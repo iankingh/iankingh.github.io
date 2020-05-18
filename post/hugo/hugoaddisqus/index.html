@@ -4,19 +4,19 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" /> 
-    <title>Categories - ianhuang筆記</title>
+    <title>Hugo 使用 disqus - ianhuang筆記</title>
     <meta name="keywords" content="程式師,架構師,個人,筆記,技術">
     
-    <meta property="og:title" content="Categories">
+    <meta property="og:title" content="Hugo 使用 disqus">
     <meta property="og:site_name" content="ianhuang筆記">
     <meta property="og:image" content="/img/author.jpg"> 
-    <meta name="title" content="Categories - ianhuang筆記" />
+    <meta name="title" content="Hugo 使用 disqus - ianhuang筆記" />
     <meta name="description" content="筆記 | 軟體 | 架構 | Java "> 
     <link rel="shortcut icon" href="https://iankingh.github.io/img/favicon.ico" />
     <link rel="apple-touch-icon" href="https://iankingh.github.io/img/apple-touch-icon.png" />
     <link rel="apple-touch-icon-precomposed" href="https://iankingh.github.io/img/apple-touch-icon.png" />
     <link href="https://iankingh.github.io/js/vendor/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
-    
+    <link href="https://iankingh.github.io/js/vendor/fancybox/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
     <link href="https://iankingh.github.io/css/main.css" rel="stylesheet" type="text/css" />
     
     <link href="https://iankingh.github.io/prism.css" rel="stylesheet"   type="text/css"/>
@@ -25,14 +25,14 @@
   var CONFIG = {
     scheme: 'Pisces',
     sidebar: {"position":"left","display":"post"},
-    fancybox: false, 
+     fancybox: true, 
     motion: true
   };
 </script>
 </head>
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
 
-<div class="container one-collumn sidebar-position-left   ">
+<div class="container one-collumn sidebar-position-left page-home  ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -113,27 +113,167 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-<div id="posts" class="posts-expand">
-    
-     <div class="category-all-page">
-        <div class="category-all-title">
-            目前共計 1 個分類
-        </div>
-        <div class="category-all">
-          <ul class="category-list">
-               
-              <li class="category-list-item">
-                  <a class="category-list-link" href="https://iankingh.github.io/categories/%e7%ad%86%e8%a8%98">筆記</a>
-              <span class="category-list-count"><sup>4</sup></span>
-              </li>
-              
-          </ul>
-        </div>
-      </div>
+<section id="posts" class="posts-expand">
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+      <h1 class="post-title" itemprop="name headline">
+        <a class="post-title-link" href="https://iankingh.github.io/post/hugo/hugoaddisqus/" itemprop="url">
+        Hugo 使用 disqus
+        </a>
+      </h1>
+      <div class="post-meta">
+      <span class="post-time">
+<span class="post-meta-item-icon">
+    <i class="fa fa-calendar-o"></i>
+</span>
+<span class="post-meta-item-text">時間：</span>
+<time itemprop="dateCreated" datetime="2016-03-22T13:04:35+08:00" content="2020-05-08">
+    2020-05-08
+</time>
+</span> 
       
 
-      
+  <span class="post-category" >
+  &nbsp; | &nbsp;
+  <span class="post-meta-item-icon">
+    <i class="fa fa-folder-o"></i>
+  </span>
+  <span class="post-meta-item-text">分類：</span>
+  
+    <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+      <a href="https://iankingh.github.io/categories/%E7%AD%86%E8%A8%98" itemprop="url" rel="index">
+        <span itemprop="name">筆記</span>
+      </a>
+      &nbsp; 
+    </span>
+  
+</span>
+
+
+       <span>
+&nbsp; | &nbsp;
+<span class="post-meta-item-icon">
+    <i class="fa fa-eye"></i>
+</span>
+<span class="post-meta-item-text">閱讀：</span>
+<span class="leancloud-visitors-count">597 字 ~2分鐘</span>
+</span>
+      </div>
+    </header>
+    <div class="post-body" itemprop="articleBody">
+    <h1 id="hugo-add-disqus">Hugo ADD disqus</h1>
+<p>Disqus（/dɪsˈkʌs/，與英語「discuss」同音）是一家使用社群網路形式，向網路社區提供網站留言服務的公司。
+該公司的平台提供不同的功能，例如與不同社群網路服務連結、社群網路、用戶個人檔案、垃圾宣傳及審核工具、資料分析、電子郵件通知和在行動裝置留言等。</p>
+<h2 id="configtoml">Config.toml</h2>
+<p>開啟Hugo配置檔 Config.toml，設定 DisqusShortname。</p>
+<pre><code class="language-toml">disqusShortname = &quot;yourDisqusShortname&quot;
+</code></pre>
+<h2 id="新增-disqushtml">新增 disqus.html</h2>
+<p>在根目錄 /layouts/partials/ 裡新增 disqus.html 檔案，
+然後把官方提供的 Script 貼到 disqus.html 檔案裡並存檔。
+官方提供的 Script 如下：</p>
+<pre><code class="language-html">    &lt;div id=&quot;disqus_thread&quot;&gt;&lt;/div&gt;
+    &lt;script type=&quot;text/javascript&quot;&gt;
+
+        (function () {
+            // Don't ever inject Disqus on localhost--it creates unwanted
+            // discussions from 'localhost:1313' on your Disqus account...
+            if (window.location.hostname == &quot;localhost&quot;)
+                return;
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            var disqus_shortname = '{{ .Site.DisqusShortname }}';
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    &lt;/script&gt;
+    &lt;noscript&gt;Please enable JavaScript to view the &lt;a href=&quot;http://disqus.com/?ref_noscript&quot;&gt;comments powered by
+            Disqus.&lt;/a&gt;&lt;/noscript&gt;
+    &lt;a href=&quot;http://disqus.com/&quot; class=&quot;dsq-brlink&quot;&gt;comments powered by &lt;span class=&quot;logo-disqus&quot;&gt;Disqus&lt;/span&gt;&lt;/a&gt;
+
+</code></pre>
+<h2 id="設定--disqushtml">設定  disqus.html</h2>
+<p>到 Hugo 主題的目錄下，找到 single.html 檔案，
+將 Hugo 主題的目錄下 single.html Copy 至 /layouts/_default/ 下。
+開啟 /layouts/_default/single.html 檔案，貼上下方語法</p>
+<pre><code class="language-html">&lt;div class=&quot;disqus markdown&quot;&gt;
+  {{ partial &quot;disqus.html&quot; . }}
+&lt;/div&gt;
+</code></pre>
+<h2 id="解決-localhost-不顯示-的問題">解決 localhost 不顯示 的問題</h2>
+<p>這是因為官方所提供的 Script 裡面其中一段語法的關係
+if (window.location.hostname == &ldquo;localhost&rdquo;)
+return;
+它的作用是當本地端 Server 運行時，就 return 中止，所以我們才會看不到 Disqus，這是因為當自己在編輯文章並運行 Server 進行預覽時，不需要用到留言的功能，所以才會採用這個判斷式來避免本地端的 Server 模式啟用Disqus功能。若您希望在本地端 Server 模式下，也能看到 Disqus，只要把上述那二行給註解掉並存檔就可以了。
+ShowDisqus</p>
+<h1 id="參考">參考</h1>
+<p>Hugo 加入 Disqus 整合性留言管理系統<br>
+<a href="https://coreychen71.github.io/posts/2019-05/hugoadddisqus/">https://coreychen71.github.io/posts/2019-05/hugoadddisqus/</a></p>
+<p>给Hugo添加disqus评论服务 - Marvin&rsquo;s Blog【程式人生】<br>
+<a href="https://zh4ui.net/post/2017-04-20-hugo-with-disqus/">https://zh4ui.net/post/2017-04-20-hugo-with-disqus/</a></p>
+<p>为你博客添加disqus评论系统 | 23.9K | Vineo<br>
+<a href="https://vineo.cn/config-disqus.html">https://vineo.cn/config-disqus.html</a></p>
+    </div>
+    <footer class="post-footer">
+     
+ 
+<div class="post-tags">     
+     
+    <a href="https://iankingh.github.io/tags/hugo" rel="tag" title="hugo">#hugo#</a>
+    
 </div>
+
+
+
+     <div class="post-nav">
+    <div class="post-nav-next post-nav-item">
+    
+        <a href="https://iankingh.github.io/post/eclipse/opentypehierarchy/" rel="next" title="OpenTypeHierarchy">
+        <i class="fa fa-chevron-left"></i> OpenTypeHierarchy
+        </a>
+    
+    </div>
+
+    <div class="post-nav-prev post-nav-item">
+    
+        <a href="https://iankingh.github.io/post/hugo/hugoaddprism/" rel="prev" title="Prism.js使用筆記">
+        Prism.js使用筆記 <i class="fa fa-chevron-right"></i>
+        </a>
+    
+    </div>
+</div>
+      
+     
+     
+     
+
+
+
+     
+    </footer>
+
+    <div class="disqus markdown">
+      <div id="disqus_thread"></div>
+<script type="text/javascript">
+
+    (function () {
+        
+        
+        
+        
+
+
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        var disqus_shortname = 'https-iankingh-github-io';
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by
+        Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </div>
+  </article>
+</section>
 
           </div>
         </div>
@@ -183,13 +323,6 @@
     </div>
 </nav>
       
-<div class="feed-link motion-element">
-<a href="https://iankingh.github.io/categories/index.xml" rel="alternate" type="application/rss+xml" target="_blank">
-    <i class="fa fa-rss"></i>
-    RSS 訂閱
-</a>
-</div>
-
       
 <div class="links-of-author motion-element">
     
@@ -257,16 +390,18 @@
 <script type="text/javascript" src="https://iankingh.github.io/js/vendor/velocity/velocity.ui.min.js?v=1.2.1"></script>
 <script src="https://iankingh.github.io/js/vendor/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
 
+<script src="https://iankingh.github.io/js/vendor/fancybox/jquery.fancybox.pack.js?v=2.1.5"></script>
+
 <script type="text/javascript" src="https://iankingh.github.io/js/utils.js"></script>
 <script type="text/javascript" src="https://iankingh.github.io/js/motion.js"></script>
 <script type="text/javascript" src="https://iankingh.github.io/js/affix.js"></script>
 <script type="text/javascript" src="https://iankingh.github.io/js/schemes/pisces.js"></script>
 
-<script type="text/javascript" src="https://iankingh.github.io/js/bootstrap.js"></script>
+<script type="text/javascript" src="https://iankingh.github.io/js/scrollspy.js"></script>
+<script type="text/javascript" src="https://iankingh.github.io/js/post-details.js"></script>
+<script type="text/javascript" src="https://iankingh.github.io/js/toc.js"></script>
 
-<script type="text/javascript" id="motion.page.archive">
-  $('.archive-year').velocity('transition.slideLeftIn');
-</script>
+<script type="text/javascript" src="https://iankingh.github.io/js/bootstrap.js"></script>
 
 <script type="text/javascript" src="https://iankingh.github.io/js/search.js"></script>
 <script type="text/x-mathjax-config">

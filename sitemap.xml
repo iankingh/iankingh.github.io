@@ -1,19 +1,79 @@
 <search>
     
      <entry>
-        <title>Hugo使用筆記</title>
-        <url>https://iankingh.github.io/post/hugonotes/</url>
+        <title>OpenTypeHierarchy</title>
+        <url>https://iankingh.github.io/post/eclipse/opentypehierarchy/</url>
         <categories>
           <category>筆記</category>
         </categories>
         <tags>
-          <tag>notes</tag>
+          <tag>eclispe</tag>
         </tags>
-        <content type="html"> 紀錄如何使用Hugo 建立及設定部落格專案 我們先使用 hugo 命令新增一個空白專案，然後下載一個Template到我們的專案裡面， 接著新增四個我們想加到模板 Menu 的頁面: about, history, tags, categories. 最後則是新增一篇空白的文章到專案內。
-1.create the project $ hugo new site myblog 2.add a theme $ git submodule add https://github.com/laozhu/hugo-nuo themes/hugo-nuo 3.add new pages $ hugo new about.md $ hugo new hisroty.md $ hugo new tags.md $ hugo new categories.md 4.add new article $ hugo new post/welcome.md 右上角github 貓
+        <content type="html"> Eclipse 用 Open Type Hierarchy 查看類的繼承關係 用Open Type Hierarchy可以查看類的繼承關係，可以在Hierarchy窗口看到繼承層次的導航。
+在方法或類名上點擊右鍵，選擇Open Type Hierarchy即可，快捷鍵是F4。
+</content>
+    </entry>
+    
+     <entry>
+        <title>Hugo 使用 disqus</title>
+        <url>https://iankingh.github.io/post/hugo/hugoaddisqus/</url>
+        <categories>
+          <category>筆記</category>
+        </categories>
+        <tags>
+          <tag>hugo</tag>
+        </tags>
+        <content type="html"> Hugo ADD disqus Disqus（/dɪsˈkʌs/，與英語「discuss」同音）是一家使用社群網路形式，向網路社區提供網站留言服務的公司。 該公司的平台提供不同的功能，例如與不同社群網路服務連結、社群網路、用戶個人檔案、垃圾宣傳及審核工具、資料分析、電子郵件通知和在行動裝置留言等。
+Config.toml 開啟Hugo配置檔 Config.toml，設定 DisqusShortname。
+disqusShortname = &amp;quot;yourDisqusShortname&amp;quot; 新增 disqus.html 在根目錄 /layouts/partials/ 裡新增 disqus.html 檔案， 然後把官方提供的 Script 貼到 disqus.html 檔案裡並存檔。 官方提供的 Script 如下：
+&amp;lt;div id=&amp;quot;disqus_thread&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;script type=&amp;quot;text/javascript&amp;quot;&amp;gt;(function () {// Don&#39;t ever inject Disqus on localhost--it creates unwanted// discussions from &#39;localhost:1313&#39; on your Disqus account...if (window.location.hostname == &amp;quot;localhost&amp;quot;)return;var dsq = document.createElement(&#39;script&#39;); dsq.type = &#39;text/javascript&#39;; dsq.async = true;var disqus_shortname = &#39;{{ .Site.DisqusShortname }}&#39;;dsq.src = &#39;//&#39; &#43; disqus_shortname &#43; &#39;.disqus.com/embed.js&#39;;(document.getElementsByTagName(&#39;head&#39;)[0] || document.getElementsByTagName(&#39;body&#39;)[0]).appendChild(dsq);})();&amp;lt;/script&amp;gt;&amp;lt;noscript&amp;gt;Please enable JavaScript to view the &amp;lt;a href=&amp;quot;http://disqus.com/?ref_noscript&amp;quot;&amp;gt;comments powered byDisqus.&amp;lt;/a&amp;gt;&amp;lt;/noscript&amp;gt;&amp;lt;a href=&amp;quot;http://disqus.com/&amp;quot; class=&amp;quot;dsq-brlink&amp;quot;&amp;gt;comments powered by &amp;lt;span class=&amp;quot;logo-disqus&amp;quot;&amp;gt;Disqus&amp;lt;/span&amp;gt;&amp;lt;/a&amp;gt; 設定 disqus.html 到 Hugo 主題的目錄下，找到 single.html 檔案， 將 Hugo 主題的目錄下 single.html Copy 至 /layouts/_default/ 下。 開啟 /layouts/_default/single.html 檔案，貼上下方語法
+&amp;lt;div class=&amp;quot;disqus markdown&amp;quot;&amp;gt;{{ partial &amp;quot;disqus.html&amp;quot; . }}&amp;lt;/div&amp;gt; 解決 localhost 不顯示 的問題 這是因為官方所提供的 Script 裡面其中一段語法的關係 if (window.location.hostname == &amp;ldquo;localhost&amp;rdquo;) return; 它的作用是當本地端 Server 運行時，就 return 中止，所以我們才會看不到 Disqus，這是因為當自己在編輯文章並運行 Server 進行預覽時，不需要用到留言的功能，所以才會採用這個判斷式來避免本地端的 Server 模式啟用Disqus功能。若您希望在本地端 Server 模式下，也能看到 Disqus，只要把上述那二行給註解掉並存檔就可以了。 ShowDisqus
+參考 Hugo 加入 Disqus 整合性留言管理系統
+https://coreychen71.github.io/posts/2019-05/hugoadddisqus/
+给Hugo添加disqus评论服务 - Marvin&amp;rsquo;s Blog【程式人生】
+https://zh4ui.net/post/2017-04-20-hugo-with-disqus/
+为你博客添加disqus评论系统 | 23.9K | Vineo
+https://vineo.cn/config-disqus.html
+</content>
+    </entry>
+    
+     <entry>
+        <title>Prism.js使用筆記</title>
+        <url>https://iankingh.github.io/post/hugo/hugoaddprism/</url>
+        <categories>
+          <category>筆記</category>
+        </categories>
+        <tags>
+          <tag>hugo</tag>
+        </tags>
+        <content type="html"> hugo使用Prism.js 使用 prism.js 做為代碼高量的工具
+Prism是一種輕量級的，可擴展的語法突出顯示工具，其構建考慮了現代Web標準。它已在數千個網站中使用，包括您每天訪問的一些網站。
+下載 https://prismjs.com/
+使用 你的Hugo部落格資料夾位置├── static│ ├── prism.js│ └── prism.css Config.toml 開啟Hugo配置檔 Config.toml，設定將預設代碼高亮設定false
+#預設代碼區塊pygmentsCodefences = falsepygmentsCodefencesGuessSyntax = false 參考 Hugo動態加載prism.js https://www.ariesme.com/post/2019/add_prism_for_hugo_automatically/
+Hugo / 如何在 Hugo 中用 Prism.js 提供程式碼色彩標註 | sujj blog
+https://sujingjhong.com/posts/how-to-add-prismjs-into-hugo/
+漂亮的代碼語法高亮插件Prism.js簡單使用文檔 - 嚴穎專欄 -SegmentFault 思否
+https://segmentfault.com/a/1190000009122617
+</content>
+    </entry>
+    
+     <entry>
+        <title>Hugo使用筆記</title>
+        <url>https://iankingh.github.io/post/hugo/hugonotes/</url>
+        <categories>
+          <category>筆記</category>
+        </categories>
+        <tags>
+          <tag>hugo</tag>
+        </tags>
+        <content type="html"> Hugo使用筆記 建立及設定部落格專案
+我們先使用 hugo 命令新增一個空白專案，然後下載一個Template到我們的專案裡面
+接著新增四個我們想加到模板 Menu 的頁面: about, history, tags, categories
+最後則是新增一篇空白的文章到專案內。
+1.create the project $ hugo new site myblog 2.add a theme $ git submodule add https://github.com/laozhu/hugo-nuo themes/hugo-nuo 3.add new pages $ hugo new about.md $ hugo new hisroty.md $ hugo new tags.md $ hugo new categories.md 4.add new article $ hugo new post/welcome.md  參考 右上角github 貓
 GitHub Corners
 http://tholman.com/github-corners/
-參考
 在 Github Pages 建立 Hugo 靜態網站 · Kaichu.io
 https://kaichu.io/2015/07/12/my-first-post/
 使用Github部署Hugo靜態網站

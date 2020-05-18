@@ -4,19 +4,19 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" /> 
-    <title>Categories - ianhuang筆記</title>
+    <title>Hugo使用筆記 - ianhuang筆記</title>
     <meta name="keywords" content="程式師,架構師,個人,筆記,技術">
     
-    <meta property="og:title" content="Categories">
+    <meta property="og:title" content="Hugo使用筆記">
     <meta property="og:site_name" content="ianhuang筆記">
     <meta property="og:image" content="/img/author.jpg"> 
-    <meta name="title" content="Categories - ianhuang筆記" />
+    <meta name="title" content="Hugo使用筆記 - ianhuang筆記" />
     <meta name="description" content="筆記 | 軟體 | 架構 | Java "> 
     <link rel="shortcut icon" href="https://iankingh.github.io/img/favicon.ico" />
     <link rel="apple-touch-icon" href="https://iankingh.github.io/img/apple-touch-icon.png" />
     <link rel="apple-touch-icon-precomposed" href="https://iankingh.github.io/img/apple-touch-icon.png" />
     <link href="https://iankingh.github.io/js/vendor/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
-    
+    <link href="https://iankingh.github.io/js/vendor/fancybox/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
     <link href="https://iankingh.github.io/css/main.css" rel="stylesheet" type="text/css" />
     
     <link href="https://iankingh.github.io/prism.css" rel="stylesheet"   type="text/css"/>
@@ -25,14 +25,14 @@
   var CONFIG = {
     scheme: 'Pisces',
     sidebar: {"position":"left","display":"post"},
-    fancybox: false, 
+     fancybox: true, 
     motion: true
   };
 </script>
 </head>
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
 
-<div class="container one-collumn sidebar-position-left   ">
+<div class="container one-collumn sidebar-position-left page-home  ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -113,27 +113,152 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-<div id="posts" class="posts-expand">
-    
-     <div class="category-all-page">
-        <div class="category-all-title">
-            目前共計 1 個分類
-        </div>
-        <div class="category-all">
-          <ul class="category-list">
-               
-              <li class="category-list-item">
-                  <a class="category-list-link" href="https://iankingh.github.io/categories/%e7%ad%86%e8%a8%98">筆記</a>
-              <span class="category-list-count"><sup>4</sup></span>
-              </li>
-              
-          </ul>
-        </div>
-      </div>
+<section id="posts" class="posts-expand">
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+      <h1 class="post-title" itemprop="name headline">
+        <a class="post-title-link" href="https://iankingh.github.io/post/hugo/hugonotes/" itemprop="url">
+        Hugo使用筆記
+        </a>
+      </h1>
+      <div class="post-meta">
+      <span class="post-time">
+<span class="post-meta-item-icon">
+    <i class="fa fa-calendar-o"></i>
+</span>
+<span class="post-meta-item-text">時間：</span>
+<time itemprop="dateCreated" datetime="2016-03-22T13:04:35+08:00" content="2020-04-21">
+    2020-04-21
+</time>
+</span> 
       
 
-      
+  <span class="post-category" >
+  &nbsp; | &nbsp;
+  <span class="post-meta-item-icon">
+    <i class="fa fa-folder-o"></i>
+  </span>
+  <span class="post-meta-item-text">分類：</span>
+  
+    <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+      <a href="https://iankingh.github.io/categories/%E7%AD%86%E8%A8%98" itemprop="url" rel="index">
+        <span itemprop="name">筆記</span>
+      </a>
+      &nbsp; 
+    </span>
+  
+</span>
+
+
+       <span>
+&nbsp; | &nbsp;
+<span class="post-meta-item-icon">
+    <i class="fa fa-eye"></i>
+</span>
+<span class="post-meta-item-text">閱讀：</span>
+<span class="leancloud-visitors-count">199 字 ~1分鐘</span>
+</span>
+      </div>
+    </header>
+    <div class="post-body" itemprop="articleBody">
+    <h1 id="hugo使用筆記">Hugo使用筆記</h1>
+<p>建立及設定部落格專案</p>
+<p>我們先使用 hugo 命令新增一個空白專案，然後下載一個Template到我們的專案裡面</p>
+<p>接著新增四個我們想加到模板 Menu 的頁面: about, history, tags, categories</p>
+<p>最後則是新增一篇空白的文章到專案內。</p>
+<pre><code class="language-Shell">
+1.create the project
+
+$ hugo new site myblog
+
+2.add a theme
+$ git submodule add https://github.com/laozhu/hugo-nuo themes/hugo-nuo
+
+3.add new pages
+
+$ hugo new about.md
+$ hugo new hisroty.md
+$ hugo new tags.md
+$ hugo new categories.md
+
+4.add new article
+
+$ hugo new post/welcome.md
+
+</code></pre>
+<h1 id="參考">參考</h1>
+<p>右上角github 貓<br>
+GitHub Corners<br>
+<a href="http://tholman.com/github-corners/">http://tholman.com/github-corners/</a></p>
+<p>在 Github Pages 建立 Hugo 靜態網站 · Kaichu.io<br>
+<a href="https://kaichu.io/2015/07/12/my-first-post/">https://kaichu.io/2015/07/12/my-first-post/</a></p>
+<p>使用Github部署Hugo靜態網站<br>
+<a href="https://kira5033.github.io/2019/05/%E4%BD%BF%E7%94%A8github%E9%83%A8%E7%BD%B2hugo%E9%9D%9C%E6%85%8B%E7%B6%B2%E7%AB%99/">https://kira5033.github.io/2019/05/%E4%BD%BF%E7%94%A8github%E9%83%A8%E7%BD%B2hugo%E9%9D%9C%E6%85%8B%E7%B6%B2%E7%AB%99/</a></p>
+<p><a href="https://github.com/xtfly/xtfly.github.io/tree/hugo/themes/next">https://github.com/xtfly/xtfly.github.io/tree/hugo/themes/next</a></p>
+<p>使用 Hugo 打造個人部落格<br>
+<a href="https://blog.walker088.tw/post/intro-hugo/">https://blog.walker088.tw/post/intro-hugo/</a></p>
+    </div>
+    <footer class="post-footer">
+     
+ 
+<div class="post-tags">     
+     
+    <a href="https://iankingh.github.io/tags/hugo" rel="tag" title="hugo">#hugo#</a>
+    
 </div>
+
+
+
+     <div class="post-nav">
+    <div class="post-nav-next post-nav-item">
+    
+        <a href="https://iankingh.github.io/post/hugo/hugoaddprism/" rel="next" title="Prism.js使用筆記">
+        <i class="fa fa-chevron-left"></i> Prism.js使用筆記
+        </a>
+    
+    </div>
+
+    <div class="post-nav-prev post-nav-item">
+    
+        <a href="https://iankingh.github.io/about/" rel="prev" title="inaghug 筆記">
+        inaghug 筆記 <i class="fa fa-chevron-right"></i>
+        </a>
+    
+    </div>
+</div>
+      
+     
+     
+     
+
+
+
+     
+    </footer>
+
+    <div class="disqus markdown">
+      <div id="disqus_thread"></div>
+<script type="text/javascript">
+
+    (function () {
+        
+        
+        
+        
+
+
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        var disqus_shortname = 'https-iankingh-github-io';
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by
+        Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </div>
+  </article>
+</section>
 
           </div>
         </div>
@@ -183,13 +308,6 @@
     </div>
 </nav>
       
-<div class="feed-link motion-element">
-<a href="https://iankingh.github.io/categories/index.xml" rel="alternate" type="application/rss+xml" target="_blank">
-    <i class="fa fa-rss"></i>
-    RSS 訂閱
-</a>
-</div>
-
       
 <div class="links-of-author motion-element">
     
@@ -257,16 +375,18 @@
 <script type="text/javascript" src="https://iankingh.github.io/js/vendor/velocity/velocity.ui.min.js?v=1.2.1"></script>
 <script src="https://iankingh.github.io/js/vendor/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
 
+<script src="https://iankingh.github.io/js/vendor/fancybox/jquery.fancybox.pack.js?v=2.1.5"></script>
+
 <script type="text/javascript" src="https://iankingh.github.io/js/utils.js"></script>
 <script type="text/javascript" src="https://iankingh.github.io/js/motion.js"></script>
 <script type="text/javascript" src="https://iankingh.github.io/js/affix.js"></script>
 <script type="text/javascript" src="https://iankingh.github.io/js/schemes/pisces.js"></script>
 
-<script type="text/javascript" src="https://iankingh.github.io/js/bootstrap.js"></script>
+<script type="text/javascript" src="https://iankingh.github.io/js/scrollspy.js"></script>
+<script type="text/javascript" src="https://iankingh.github.io/js/post-details.js"></script>
+<script type="text/javascript" src="https://iankingh.github.io/js/toc.js"></script>
 
-<script type="text/javascript" id="motion.page.archive">
-  $('.archive-year').velocity('transition.slideLeftIn');
-</script>
+<script type="text/javascript" src="https://iankingh.github.io/js/bootstrap.js"></script>
 
 <script type="text/javascript" src="https://iankingh.github.io/js/search.js"></script>
 <script type="text/x-mathjax-config">

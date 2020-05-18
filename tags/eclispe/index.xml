@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>eclispe on ianhuang筆記</title>
+    <link>https://iankingh.github.io/tags/eclispe/</link>
+    <description>Recent content in eclispe on ianhuang筆記</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-TW</language>
+    <lastBuildDate>Fri, 15 May 2020 16:36:13 +0800</lastBuildDate>
+    
+	<atom:link href="https://iankingh.github.io/tags/eclispe/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>OpenTypeHierarchy</title>
+      <link>https://iankingh.github.io/post/eclipse/opentypehierarchy/</link>
+      <pubDate>Fri, 15 May 2020 16:36:13 +0800</pubDate>
+      
+      <guid>https://iankingh.github.io/post/eclipse/opentypehierarchy/</guid>
+      <description>&lt;h1 id=&#34;eclipse-用-open-type-hierarchy-查看類的繼承關係&#34;&gt;Eclipse 用 Open Type Hierarchy 查看類的繼承關係&lt;/h1&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
