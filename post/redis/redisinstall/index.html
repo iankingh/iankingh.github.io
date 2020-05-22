@@ -4,33 +4,35 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" /> 
-    <title>notes - ianhuang筆記</title>
+    <title>RedisInstall - ianhuang筆記</title>
     <meta name="keywords" content="程式師,架構師,個人,筆記,技術">
     
-    <meta property="og:title" content="notes">
+    <meta property="og:title" content="RedisInstall">
     <meta property="og:site_name" content="ianhuang筆記">
     <meta property="og:image" content="/img/author.jpg"> 
-    <meta name="title" content="notes - ianhuang筆記" />
+    <meta name="title" content="RedisInstall - ianhuang筆記" />
     <meta name="description" content="筆記 | 軟體 | 架構 | Java "> 
     <link rel="shortcut icon" href="https://iankingh.github.io/img/favicon.ico" />
     <link rel="apple-touch-icon" href="https://iankingh.github.io/img/apple-touch-icon.png" />
     <link rel="apple-touch-icon-precomposed" href="https://iankingh.github.io/img/apple-touch-icon.png" />
     <link href="https://iankingh.github.io/js/vendor/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
-    
+    <link href="https://iankingh.github.io/js/vendor/fancybox/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
     <link href="https://iankingh.github.io/css/main.css" rel="stylesheet" type="text/css" />
-    <link href="https://iankingh.github.io/css/syntax.css" rel="stylesheet" type="text/css" />
+    
+    <link href="https://iankingh.github.io/prism.css" rel="stylesheet"   type="text/css"/>
     <script type="text/javascript" id="hexo.configuration">
   var NexT = window.NexT || {};
   var CONFIG = {
     scheme: 'Pisces',
     sidebar: {"position":"left","display":"post"},
-    fancybox: false, 
+     fancybox: true, 
     motion: true
   };
 </script>
 </head>
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
-<div class="container one-collumn sidebar-position-left   ">
+
+<div class="container one-collumn sidebar-position-left page-home  ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -111,71 +113,158 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-<section id="posts" class="posts-collapse">
-<div class="collection-title">
-    <h2 >notes
-    <small>標籤</small>
-    </h2>
-</div>
-
-<div class="collection-title">
-  <h2 class="archive-year motion-element" id="archive-year-2020">2020</h2>
-</div>
-
-  <article class="post post-type-normal }}" itemscope itemtype="http://schema.org/Article">
+<section id="posts" class="posts-expand">
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
-      <h1 class="post-title">
-        <a class="post-title-link" href="https://iankingh.github.io/post/hugonotes/" itemprop="url">
-            <span itemprop="name">Hugo使用筆記</span>
+      <h1 class="post-title" itemprop="name headline">
+        <a class="post-title-link" href="https://iankingh.github.io/post/redis/redisinstall/" itemprop="url">
+        RedisInstall
         </a>
       </h1>
-
       <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2020-04-21"
-              content="04-21" >
-          04-21
-        </time>
+      <span class="post-time">
+<span class="post-meta-item-icon">
+    <i class="fa fa-calendar-o"></i>
+</span>
+<span class="post-meta-item-text">時間：</span>
+<time itemprop="dateCreated" datetime="2016-03-22T13:04:35+08:00" content="2020-05-20">
+    2020-05-20
+</time>
+</span> 
+      
+
+  <span class="post-category" >
+  &nbsp; | &nbsp;
+  <span class="post-meta-item-icon">
+    <i class="fa fa-folder-o"></i>
+  </span>
+  <span class="post-meta-item-text">分類：</span>
+  
+    <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+      <a href="https://iankingh.github.io/categories/%E7%AD%86%E8%A8%98" itemprop="url" rel="index">
+        <span itemprop="name">筆記</span>
+      </a>
+      &nbsp; 
+    </span>
+  
+</span>
+
+
+       <span>
+&nbsp; | &nbsp;
+<span class="post-meta-item-icon">
+    <i class="fa fa-eye"></i>
+</span>
+<span class="post-meta-item-text">閱讀：</span>
+<span class="leancloud-visitors-count">189 字 ~1分鐘</span>
+</span>
       </div>
     </header>
+    <div class="post-body" itemprop="articleBody">
+    <h2 id="簡介">簡介</h2>
+<p>Redis是一個使用ANSI C編寫的開源、支援網路、基於記憶體、可選永續性的鍵值對儲存資料庫。</p>
+<h2 id="安裝">安裝</h2>
+<h3 id="window-下-安裝">Window 下 安裝</h3>
+<h4 id="安裝網址">安裝網址</h4>
+<p><a href="https://github.com/microsoftarchive/redis/releases">https://github.com/microsoftarchive/redis/releases</a></p>
+<h4 id="啟動指令">啟動指令</h4>
+<pre><code class="language-powershell">redis-server.exe redis.windows.conf
+</code></pre>
+<h4 id="啟動畫面">啟動畫面</h4>
+<p><img src="https://iankingh.github.io/images/redis/runRedisWin.png" alt="runRedisWin"></p>
+<h4 id="測試">測試</h4>
+<pre><code class="language-powershell">//連線指令
+redis-cli.exe -h 127.0.0.1 -p 6379
+// 塞值
+Set testkey testvalue
+// 取值
+Get testkey
+</code></pre>
+<p><img src="https://iankingh.github.io/images/redis/redisWinTest.png" alt="redisWinTest"></p>
+<h3 id="linux-安裝">Linux 安裝</h3>
+<pre><code class="language-shell">$ wget http://download.redis.io/releases/redis-6.0.3.tar.gz
+$ tar xzf redis-6.0.3.tar.gz
+$ cd redis-6.0.3
+$ make
+</code></pre>
+<h4 id="啟動">啟動</h4>
+<pre><code class="language-shell">src/redis-server
+</code></pre>
+<p><img src="https://iankingh.github.io/images/redis/runRedisUbuntu.png" alt="runRedisUbuntu"></p>
+<h4 id="測試-1">測試</h4>
+<p><img src="https://iankingh.github.io/images/redis/redisUbuntuTest.png" alt="redisUbuntuTest"></p>
+<pre><code class="language-shell">//連線指令
+src/redis-cli  
+// 塞值
+redis&gt; set foo bar  
+// 取值
+redis&gt; get foo  
+</code></pre>
+<h2 id="參考">參考</h2>
+<p>Redis - 維基百科，自由的百科全書<br>
+<a href="https://zh.wikipedia.org/wiki/Redis">https://zh.wikipedia.org/wiki/Redis</a></p>
+<p>Redis - 在 Windows 上建立高可用性的 Redis | 天空的垃圾場<br>
+<a href="https://skychang.github.io/2017/04/09/Redis-Create_Redis_HA/">https://skychang.github.io/2017/04/09/Redis-Create_Redis_HA/</a></p>
+<p>Redis系列 - 環境建置篇 - Jed&rsquo;s blog<br>
+<a href="https://jed1978.github.io/2018/05/02/Redis-Environment-Installation-Configuration.html">https://jed1978.github.io/2018/05/02/Redis-Environment-Installation-Configuration.html</a></p>
+    </div>
+    <footer class="post-footer">
+     
+ 
+<div class="post-tags">     
+     
+    <a href="https://iankingh.github.io/tags/redis" rel="tag" title="redis">#redis#</a>
+    
+</div>
+
+
+
+     <div class="post-nav">
+    <div class="post-nav-next post-nav-item">
+    
+    </div>
+
+    <div class="post-nav-prev post-nav-item">
+    
+        <a href="https://iankingh.github.io/post/eclipse/opentypehierarchy/" rel="prev" title="OpenTypeHierarchy">
+        OpenTypeHierarchy <i class="fa fa-chevron-right"></i>
+        </a>
+    
+    </div>
+</div>
+      
+     
+     
+     
+
+
+
+     
+    </footer>
+
+    <div class="disqus markdown">
+      <div id="disqus_thread"></div>
+<script type="text/javascript">
+
+    (function () {
+        
+        
+        
+        
+
+
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        var disqus_shortname = 'https-iankingh-github-io';
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by
+        Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </div>
   </article>
-
-
- </section>
-
-
-
-
-
-
-
-
-
-  
-  
-
-
-
-
-
-
-  
-  
-
-
-
-<nav class="pagination">
-    
-    
-        
-        
-          <span class="page-number current">1</span>
-        
-        
-    
-    
-</nav>
-
+</section>
 
           </div>
         </div>
@@ -189,7 +278,16 @@
 <aside id="sidebar" class="sidebar">
   <div class="sidebar-inner">
 
-    <section class="site-overview sidebar-panel  sidebar-panel-active ">
+  <ul class="sidebar-nav motion-element">
+    <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+      文章目錄
+    </li>
+    <li class="sidebar-nav-overview" data-target="site-overview">
+      網站概覽
+    </li>
+  </ul>
+
+    <section class="site-overview sidebar-panel ">
       <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
     <img class="site-author-image" itemprop="image"
         src="https://iankingh.github.io/img/author.jpg"
@@ -201,7 +299,7 @@
       <nav class="site-state motion-element">
     <div class="site-state-item site-state-posts">
       <a href="https://iankingh.github.io/post/">
-        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-count">5</span>
         <span class="site-state-item-name">日誌</span>
       </a>
     </div>
@@ -218,20 +316,13 @@
     <div class="site-state-item site-state-tags">
         <a href="https://iankingh.github.io/tags/">
          
-        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-count">3</span>
         
         <span class="site-state-item-name">標籤</span>
         </a>
     </div>
 </nav>
       
-<div class="feed-link motion-element">
-<a href="https://iankingh.github.io/tags/notes/index.xml" rel="alternate" type="application/rss+xml" target="_blank">
-    <i class="fa fa-rss"></i>
-    RSS 訂閱
-</a>
-</div>
-
       
 <div class="links-of-author motion-element">
     
@@ -253,6 +344,23 @@
 
     </section>
     
+<section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+    <div class="post-toc">
+        <div class="post-toc-content"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#簡介">簡介</a></li>
+    <li><a href="#安裝">安裝</a>
+      <ul>
+        <li><a href="#window-下-安裝">Window 下 安裝</a></li>
+        <li><a href="#linux-安裝">Linux 安裝</a></li>
+      </ul>
+    </li>
+    <li><a href="#參考">參考</a></li>
+  </ul>
+</nav></div>
+    </div>
+</section>
+
   </div>
 </aside>
 
@@ -299,16 +407,18 @@
 <script type="text/javascript" src="https://iankingh.github.io/js/vendor/velocity/velocity.ui.min.js?v=1.2.1"></script>
 <script src="https://iankingh.github.io/js/vendor/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
 
+<script src="https://iankingh.github.io/js/vendor/fancybox/jquery.fancybox.pack.js?v=2.1.5"></script>
+
 <script type="text/javascript" src="https://iankingh.github.io/js/utils.js"></script>
 <script type="text/javascript" src="https://iankingh.github.io/js/motion.js"></script>
 <script type="text/javascript" src="https://iankingh.github.io/js/affix.js"></script>
 <script type="text/javascript" src="https://iankingh.github.io/js/schemes/pisces.js"></script>
 
-<script type="text/javascript" src="https://iankingh.github.io/js/bootstrap.js"></script>
+<script type="text/javascript" src="https://iankingh.github.io/js/scrollspy.js"></script>
+<script type="text/javascript" src="https://iankingh.github.io/js/post-details.js"></script>
+<script type="text/javascript" src="https://iankingh.github.io/js/toc.js"></script>
 
-<script type="text/javascript" id="motion.page.archive">
-  $('.archive-year').velocity('transition.slideLeftIn');
-</script>
+<script type="text/javascript" src="https://iankingh.github.io/js/bootstrap.js"></script>
 
 <script type="text/javascript" src="https://iankingh.github.io/js/search.js"></script>
 <script type="text/x-mathjax-config">
@@ -323,6 +433,7 @@
     "HTML-CSS": { fonts: ["TeX"] }
   });
 </script>
+<script src="https://iankingh.github.io/prism.js"></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML' async></script>
 </body>
 </html>

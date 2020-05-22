@@ -1,6 +1,26 @@
 <search>
     
      <entry>
+        <title>RedisInstall</title>
+        <url>https://iankingh.github.io/post/redis/redisinstall/</url>
+        <categories>
+          <category>筆記</category>
+        </categories>
+        <tags>
+          <tag>redis</tag>
+        </tags>
+        <content type="html"> 簡介 Redis是一個使用ANSI C編寫的開源、支援網路、基於記憶體、可選永續性的鍵值對儲存資料庫。
+安裝 Window 下 安裝 安裝網址 https://github.com/microsoftarchive/redis/releases
+啟動指令 redis-server.exe redis.windows.conf 啟動畫面 測試 //連線指令redis-cli.exe -h 127.0.0.1 -p 6379// 塞值Set testkey testvalue// 取值Get testkey Linux 安裝 $ wget http://download.redis.io/releases/redis-6.0.3.tar.gz$ tar xzf redis-6.0.3.tar.gz$ cd redis-6.0.3$ make 啟動 src/redis-server 測試 //連線指令src/redis-cli // 塞值redis&amp;gt; set foo bar // 取值redis&amp;gt; get foo  參考 Redis - 維基百科，自由的百科全書
+https://zh.wikipedia.org/wiki/Redis
+Redis - 在 Windows 上建立高可用性的 Redis | 天空的垃圾場
+https://skychang.github.io/2017/04/09/Redis-Create_Redis_HA/
+Redis系列 - 環境建置篇 - Jed&amp;rsquo;s blog
+https://jed1978.github.io/2018/05/02/Redis-Environment-Installation-Configuration.html
+</content>
+    </entry>
+    
+     <entry>
         <title>OpenTypeHierarchy</title>
         <url>https://iankingh.github.io/post/eclipse/opentypehierarchy/</url>
         <categories>
@@ -81,6 +101,7 @@ https://kira5033.github.io/2019/05/%E4%BD%BF%E7%94%A8github%E9%83%A8%E7%BD%B2hug
 https://github.com/xtfly/xtfly.github.io/tree/hugo/themes/next
 使用 Hugo 打造個人部落格
 https://blog.walker088.tw/post/intro-hugo/
+hugo搭建静态博客 | 生信笔记 https://www.bioinfo-scrounger.com/archives/809/
 </content>
     </entry>
     

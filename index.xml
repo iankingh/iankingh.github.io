@@ -12,6 +12,16 @@
     
     
     <item>
+      <title>RedisInstall</title>
+      <link>https://iankingh.github.io/post/redis/redisinstall/</link>
+      <pubDate>Wed, 20 May 2020 10:11:13 +0800</pubDate>
+      
+      <guid>https://iankingh.github.io/post/redis/redisinstall/</guid>
+      <description>&lt;h2 id=&#34;簡介&#34;&gt;簡介&lt;/h2&gt;
+&lt;p&gt;Redis是一個使用ANSI C編寫的開源、支援網路、基於記憶體、可選永續性的鍵值對儲存資料庫。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>OpenTypeHierarchy</title>
       <link>https://iankingh.github.io/post/eclipse/opentypehierarchy/</link>
       <pubDate>Fri, 15 May 2020 16:36:13 +0800</pubDate>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>redis on ianhuang筆記</title>
+    <link>https://iankingh.github.io/tags/redis/</link>
+    <description>Recent content in redis on ianhuang筆記</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-TW</language>
+    <lastBuildDate>Wed, 20 May 2020 10:11:13 +0800</lastBuildDate>
+    
+	<atom:link href="https://iankingh.github.io/tags/redis/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>RedisInstall</title>
+      <link>https://iankingh.github.io/post/redis/redisinstall/</link>
+      <pubDate>Wed, 20 May 2020 10:11:13 +0800</pubDate>
+      
+      <guid>https://iankingh.github.io/post/redis/redisinstall/</guid>
+      <description>&lt;h2 id=&#34;簡介&#34;&gt;簡介&lt;/h2&gt;
+&lt;p&gt;Redis是一個使用ANSI C編寫的開源、支援網路、基於記憶體、可選永續性的鍵值對儲存資料庫。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

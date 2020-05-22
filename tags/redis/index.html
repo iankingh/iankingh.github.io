@@ -4,33 +4,35 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" /> 
-    <title>Hugo使用筆記 - ianhuang筆記</title>
+    <title>redis - ianhuang筆記</title>
     <meta name="keywords" content="程式師,架構師,個人,筆記,技術">
     
-    <meta property="og:title" content="Hugo使用筆記">
+    <meta property="og:title" content="redis">
     <meta property="og:site_name" content="ianhuang筆記">
     <meta property="og:image" content="/img/author.jpg"> 
-    <meta name="title" content="Hugo使用筆記 - ianhuang筆記" />
+    <meta name="title" content="redis - ianhuang筆記" />
     <meta name="description" content="筆記 | 軟體 | 架構 | Java "> 
     <link rel="shortcut icon" href="https://iankingh.github.io/img/favicon.ico" />
     <link rel="apple-touch-icon" href="https://iankingh.github.io/img/apple-touch-icon.png" />
     <link rel="apple-touch-icon-precomposed" href="https://iankingh.github.io/img/apple-touch-icon.png" />
     <link href="https://iankingh.github.io/js/vendor/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
-    <link href="https://iankingh.github.io/js/vendor/fancybox/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+    
     <link href="https://iankingh.github.io/css/main.css" rel="stylesheet" type="text/css" />
-    <link href="https://iankingh.github.io/css/syntax.css" rel="stylesheet" type="text/css" />
+    
+    <link href="https://iankingh.github.io/prism.css" rel="stylesheet"   type="text/css"/>
     <script type="text/javascript" id="hexo.configuration">
   var NexT = window.NexT || {};
   var CONFIG = {
     scheme: 'Pisces',
     sidebar: {"position":"left","display":"post"},
-     fancybox: true, 
+    fancybox: false, 
     motion: true
   };
 </script>
 </head>
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
-<div class="container one-collumn sidebar-position-left page-home  ">
+
+<div class="container one-collumn sidebar-position-left   ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -111,119 +113,71 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-<section id="posts" class="posts-expand">
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+<section id="posts" class="posts-collapse">
+<div class="collection-title">
+    <h2 >redis
+    <small>標籤</small>
+    </h2>
+</div>
+
+<div class="collection-title">
+  <h2 class="archive-year motion-element" id="archive-year-2020">2020</h2>
+</div>
+
+  <article class="post post-type-normal }}" itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
-      <h1 class="post-title" itemprop="name headline">
-        <a class="post-title-link" href="https://iankingh.github.io/post/hugonotes/" itemprop="url">
-        Hugo使用筆記
+      <h1 class="post-title">
+        <a class="post-title-link" href="https://iankingh.github.io/post/redis/redisinstall/" itemprop="url">
+            <span itemprop="name">RedisInstall</span>
         </a>
       </h1>
+
       <div class="post-meta">
-      <span class="post-time">
-<span class="post-meta-item-icon">
-    <i class="fa fa-calendar-o"></i>
-</span>
-<span class="post-meta-item-text">時間：</span>
-<time itemprop="dateCreated" datetime="2016-03-22T13:04:35+08:00" content="2020-04-21">
-    2020-04-21
-</time>
-</span> 
-      
-
-  <span class="post-category" >
-  &nbsp; | &nbsp;
-  <span class="post-meta-item-icon">
-    <i class="fa fa-folder-o"></i>
-  </span>
-  <span class="post-meta-item-text">分類：</span>
-  
-    <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-      <a href="https://iankingh.github.io/categories/%E7%AD%86%E8%A8%98" itemprop="url" rel="index">
-        <span itemprop="name">筆記</span>
-      </a>
-      &nbsp; 
-    </span>
-  
-</span>
-
-
-       <span>
-&nbsp; | &nbsp;
-<span class="post-meta-item-icon">
-    <i class="fa fa-eye"></i>
-</span>
-<span class="post-meta-item-text">閱讀：</span>
-<span class="leancloud-visitors-count">202 字 ~1分鐘</span>
-</span>
+        <time class="post-time" itemprop="dateCreated"
+              datetime="2020-05-20"
+              content="05-20" >
+          05-20
+        </time>
       </div>
     </header>
-    <div class="post-body" itemprop="articleBody">
-    <h1 id="紀錄如何使用hugo">紀錄如何使用Hugo</h1>
-<p>建立及設定部落格專案
-我們先使用 hugo 命令新增一個空白專案，然後下載一個Template到我們的專案裡面， 接著新增四個我們想加到模板 Menu 的頁面: about, history, tags, categories. 最後則是新增一篇空白的文章到專案內。</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">1.create the project
-
-$ hugo new site myblog
-
-2.add a theme
-$ git submodule add https://github.com/laozhu/hugo-nuo themes/hugo-nuo
-
-3.add new pages
-
-$ hugo new about.md
-$ hugo new hisroty.md
-$ hugo new tags.md
-$ hugo new categories.md
-
-4.add new article
-
-$ hugo new post/welcome.md
-
-
-</code></pre></div><p>右上角github 貓</p>
-<p>GitHub Corners<br>
-<a href="http://tholman.com/github-corners/">http://tholman.com/github-corners/</a></p>
-<p>參考</p>
-<p>在 Github Pages 建立 Hugo 靜態網站 · Kaichu.io<br>
-<a href="https://kaichu.io/2015/07/12/my-first-post/">https://kaichu.io/2015/07/12/my-first-post/</a></p>
-<p>使用Github部署Hugo靜態網站<br>
-<a href="https://kira5033.github.io/2019/05/%E4%BD%BF%E7%94%A8github%E9%83%A8%E7%BD%B2hugo%E9%9D%9C%E6%85%8B%E7%B6%B2%E7%AB%99/">https://kira5033.github.io/2019/05/%E4%BD%BF%E7%94%A8github%E9%83%A8%E7%BD%B2hugo%E9%9D%9C%E6%85%8B%E7%B6%B2%E7%AB%99/</a></p>
-<p><a href="https://github.com/xtfly/xtfly.github.io/tree/hugo/themes/next">https://github.com/xtfly/xtfly.github.io/tree/hugo/themes/next</a></p>
-<p>使用 Hugo 打造個人部落格<br>
-<a href="https://blog.walker088.tw/post/intro-hugo/">https://blog.walker088.tw/post/intro-hugo/</a></p>
-    </div>
-    <footer class="post-footer">
-     
- 
-<div class="post-tags">     
-     
-    <a href="https://iankingh.github.io/tags/notes" rel="tag" title="notes">#notes#</a>
-    
-</div>
-
-
-
-     <div class="post-nav">
-    <div class="post-nav-next post-nav-item">
-    
-    </div>
-
-    <div class="post-nav-prev post-nav-item">
-    
-    </div>
-</div>
-      
-     
-     
-     
-
-
-
-
-    </footer>
   </article>
-</section>
+
+
+ </section>
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+  
+  
+
+
+
+<nav class="pagination">
+    
+    
+        
+        
+          <span class="page-number current">1</span>
+        
+        
+    
+    
+</nav>
+
 
           </div>
         </div>
@@ -249,7 +203,7 @@ $ hugo new post/welcome.md
       <nav class="site-state motion-element">
     <div class="site-state-item site-state-posts">
       <a href="https://iankingh.github.io/post/">
-        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-count">5</span>
         <span class="site-state-item-name">日誌</span>
       </a>
     </div>
@@ -266,13 +220,20 @@ $ hugo new post/welcome.md
     <div class="site-state-item site-state-tags">
         <a href="https://iankingh.github.io/tags/">
          
-        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-count">3</span>
         
         <span class="site-state-item-name">標籤</span>
         </a>
     </div>
 </nav>
       
+<div class="feed-link motion-element">
+<a href="https://iankingh.github.io/tags/redis/index.xml" rel="alternate" type="application/rss+xml" target="_blank">
+    <i class="fa fa-rss"></i>
+    RSS 訂閱
+</a>
+</div>
+
       
 <div class="links-of-author motion-element">
     
@@ -340,18 +301,16 @@ $ hugo new post/welcome.md
 <script type="text/javascript" src="https://iankingh.github.io/js/vendor/velocity/velocity.ui.min.js?v=1.2.1"></script>
 <script src="https://iankingh.github.io/js/vendor/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
 
-<script src="https://iankingh.github.io/js/vendor/fancybox/jquery.fancybox.pack.js?v=2.1.5"></script>
-
 <script type="text/javascript" src="https://iankingh.github.io/js/utils.js"></script>
 <script type="text/javascript" src="https://iankingh.github.io/js/motion.js"></script>
 <script type="text/javascript" src="https://iankingh.github.io/js/affix.js"></script>
 <script type="text/javascript" src="https://iankingh.github.io/js/schemes/pisces.js"></script>
 
-<script type="text/javascript" src="https://iankingh.github.io/js/scrollspy.js"></script>
-<script type="text/javascript" src="https://iankingh.github.io/js/post-details.js"></script>
-<script type="text/javascript" src="https://iankingh.github.io/js/toc.js"></script>
-
 <script type="text/javascript" src="https://iankingh.github.io/js/bootstrap.js"></script>
+
+<script type="text/javascript" id="motion.page.archive">
+  $('.archive-year').velocity('transition.slideLeftIn');
+</script>
 
 <script type="text/javascript" src="https://iankingh.github.io/js/search.js"></script>
 <script type="text/x-mathjax-config">
@@ -366,6 +325,7 @@ $ hugo new post/welcome.md
     "HTML-CSS": { fonts: ["TeX"] }
   });
 </script>
+<script src="https://iankingh.github.io/prism.js"></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML' async></script>
 </body>
 </html>
