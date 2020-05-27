@@ -6,10 +6,19 @@
     <description>Recent content in 筆記 on ianhuang筆記</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-TW</language>
-    <lastBuildDate>Wed, 20 May 2020 10:11:13 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 26 May 2020 08:59:50 +0800</lastBuildDate>
     
 	<atom:link href="https://iankingh.github.io/categories/%E7%AD%86%E8%A8%98/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Java_DecimalFormat</title>
+      <link>https://iankingh.github.io/post/java/java_decimalformat/</link>
+      <pubDate>Tue, 26 May 2020 08:59:50 +0800</pubDate>
+      
+      <guid>https://iankingh.github.io/post/java/java_decimalformat/</guid>
+      <description>&lt;h1 id=&#34;java-use-decimalformat數字格式&#34;&gt;Java Use DecimalFormat(數字格式)&lt;/h1&gt;</description>
+    </item>
     
     <item>
       <title>RedisInstall</title>
