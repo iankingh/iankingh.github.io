@@ -1,7 +1,7 @@
 <search>
     
      <entry>
-        <title>Java_DecimalFormat</title>
+        <title>Java DecimalFormat(數字格式)</title>
         <url>https://iankingh.github.io/post/java/java_decimalformat/</url>
         <categories>
           <category>筆記</category>
@@ -9,7 +9,7 @@
         <tags>
           <tag>java</tag>
         </tags>
-        <content type="html"> Java Use DecimalFormat(數字格式) 簡介 java.text提供了NumberFormat類別來讓我們更方便的格式化數字的呈現方式
+        <content type="html"> 簡介 java.text提供了NumberFormat類別來讓我們更方便的格式化數字的呈現方式
 DecimalFormat是NumberFormat該格式的具體子類， 其格式為小數。它具有多種功能，旨在使可以在任何語言環境中解析和格式化數字，包括對西方，阿拉伯和印度數字的支持。它還支持各種數字，包括整數（123），定點數字（123.4），科學計數法（1.23E4），百分比（12％）和貨幣金額（$ 123）。所有這些都可以本地化。
 基本用法 NumberFormat //	由於NumberFormat是一個抽象類別，必須用getInstance()來取得他裡面的方法NumberFormat nf = NumberFormat.getInstance();//	NumberFormat物件格式化的方式是固定的，都是以每三位數一個逗號的方式格式化數字，浮點數欄位則是有的時候顯示，沒有就不顯示。所以可以得到1,234,567.89。System.out.println(nf.format(1234567.89)); DecimalFormat ​	DecimalFormat實作了NumberFormat，並提供更客製化的格式選擇，用法如下：
 Double value = 123456.789;String pattern = &amp;quot;###,###.###&amp;quot; ;//	宣告了一個DecimalFormat物件，並可以在宣告時帶入要格式化的格式，若不帶入參數，格式規則和NumberFormat相同。DecimalFormat myFormatter = new DecimalFormat(pattern);String output = myFormatter.format(value);System.out.println(&amp;quot;執行結果為：&amp;quot; &#43; value &#43; &amp;quot; &amp;quot; &#43; pattern &#43; &amp;quot; &amp;quot; &#43; output); ​	下表描述了前幾行代碼的輸出. value 是要格式化的數字(double) ,pattern 是指定格式設置屬性的字符串.The output, 輸出是字符串，表示格式化的數字。
@@ -30,6 +30,18 @@ https://docs.oracle.com/javase/8/docs/api/java/text/DecimalFormat.html
     </entry>
     
      <entry>
+        <title>[從 0 開始的 JAVA 生活]No.0 java環境變數 (Environment Variable)設定</title>
+        <url>https://iankingh.github.io/post/java/java_tutorial_0/</url>
+        <categories>
+          <category>筆記</category><category>技術</category>
+        </categories>
+        <tags>
+          <tag>java</tag>
+        </tags>
+        <content type="html"> 設定JAVA_HOME C:\Program Files\Java\jdk1.8.0_111(後面為自己的jdk) Path %JAVA_HOME%\bin; 測試 java -vresionjavac -version </content>
+    </entry>
+    
+     <entry>
         <title>RedisInstall</title>
         <url>https://iankingh.github.io/post/redis/redisinstall/</url>
         <categories>
@@ -46,6 +58,21 @@ Redis - 在 Windows 上建立高可用性的 Redis | 天空的垃圾場
 https://skychang.github.io/2017/04/09/Redis-Create_Redis_HA/
 Redis系列 - 環境建置篇 - Jed&amp;rsquo;s blog
 https://jed1978.github.io/2018/05/02/Redis-Environment-Installation-Configuration.html
+</content>
+    </entry>
+    
+     <entry>
+        <title>[從 0 開始的 JAVA 生活]No.2 Java 基本的資料型態(Primitive Data Types)</title>
+        <url>https://iankingh.github.io/post/java/java_tutorial_1/</url>
+        <categories>
+          <category>筆記</category><category>技術</category>
+        </categories>
+        <tags>
+          <tag>java</tag>
+        </tags>
+        <content type="html"> Java 基本的資料型態(Primitive Data Types)    序號 數據類型 大小/位 封裝類 默認值 可表示數據范圍     1 byte 8bit Byte 0 -128~127   2 short 16bit Short 0 -32768~32767   3 int 32bit Integer 0 -2147483648~2147483647   4 long 64bit Long 0L -9223372036854775808~9223372036854775807   5 float 32bit Float 0.0F 1.4E-45~3.4028235E38   6 double 64bit Double 0.0D 4.9E-324~1.7976931348623157E308   7 char 16bit Character &amp;lsquo;\u0000&amp;rsquo; 0~65535   8 boolean 8bit Boolean false true或false    範例 package ch1;/*** * * &amp;lt;p/&amp;gt;* Package: ch1 &amp;lt;br&amp;gt;* File Name: PrimitiveDataTypesTest &amp;lt;br&amp;gt;* &amp;lt;p/&amp;gt;* Purpose: &amp;lt;br&amp;gt;* * @ClassName: ch1.PrimitiveDataTypesTest* @Description: 測試基本數據類型* @Copyright : Copyright (c) Corp. 2020. All Rights Reserved.* @Company: ian Team.* @author ian* @version 1.0, 2020年5月18日*/public class PrimitiveDataTypesTest {static byte b;static short s;static int i;static long l;static float f;static double d;static char c;static boolean bo;// String不是基本類型static String str1 = &amp;quot;&amp;quot;;// 生成一個String類型的引用，而且分配記憶體空間來存放&amp;quot;&amp;quot;;static String str2; // 只生成一個string類型的引用；不分配記憶體空間,預設為nullpublic static void main(String[] args) {System.out.println(&amp;quot;byte的大小：&amp;quot; &#43; Byte.SIZE &#43; &amp;quot; byte的預設值：&amp;quot; &#43; b &#43; &amp;quot; byte的資料範圍：&amp;quot; &#43; Byte.MIN_VALUE &#43; &amp;quot;~&amp;quot;&#43; Byte.MAX_VALUE);System.out.println(&amp;quot;----------------------------------------------------&amp;quot;);System.out.println(&amp;quot;short的大小：&amp;quot; &#43; Short.SIZE &#43; &amp;quot; short的預設值：&amp;quot; &#43; s &#43; &amp;quot; short的資料範圍：&amp;quot; &#43; Short.MIN_VALUE &#43; &amp;quot;~&amp;quot;&#43; Short.MAX_VALUE);System.out.println(&amp;quot;----------------------------------------------------&amp;quot;);System.out.println(&amp;quot;int的大小：&amp;quot; &#43; Integer.SIZE &#43; &amp;quot; int的預設值：&amp;quot; &#43; i &#43; &amp;quot; int的資料範圍：&amp;quot; &#43; Integer.MIN_VALUE &#43; &amp;quot;~&amp;quot;&#43; Integer.MAX_VALUE);System.out.println(&amp;quot;----------------------------------------------------&amp;quot;);System.out.println(&amp;quot;long的大小：&amp;quot; &#43; Long.SIZE &#43; &amp;quot; long的預設值：&amp;quot; &#43; l &#43; &amp;quot; long的資料範圍：&amp;quot; &#43; Long.MIN_VALUE &#43; &amp;quot;~&amp;quot;&#43; Long.MAX_VALUE);System.out.println(&amp;quot;----------------------------------------------------&amp;quot;);System.out.println(&amp;quot;float的大小：&amp;quot; &#43; Float.SIZE &#43; &amp;quot; float的預設值：&amp;quot; &#43; f &#43; &amp;quot; float的資料範圍：&amp;quot; &#43; Float.MIN_VALUE &#43; &amp;quot;~&amp;quot;&#43; Float.MAX_VALUE);System.out.println(&amp;quot;----------------------------------------------------&amp;quot;);System.out.println(&amp;quot;double的大小：&amp;quot; &#43; Double.SIZE &#43; &amp;quot; double的預設值：&amp;quot; &#43; d &#43; &amp;quot; double的資料範圍：&amp;quot; &#43; Double.MIN_VALUE&#43; &amp;quot;~&amp;quot; &#43; Double.MAX_VALUE);System.out.println(&amp;quot;----------------------------------------------------&amp;quot;);System.out.println(&amp;quot;char的大小：&amp;quot; &#43; Character.SIZE &#43; &amp;quot; char的預設值：&amp;quot; &#43; c &#43; &amp;quot; char的資料範圍：&amp;quot; &#43; Character.MIN_VALUE&#43; &amp;quot;~&amp;quot; &#43; Character.MAX_VALUE);System.out.println(&amp;quot;----------------------------------------------------&amp;quot;);System.out.println(&amp;quot;boolean的大小：&amp;quot; &#43; Byte.SIZE &#43; &amp;quot; boolean的預設值：&amp;quot; &#43; bo &#43; &amp;quot; boolean的資料範圍：&amp;quot; &#43; Byte.MIN_VALUE&#43; &amp;quot;~&amp;quot; &#43; Byte.MAX_VALUE);System.out.println(&amp;quot;String字串的預設值：&amp;quot; &#43; str1 &#43; &amp;quot;str的默認長度：&amp;quot; &#43; str1.length());System.out.println(&amp;quot;String字串的預設值：&amp;quot; &#43; str2);}} JAVA 跳脫字元 Escape Characters - \&#39; : 單引號- \&amp;quot; : 雙引號- \\ : 反斜線- \n : 換行- \t : tab鍵- \b : 倒退一格- \f : 換頁- \r : Enter 鍵 參考
+Java中8種基本數據類型默認的默認值_java_飛月程序人生-CSDN博客
+https://blog.csdn.net/fysuccess/article/details/40656761
 </content>
     </entry>
     

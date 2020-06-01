@@ -172,18 +172,12 @@ optgroup {
   font-weight: bold;
 }
 table {
-  border-collapse: collapse;
-  border-spacing: 0;
+ table-layout: fixed;
+ word-break: break-all;
 }
-td,
-th {
-  padding: 0;
-}
-::selection {
-  background: #262a30;
-  color: #fff;
-}
-body {
+table th 
+table td 
+table body {
   position: relative;
   font-family: 'Monda', "PingFang SC", "Microsoft YaHei", sans-serif;
   font-size: 14px;

@@ -12,12 +12,23 @@
     
     
     <item>
-      <title>Java_DecimalFormat</title>
+      <title>Java DecimalFormat(數字格式)</title>
       <link>https://iankingh.github.io/post/java/java_decimalformat/</link>
       <pubDate>Tue, 26 May 2020 08:59:50 +0800</pubDate>
       
       <guid>https://iankingh.github.io/post/java/java_decimalformat/</guid>
-      <description>&lt;h1 id=&#34;java-use-decimalformat數字格式&#34;&gt;Java Use DecimalFormat(數字格式)&lt;/h1&gt;</description>
+      <description>&lt;h2 id=&#34;簡介&#34;&gt;簡介&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;java.text&lt;/code&gt;提供了&lt;code&gt;NumberFormat&lt;/code&gt;類別來讓我們更方便的格式化數字的呈現方式&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;DecimalFormat&lt;/code&gt;是&lt;code&gt;NumberFormat&lt;/code&gt;該格式的具體子類， 其格式為小數。它具有多種功能，旨在使可以在任何語言環境中解析和格式化數字，包括對西方，阿拉伯和印度數字的支持。它還支持各種數字，包括整數（123），定點數字（123.4），科學計數法（1.23E4），百分比（12％）和貨幣金額（$ 123）。所有這些都可以本地化。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>[從 0 開始的 JAVA 生活]No.0 java環境變數 (Environment Variable)設定</title>
+      <link>https://iankingh.github.io/post/java/java_tutorial_0/</link>
+      <pubDate>Mon, 25 May 2020 07:54:27 +0800</pubDate>
+      
+      <guid>https://iankingh.github.io/post/java/java_tutorial_0/</guid>
+      <description></description>
     </item>
     
     <item>
@@ -28,6 +39,15 @@
       <guid>https://iankingh.github.io/post/redis/redisinstall/</guid>
       <description>&lt;h2 id=&#34;簡介&#34;&gt;簡介&lt;/h2&gt;
 &lt;p&gt;Redis是一個使用ANSI C編寫的開源、支援網路、基於記憶體、可選永續性的鍵值對儲存資料庫。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>[從 0 開始的 JAVA 生活]No.2 Java 基本的資料型態(Primitive Data Types)</title>
+      <link>https://iankingh.github.io/post/java/java_tutorial_1/</link>
+      <pubDate>Tue, 19 May 2020 06:22:46 +0800</pubDate>
+      
+      <guid>https://iankingh.github.io/post/java/java_tutorial_1/</guid>
+      <description></description>
     </item>
     
     <item>
