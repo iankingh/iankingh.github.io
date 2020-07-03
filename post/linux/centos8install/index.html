@@ -1,0 +1,528 @@
+<!DOCTYPE HTML>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" /> 
+    <title>CentOS 8 Install - ianhuang筆記</title>
+    <meta name="keywords" content="程式師,架構師,個人,筆記,技術">
+    
+    <meta property="og:title" content="CentOS 8 Install">
+    <meta property="og:site_name" content="ianhuang筆記">
+    <meta property="og:image" content="/img/author.jpg"> 
+    <meta name="title" content="CentOS 8 Install - ianhuang筆記" />
+    <meta name="description" content="筆記 | 軟體 | 架構 | Java "> 
+    <link rel="shortcut icon" href="https://iankingh.github.io/img/favicon.ico" />
+    <link rel="apple-touch-icon" href="https://iankingh.github.io/img/apple-touch-icon.png" />
+    <link rel="apple-touch-icon-precomposed" href="https://iankingh.github.io/img/apple-touch-icon.png" />
+    <link href="https://iankingh.github.io/js/vendor/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+    <link href="https://iankingh.github.io/js/vendor/fancybox/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+    <link href="https://iankingh.github.io/css/main.css" rel="stylesheet" type="text/css" />
+    
+    <link href="https://iankingh.github.io/prism.css" rel="stylesheet"   type="text/css"/>
+    <script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Pisces',
+    sidebar: {"position":"left","display":"post"},
+     fancybox: true, 
+    motion: true
+  };
+</script>
+</head>
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+<div class="container one-collumn sidebar-position-left page-home  ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"> <div class="site-meta  custom-logo ">
+
+  <div class="custom-logo-site-title">
+    <a href="https://iankingh.github.io/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">ianhuang筆記</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle">總有一天，你的日積月累，會變成他人的望塵莫及</p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+    <ul id="menu" class="menu">
+      
+      
+        <li class="menu-item ">
+          <a href="https://iankingh.github.io/" rel="section">
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />首頁
+          </a>
+        </li>
+      
+        <li class="menu-item ">
+          <a href="https://iankingh.github.io/categories/%E6%8A%80%E8%A1%93/" rel="section">
+              <i class="menu-item-icon fa fa-fw fa-code"></i> <br />技術
+          </a>
+        </li>
+      
+        <li class="menu-item ">
+          <a href="https://iankingh.github.io/categories/%E7%AD%86%E8%A8%98/" rel="section">
+              <i class="menu-item-icon fa fa-fw fa-book"></i> <br />筆記
+          </a>
+        </li>
+      
+        <li class="menu-item ">
+          <a href="https://iankingh.github.io/post/" rel="section">
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />歸檔
+          </a>
+        </li>
+      
+        <li class="menu-item ">
+          <a href="https://iankingh.github.io/about/" rel="section">
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />關於
+          </a>
+        </li>
+      
+      <li class="menu-item menu-item-search">
+        <a href="javascript:;" class="popup-trigger"> <i class="menu-item-icon fa fa-search fa-fw"></i> <br /> 搜索</a>
+      </li>
+    </ul>
+    <div class="site-search">
+      <div class="popup">
+ <span class="search-icon fa fa-search"></span>
+ <input type="text" id="local-search-input">
+ <div id="local-search-result"></div>
+ <span class="popup-btn-close">close</span>
+</div>
+
+    </div>
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+<section id="posts" class="posts-expand">
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+      <h1 class="post-title" itemprop="name headline">
+        <a class="post-title-link" href="https://iankingh.github.io/post/linux/centos8install/" itemprop="url">
+        CentOS 8 Install
+        </a>
+      </h1>
+      <div class="post-meta">
+      <span class="post-time">
+<span class="post-meta-item-icon">
+    <i class="fa fa-calendar-o"></i>
+</span>
+<span class="post-meta-item-text">時間：</span>
+<time itemprop="dateCreated" datetime="2016-03-22T13:04:35+08:00" content="2020-06-29">
+    2020-06-29
+</time>
+</span> 
+      
+
+  <span class="post-category" >
+  &nbsp; | &nbsp;
+  <span class="post-meta-item-icon">
+    <i class="fa fa-folder-o"></i>
+  </span>
+  <span class="post-meta-item-text">分類：</span>
+  
+    <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+      <a href="https://iankingh.github.io/categories/xx" itemprop="url" rel="index">
+        <span itemprop="name">xx</span>
+      </a>
+      &nbsp; 
+    </span>
+  
+</span>
+
+
+       <span>
+&nbsp; | &nbsp;
+<span class="post-meta-item-icon">
+    <i class="fa fa-eye"></i>
+</span>
+<span class="post-meta-item-text">閱讀：</span>
+<span class="leancloud-visitors-count">889 字 ~2分鐘</span>
+</span>
+      </div>
+    </header>
+    <div class="post-body" itemprop="articleBody">
+    <h2 id="centos-8-install">CentOS 8 Install</h2>
+<h2 id="step-1-download-centos-8">Step 1: Download Centos 8</h2>
+<p>在 CentOS 官方網站 <a href="https://www.centos.org/download/">https://www.centos.org/download/</a> 下載 CentOS 8 ISO 檔案。</p>
+<p>CentOS 8 的新特性</p>
+<ul>
+<li>DNF 成為了預設的軟體包管理器，同時 yum 仍然是可用的</li>
+<li>使用網路管理器（nmcli 和 nmtui）進行網路配置，移除了網路指令碼</li>
+<li>使用 Podman     進行容器管理</li>
+<li>引入了兩個新的包倉庫：BaseOS 和 AppStream</li>
+<li>使用     Cockpit 作為預設的系統管理工具</li>
+<li>預設使用     Wayland 作為顯示伺服器</li>
+<li>iptables 將被 nftables 取代</li>
+<li>使用 Linux 核心 4.18</li>
+<li>提供 PHP     7.2、Python 3.6、Ansible 2.8、VIM 8.0 和 Squid 4</li>
+</ul>
+<p>CentOS 8 所需的最低硬體配置:</p>
+<ul>
+<li>2 GB     RAM</li>
+<li>64 位 x86 架構、2 GHz 或以上的 CPU</li>
+<li>20 GB 硬碟空間</li>
+</ul>
+<h2 id="step-2-make-a-bootable-device建立-centos-8-啟動介質">Step 2: Make a bootable device(建立 CentOS 8 啟動介質)</h2>
+<p>使用 dd建立</p>
+<pre><code>dd if=CentOS-8-x86_64-1905-dvd1.iso of=/dev/sdb
+</code></pre>
+<h2 id="step-3start-with-the-installation-process">Step 3:Start with the installation process</h2>
+<p>當系統從 CentOS 8 ISO 啟動介質啟動之後，就可以看到以下這個介面。</p>
+<p>使用 CentOS 8 安裝檔開機會有下述三種模式：</p>
+<p>\1.   Install CentOS Linux 8：正常安裝系統流程。</p>
+<p>\2.   Test this media &amp; install CentOS Linux 8：測試媒體後在進入安裝系統流程。</p>
+<p>\3.   Troubleshooting：進入【除錯模式】，能夠救授 CentOS 系統和執行記憶體測試 (Run a memory test) &hellip;。</p>
+<p>選擇“Install CentOS Linux 8.0”（安裝 CentOS Linux 8.0）選項。</p>
+<p><img src="C:%5CUsers%5CIan%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200628221546004.png" alt="image-20200628221546004"></p>
+<p>再選擇</p>
+<h2 id="step-4-choose-the-language-for-the-installation-process">Step 4: Choose the language for the installation process</h2>
+<p>第四步：選擇系統語言</p>
+<p>選擇想要在 CentOS 8 安裝過程中使用的語言，然後繼續。</p>
+<p><img src="C:%5CUsers%5CIan%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200628221723578.png" alt="image-20200628221723578"></p>
+<h2 id="step5--select-the-keyboard-language-for-the-installation-process">Step5 : Select the keyboard language for the installation process</h2>
+<h2 id="step-7-configure-the-network-and-hostname">Step 7: Configure the network and hostname</h2>
+<h2 id="step-8-configure-the-location-and-the-timezone"><strong>Step 8: Configure the location and the timezone</strong></h2>
+<h2 id="step-9-select-the-destination-for-the-installation"><strong>Step 9: Select the destination for the installation</strong></h2>
+<p>磁碟分割與檔案系統</p>
+<p>/home、swap 和 / 這三個【掛載點】將來容量有可能會變動，因此【裝置類型】設定為可以彈性增加和減少檔案系統容量的 LVM。</p>
+<table>
+<thead>
+<tr>
+<th>磁碟分割建議表</th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>掛載點</strong></td>
+<td><strong>裝置類型</strong></td>
+<td><strong>檔案系統</strong></td>
+<td><strong>建議容量</strong></td>
+</tr>
+<tr>
+<td>biosboot</td>
+<td>標準分割區</td>
+<td>BIOS Boot</td>
+<td>2MB</td>
+</tr>
+<tr>
+<td>/boot</td>
+<td>標準分割區</td>
+<td>ext4</td>
+<td>1GB</td>
+</tr>
+<tr>
+<td>/home</td>
+<td>LVM</td>
+<td>xfs</td>
+<td>10GB 以上</td>
+</tr>
+<tr>
+<td>swap</td>
+<td>LVM</td>
+<td>swap</td>
+<td><a href="https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/html/managing_storage_devices/getting-started-with-swap_managing-storage-devices#recommended-system-swap-space_getting-started-with-swap">參考 Red Hat swap 建議</a></td>
+</tr>
+<tr>
+<td>/</td>
+<td>LVM</td>
+<td>xfs</td>
+<td>剩餘容量</td>
+</tr>
+</tbody>
+</table>
+<h2 id="step-10-choose-the-partitioning-scheme">Step 10: Choose the partitioning scheme</h2>
+<h2 id="step-11-create-the-mount-points"><strong>Step 11: Create the mount points</strong></h2>
+<p><strong>Step 12: Select the server environment and the features to install</strong></p>
+<p><strong>Step 13: Begin the installation</strong></p>
+<p><strong>Step 14: Create your user account</strong></p>
+<p><strong>Step 15: Configure the root password</strong></p>
+<p><strong>Step 16: Reboot and accept the licence agreement</strong></p>
+<p><strong>Step 17: Log in your new system</strong></p>
+<h2 id="安裝-cockpit">安裝 Cockpit</h2>
+<p><a href="https://cockpit-project.org/">Cockpit</a> 是基於 Web 介面的應用程式，可用來管理伺服器並監視和調整系統資源。</p>
+<p>如果 CentOS 8 是使用【最小型安裝】Cockpit 須手動安裝：</p>
+<p>dnf install -y cockpit</p>
+<p>Bash</p>
+<p>Copy</p>
+<p>設定 Cockpit 開機自動啟用 (enable) 且立即啟用 (&ndash;now)：</p>
+<p>systemctl enable &ndash;now cockpit.socket</p>
+<p>Bash</p>
+<p>Copy</p>
+<p>firewall 預設已允許 cockpit (port 9090)：</p>
+<p>firewall-cmd &ndash;list-all</p>
+<p>Bash</p>
+<p>Copy</p>
+<p>public (active)</p>
+<p>target: default</p>
+<p>icmp-block-inversion: no</p>
+<p>interfaces: enp0s3</p>
+<p>sources:</p>
+<p>services: cockpit dhcpv6-client ssh</p>
+<p>開啟瀏覽器輸入 IP:9090 即可連結到 Cockpit。</p>
+<h2 id="參考">參考</h2>
+<p>CentOS 8 安裝圖解 | IT人</p>
+<p><a href="https://iter01.com/443455.html">https://iter01.com/443455.html</a></p>
+<p>How to Install CentOS 8 (Step by Step with Screenshots)</p>
+<p><a href="https://linoxide.com/distros/how-to-install-centos/">https://linoxide.com/distros/how-to-install-centos/</a></p>
+<p>CentOS 8 伺服器作業系統安裝和設定 - MIS 腳印</p>
+<p><a href="https://www.footmark.info/linux/centos/centos8-installation/">https://www.footmark.info/linux/centos/centos8-installation/</a></p>
+    </div>
+    <footer class="post-footer">
+     
+ 
+<div class="post-tags">     
+     
+    <a href="https://iankingh.github.io/tags/xxx" rel="tag" title="xxx">#xxx#</a>
+    
+    <a href="https://iankingh.github.io/tags/xxx" rel="tag" title="xxx">#xxx#</a>
+    
+</div>
+
+
+
+     <div class="post-nav">
+    <div class="post-nav-next post-nav-item">
+    
+    </div>
+
+    <div class="post-nav-prev post-nav-item">
+    
+        <a href="https://iankingh.github.io/post/spring/springdatajapnotes/" rel="prev" title="SpringDataJapNotes">
+        SpringDataJapNotes <i class="fa fa-chevron-right"></i>
+        </a>
+    
+    </div>
+</div>
+      
+     
+     
+     
+
+
+
+     
+    </footer>
+
+    <div class="disqus markdown">
+      <div id="disqus_thread"></div>
+<script type="text/javascript">
+
+    (function () {
+        
+        
+        
+        
+
+
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        var disqus_shortname = 'https-iankingh-github-io';
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by
+        Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </div>
+  </article>
+</section>
+
+          </div>
+        </div>
+        <div class="sidebar-toggle">
+  <div class="sidebar-toggle-line-wrap">
+    <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+    <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+    <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+  </div>
+</div>
+<aside id="sidebar" class="sidebar">
+  <div class="sidebar-inner">
+
+  <ul class="sidebar-nav motion-element">
+    <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+      文章目錄
+    </li>
+    <li class="sidebar-nav-overview" data-target="site-overview">
+      網站概覽
+    </li>
+  </ul>
+
+    <section class="site-overview sidebar-panel ">
+      <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image"
+        src="https://iankingh.github.io/img/author.jpg"
+        alt="ianhuang" />
+    <p class="site-author-name" itemprop="name">ianhuang</p>
+    <p class="site-description motion-element" itemprop="description"> 
+        Programmer &amp; Architect</p>
+</div>
+      <nav class="site-state motion-element">
+    <div class="site-state-item site-state-posts">
+      <a href="https://iankingh.github.io/post/">
+        <span class="site-state-item-count">11</span>
+        <span class="site-state-item-name">日誌</span>
+      </a>
+    </div>
+    <div class="site-state-item site-state-categories">    
+        <a href="https://iankingh.github.io/categories/">      
+         
+        <span class="site-state-item-count">3</span>
+        
+        <span class="site-state-item-name">分類</span>
+        
+        </a>
+    </div>
+
+    <div class="site-state-item site-state-tags">
+        <a href="https://iankingh.github.io/tags/">
+         
+        <span class="site-state-item-count">8</span>
+        
+        <span class="site-state-item-name">標籤</span>
+        </a>
+    </div>
+</nav>
+      
+      
+<div class="links-of-author motion-element">
+    
+        <span class="links-of-author-item">
+        <a href="https://github.com/iankingh" target="_blank" title="GitHub">
+            <i class="fa fa-fw fa-github"></i>
+            GitHub
+        </a>
+        </span>
+    
+</div>
+
+
+      
+
+      <div class="links-of-blogroll motion-element inline">
+<script type="text/javascript" src="//rf.revolvermaps.com/0/0/8.js?i=5b4f2ucxar6&amp;m=0&amp;s=220&amp;c=ff0000&amp;cr1=ffffff&amp;f=arial&amp;l=33&amp;bv=35" async="async"></script>
+</div>
+
+    </section>
+    
+<section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+    <div class="post-toc">
+        <div class="post-toc-content"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#centos-8-install">CentOS 8 Install</a></li>
+    <li><a href="#step-1-download-centos-8">Step 1: Download Centos 8</a></li>
+    <li><a href="#step-2-make-a-bootable-device建立-centos-8-啟動介質">Step 2: Make a bootable device(建立 CentOS 8 啟動介質)</a></li>
+    <li><a href="#step-3start-with-the-installation-process">Step 3:Start with the installation process</a></li>
+    <li><a href="#step-4-choose-the-language-for-the-installation-process">Step 4: Choose the language for the installation process</a></li>
+    <li><a href="#step5--select-the-keyboard-language-for-the-installation-process">Step5 : Select the keyboard language for the installation process</a></li>
+    <li><a href="#step-7-configure-the-network-and-hostname">Step 7: Configure the network and hostname</a></li>
+    <li><a href="#step-8-configure-the-location-and-the-timezone"><strong>Step 8: Configure the location and the timezone</strong></a></li>
+    <li><a href="#step-9-select-the-destination-for-the-installation"><strong>Step 9: Select the destination for the installation</strong></a></li>
+    <li><a href="#step-10-choose-the-partitioning-scheme">Step 10: Choose the partitioning scheme</a></li>
+    <li><a href="#step-11-create-the-mount-points"><strong>Step 11: Create the mount points</strong></a></li>
+    <li><a href="#安裝-cockpit">安裝 Cockpit</a></li>
+    <li><a href="#參考">參考</a></li>
+  </ul>
+</nav></div>
+    </div>
+</section>
+
+  </div>
+</aside>
+
+      </div>
+    </main>
+   
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  <span itemprop="copyrightYear">  &copy; 
+  2009 - 2020</span>
+  <span class="with-love"><i class="fa fa-heart"></i></span>
+  <span class="author" itemprop="copyrightHolder">ianhuang筆記</span>
+</div>
+<div class="powered-by">
+  Powered by - <a class="theme-link" href="http://gohugo.io" target="_blank" title="hugo" >Hugo v0.68.3</a>
+</div>
+<div class="theme-info">
+  Theme by - <a class="theme-link" href="https://github.com/xtfly/hugo-theme-next" target="_blank"> NexT
+  </a>
+</div>
+
+
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+      <span id="scrollpercent"><span>0</span>%</span>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+<script type="text/javascript" src="https://iankingh.github.io/js/vendor/jquery/index.js?v=2.1.3"></script>
+<script type="text/javascript" src="https://iankingh.github.io/js/vendor/fastclick/lib/fastclick.min.js?v=1.0.6"></script> 
+<script type="text/javascript" src="https://iankingh.github.io/js/vendor/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+<script type="text/javascript" src="https://iankingh.github.io/js/vendor/velocity/velocity.min.js?v=1.2.1"></script>
+<script type="text/javascript" src="https://iankingh.github.io/js/vendor/velocity/velocity.ui.min.js?v=1.2.1"></script>
+<script src="https://iankingh.github.io/js/vendor/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
+
+<script src="https://iankingh.github.io/js/vendor/fancybox/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+<script type="text/javascript" src="https://iankingh.github.io/js/utils.js"></script>
+<script type="text/javascript" src="https://iankingh.github.io/js/motion.js"></script>
+<script type="text/javascript" src="https://iankingh.github.io/js/affix.js"></script>
+<script type="text/javascript" src="https://iankingh.github.io/js/schemes/pisces.js"></script>
+
+<script type="text/javascript" src="https://iankingh.github.io/js/scrollspy.js"></script>
+<script type="text/javascript" src="https://iankingh.github.io/js/post-details.js"></script>
+<script type="text/javascript" src="https://iankingh.github.io/js/toc.js"></script>
+
+<script type="text/javascript" src="https://iankingh.github.io/js/bootstrap.js"></script>
+
+<script type="text/javascript" src="https://iankingh.github.io/js/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX", "output/HTML-CSS"],
+    tex2jax: {
+      inlineMath: [ ['$','$'] ],
+      displayMath: [ ['$$','$$'] ],
+      processEscapes: true
+    },
+    "HTML-CSS": { fonts: ["TeX"] }
+  });
+</script>
+<script src="https://iankingh.github.io/prism.js"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML' async></script>
+</body>
+</html>

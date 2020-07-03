@@ -6,10 +6,45 @@
     <description>Recent content in Posts on ianhuang筆記</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-TW</language>
-    <lastBuildDate>Tue, 26 May 2020 08:59:50 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 29 Jun 2020 08:51:38 +0800</lastBuildDate>
     
 	<atom:link href="https://iankingh.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>CentOS 8 Install</title>
+      <link>https://iankingh.github.io/post/linux/centos8install/</link>
+      <pubDate>Mon, 29 Jun 2020 08:51:38 +0800</pubDate>
+      
+      <guid>https://iankingh.github.io/post/linux/centos8install/</guid>
+      <description>&lt;h2 id=&#34;centos-8-install&#34;&gt;CentOS 8 Install&lt;/h2&gt;</description>
+    </item>
+    
+    <item>
+      <title>SpringDataJapNotes</title>
+      <link>https://iankingh.github.io/post/spring/springdatajapnotes/</link>
+      <pubDate>Thu, 04 Jun 2020 05:45:59 +0800</pubDate>
+      
+      <guid>https://iankingh.github.io/post/spring/springdatajapnotes/</guid>
+      <description>&lt;h2 id=&#34;spring-data-jpa-介紹&#34;&gt;Spring Data JPA 介紹&lt;/h2&gt;
+&lt;h3 id=&#34;spring-data-概述&#34;&gt;Spring-Data 概述&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Spring Data&lt;/strong&gt; 是一個資料訪問框架 ，用於簡化資料庫訪問，旨在提供一致的資料庫訪問模型，同時仍然保留不同資料庫底層資料存儲的特點，&lt;strong&gt;Spring&lt;/strong&gt; &lt;strong&gt;Data&lt;/strong&gt; 採用了&lt;strong&gt;領域驅動模型&lt;/strong&gt;的設計思想，實現了訪問關係型數據庫、非關係型數據庫的統一的介面，只需要定義好領域模型（&lt;strong&gt;Entity&lt;/strong&gt;），後續的創建表、&lt;strong&gt;CURD&lt;/strong&gt;、排序操作不需要手動添加任何&lt;strong&gt;SQL&lt;/strong&gt;語句，同時也支持手動擴展功能。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Spring Data&lt;/strong&gt; 只要定義介面，遵循 &lt;strong&gt;Spring Data&lt;/strong&gt; 的規範，就無需寫實現類。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Spring Data&lt;/strong&gt; 提供了預設的交易處理方式，即所有的查詢均聲明為唯讀事務。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Spring Data&lt;/strong&gt; 專案所支援 &lt;strong&gt;NoSQL&lt;/strong&gt; 存儲：&lt;strong&gt;MongoDB&lt;/strong&gt; （文檔資料庫）、&lt;strong&gt;Neo4j&lt;/strong&gt;（圖形資料庫）、Redis（&lt;strong&gt;鍵&lt;/strong&gt;/值存儲）、&lt;strong&gt;Hbase&lt;/strong&gt;（列族資料庫）&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Spring Data&lt;/strong&gt; 專案所支援的關係資料存儲技術：&lt;strong&gt;JDBC、JPA&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+    
+    <item>
+      <title>docker 指令</title>
+      <link>https://iankingh.github.io/post/docker/docker_command/</link>
+      <pubDate>Sun, 31 May 2020 17:40:46 +0800</pubDate>
+      
+      <guid>https://iankingh.github.io/post/docker/docker_command/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Java DecimalFormat(數字格式)</title>
