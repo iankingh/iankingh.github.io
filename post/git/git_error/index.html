@@ -168,7 +168,7 @@
 </code></pre>
 <p>意思是本地新修改的程式碼檔案，將會被git伺服器上的程式碼覆蓋</p>
 <p>解決方法如下：</p>
-<h3 id="方法1使用pop">方法1：使用pop</h3>
+<h3 id="方法1-使用stash">方法1： 使用stash</h3>
 <p>如果你想保留剛才本地修改的程式碼，並把git伺服器上的程式碼pull到本地（本地剛才修改的程式碼將會被暫時封存起來）</p>
 <pre><code class="language-shell">$ git stash 
 $ git pull origin master
@@ -195,7 +195,7 @@ $ git checkout master
 $ git merge master
 
 </code></pre>
-<p><strong>注：</strong>  感謝KFC 前輩的提供正確解決衝突的教學</p>
+<p><strong>注：</strong>  感謝 <strong>KFC 前輩</strong>的提供正確解決衝突的教學</p>
 <h2 id="參考">參考</h2>
 <p>git pull遇到錯誤：error: Your local changes to the following files would be overwritten by merge:解決方法</p>
 <p><a href="https://www.itread01.com/content/1545046022.html">https://www.itread01.com/content/1545046022.html</a></p>
@@ -344,7 +344,7 @@ $ git merge master
   <ul>
     <li><a href="#gi-pull-error筆記">gi pull error筆記</a>
       <ul>
-        <li><a href="#方法1使用pop">方法1：使用pop</a></li>
+        <li><a href="#方法1-使用stash">方法1： 使用stash</a></li>
         <li><a href="#方法2--放棄變更">方法2 : 放棄變更</a></li>
         <li><a href="#方法3--使用分支-推薦-正統">方法3 : 使用分支( 推薦 正統)</a></li>
       </ul>
