@@ -6,10 +6,28 @@
     <description>Recent content in docker on ianhuang筆記</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-TW</language>
-    <lastBuildDate>Sun, 31 May 2020 17:40:46 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 28 Sep 2020 21:53:46 +0800</lastBuildDate>
     
 	<atom:link href="https://iankingh.github.io/tags/docker/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Docker_Compose</title>
+      <link>https://iankingh.github.io/post/docker/docker_compose/</link>
+      <pubDate>Mon, 28 Sep 2020 21:53:46 +0800</pubDate>
+      
+      <guid>https://iankingh.github.io/post/docker/docker_compose/</guid>
+      <description>&lt;h1 id=&#34;docker_compose筆記&#34;&gt;Docker_Compose筆記&lt;/h1&gt;</description>
+    </item>
+    
+    <item>
+      <title>DockerFile</title>
+      <link>https://iankingh.github.io/post/docker/dockerfile/</link>
+      <pubDate>Sun, 20 Sep 2020 19:45:16 +0800</pubDate>
+      
+      <guid>https://iankingh.github.io/post/docker/dockerfile/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>docker 指令</title>

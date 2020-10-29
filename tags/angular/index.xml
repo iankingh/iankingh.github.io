@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Angular on ianhuang筆記</title>
+    <link>https://iankingh.github.io/tags/angular/</link>
+    <description>Recent content in Angular on ianhuang筆記</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-TW</language>
+    <lastBuildDate>Fri, 25 Sep 2020 20:40:28 +0800</lastBuildDate>
+    
+	<atom:link href="https://iankingh.github.io/tags/angular/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>AngularDeployTomcat</title>
+      <link>https://iankingh.github.io/post/angular/angulardeploytomcat/</link>
+      <pubDate>Fri, 25 Sep 2020 20:40:28 +0800</pubDate>
+      
+      <guid>https://iankingh.github.io/post/angular/angulardeploytomcat/</guid>
+      <description>&lt;h1 id=&#34;angular-deploy-tomcat&#34;&gt;Angular Deploy Tomcat&lt;/h1&gt;</description>
+    </item>
+    
+    <item>
+      <title>AngularBsN02</title>
+      <link>https://iankingh.github.io/post/angular/angularbsn02/</link>
+      <pubDate>Sun, 05 Jul 2020 19:02:31 +0800</pubDate>
+      
+      <guid>https://iankingh.github.io/post/angular/angularbsn02/</guid>
+      <description>&lt;h1 id=&#34;從-0-開始的-angular-生活-第2天-認識-angular-cli-建立的專案架構&#34;&gt;從 0 開始的 Angular 生活 第2天-認識 Angular CLI 建立的專案架構&lt;/h1&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

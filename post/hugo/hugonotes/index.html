@@ -156,12 +156,30 @@
     <i class="fa fa-eye"></i>
 </span>
 <span class="post-meta-item-text">閱讀：</span>
-<span class="leancloud-visitors-count">215 字 ~1分鐘</span>
+<span class="leancloud-visitors-count">305 字 ~1分鐘</span>
 </span>
       </div>
     </header>
     <div class="post-body" itemprop="articleBody">
     <h1 id="hugo使用筆記">Hugo使用筆記</h1>
+<h2 id="安裝">安裝</h2>
+<pre><code class="language-shell">scoop install hugo
+hugo version
+</code></pre>
+<h2 id="建立新blog">建立新Blog</h2>
+<pre><code>hugo new site blog
+</code></pre>
+<h2 id="新增文章">新增文章</h2>
+<pre><code class="language-shell">hugo new post/文章名稱.md
+</code></pre>
+<p>生成的文件默認為會帶上 draft: true標記，不會發布。</p>
+<pre><code class="language-shell">hugo server -D
+</code></pre>
+<h2 id="插入圖片">插入圖片</h2>
+<pre><code class="language-shell">![Example image](/static/image.png)
+</code></pre>
+<p><img src="images/hugo/useImageRootPath.png" alt="useImageRootPath"></p>
+<p><img src="C:%5CUsers%5CIan%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200930075548139.png" alt="image-20200930075548139"></p>
 <p>建立及設定部落格專案</p>
 <p>我們先使用 hugo 命令新增一個空白專案，然後下載一個Template到我們的專案裡面</p>
 <p>接著新增四個我們想加到模板 Menu 的頁面: about, history, tags, categories</p>
@@ -185,6 +203,8 @@ $ hugo new categories.md
 
 $ hugo new post/welcome.md
 
+hugo server -D
+
 </code></pre>
 <h1 id="參考">參考</h1>
 <p>右上角github 貓<br>
@@ -199,6 +219,8 @@ GitHub Corners<br>
 <a href="https://blog.walker088.tw/post/intro-hugo/">https://blog.walker088.tw/post/intro-hugo/</a></p>
 <p>hugo搭建静态博客 | 生信笔记
 <a href="https://www.bioinfo-scrounger.com/archives/809/">https://www.bioinfo-scrounger.com/archives/809/</a></p>
+<p>使用Hugo搭建博客系统 - XniLe - Ops 2.0</p>
+<p><a href="https://blog.dianduidian.com/post/%E4%BD%BF%E7%94%A8hugo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E7%B3%BB%E7%BB%9F/">https://blog.dianduidian.com/post/%E4%BD%BF%E7%94%A8hugo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E7%B3%BB%E7%BB%9F/</a></p>
     </div>
     <footer class="post-footer">
      
@@ -286,7 +308,7 @@ GitHub Corners<br>
       <nav class="site-state motion-element">
     <div class="site-state-item site-state-posts">
       <a href="https://iankingh.github.io/post/">
-        <span class="site-state-item-count">10</span>
+        <span class="site-state-item-count">16</span>
         <span class="site-state-item-name">日誌</span>
       </a>
     </div>
@@ -303,7 +325,7 @@ GitHub Corners<br>
     <div class="site-state-item site-state-tags">
         <a href="https://iankingh.github.io/tags/">
          
-        <span class="site-state-item-count">7</span>
+        <span class="site-state-item-count">10</span>
         
         <span class="site-state-item-name">標籤</span>
         </a>

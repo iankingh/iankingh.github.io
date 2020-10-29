@@ -12,6 +12,51 @@
     
     
     <item>
+      <title>Git_error</title>
+      <link>https://iankingh.github.io/post/git/git_error/</link>
+      <pubDate>Tue, 06 Oct 2020 21:45:42 +0800</pubDate>
+      
+      <guid>https://iankingh.github.io/post/git/git_error/</guid>
+      <description>&lt;h2 id=&#34;gi-pull-error筆記&#34;&gt;gi pull error筆記&lt;/h2&gt;</description>
+    </item>
+    
+    <item>
+      <title>Docker_Compose</title>
+      <link>https://iankingh.github.io/post/docker/docker_compose/</link>
+      <pubDate>Mon, 28 Sep 2020 21:53:46 +0800</pubDate>
+      
+      <guid>https://iankingh.github.io/post/docker/docker_compose/</guid>
+      <description>&lt;h1 id=&#34;docker_compose筆記&#34;&gt;Docker_Compose筆記&lt;/h1&gt;</description>
+    </item>
+    
+    <item>
+      <title>AngularDeployTomcat</title>
+      <link>https://iankingh.github.io/post/angular/angulardeploytomcat/</link>
+      <pubDate>Fri, 25 Sep 2020 20:40:28 +0800</pubDate>
+      
+      <guid>https://iankingh.github.io/post/angular/angulardeploytomcat/</guid>
+      <description>&lt;h1 id=&#34;angular-deploy-tomcat&#34;&gt;Angular Deploy Tomcat&lt;/h1&gt;</description>
+    </item>
+    
+    <item>
+      <title>DockerFile</title>
+      <link>https://iankingh.github.io/post/docker/dockerfile/</link>
+      <pubDate>Sun, 20 Sep 2020 19:45:16 +0800</pubDate>
+      
+      <guid>https://iankingh.github.io/post/docker/dockerfile/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>AngularBsN02</title>
+      <link>https://iankingh.github.io/post/angular/angularbsn02/</link>
+      <pubDate>Sun, 05 Jul 2020 19:02:31 +0800</pubDate>
+      
+      <guid>https://iankingh.github.io/post/angular/angularbsn02/</guid>
+      <description>&lt;h1 id=&#34;從-0-開始的-angular-生活-第2天-認識-angular-cli-建立的專案架構&#34;&gt;從 0 開始的 Angular 生活 第2天-認識 Angular CLI 建立的專案架構&lt;/h1&gt;</description>
+    </item>
+    
+    <item>
       <title>SpringDataJapNotes</title>
       <link>https://iankingh.github.io/post/spring/springdatajapnotes/</link>
       <pubDate>Thu, 04 Jun 2020 05:45:59 +0800</pubDate>
@@ -73,6 +118,15 @@
       <pubDate>Tue, 19 May 2020 06:22:46 +0800</pubDate>
       
       <guid>https://iankingh.github.io/post/java/java_tutorial_1/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>GitLab error</title>
+      <link>https://iankingh.github.io/post/git/gitlab%E5%95%8F%E9%A1%8C/</link>
+      <pubDate>Fri, 15 May 2020 16:36:13 +0800</pubDate>
+      
+      <guid>https://iankingh.github.io/post/git/gitlab%E5%95%8F%E9%A1%8C/</guid>
       <description></description>
     </item>
     

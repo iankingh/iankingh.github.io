@@ -507,7 +507,7 @@ public class CustomerRepositoryTest {
 <p>例子如下：</p>
 <pre><code class="language-java">public interface  CustomerRepository extends  CrudRepository&lt;Customer,  Long&gt; 
 	{   
-      @Query(&quot;select a from Customer a WHERE  a.firstName = ?1&quot;)
+      @Query(&quot;select a from Customer a WHERE  a.firstName = ?&quot;)
       List&lt;Customer&gt; findByQuery(StringfirstName);  
 	}  
 </code></pre>
@@ -518,7 +518,6 @@ public class CustomerRepositoryTest {
     *	@return
     **/
    @Query(&quot;select p from ProductInfoEntity p where p.productName like '%米%' &quot;)
-
    List&lt;ProductInfoEntity&gt; findProductInfo();
 
 
@@ -629,6 +628,10 @@ public class ProductInfoService {
      <div class="post-nav">
     <div class="post-nav-next post-nav-item">
     
+        <a href="https://iankingh.github.io/post/angular/angularbsn02/" rel="next" title="AngularBsN02">
+        <i class="fa fa-chevron-left"></i> AngularBsN02
+        </a>
+    
     </div>
 
     <div class="post-nav-prev post-nav-item">
@@ -706,7 +709,7 @@ public class ProductInfoService {
       <nav class="site-state motion-element">
     <div class="site-state-item site-state-posts">
       <a href="https://iankingh.github.io/post/">
-        <span class="site-state-item-count">10</span>
+        <span class="site-state-item-count">16</span>
         <span class="site-state-item-name">日誌</span>
       </a>
     </div>
@@ -723,7 +726,7 @@ public class ProductInfoService {
     <div class="site-state-item site-state-tags">
         <a href="https://iankingh.github.io/tags/">
          
-        <span class="site-state-item-count">7</span>
+        <span class="site-state-item-count">10</span>
         
         <span class="site-state-item-name">標籤</span>
         </a>

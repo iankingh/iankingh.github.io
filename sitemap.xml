@@ -1,6 +1,168 @@
 <search>
     
      <entry>
+        <title>Git_error</title>
+        <url>https://iankingh.github.io/post/git/git_error/</url>
+        <categories>
+          <category>筆記</category>
+        </categories>
+        <tags>
+          <tag>git</tag>
+        </tags>
+        <content type="html"> gi pull error筆記 當 git pull 出現
+error: Your local changes to the following files would be overwritten by merge: 意思是本地新修改的程式碼檔案，將會被git伺服器上的程式碼覆蓋
+解決方法如下：
+方法1：使用pop 如果你想保留剛才本地修改的程式碼，並把git伺服器上的程式碼pull到本地（本地剛才修改的程式碼將會被暫時封存起來）
+$ git stash $ git pull origin master$ git stash pop **注：**用 pop 指令，可以把某個 Stash 拿出來並套用在目前的分支上。套用成功之後，那個套用過的 Stash 就會被刪除。
+方法2 : 放棄變更 如果你想完全地覆蓋本地的程式碼，只保留伺服器端程式碼，則直接回退到上一個版本，再進行pull： $ git reset --hard$ git pull origin master 注： 其中origin master表示git的主分支。
+方法3 : 使用分支( 推薦 正統)  切分支出去commit 在切回 master fetch 再進行 merge  $ git checkout -b &amp;lt;branch&amp;gt;$ git commit -m &amp;quot;add dev&amp;quot; $ git checkout master $ git merge master 注： 感謝KFC 前輩的提供正確解決衝突的教學
+參考 git pull遇到錯誤：error: Your local changes to the following files would be overwritten by merge:解決方法
+https://www.itread01.com/content/1545046022.html
+【狀況題】手邊的工作做到一半，臨時要切換到別的任務 - 為你自己學 Git | 高見龍
+https://gitbook.tw/chapters/faq/stash.html
+</content>
+    </entry>
+    
+     <entry>
+        <title>Docker_Compose</title>
+        <url>https://iankingh.github.io/post/docker/docker_compose/</url>
+        <categories>
+          <category>筆記</category>
+        </categories>
+        <tags>
+          <tag>docker</tag>
+        </tags>
+        <content type="html"> Docker_Compose筆記 安裝Compose 1.下載 sudo curl -L &amp;quot;https://github.com/docker/compose/releases/download/1.27.4/docker-compose-$(uname -s)-$(uname -m)&amp;quot; -o /usr/local/bin/docker-compose 2.安裝 chmod &#43;x /usr/local/bin/docker-compose 3.查看版本 docker-compose version 測試
+第一步，創建 Spring boot 服務 在
+ 第二步，创建 Dockerfile 同样在此目录下，我们创建一个 Dockerfile 文件。
+FROM python:3.4-alpineADD . /codeWORKDIR /codeDㄟRUN pip install -r requirements.txtCMD [&amp;quot;python&amp;quot;, &amp;quot;app.py&amp;quot;] 第三步，使用 Compose 文件定义一个服务 在当期目录下，我们创建一个 docker-compose.yml 文件，内容如下：
+version: &#39;2&#39;services:web:build: .ports:- &amp;quot;5000:5000&amp;quot;redis:image: &amp;quot;redis:alpine&amp;quot; 这个 Compose 文件定义了两个服务, 一个 Pyhon Web 服务和 redis 服务。
+ Pyhon Web 服务：使用 Dockerfile 构建了当前镜像。将 Web 容器内部的5000端口映射到 host 的5000端口；并将 Web 容器与 redis 容器连接。 redis服务：该容器直接由官方的 redis 镜像创建。  第四步，使用 Compose 使用命令docker-compose up启动
+version: &#39;2&#39;services:web:build: .command: python app.pyports:- &amp;quot;5000:5000&amp;quot;volumes:- .:/coderedis:image: &amp;quot;redis:alpine&amp;quot; 启动成功之后，在浏览器访问：http://ipaddress:5000/ ，返回如下：
+Hello World! I have been seen 1 times. 刷新再次访问返回
+Hello World! I have been seen 2 times. 不断的刷新数字会不断的增长。
+Docker Compose 常用命令 使用docker-compose up -d在后台启动服务
+[root@localhost composetest]# docker-compose up -d 使用docker-compose ps命令查看启动的服务
+[root@localhost composetest]# docker-compose psName Command State Ports -------------------------------------------------------------------------------------composetest_redis_1 docker-entrypoint.sh redis ... Up 6379/tcp composetest_web_1 python app.py Up 0.0.0.0:5000-&amp;gt;5000/tcp 使用docker-compose stop停止服务。
+[root@localhost composetest]# docker-compose stopStopping composetest_web_1 ... doneStopping composetest_redis_1 ... done 其它常用命令
+#查看帮助docker-compose -h# -f 指定使用的 Compose 模板文件，默认为 docker-compose.yml，可以多次指定。docker-compose -f docker-compose.yml up -d #启动所有容器，-d 将会在后台启动并运行所有的容器docker-compose up -d#停用移除所有容器以及网络相关docker-compose down#查看服务容器的输出docker-compose logs#列出项目中目前的所有容器docker-compose ps#构建（重新构建）项目中的服务容器。服务容器一旦构建后，将会带上一个标记名，例如对于 web 项目中的一个 db 容器，可能是 web_db。可以随时在项目目录下运行 docker-compose build 来重新构建服务docker-compose build#拉取服务依赖的镜像docker-compose pull#重启项目中的服务docker-compose restart#删除所有（停止状态的）服务容器。推荐先执行 docker-compose stop 命令来停止容器。docker-compose rm #在指定服务上执行一个命令。docker-compose run ubuntu ping docker.com#设置指定服务运行的容器个数。通过 service=num 的参数来设置数量docker-compose scale web=3 db=2#启动已经存在的服务容器。docker-compose start#停止已经处于运行状态的容器，但不删除它。通过 docker-compose start 可以再次启动这些容器。docker-compose stop 參考 Docker(四)：Docker 三剑客之 Docker Compose - 纯洁的微笑博客
+http://www.ityouknow.com/docker/2018/03/22/docker-compose.htm
+https://docs.docker.com/compose/install/
+</content>
+    </entry>
+    
+     <entry>
+        <title>AngularDeployTomcat</title>
+        <url>https://iankingh.github.io/post/angular/angulardeploytomcat/</url>
+        <categories>
+          <category>筆記</category>
+        </categories>
+        <tags>
+          <tag>Angular</tag>
+        </tags>
+        <content type="html"> Angular Deploy Tomcat 1. 編譯 到專案目錄執行 編譯指令如下
+ng build --prod --base-href /project_Name/  匯出 index.html 如下
+&amp;lt;!doctype html&amp;gt; &amp;lt;html lang=&amp;quot;en&amp;quot;&amp;gt; &amp;lt;head&amp;gt; &amp;lt;meta charset=&amp;quot;utf-8&amp;quot;&amp;gt; &amp;lt;title&amp;gt;Title&amp;lt;/title&amp;gt; &amp;lt;base href=&amp;quot;/project_Name/&amp;quot;&amp;gt; &amp;lt;meta name=&amp;quot;viewport&amp;quot; content=&amp;quot;width=device-width, initial-scale=1&amp;quot;&amp;gt; &amp;lt;link rel=&amp;quot;icon&amp;quot; type=&amp;quot;image/x-icon&amp;quot; href=&amp;quot;favicon.ico&amp;quot;&amp;gt; &amp;lt;link href=&amp;quot;https://fonts.googleapis.com/css?family=Roboto:300,400,500&amp;amp;display=swap&amp;quot; rel=&amp;quot;stylesheet&amp;quot;&amp;gt; &amp;lt;link href=&amp;quot;https://fonts.googleapis.com/icon?family=Material&#43;Icons&amp;quot; rel=&amp;quot;stylesheet&amp;quot;&amp;gt; &amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;styles.479444a78a429503e78e.css&amp;quot;&amp;gt;&amp;lt;/head&amp;gt; &amp;lt;body class=&amp;quot;mat-typography&amp;quot;&amp;gt; &amp;lt;app-root&amp;gt;&amp;lt;/app-root&amp;gt; &amp;lt;script src=&amp;quot;runtime.c51bd5b1c616d9ffddc1.js&amp;quot; defer&amp;gt;&amp;lt;/script&amp;gt; &amp;lt;script src=&amp;quot;polyfills-es5.272209ba9e789fcad1c2.js&amp;quot; nomodule defer&amp;gt;&amp;lt;/script&amp;gt; &amp;lt;script src=&amp;quot;polyfills.7f244a820a4deda6d9fd.js&amp;quot; defer&amp;gt;&amp;lt;/script&amp;gt; &amp;lt;script src=&amp;quot;main.d604dab66ca826078124.js&amp;quot; defer&amp;gt;&amp;lt;/script&amp;gt; &amp;lt;/body&amp;gt; &amp;lt;/html&amp;gt;  &amp;ndash;prod : 把 src/environments/environment.ts 檔案替換成針對特定目標的版本 , 且編譯出來的檔案會小很多
+&amp;ndash;output-path : 表示輸出路徑 : ex : 輸出到當前目錄的 web資料夾底下
+&amp;ndash;base-href : 修改 index.html 裡的 : ex : 2.部屬 把project/dist裡的project的資料夾 移動到 $Tomcat/webapps
+3. Deploy Tomcat9 調整 server.xml，將 http port 改為 80，https port 改為 443。
+&amp;lt;Connector port=&amp;quot;80&amp;quot; protocol=&amp;quot;HTTP/1.1&amp;quot; connectionTimeout=&amp;quot;20000&amp;quot; redirectPort=&amp;quot;443&amp;quot; /&amp;gt;  4. Installing services Install the service named &amp;lsquo;Tomcat9&amp;rsquo;
+service.bat install  5. 404 如何解決 因為 Angular 是 SPA，所以在網頁伺服器要將所有的 request 全部導回到 index.html 才可以正常地顯示，如果在沒有設定下直接打開網址 web/home，他會去找 home 資料夾下的 index.html
+(1)將以下代碼放在部署文件夾的web.xml中：
+&amp;lt;error-page&amp;gt; &amp;lt;error-code&amp;gt;404&amp;lt;/error-code&amp;gt; &amp;lt;location&amp;gt;/index.html&amp;lt;/location&amp;gt; &amp;lt;/error-page&amp;gt;  (2)將HashLocationStrategy與路由的URL中的＃一起使用
+修改 app-routing.module.ts
+使用: RouterModule.forRoot(routes, { useHash: true }) 代替: RouterModule.forRoot(routes)
+使用HashLocationStrategy，您的網址將類似於：
+http://localhost/#/route
+app-routing.module.ts
+@NgModule({ imports: [RouterModule.forRoot(routes, { useHash: true })], exports: [RouterModule] })  (3) Tomcat URL Rewrite Valve：如果找不到資源，則使用服務器級別的配置來重寫URL，以重定向到index.html。
+(3.1)在server.xml中配置RewriteValve
+&amp;lt;?xml version=&amp;quot;1.0&amp;quot; encoding=&amp;quot;utf-8&amp;quot;?&amp;gt; &amp;lt;Context&amp;gt; &amp;lt;Valve className=&amp;quot;org.apache.catalina.valves.rewrite.RewriteValve&amp;quot; /&amp;gt; &amp;lt;/Context&amp;gt;  (3.2)在rewrite.config中寫入重寫規則
+創建目錄結構–〜/ conf / Catalina / localhost /並使用以下內容在其中創建rewrite.config文件。注意-這裡我考慮將其/web作為應用程序的上下文路徑。
+RewriteCond %{REQUEST_PATH} !-f RewriteRule ^/web/(.*) /web/index.html  參考
+https://angular.io/guide/deployment
+https://tomcat.apache.org/tomcat-9.0-doc/windows-service-howto.html
+https://stackoverflow.com/questions/51042875/url-rewriting-angular-4-on-tomcat-8-server
+https://blog.miniasp.com/post/2017/01/17/Angular-2-deploy-on-IIS
+https://forum.angular.tw/t/topic/881/12
+https://forum.angular.tw/t/topic/1839/2
+</content>
+    </entry>
+    
+     <entry>
+        <title>DockerFile</title>
+        <url>https://iankingh.github.io/post/docker/dockerfile/</url>
+        <categories>
+          <category>筆記</category>
+        </categories>
+        <tags>
+          <tag>docker</tag>
+        </tags>
+        <content type="html"> Dockerfile Dockerfile 是用來描述映像檔（image）的文件。
+所謂的 Image，就是生產 Container 的模版，你可以從 Docker Hub 官方下載或是根據官方的 Image 自己加工後打包成 Image 或是完全自己使用 Dockerfile 描述 Image 內容來製作 Image。
+而 Container 則是透過 Image 產生隔離的執行環境，稱之為 Container，也就是我們一般用來提供 microservice 的最小單位。
+簡單示例 Dockerfile 一般位於構建上下文的根目錄下，也可以通過-f指定該檔的位置：
+$ docker build -f /path/to/a/Dockerfile . 構建時，還可以通過-t參數指定構建成鏡像的倉庫、標籤。
+映像標籤
+$ docker build -t nginx:v1 . 命令最後有一個. 表示目前的目錄
+#從Docker hub 下載基礎的 image，可能是作業系統環境或是程式語言環境FROM nginx#維護者資訊MAINTAINER ianhunag@gmail.com # 鏡像操作指令執行 CMD 指令跑的指令RUN echo &#39;&amp;lt;h1&amp;gt;Hello, Docker!&amp;lt;/h1&amp;gt;&#39; &amp;gt; /usr/share/nginx/html/index.html 使用 docker run 命令來啟動容器
+$ docker run --name docker_nginx_v1 -d -p 80:80 nginx:v1 這條命令會用 nginx 鏡像啟動一個容器，命名為docker_nginx_v1，並且映射了 80 埠，這樣我們可以用流覽器去訪問這個 nginx 伺服器：
+緩存
+Docker 守護進程會一條一條的執行 Dockerfile 中的指令，而且會在每一步提交並生成一個新鏡像，最後會輸出最終映像的ID。生成完成後，Docker 守護進程會自動清理你發送的上下文。
+Dockerfile檔中的每條指令會被獨立執行，並會創建一個新鏡像，RUN cd /tmp等命令不會對下條指令產生影響。
+Docker 會重用已生成的中間鏡像，以加速docker build的構建速度。以下是一個使用了緩存鏡像的執行過程：
+$ docker build -t svendowideit/ambassador . Sending build context to Docker daemon 2.048kBStep 1/3 : FROM nginx---&amp;gt; 7e4d58f0e5f3Step 2/3 : MAINTAINER ianhunag@gmail.com---&amp;gt; Using cache---&amp;gt; d0140a7f8c8eStep 3/3 : RUN echo &#39;&amp;lt;h1&amp;gt;Hello, Docker!&amp;lt;/h1&amp;gt;&#39; &amp;gt; /usr/share/nginx/html/index.html---&amp;gt; Using cache---&amp;gt; 81a660be4e2bSuccessfully built 81a660be4e2bSuccessfully tagged svendowideit/ambassador:latest 構建緩存僅會使用本地父生成鏈上的鏡像，如果不想使用本地緩存的鏡像，也可以通過&amp;ndash;cache-from指定緩存。指定後將不再使用本地生成的鏡像鏈，而是從鏡像倉庫中下載。
+參考
+Dockerfile 使用介紹 - 純潔的微笑博客
+http://www.ityouknow.com/docker/2018/03/12/docker-use-dockerfile.html
+</content>
+    </entry>
+    
+     <entry>
+        <title>AngularBsN02</title>
+        <url>https://iankingh.github.io/post/angular/angularbsn02/</url>
+        <categories>
+          <category>筆記</category>
+        </categories>
+        <tags>
+          <tag>Angular</tag><tag>FrontEnd</tag>
+        </tags>
+        <content type="html"> 從 0 開始的 Angular 生活 第2天-認識 Angular CLI 建立的專案架構 angular.json Angular CLI 的設定檔 ，Angular CLI v6 之前檔名 angular-cli.json為。
+.editorconfig 編輯器設定檔，設定處理 tab 符號、換行等等。
+官網。
+.gitignore 設定git 忽略那些檔案不要加入版本控管。
+karma.conf.js karma.conf.js: 是一個單元測試工具。
+官網
+protractor.conf.js E2E 測試，主要是測試使用者操作與想要的結果是否符合規格。
+tsconfig.json TypeScript 編譯設定。
+tslint.json TypeScript 程式碼風格檢查器。
+package.json npm 的設定檔， scripts 區塊定義了在開發 Angular 時用到的命令 。
+node_modeles 資料夾 存放npm install 後所有被下載下來所有的套件。
+e2e 資料夾 存放 End-To-End Testing 所有測試的指定檔都被放在這裡。
+src 資料夾(重要) 根據 Angular 官網的 Style Guide 建立而成Angular 應用程式主要的原始碼。
+app 資料夾(重要) 存放app.module 的地方
+index.html angular 應用程式地進入點。
+style.css 在這裡它是 「global styles」也就是整個應用程式都會套用到的 CSS 定義，全部都可以寫在這裡。
+main.ts main.ts 是 Angular 中 JavaScript 程式的進入點。(.ts 代表 TypeScript)
+import { enableProdMode } from &#39;@angular/core&#39;;import { platformBrowserDynamic } from &#39;@angular/platform-browser-dynamic&#39;;import { AppModule } from &#39;./app/app.module&#39;;import { environment } from &#39;./environments/environment&#39;;if (environment.production) {enableProdMode();}platformBrowserDynamic().bootstrapModule(AppModule).catch(err =&amp;gt; console.error(err)); bootstrapModule 表示以引入 AppModule 啟動
+app.module.ts 根目錄的TS module
+import { BrowserModule } from &#39;@angular/platform-browser&#39;;import { NgModule } from &#39;@angular/core&#39;;import { FormsModule } from &#39;@angular/forms&#39;;import { AppRoutingModule } from &#39;./app-routing.module&#39;;import { AppComponent } from &#39;./app.component&#39;;@NgModule({declarations: [AppComponent],imports: [BrowserModule,AppRoutingModule,FormsModule],providers: [],bootstrap: [AppComponent]})export class AppModule { } app.component.ts import { Component } from &#39;@angular/core&#39;;@Component({selector: &#39;app-root&#39;,templateUrl: &#39;./app.component.html&#39;,styleUrls: [&#39;./app.component.scss&#39;]})export class AppComponent {title = &#39;firstAngular&#39;;} 根目錄的TS controller
+assets(資產) 資料夾 放置所有的靜態檔案的資料夾，如額外的 JavaScript、JQery、CSS、圖片&amp;hellip;&amp;hellip;&amp;hellip;等等。
+.gitkeep Git 無法添加完全空目錄 ，希望跟蹤Git中空目錄的人就創建了將名為&amp;quot;gitkeep &amp;ldquo;的文件，把它放在這些目錄中的慣例，該文件可以被稱為任何東西;Git對此名稱沒有特殊意義。
+environments 資料夾 這個資料夾裡面所定義的是 Angular 專案內的環境變數，透過 TypeScript 定義一些環境變數。
+這個資料夾內有兩個檔案，分別是 environment.ts 與 environment.prod.ts ，差別在於 environment.prod.ts 是只有當 build 出 production 版的應用程式時才用得上，否則在開發時期都是使用另一個設定檔。
+favicon.ico 瀏覽器業籤上面的圖示。
+polyfills.ts 當你的 Angular 應用程式同時要符合 IE 或舊版瀏覽器時，會用 Polyfill 來填充缺少的 HTML5/JS APIs
+test.ts 測試 - Angular 的檔案
+tsconfig.app.json Typescripe編譯成Javascript時的編譯設定
+tsconfig.spec.json Typescripe編譯成Javascript時的編譯設定
+參考 Angular CLI 7.3 使用 ES2015 的 nomodule 屬性載入 Polyfills 函式庫 | The Will Will Web https://blog.miniasp.com/post/2019/02/03/Angular-CLI-73-Use-ES2015-nomodule-load-polyfills
+[DAY-19] Angular架構與學習資源介紹 - iT 邦幫忙::一起幫忙解決難題，拯救 IT 人的一天 https://ithelp.ithome.com.tw/articles/10225044
+[從 0 開始的 Angular 生活]No.2 檔案架構 | pvt5r486&amp;rsquo;s Blog https://pvt5r486.github.io/f2e/20190520/3222844657/
+</content>
+    </entry>
+    
+     <entry>
         <title>SpringDataJapNotes</title>
         <url>https://iankingh.github.io/post/spring/springdatajapnotes/</url>
         <categories>
@@ -55,7 +217,7 @@ Spring Data JPA為此提供了一些表達條件查詢的關鍵字，大致如�
 @Query(value=&amp;quot;select * from tbl_user where name like %?1&amp;quot; ,nativeQuery=true) @Query 與 @Modifying 這兩個 annotation一起聲明，可定義個性化更新操作，例如只涉及某些欄位更新時最為常用
 Springdata支援JPQL 語句對查詢進行擴展，
 例子如下：
-public interface CustomerRepository extends CrudRepository&amp;lt;Customer, Long&amp;gt; { @Query(&amp;quot;select a from Customer a WHERE a.firstName = ?1&amp;quot;)List&amp;lt;Customer&amp;gt; findByQuery(StringfirstName); }  EX:
+public interface CustomerRepository extends CrudRepository&amp;lt;Customer, Long&amp;gt; { @Query(&amp;quot;select a from Customer a WHERE a.firstName = ?&amp;quot;)List&amp;lt;Customer&amp;gt; findByQuery(StringfirstName); }  EX:
 //聲明自訂查詢/***	使用JPA SQL語句*	@return**/@Query(&amp;quot;select p from ProductInfoEntity p where p.productName like &#39;%米%&#39; &amp;quot;)List&amp;lt;ProductInfoEntity&amp;gt; findProductInfo(); /***	使用JPA SQL語句 查詢價格最高的商品**/@Query(&amp;quot;select p from ProductInfoEntity p &amp;quot; &#43;&amp;quot;where p.productPrice=&amp;quot; &#43;&amp;quot;(select max(p2.productPrice) from ProductInfoEntity p2)&amp;quot;)List&amp;lt;ProductInfoEntity&amp;gt; findMaxPrice(); /*** 使用JPA SQL語句 帶參數的查詢1* @param name* @param price* @return**/@Query(&amp;quot;select o from ProductInfoEntity o where o.productName=?1 and o.productPrice=?2&amp;quot;)List&amp;lt;ProductInfoEntity&amp;gt; findParam(String name, double price); /*** 使用JPASQL語句 帶參數的查詢2* @param name* @param price* @return**/@Query(&amp;quot;select o from ProductInfoEntity o where o.productName=:name and o.productPrice=:price&amp;quot;)List&amp;lt;ProductInfoEntity&amp;gt; findParam2(@Param(&amp;quot;name&amp;quot;) String name, @Param(&amp;quot;price&amp;quot;) double price);當然還可以使用原生SQL語句進行查詢,只需要 nativeQuery = true 即可 /***使用原生SQL語句 查詢* @return**/@Query(nativeQuery = true,value = &amp;quot;select count(*) from product_info&amp;quot;)Integer getCount(); Spring data JPA 更新及刪除操作整合事物的使用
 更新操作注意事項:
 /** 使用Query注解寫更新JPA語句*添加 @Modifying 注解**/@Modifying@Query(&amp;quot;update ProductInfoEntity o set o.productPrice =:price where o.productId=:id&amp;quot;)Integer updatePrice(@Param(&amp;quot;id&amp;quot;) String id,@Param(&amp;quot;price&amp;quot;) double price);  在service層添加事物 @Transactional  package com.itguang.weixinsell.service;import com.itguang.weixinsell.repository.ProductInfoRepository;import org.springframework.beans.factory.annotation.Autowired;import org.springframework.stereotype.Service;import org.springframework.transaction.annotation.Transactional;@Service@Transactionalpublic class ProductInfoService {@Autowiredprivate ProductInfoRepository infoRepository;public Integer updatePrice( String id,double price){Integer i = infoRepository.updatePrice(id, price);return i;}}</content>
@@ -70,7 +232,7 @@ public interface CustomerRepository extends CrudRepository&amp;lt;Customer, Long
         <tags>
           <tag>docker</tag>
         </tags>
-        <content type="html"> images see images(看鏡像) docker images docker pull docker pull see registry images curl -XGET 172.22.11.11:5000/v2/_catalog container docker container ls (看容器) docker container ls docker ps (看容器) docker ps -a : 看到的所有容器 docker ps -a  -l :顯示最新創建的容器(包括所有狀態) docker ps -l -q :只顯示數字ID docker ps -q  -f: 過濾器 docker ps -f id=ContainerId Container Stop (停掉Container) docker stop  Container remove(移除停掉的Container) docker rm see log docker logs Show Container&amp;rsquo;s logs (once) docker logs ContainerId Log countinuing docker logs -f ContainerId See Container ENV docker inspect Cid &amp;gt; Y.txt (獲取容器/鏡像的 ENV。) Into Container (進入 container 裡面) docker exec -it containerID bash  into 執行命令 docker exec -it ebbeb7c38404 bash -c &#39;echo &amp;quot;$envKey&amp;quot;&#39; stop &amp;amp;&amp;amp; rm docker container docker stop ContainerId &amp;amp;&amp;amp; docker rm ContainerId Container status (查看docker 容器使用的資源) docker stats  提交一個commit docker commit cID docker system docker system df (空間分佈) docker system df 可用於查詢鏡像（Images）、容器（Containers）和本地卷（Local Volumes）等空間使用大戶的空間佔用情況。
+        <content type="html"> images see images(看映像) docker images docker pull(下載映像) docker pull see registry images curl -XGET 172.22.11.11:5000/v2/_catalog container docker container ls (看容器) docker container ls docker ps (看容器) docker ps -a : 看到的所有容器 docker ps -a  -l :顯示最新創建的容器(包括所有狀態) docker ps -l -q :只顯示數字ID docker ps -q  -f: 過濾器 docker ps -f id(ContainerId) Container Stop (停掉Container) docker stop  Container remove(移除停掉的Container) docker rm see log docker logs Show Container&amp;rsquo;s logs (once) docker logs ContainerId Log countinuing docker logs -f ContainerId See Container ENV docker inspect Cid &amp;gt; Y.txt (獲取容器/鏡像的 ENV。) Into Container (進入 container 裡面) docker exec -it containerID bash  into 執行命令 docker exec -it ebbeb7c38404 bash -c &#39;echo &amp;quot;$envKey&amp;quot;&#39; stop &amp;amp;&amp;amp; rm docker container docker stop ContainerId &amp;amp;&amp;amp; docker rm ContainerId Container status (查看docker 容器使用的資源) docker stats  提交一個commit docker commit cID docker system docker system df (空間分佈) docker system df 可用於查詢鏡像（Images）、容器（Containers）和本地卷（Local Volumes）等空間使用大戶的空間佔用情況。
 -v 表示細節查看空間佔用細節 docker system df -v docker system prune (空間清理) 可以通過 Docker 內置的 CLI 指令 docker system prune 來進行自動空間清理。
 docker system prune WARNING! This will remove:
 - all stopped containers (已經停止的容器（container）)
@@ -166,6 +328,29 @@ https://blog.csdn.net/fysuccess/article/details/40656761
     </entry>
     
      <entry>
+        <title>GitLab error</title>
+        <url>https://iankingh.github.io/post/git/gitlab%E5%95%8F%E9%A1%8C/</url>
+        <categories>
+          <category>筆記</category>
+        </categories>
+        <tags>
+          <tag>git</tag>
+        </tags>
+        <content type="html"> 連線GitLab問題處理 問題1 : 在連線 gitlab 遇到fatal: Authentication failed for&amp;hellip;. 的問題
+可能是有人重灌gitlab 或是改密碼時造成 憑證用舊的對新的 gitlab 密碼
+Windows 解法
+解決方法1 : 到 win10 的控制台/認證管理員/ Windows 認證
+或到搜尋輸入
+Credential Manager / Windows Credentials/
+找到 對應的 gitlab 把他移除
+1.Credential Manager
+2.Windows Credentials
+參考 在gitlab 遇到fatal: Authentication failed for&amp;hellip;. 的問題 | Frank的探索之旅 - 點部落
+https://dotblogs.com.tw/zeroade/2018/10/11/111941
+</content>
+    </entry>
+    
+     <entry>
         <title>OpenTypeHierarchy</title>
         <url>https://iankingh.github.io/post/eclipse/opentypehierarchy/</url>
         <categories>
@@ -232,11 +417,12 @@ https://segmentfault.com/a/1190000009122617
         <tags>
           <tag>hugo</tag>
         </tags>
-        <content type="html"> Hugo使用筆記 建立及設定部落格專案
+        <content type="html"> Hugo使用筆記 安裝 scoop install hugo hugo version  建立新Blog hugo new site blog  新增文章 hugo new post/文章名稱.md  生成的文件默認為會帶上 draft: true標記，不會發布。
+hugo server -D  插入圖片 ![Example image](/static/image.png)  建立及設定部落格專案
 我們先使用 hugo 命令新增一個空白專案，然後下載一個Template到我們的專案裡面
 接著新增四個我們想加到模板 Menu 的頁面: about, history, tags, categories
 最後則是新增一篇空白的文章到專案內。
-1.create the project $ hugo new site myblog 2.add a theme $ git submodule add https://github.com/laozhu/hugo-nuo themes/hugo-nuo 3.add new pages $ hugo new about.md $ hugo new hisroty.md $ hugo new tags.md $ hugo new categories.md 4.add new article $ hugo new post/welcome.md  參考 右上角github 貓
+1.create the project $ hugo new site myblog 2.add a theme $ git submodule add https://github.com/laozhu/hugo-nuo themes/hugo-nuo 3.add new pages $ hugo new about.md $ hugo new hisroty.md $ hugo new tags.md $ hugo new categories.md 4.add new article $ hugo new post/welcome.md hugo server -D  參考 右上角github 貓
 GitHub Corners
 http://tholman.com/github-corners/
 在 Github Pages 建立 Hugo 靜態網站 · Kaichu.io
@@ -247,6 +433,8 @@ https://github.com/xtfly/xtfly.github.io/tree/hugo/themes/next
 使用 Hugo 打造個人部落格
 https://blog.walker088.tw/post/intro-hugo/
 hugo搭建静态博客 | 生信笔记 https://www.bioinfo-scrounger.com/archives/809/
+使用Hugo搭建博客系统 - XniLe - Ops 2.0
+https://blog.dianduidian.com/post/%E4%BD%BF%E7%94%A8hugo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E7%B3%BB%E7%BB%9F/
 </content>
     </entry>
     

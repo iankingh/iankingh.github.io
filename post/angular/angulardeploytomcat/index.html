@@ -1,0 +1,481 @@
+<!DOCTYPE HTML>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" /> 
+    <title>AngularDeployTomcat - ianhuang筆記</title>
+    <meta name="keywords" content="程式師,架構師,個人,筆記,技術">
+    
+    <meta property="og:title" content="AngularDeployTomcat">
+    <meta property="og:site_name" content="ianhuang筆記">
+    <meta property="og:image" content="/img/author.jpg"> 
+    <meta name="title" content="AngularDeployTomcat - ianhuang筆記" />
+    <meta name="description" content="筆記 | 軟體 | 架構 | Java "> 
+    <link rel="shortcut icon" href="https://iankingh.github.io/img/favicon.ico" />
+    <link rel="apple-touch-icon" href="https://iankingh.github.io/img/apple-touch-icon.png" />
+    <link rel="apple-touch-icon-precomposed" href="https://iankingh.github.io/img/apple-touch-icon.png" />
+    <link href="https://iankingh.github.io/js/vendor/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+    <link href="https://iankingh.github.io/js/vendor/fancybox/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+    <link href="https://iankingh.github.io/css/main.css" rel="stylesheet" type="text/css" />
+    
+    <link href="https://iankingh.github.io/prism.css" rel="stylesheet"   type="text/css"/>
+    <script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Pisces',
+    sidebar: {"position":"left","display":"post"},
+     fancybox: true, 
+    motion: true
+  };
+</script>
+</head>
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+<div class="container one-collumn sidebar-position-left page-home  ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"> <div class="site-meta  custom-logo ">
+
+  <div class="custom-logo-site-title">
+    <a href="https://iankingh.github.io/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">ianhuang筆記</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle">總有一天，你的日積月累，會變成他人的望塵莫及</p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+    <ul id="menu" class="menu">
+      
+      
+        <li class="menu-item ">
+          <a href="https://iankingh.github.io/" rel="section">
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />首頁
+          </a>
+        </li>
+      
+        <li class="menu-item ">
+          <a href="https://iankingh.github.io/categories/%E6%8A%80%E8%A1%93/" rel="section">
+              <i class="menu-item-icon fa fa-fw fa-code"></i> <br />技術
+          </a>
+        </li>
+      
+        <li class="menu-item ">
+          <a href="https://iankingh.github.io/categories/%E7%AD%86%E8%A8%98/" rel="section">
+              <i class="menu-item-icon fa fa-fw fa-book"></i> <br />筆記
+          </a>
+        </li>
+      
+        <li class="menu-item ">
+          <a href="https://iankingh.github.io/post/" rel="section">
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />歸檔
+          </a>
+        </li>
+      
+        <li class="menu-item ">
+          <a href="https://iankingh.github.io/about/" rel="section">
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />關於
+          </a>
+        </li>
+      
+      <li class="menu-item menu-item-search">
+        <a href="javascript:;" class="popup-trigger"> <i class="menu-item-icon fa fa-search fa-fw"></i> <br /> 搜索</a>
+      </li>
+    </ul>
+    <div class="site-search">
+      <div class="popup">
+ <span class="search-icon fa fa-search"></span>
+ <input type="text" id="local-search-input">
+ <div id="local-search-result"></div>
+ <span class="popup-btn-close">close</span>
+</div>
+
+    </div>
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+<section id="posts" class="posts-expand">
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+      <h1 class="post-title" itemprop="name headline">
+        <a class="post-title-link" href="https://iankingh.github.io/post/angular/angulardeploytomcat/" itemprop="url">
+        AngularDeployTomcat
+        </a>
+      </h1>
+      <div class="post-meta">
+      <span class="post-time">
+<span class="post-meta-item-icon">
+    <i class="fa fa-calendar-o"></i>
+</span>
+<span class="post-meta-item-text">時間：</span>
+<time itemprop="dateCreated" datetime="2016-03-22T13:04:35+08:00" content="2020-09-25">
+    2020-09-25
+</time>
+</span> 
+      
+
+  <span class="post-category" >
+  &nbsp; | &nbsp;
+  <span class="post-meta-item-icon">
+    <i class="fa fa-folder-o"></i>
+  </span>
+  <span class="post-meta-item-text">分類：</span>
+  
+    <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+      <a href="https://iankingh.github.io/categories/%E7%AD%86%E8%A8%98" itemprop="url" rel="index">
+        <span itemprop="name">筆記</span>
+      </a>
+      &nbsp; 
+    </span>
+  
+</span>
+
+
+       <span>
+&nbsp; | &nbsp;
+<span class="post-meta-item-icon">
+    <i class="fa fa-eye"></i>
+</span>
+<span class="post-meta-item-text">閱讀：</span>
+<span class="leancloud-visitors-count">634 字 ~2分鐘</span>
+</span>
+      </div>
+    </header>
+    <div class="post-body" itemprop="articleBody">
+    <h1 id="angular-deploy-tomcat">Angular Deploy Tomcat</h1>
+<h2 id="1-編譯">1. 編譯</h2>
+<p>到專案目錄執行 <strong>編譯指令如下</strong></p>
+<pre><code>ng build --prod --base-href /project_Name/
+</code></pre>
+<p>匯出 index.html 如下</p>
+<pre><code class="language-html">&lt;!doctype html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;utf-8&quot;&gt;
+  &lt;title&gt;Title&lt;/title&gt;
+  &lt;base href=&quot;/project_Name/&quot;&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+  &lt;link rel=&quot;icon&quot; type=&quot;image/x-icon&quot; href=&quot;favicon.ico&quot;&gt;
+  &lt;link href=&quot;https://fonts.googleapis.com/css?family=Roboto:300,400,500&amp;display=swap&quot; rel=&quot;stylesheet&quot;&gt;
+  &lt;link href=&quot;https://fonts.googleapis.com/icon?family=Material+Icons&quot; rel=&quot;stylesheet&quot;&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;styles.479444a78a429503e78e.css&quot;&gt;&lt;/head&gt;
+&lt;body class=&quot;mat-typography&quot;&gt;
+  		&lt;app-root&gt;&lt;/app-root&gt;
+        &lt;script src=&quot;runtime.c51bd5b1c616d9ffddc1.js&quot; defer&gt;&lt;/script&gt;
+        &lt;script src=&quot;polyfills-es5.272209ba9e789fcad1c2.js&quot; nomodule defer&gt;&lt;/script&gt;
+        &lt;script src=&quot;polyfills.7f244a820a4deda6d9fd.js&quot; defer&gt;&lt;/script&gt;
+        &lt;script src=&quot;main.d604dab66ca826078124.js&quot; defer&gt;&lt;/script&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+
+</code></pre>
+<p>&ndash;prod  : 把 <code>src/environments/environment.ts</code> 檔案替換成針對特定目標的版本 , 且編譯出來的檔案會小很多</p>
+<p>&ndash;output-path : 表示輸出路徑  : ex : 輸出到當前目錄的 web資料夾底下</p>
+<p>&ndash;base-href : 修改 index.html 裡的 <!-- raw HTML omitted --> : ex : <!-- raw HTML omitted --></p>
+<h2 id="2部屬"><strong>2.部屬</strong></h2>
+<p>把project/dist裡的project的資料夾 移動到  $Tomcat/webapps</p>
+<h2 id="3-deploy-tomcat9">3. Deploy Tomcat9</h2>
+<p>調整 server.xml，將 http port 改為 80，https port 改為 443。</p>
+<pre><code class="language-xml">&lt;Connector port=&quot;80&quot; protocol=&quot;HTTP/1.1&quot;
+           connectionTimeout=&quot;20000&quot;
+           redirectPort=&quot;443&quot; /&gt;
+</code></pre>
+<h3 id="4-installing-services">4. Installing services</h3>
+<p>Install the service named &lsquo;Tomcat9&rsquo;</p>
+<pre><code>service.bat install
+</code></pre>
+<h2 id="5-404-如何解決">5. 404 如何解決</h2>
+<p>因為 Angular 是 SPA，所以在網頁伺服器要將所有的 request 全部導回到 index.html 才可以正常地顯示，如果在沒有設定下直接打開網址 web/home，他會去找 home 資料夾下的 index.html</p>
+<p><strong>(1)將以下代碼放在部署文件夾的web.xml中：</strong></p>
+<pre><code class="language-xml">&lt;error-page&gt;
+     &lt;error-code&gt;404&lt;/error-code&gt;
+     &lt;location&gt;/index.html&lt;/location&gt;
+&lt;/error-page&gt;
+</code></pre>
+<p><strong>(2)將HashLocationStrategy與路由的URL中的＃一起使用</strong></p>
+<p>修改 app-routing.module.ts</p>
+<p>使用:
+RouterModule.forRoot(routes, { useHash: true })
+代替:
+RouterModule.forRoot(routes)</p>
+<p>使用HashLocationStrategy，您的網址將類似於：</p>
+<p>http://localhost/#/route</p>
+<p>app-routing.module.ts</p>
+<pre><code class="language-typescript">@NgModule({
+  imports: [RouterModule.forRoot(routes, { useHash: true })],
+  exports: [RouterModule]
+})
+</code></pre>
+<p><strong>(3) Tomcat URL Rewrite Valve：如果找不到資源，則使用服務器級別的配置來重寫URL，以重定向到index.html。</strong></p>
+<p>(3.1)在server.xml中配置RewriteValve</p>
+<pre><code class="language-xml">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
+&lt;Context&gt;
+  &lt;Valve className=&quot;org.apache.catalina.valves.rewrite.RewriteValve&quot; /&gt;
+&lt;/Context&gt;
+</code></pre>
+<p>(3.2)在rewrite.config中寫入重寫規則</p>
+<p>創建目錄結構–〜/ conf / Catalina / localhost /並使用以下內容在其中創建rewrite.config文件。注意-這裡我考慮將其<code>/web</code>作為應用程序的上下文路徑。</p>
+<pre><code class="language-xml">RewriteCond %{REQUEST_PATH} !-f
+RewriteRule ^/web/(.*) /web/index.html
+</code></pre>
+<p>參考</p>
+<p><a href="https://angular.io/guide/deployment">https://angular.io/guide/deployment</a></p>
+<p><a href="https://tomcat.apache.org/tomcat-9.0-doc/windows-service-howto.html">https://tomcat.apache.org/tomcat-9.0-doc/windows-service-howto.html</a></p>
+<p><a href="https://stackoverflow.com/questions/51042875/url-rewriting-angular-4-on-tomcat-8-server">https://stackoverflow.com/questions/51042875/url-rewriting-angular-4-on-tomcat-8-server</a></p>
+<p><a href="https://blog.miniasp.com/post/2017/01/17/Angular-2-deploy-on-IIS">https://blog.miniasp.com/post/2017/01/17/Angular-2-deploy-on-IIS</a></p>
+<!-- raw HTML omitted -->
+<p><a href="https://forum.angular.tw/t/topic/881/12">https://forum.angular.tw/t/topic/881/12</a></p>
+<p><a href="https://forum.angular.tw/t/topic/1839/2">https://forum.angular.tw/t/topic/1839/2</a></p>
+    </div>
+    <footer class="post-footer">
+     
+ 
+<div class="post-tags">     
+     
+    <a href="https://iankingh.github.io/tags/angular" rel="tag" title="Angular">#Angular#</a>
+    
+</div>
+
+
+
+     <div class="post-nav">
+    <div class="post-nav-next post-nav-item">
+    
+        <a href="https://iankingh.github.io/post/docker/docker_compose/" rel="next" title="Docker_Compose">
+        <i class="fa fa-chevron-left"></i> Docker_Compose
+        </a>
+    
+    </div>
+
+    <div class="post-nav-prev post-nav-item">
+    
+        <a href="https://iankingh.github.io/post/docker/dockerfile/" rel="prev" title="DockerFile">
+        DockerFile <i class="fa fa-chevron-right"></i>
+        </a>
+    
+    </div>
+</div>
+      
+     
+     
+     
+
+
+
+     
+    </footer>
+
+    <div class="disqus markdown">
+      <div id="disqus_thread"></div>
+<script type="text/javascript">
+
+    (function () {
+        
+        
+        
+        
+
+
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        var disqus_shortname = 'https-iankingh-github-io';
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by
+        Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </div>
+  </article>
+</section>
+
+          </div>
+        </div>
+        <div class="sidebar-toggle">
+  <div class="sidebar-toggle-line-wrap">
+    <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+    <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+    <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+  </div>
+</div>
+<aside id="sidebar" class="sidebar">
+  <div class="sidebar-inner">
+
+  <ul class="sidebar-nav motion-element">
+    <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+      文章目錄
+    </li>
+    <li class="sidebar-nav-overview" data-target="site-overview">
+      網站概覽
+    </li>
+  </ul>
+
+    <section class="site-overview sidebar-panel ">
+      <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image"
+        src="https://iankingh.github.io/img/author.jpg"
+        alt="ianhuang" />
+    <p class="site-author-name" itemprop="name">ianhuang</p>
+    <p class="site-description motion-element" itemprop="description"> 
+        Programmer &amp; Architect</p>
+</div>
+      <nav class="site-state motion-element">
+    <div class="site-state-item site-state-posts">
+      <a href="https://iankingh.github.io/post/">
+        <span class="site-state-item-count">16</span>
+        <span class="site-state-item-name">日誌</span>
+      </a>
+    </div>
+    <div class="site-state-item site-state-categories">    
+        <a href="https://iankingh.github.io/categories/">      
+         
+        <span class="site-state-item-count">2</span>
+        
+        <span class="site-state-item-name">分類</span>
+        
+        </a>
+    </div>
+
+    <div class="site-state-item site-state-tags">
+        <a href="https://iankingh.github.io/tags/">
+         
+        <span class="site-state-item-count">10</span>
+        
+        <span class="site-state-item-name">標籤</span>
+        </a>
+    </div>
+</nav>
+      
+      
+<div class="links-of-author motion-element">
+    
+        <span class="links-of-author-item">
+        <a href="https://github.com/iankingh" target="_blank" title="GitHub">
+            <i class="fa fa-fw fa-github"></i>
+            GitHub
+        </a>
+        </span>
+    
+</div>
+
+
+      
+
+      <div class="links-of-blogroll motion-element inline">
+<script type="text/javascript" src="//rf.revolvermaps.com/0/0/8.js?i=5b4f2ucxar6&amp;m=0&amp;s=220&amp;c=ff0000&amp;cr1=ffffff&amp;f=arial&amp;l=33&amp;bv=35" async="async"></script>
+</div>
+
+    </section>
+    
+<section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+    <div class="post-toc">
+        <div class="post-toc-content"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#1-編譯">1. 編譯</a></li>
+    <li><a href="#2部屬"><strong>2.部屬</strong></a></li>
+    <li><a href="#3-deploy-tomcat9">3. Deploy Tomcat9</a>
+      <ul>
+        <li><a href="#4-installing-services">4. Installing services</a></li>
+      </ul>
+    </li>
+    <li><a href="#5-404-如何解決">5. 404 如何解決</a></li>
+  </ul>
+</nav></div>
+    </div>
+</section>
+
+  </div>
+</aside>
+
+      </div>
+    </main>
+   
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  <span itemprop="copyrightYear">  &copy; 
+  2009 - 2020</span>
+  <span class="with-love"><i class="fa fa-heart"></i></span>
+  <span class="author" itemprop="copyrightHolder">ianhuang筆記</span>
+</div>
+<div class="powered-by">
+  Powered by - <a class="theme-link" href="http://gohugo.io" target="_blank" title="hugo" >Hugo v0.68.3</a>
+</div>
+<div class="theme-info">
+  Theme by - <a class="theme-link" href="https://github.com/xtfly/hugo-theme-next" target="_blank"> NexT
+  </a>
+</div>
+
+
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+      <span id="scrollpercent"><span>0</span>%</span>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+<script type="text/javascript" src="https://iankingh.github.io/js/vendor/jquery/index.js?v=2.1.3"></script>
+<script type="text/javascript" src="https://iankingh.github.io/js/vendor/fastclick/lib/fastclick.min.js?v=1.0.6"></script> 
+<script type="text/javascript" src="https://iankingh.github.io/js/vendor/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+<script type="text/javascript" src="https://iankingh.github.io/js/vendor/velocity/velocity.min.js?v=1.2.1"></script>
+<script type="text/javascript" src="https://iankingh.github.io/js/vendor/velocity/velocity.ui.min.js?v=1.2.1"></script>
+<script src="https://iankingh.github.io/js/vendor/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
+
+<script src="https://iankingh.github.io/js/vendor/fancybox/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+<script type="text/javascript" src="https://iankingh.github.io/js/utils.js"></script>
+<script type="text/javascript" src="https://iankingh.github.io/js/motion.js"></script>
+<script type="text/javascript" src="https://iankingh.github.io/js/affix.js"></script>
+<script type="text/javascript" src="https://iankingh.github.io/js/schemes/pisces.js"></script>
+
+<script type="text/javascript" src="https://iankingh.github.io/js/scrollspy.js"></script>
+<script type="text/javascript" src="https://iankingh.github.io/js/post-details.js"></script>
+<script type="text/javascript" src="https://iankingh.github.io/js/toc.js"></script>
+
+<script type="text/javascript" src="https://iankingh.github.io/js/bootstrap.js"></script>
+
+<script type="text/javascript" src="https://iankingh.github.io/js/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX", "output/HTML-CSS"],
+    tex2jax: {
+      inlineMath: [ ['$','$'] ],
+      displayMath: [ ['$$','$$'] ],
+      processEscapes: true
+    },
+    "HTML-CSS": { fonts: ["TeX"] }
+  });
+</script>
+<script src="https://iankingh.github.io/prism.js"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML' async></script>
+</body>
+</html>
