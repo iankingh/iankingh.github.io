@@ -6,13 +6,45 @@
     <description>Recent content in Posts on ianhuang筆記</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-TW</language>
-    <lastBuildDate>Tue, 06 Oct 2020 21:45:42 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 10 Jan 2021 18:04:51 +0800</lastBuildDate>
     
 	<atom:link href="https://iankingh.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Git_error</title>
+      <title>WindowsNetCmd</title>
+      <link>https://iankingh.github.io/post/net/windowsnetcmd/</link>
+      <pubDate>Sun, 10 Jan 2021 18:04:51 +0800</pubDate>
+      
+      <guid>https://iankingh.github.io/post/net/windowsnetcmd/</guid>
+      <description>&lt;p&gt;WindowsNetCmd筆記&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>IP</title>
+      <link>https://iankingh.github.io/post/net/ip/</link>
+      <pubDate>Tue, 06 Oct 2020 22:18:37 +0800</pubDate>
+      
+      <guid>https://iankingh.github.io/post/net/ip/</guid>
+      <description>&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
+&lt;p&gt;在 TCP/IP 通訊協定組的 IP 層裡，用來辨識每台電腦的東西，稱為網際網路位址 ( Internet address ) 或 IP 位址 ( IP address )。
+IP 位址是一個 32 位元的二進制數字，具有全域性，用來唯一的定義 Internet 上的一台電腦或一台路由器。
+所有 IP 位址都是唯一的。「唯一」是指一個位址只定義一個與 Internet 的連接 ( connection )。Internet 上不可以有兩台裝置有著相同的 IP 位址。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;一個 IP 位址為一個 32 位元的位址。&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;IP 位址是唯一的。&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;IPv4 的位址空間為 232 或 4,294,967,296。&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;</description>
+    </item>
+    
+    <item>
+      <title>Git_pull_error</title>
       <link>https://iankingh.github.io/post/git/git_error/</link>
       <pubDate>Tue, 06 Oct 2020 21:45:42 +0800</pubDate>
       
@@ -45,6 +77,17 @@
       
       <guid>https://iankingh.github.io/post/docker/dockerfile/</guid>
       <description></description>
+    </item>
+    
+    <item>
+      <title>AngularUseCompodoc</title>
+      <link>https://iankingh.github.io/post/angular/angularusecompodoc/</link>
+      <pubDate>Mon, 20 Jul 2020 16:17:45 +0800</pubDate>
+      
+      <guid>https://iankingh.github.io/post/angular/angularusecompodoc/</guid>
+      <description>&lt;h1 id=&#34;angularg-use-compodoc&#34;&gt;Angularg use compodoc&lt;/h1&gt;
+&lt;p&gt;compodoc是一個用於產生 Angular 靜態網頁的工具&lt;/p&gt;
+&lt;p&gt;Angular 使用 compodoc 產生說明文件&lt;/p&gt;</description>
     </item>
     
     <item>

@@ -21,6 +21,17 @@
     </item>
     
     <item>
+      <title>AngularUseCompodoc</title>
+      <link>https://iankingh.github.io/post/angular/angularusecompodoc/</link>
+      <pubDate>Mon, 20 Jul 2020 16:17:45 +0800</pubDate>
+      
+      <guid>https://iankingh.github.io/post/angular/angularusecompodoc/</guid>
+      <description>&lt;h1 id=&#34;angularg-use-compodoc&#34;&gt;Angularg use compodoc&lt;/h1&gt;
+&lt;p&gt;compodoc是一個用於產生 Angular 靜態網頁的工具&lt;/p&gt;
+&lt;p&gt;Angular 使用 compodoc 產生說明文件&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>AngularBsN02</title>
       <link>https://iankingh.github.io/post/angular/angularbsn02/</link>
       <pubDate>Sun, 05 Jul 2020 19:02:31 +0800</pubDate>

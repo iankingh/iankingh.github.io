@@ -4,13 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" /> 
-    <title>Git_error - ianhuang筆記</title>
+    <title>Git_pull_error - ianhuang筆記</title>
     <meta name="keywords" content="程式師,架構師,個人,筆記,技術">
     
-    <meta property="og:title" content="Git_error">
+    <meta property="og:title" content="Git_pull_error">
     <meta property="og:site_name" content="ianhuang筆記">
     <meta property="og:image" content="/img/author.jpg"> 
-    <meta name="title" content="Git_error - ianhuang筆記" />
+    <meta name="title" content="Git_pull_error - ianhuang筆記" />
     <meta name="description" content="筆記 | 軟體 | 架構 | Java "> 
     <link rel="shortcut icon" href="https://iankingh.github.io/img/favicon.ico" />
     <link rel="apple-touch-icon" href="https://iankingh.github.io/img/apple-touch-icon.png" />
@@ -118,7 +118,7 @@
     <header class="post-header">
       <h1 class="post-title" itemprop="name headline">
         <a class="post-title-link" href="https://iankingh.github.io/post/git/git_error/" itemprop="url">
-        Git_error
+        Git_pull_error
         </a>
       </h1>
       <div class="post-meta">
@@ -156,7 +156,7 @@
     <i class="fa fa-eye"></i>
 </span>
 <span class="post-meta-item-text">閱讀：</span>
-<span class="leancloud-visitors-count">436 字 ~1分鐘</span>
+<span class="leancloud-visitors-count">477 字 ~1分鐘</span>
 </span>
       </div>
     </header>
@@ -164,10 +164,16 @@
     <h2 id="gi-pull-error筆記">gi pull error筆記</h2>
 <p>當 git pull  出現</p>
 <pre><code>error: Your local changes to the following files would be overwritten by merge:
-
 </code></pre>
 <p>意思是本地新修改的程式碼檔案，將會被git伺服器上的程式碼覆蓋</p>
-<p>解決方法如下：</p>
+<p>git pull == git fetch + git merge</p>
+<p>發生衝突時 可以先試以下步驟</p>
+<pre><code>先
+git fetch 
+再
+git merge origin/master
+</code></pre>
+<p>如果還是無法解決可以使用的解決方法如下：</p>
 <h3 id="方法1-使用stash">方法1： 使用stash</h3>
 <p>如果你想保留剛才本地修改的程式碼，並把git伺服器上的程式碼pull到本地（本地剛才修改的程式碼將會被暫時封存起來）</p>
 <pre><code class="language-shell">$ git stash 
@@ -180,7 +186,6 @@ $ git stash pop
 </code></pre>
 <pre><code class="language-shell">$ git reset --hard
 $ git pull origin master
-
 </code></pre>
 <p><strong>注：</strong> 其中origin master表示git的主分支。</p>
 <h3 id="方法3--使用分支-推薦-正統">方法3 : 使用分支( 推薦 正統)</h3>
@@ -193,7 +198,6 @@ $ git pull origin master
 $ git commit -m &quot;add dev&quot; 
 $ git checkout master 
 $ git merge master
-
 </code></pre>
 <p><strong>注：</strong>  感謝 <strong>KFC 前輩</strong>的提供正確解決衝突的教學</p>
 <h2 id="參考">參考</h2>
@@ -215,6 +219,10 @@ $ git merge master
 
      <div class="post-nav">
     <div class="post-nav-next post-nav-item">
+    
+        <a href="https://iankingh.github.io/post/net/ip/" rel="next" title="IP">
+        <i class="fa fa-chevron-left"></i> IP
+        </a>
     
     </div>
 
@@ -293,14 +301,14 @@ $ git merge master
       <nav class="site-state motion-element">
     <div class="site-state-item site-state-posts">
       <a href="https://iankingh.github.io/post/">
-        <span class="site-state-item-count">16</span>
+        <span class="site-state-item-count">19</span>
         <span class="site-state-item-name">日誌</span>
       </a>
     </div>
     <div class="site-state-item site-state-categories">    
         <a href="https://iankingh.github.io/categories/">      
          
-        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-count">3</span>
         
         <span class="site-state-item-name">分類</span>
         
@@ -310,7 +318,7 @@ $ git merge master
     <div class="site-state-item site-state-tags">
         <a href="https://iankingh.github.io/tags/">
          
-        <span class="site-state-item-count">10</span>
+        <span class="site-state-item-count">14</span>
         
         <span class="site-state-item-name">標籤</span>
         </a>
@@ -365,7 +373,7 @@ $ git merge master
       <div class="footer-inner">
         <div class="copyright" >
   <span itemprop="copyrightYear">  &copy; 
-  2009 - 2020</span>
+  2009 - 2021</span>
   <span class="with-love"><i class="fa fa-heart"></i></span>
   <span class="author" itemprop="copyrightHolder">ianhuang筆記</span>
 </div>

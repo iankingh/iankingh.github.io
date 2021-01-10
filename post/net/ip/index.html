@@ -1,0 +1,469 @@
+<!DOCTYPE HTML>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" /> 
+    <title>IP - ianhuang筆記</title>
+    <meta name="keywords" content="程式師,架構師,個人,筆記,技術">
+    
+    <meta property="og:title" content="IP">
+    <meta property="og:site_name" content="ianhuang筆記">
+    <meta property="og:image" content="/img/author.jpg"> 
+    <meta name="title" content="IP - ianhuang筆記" />
+    <meta name="description" content="筆記 | 軟體 | 架構 | Java "> 
+    <link rel="shortcut icon" href="https://iankingh.github.io/img/favicon.ico" />
+    <link rel="apple-touch-icon" href="https://iankingh.github.io/img/apple-touch-icon.png" />
+    <link rel="apple-touch-icon-precomposed" href="https://iankingh.github.io/img/apple-touch-icon.png" />
+    <link href="https://iankingh.github.io/js/vendor/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+    <link href="https://iankingh.github.io/js/vendor/fancybox/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+    <link href="https://iankingh.github.io/css/main.css" rel="stylesheet" type="text/css" />
+    
+    <link href="https://iankingh.github.io/prism.css" rel="stylesheet"   type="text/css"/>
+    <script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Pisces',
+    sidebar: {"position":"left","display":"post"},
+     fancybox: true, 
+    motion: true
+  };
+</script>
+</head>
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+<div class="container one-collumn sidebar-position-left page-home  ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"> <div class="site-meta  custom-logo ">
+
+  <div class="custom-logo-site-title">
+    <a href="https://iankingh.github.io/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">ianhuang筆記</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle">總有一天，你的日積月累，會變成他人的望塵莫及</p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+    <ul id="menu" class="menu">
+      
+      
+        <li class="menu-item ">
+          <a href="https://iankingh.github.io/" rel="section">
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />首頁
+          </a>
+        </li>
+      
+        <li class="menu-item ">
+          <a href="https://iankingh.github.io/categories/%E6%8A%80%E8%A1%93/" rel="section">
+              <i class="menu-item-icon fa fa-fw fa-code"></i> <br />技術
+          </a>
+        </li>
+      
+        <li class="menu-item ">
+          <a href="https://iankingh.github.io/categories/%E7%AD%86%E8%A8%98/" rel="section">
+              <i class="menu-item-icon fa fa-fw fa-book"></i> <br />筆記
+          </a>
+        </li>
+      
+        <li class="menu-item ">
+          <a href="https://iankingh.github.io/post/" rel="section">
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />歸檔
+          </a>
+        </li>
+      
+        <li class="menu-item ">
+          <a href="https://iankingh.github.io/about/" rel="section">
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />關於
+          </a>
+        </li>
+      
+      <li class="menu-item menu-item-search">
+        <a href="javascript:;" class="popup-trigger"> <i class="menu-item-icon fa fa-search fa-fw"></i> <br /> 搜索</a>
+      </li>
+    </ul>
+    <div class="site-search">
+      <div class="popup">
+ <span class="search-icon fa fa-search"></span>
+ <input type="text" id="local-search-input">
+ <div id="local-search-result"></div>
+ <span class="popup-btn-close">close</span>
+</div>
+
+    </div>
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+<section id="posts" class="posts-expand">
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+      <h1 class="post-title" itemprop="name headline">
+        <a class="post-title-link" href="https://iankingh.github.io/post/net/ip/" itemprop="url">
+        IP
+        </a>
+      </h1>
+      <div class="post-meta">
+      <span class="post-time">
+<span class="post-meta-item-icon">
+    <i class="fa fa-calendar-o"></i>
+</span>
+<span class="post-meta-item-text">時間：</span>
+<time itemprop="dateCreated" datetime="2016-03-22T13:04:35+08:00" content="2020-10-06">
+    2020-10-06
+</time>
+</span> 
+      
+
+  <span class="post-category" >
+  &nbsp; | &nbsp;
+  <span class="post-meta-item-icon">
+    <i class="fa fa-folder-o"></i>
+  </span>
+  <span class="post-meta-item-text">分類：</span>
+  
+    <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+      <a href="https://iankingh.github.io/categories/%E6%8A%80%E8%A1%93" itemprop="url" rel="index">
+        <span itemprop="name">技術</span>
+      </a>
+      &nbsp; 
+    </span>
+  
+</span>
+
+
+       <span>
+&nbsp; | &nbsp;
+<span class="post-meta-item-icon">
+    <i class="fa fa-eye"></i>
+</span>
+<span class="post-meta-item-text">閱讀：</span>
+<span class="leancloud-visitors-count">1110 字 ~3分鐘</span>
+</span>
+      </div>
+    </header>
+    <div class="post-body" itemprop="articleBody">
+    <h2 id="前言">前言</h2>
+<p>在 TCP/IP 通訊協定組的 IP 層裡，用來辨識每台電腦的東西，稱為網際網路位址 ( Internet address ) 或 IP 位址 ( IP address )。
+IP 位址是一個 32 位元的二進制數字，具有全域性，用來唯一的定義 Internet 上的一台電腦或一台路由器。
+所有 IP 位址都是唯一的。「唯一」是指一個位址只定義一個與 Internet 的連接 ( connection )。Internet 上不可以有兩台裝置有著相同的 IP 位址。</p>
+<ol>
+<li>
+<p><strong>一個 IP 位址為一個 32 位元的位址。</strong></p>
+</li>
+<li>
+<p><strong>IP 位址是唯一的。</strong></p>
+</li>
+<li>
+<p><strong>IPv4 的位址空間為 232 或 4,294,967,296。</strong></p>
+</li>
+</ol>
+<h2 id="私有網路-ip-範圍">私有網路 IP 範圍</h2>
+<table>
+<thead>
+<tr>
+<th align="center">RFC1918 規定區塊名</th>
+<th align="center">IP位址區段</th>
+<th align="center">IP數量</th>
+<th align="center"><a href="https://zh.wikipedia.org/wiki/%E5%88%86%E7%B1%BB%E7%BD%91%E7%BB%9C">分類網路</a> 說明</th>
+<th align="center">最大<a href="https://zh.wikipedia.org/wiki/%E6%97%A0%E7%B1%BB%E5%88%AB%E5%9F%9F%E9%97%B4%E8%B7%AF%E7%94%B1">CIDR</a>區塊 （<a href="https://zh.wikipedia.org/wiki/%E5%AD%90%E7%BD%91#%E7%BD%91%E7%BB%9C%E6%8E%A9%E7%A0%81">子網路遮罩</a>）</th>
+<th align="center">主機端位長</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">24位元區塊</td>
+<td align="center">10.0.0.0 – 10.255.255.255</td>
+<td align="center">16,777,216</td>
+<td align="center">單個A類網路</td>
+<td align="center">10.0.0.0/8 (255.0.0.0)</td>
+<td align="center">24位元</td>
+</tr>
+<tr>
+<td align="center">20位區塊</td>
+<td align="center">172.16.0.0 – 172.31.255.255</td>
+<td align="center">1,048,576</td>
+<td align="center">16個連續B類網路</td>
+<td align="center">172.16.0.0/12 (255.240.0.0)</td>
+<td align="center">20位</td>
+</tr>
+<tr>
+<td align="center">16位元區塊</td>
+<td align="center">192.168.0.0 – 192.168.255.255</td>
+<td align="center">65,536</td>
+<td align="center">256個連續C類網路</td>
+<td align="center">192.168.0.0/16 (255.255.0.0)</td>
+<td align="center">16位元</td>
+</tr>
+</tbody>
+</table>
+<p>正是由於這些限制，當我們使用這些私有位址來設定網路的時候，就無需擔心會和其它也使用相同位址的網路衝突。而這些無需註冊就能自由使用的 IP ，我們稱之為 <strong>私有 IP( Private IP )</strong>。當我們架設 IP 網路的時候，私有 IP 給與我們很大的方便。比方說：您目前的公司還沒有連上Internet，且也沒有或得公共 IP 的註冊。倘若使用公共 IP 的話，等到以後真正要連上網路的時候，就很可能和別人衝突了。其壞處是：由於您的 IP 不是合法授權使用的，別人跟本連不進來，而且，與您衝突的 IP 您卻永遠沒法連上去(若對方是您的最大客戶可就慘了)。若是那時候再重新規劃 IP 的話，將是件非常頭痛的問題！</p>
+<p>解決的辦法是：我們可以先利用私有位址來架設網路，等到真要連上 intetnet 的時候，我們可以使用代理伺服器( proxy )或 IP 轉換( NAT &mdash; Network Addresss Translation) 等技術，配合新註冊的 IP 就可以了。</p>
+<p>由於私有位址在 Internet 上是不能路由的，用來架設企業內部網路，在安全上面也是有所幫助的。</p>
+<h2 id="路由器">路由器</h2>
+<p>兩個不同的網域是無法透過廣播來資料的傳遞，此時便需要 IP 的路徑選擇 (routing) 功能，才能決定要透過哪個網路來傳送封包，
+路由器乃是決定最佳路徑的方式，如果沒有路由器的話，就無法在不同網域之間傳送資料了。
+例如，192.168.0.0 與 192.168.1.0 是不同網域，所以主機 A 與主機 B 是不能直接互通資料，必須有路由器找尋需要經過哪些網路才能到達 B 網域的主機 B。</p>
+<ol>
+<li>查詢 IP 封包的目標 IP 位址：
+當主機 A 有 IP 封包需要傳送時，主機會查閱 IP 封包表頭的目標 IP 位址；</li>
+<li>查詢主機所在的網域：
+當主機 A 發現目標 IP 與本機 IP 的 Net_ID 相同時 (同一網域)，則主機 A 會直接透過區域網路功能，將資料直接傳送給目的地主機；</li>
+<li>送出封包至路由器：
+在本例中，主機 A 與主機 B 並非同一網域，因此主機 A 直接將該 IP 封包送到路由器上，路由器接收到這個封包後，會分析路由資料表當中與目的地網路之間的距離、
+下一個負責中繼的路由器、與路由器互相連接的來源端 Port，然後繼續傳輸到正確的目標主機 B。如下圖所示：</li>
+</ol>
+<p>參考</p>
+<p><a href="http://dns-learning.twnic.net.tw/internet/intro7.html">http://dns-learning.twnic.net.tw/internet/intro7.html</a></p>
+<p><a href="https://www.netadmin.com.tw/netadmin/zh-tw/technology/EFA52337DD5D4026BB9E594A3B71EC5B">https://www.netadmin.com.tw/netadmin/zh-tw/technology/EFA52337DD5D4026BB9E594A3B71EC5B</a></p>
+<p><a href="https://zh.wikipedia.org/wiki/%E4%B8%93%E7%94%A8%E7%BD%91%E7%BB%9C">https://zh.wikipedia.org/wiki/%E4%B8%93%E7%94%A8%E7%BD%91%E7%BB%9C</a></p>
+<p><a href="http://kevin.hwai.edu.tw/~kevin/material/EAssistant/IP_Class.htm">http://kevin.hwai.edu.tw/~kevin/material/EAssistant/IP_Class.htm</a></p>
+    </div>
+    <footer class="post-footer">
+     
+ 
+<div class="post-tags">     
+     
+    <a href="https://iankingh.github.io/tags/ip" rel="tag" title="ip">#ip#</a>
+    
+    <a href="https://iankingh.github.io/tags/internet" rel="tag" title="internet">#internet#</a>
+    
+</div>
+
+
+
+     <div class="post-nav">
+    <div class="post-nav-next post-nav-item">
+    
+        <a href="https://iankingh.github.io/post/net/windowsnetcmd/" rel="next" title="WindowsNetCmd">
+        <i class="fa fa-chevron-left"></i> WindowsNetCmd
+        </a>
+    
+    </div>
+
+    <div class="post-nav-prev post-nav-item">
+    
+        <a href="https://iankingh.github.io/post/git/git_error/" rel="prev" title="Git_pull_error">
+        Git_pull_error <i class="fa fa-chevron-right"></i>
+        </a>
+    
+    </div>
+</div>
+      
+     
+     
+     
+
+
+
+     
+    </footer>
+
+    <div class="disqus markdown">
+      <div id="disqus_thread"></div>
+<script type="text/javascript">
+
+    (function () {
+        
+        
+        
+        
+
+
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        var disqus_shortname = 'https-iankingh-github-io';
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by
+        Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </div>
+  </article>
+</section>
+
+          </div>
+        </div>
+        <div class="sidebar-toggle">
+  <div class="sidebar-toggle-line-wrap">
+    <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+    <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+    <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+  </div>
+</div>
+<aside id="sidebar" class="sidebar">
+  <div class="sidebar-inner">
+
+  <ul class="sidebar-nav motion-element">
+    <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+      文章目錄
+    </li>
+    <li class="sidebar-nav-overview" data-target="site-overview">
+      網站概覽
+    </li>
+  </ul>
+
+    <section class="site-overview sidebar-panel ">
+      <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image"
+        src="https://iankingh.github.io/img/author.jpg"
+        alt="ianhuang" />
+    <p class="site-author-name" itemprop="name">ianhuang</p>
+    <p class="site-description motion-element" itemprop="description"> 
+        Programmer &amp; Architect</p>
+</div>
+      <nav class="site-state motion-element">
+    <div class="site-state-item site-state-posts">
+      <a href="https://iankingh.github.io/post/">
+        <span class="site-state-item-count">19</span>
+        <span class="site-state-item-name">日誌</span>
+      </a>
+    </div>
+    <div class="site-state-item site-state-categories">    
+        <a href="https://iankingh.github.io/categories/">      
+         
+        <span class="site-state-item-count">3</span>
+        
+        <span class="site-state-item-name">分類</span>
+        
+        </a>
+    </div>
+
+    <div class="site-state-item site-state-tags">
+        <a href="https://iankingh.github.io/tags/">
+         
+        <span class="site-state-item-count">14</span>
+        
+        <span class="site-state-item-name">標籤</span>
+        </a>
+    </div>
+</nav>
+      
+      
+<div class="links-of-author motion-element">
+    
+        <span class="links-of-author-item">
+        <a href="https://github.com/iankingh" target="_blank" title="GitHub">
+            <i class="fa fa-fw fa-github"></i>
+            GitHub
+        </a>
+        </span>
+    
+</div>
+
+
+      
+
+      <div class="links-of-blogroll motion-element inline">
+<script type="text/javascript" src="//rf.revolvermaps.com/0/0/8.js?i=5b4f2ucxar6&amp;m=0&amp;s=220&amp;c=ff0000&amp;cr1=ffffff&amp;f=arial&amp;l=33&amp;bv=35" async="async"></script>
+</div>
+
+    </section>
+    
+<section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+    <div class="post-toc">
+        <div class="post-toc-content"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#前言">前言</a></li>
+    <li><a href="#私有網路-ip-範圍">私有網路 IP 範圍</a></li>
+    <li><a href="#路由器">路由器</a></li>
+  </ul>
+</nav></div>
+    </div>
+</section>
+
+  </div>
+</aside>
+
+      </div>
+    </main>
+   
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  <span itemprop="copyrightYear">  &copy; 
+  2009 - 2021</span>
+  <span class="with-love"><i class="fa fa-heart"></i></span>
+  <span class="author" itemprop="copyrightHolder">ianhuang筆記</span>
+</div>
+<div class="powered-by">
+  Powered by - <a class="theme-link" href="http://gohugo.io" target="_blank" title="hugo" >Hugo v0.68.3</a>
+</div>
+<div class="theme-info">
+  Theme by - <a class="theme-link" href="https://github.com/xtfly/hugo-theme-next" target="_blank"> NexT
+  </a>
+</div>
+
+
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+      <span id="scrollpercent"><span>0</span>%</span>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+<script type="text/javascript" src="https://iankingh.github.io/js/vendor/jquery/index.js?v=2.1.3"></script>
+<script type="text/javascript" src="https://iankingh.github.io/js/vendor/fastclick/lib/fastclick.min.js?v=1.0.6"></script> 
+<script type="text/javascript" src="https://iankingh.github.io/js/vendor/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+<script type="text/javascript" src="https://iankingh.github.io/js/vendor/velocity/velocity.min.js?v=1.2.1"></script>
+<script type="text/javascript" src="https://iankingh.github.io/js/vendor/velocity/velocity.ui.min.js?v=1.2.1"></script>
+<script src="https://iankingh.github.io/js/vendor/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
+
+<script src="https://iankingh.github.io/js/vendor/fancybox/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+<script type="text/javascript" src="https://iankingh.github.io/js/utils.js"></script>
+<script type="text/javascript" src="https://iankingh.github.io/js/motion.js"></script>
+<script type="text/javascript" src="https://iankingh.github.io/js/affix.js"></script>
+<script type="text/javascript" src="https://iankingh.github.io/js/schemes/pisces.js"></script>
+
+<script type="text/javascript" src="https://iankingh.github.io/js/scrollspy.js"></script>
+<script type="text/javascript" src="https://iankingh.github.io/js/post-details.js"></script>
+<script type="text/javascript" src="https://iankingh.github.io/js/toc.js"></script>
+
+<script type="text/javascript" src="https://iankingh.github.io/js/bootstrap.js"></script>
+
+<script type="text/javascript" src="https://iankingh.github.io/js/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX", "output/HTML-CSS"],
+    tex2jax: {
+      inlineMath: [ ['$','$'] ],
+      displayMath: [ ['$$','$$'] ],
+      processEscapes: true
+    },
+    "HTML-CSS": { fonts: ["TeX"] }
+  });
+</script>
+<script src="https://iankingh.github.io/prism.js"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML' async></script>
+</body>
+</html>

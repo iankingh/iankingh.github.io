@@ -1,7 +1,57 @@
 <search>
     
      <entry>
-        <title>Git_error</title>
+        <title>WindowsNetCmd</title>
+        <url>https://iankingh.github.io/post/net/windowsnetcmd/</url>
+        <categories>
+          <category>categories</category>
+        </categories>
+        <tags>
+          <tag>Windows</tag><tag>Cmd</tag>
+        </tags>
+        <content type="html"> WindowsNetCmd筆記
+前言 在網路的世界有 Client 端 及 Server 端 ，有時Server 時要對Cleint 端 開放 特殊服務的Port 才可以正常使用服務
+Windows網路指令: ping ip ping命令是用來檢測網路是否暢通的 ping指的是端對端連通，通常用來作為可用性的檢查 一般來說server 都會開 ping service，所以 ping ip，就可以知道該 server 是否存在。
+ping www.google.com telnet ip port Telnet是一種應用層協定，可以用來確認某個 ip的port 有沒有 TCP 服務。
+telnet 192.168.70.33 80 netstat 查看目前所在機器有那些網路連線，包含 TCP 和 UDP。 了解網絡的整體使用情況。它可以顯示當前正在活動的網絡連接的詳細信息，如採用的協議類型（看tcp，udp）、當前主機與遠端相連主機（一個或多個）的IP位址以及 它們之間的連接狀態等。
+netstat監控TCP/IP網絡的非常有用的工具，它可以顯示路由表、實際的網絡連接以及每一個網絡接口設備的狀態信息。
+netstat -a # 列出所有埠 netstat -n #顯示所有已建立的有效連接。 netstat -at # 列出所有TCP埠 netstat -au # 列出所有UDP埠  &amp;ldquo;-a&amp;quot;選項意在顯示所有連接，當不附加&amp;rdquo;-n&amp;quot;選項時，它顯示的是本地計算機的 netbios名字&#43;埠號。 加了&amp;rdquo;-n&amp;quot;選項後，它顯示的是本地IP位址&#43;埠號。
+tracert tracert 是一個簡單的網絡診斷工具，可以列出分組經過的路由節點（通過tracert命令，就能知道本機與目標主機之間經過多台主機，即經過多少路由。）
+tracert www.google.com 參考
+ping、telnet、tracert簡介與使用 - IT閱讀
+https://www.itread01.com/content/1550289784.html
+windows網絡命令：ping、ipconfig、tracert、netstat、arp - 每日頭條
+https://kknews.cc/zh-tw/code/o3jx8z5.html
+</content>
+    </entry>
+    
+     <entry>
+        <title>IP</title>
+        <url>https://iankingh.github.io/post/net/ip/</url>
+        <categories>
+          <category>技術</category>
+        </categories>
+        <tags>
+          <tag>ip</tag><tag>internet</tag>
+        </tags>
+        <content type="html"> 前言 在 TCP/IP 通訊協定組的 IP 層裡，用來辨識每台電腦的東西，稱為網際網路位址 ( Internet address ) 或 IP 位址 ( IP address )。 IP 位址是一個 32 位元的二進制數字，具有全域性，用來唯一的定義 Internet 上的一台電腦或一台路由器。 所有 IP 位址都是唯一的。「唯一」是指一個位址只定義一個與 Internet 的連接 ( connection )。Internet 上不可以有兩台裝置有著相同的 IP 位址。
+  一個 IP 位址為一個 32 位元的位址。
+  IP 位址是唯一的。
+  IPv4 的位址空間為 232 或 4,294,967,296。
+  私有網路 IP 範圍    RFC1918 規定區塊名 IP位址區段 IP數量 分類網路 說明 最大CIDR區塊 （子網路遮罩） 主機端位長     24位元區塊 10.0.0.0 – 10.255.255.255 16,777,216 單個A類網路 10.0.0.0/8 (255.0.0.0) 24位元   20位區塊 172.16.0.0 – 172.31.255.255 1,048,576 16個連續B類網路 172.16.0.0/12 (255.240.0.0) 20位   16位元區塊 192.168.0.0 – 192.168.255.255 65,536 256個連續C類網路 192.168.0.0/16 (255.255.0.0) 16位元    正是由於這些限制，當我們使用這些私有位址來設定網路的時候，就無需擔心會和其它也使用相同位址的網路衝突。而這些無需註冊就能自由使用的 IP ，我們稱之為 私有 IP( Private IP )。當我們架設 IP 網路的時候，私有 IP 給與我們很大的方便。比方說：您目前的公司還沒有連上Internet，且也沒有或得公共 IP 的註冊。倘若使用公共 IP 的話，等到以後真正要連上網路的時候，就很可能和別人衝突了。其壞處是：由於您的 IP 不是合法授權使用的，別人跟本連不進來，而且，與您衝突的 IP 您卻永遠沒法連上去(若對方是您的最大客戶可就慘了)。若是那時候再重新規劃 IP 的話，將是件非常頭痛的問題！
+解決的辦法是：我們可以先利用私有位址來架設網路，等到真要連上 intetnet 的時候，我們可以使用代理伺服器( proxy )或 IP 轉換( NAT &amp;mdash; Network Addresss Translation) 等技術，配合新註冊的 IP 就可以了。
+由於私有位址在 Internet 上是不能路由的，用來架設企業內部網路，在安全上面也是有所幫助的。
+路由器 兩個不同的網域是無法透過廣播來資料的傳遞，此時便需要 IP 的路徑選擇 (routing) 功能，才能決定要透過哪個網路來傳送封包， 路由器乃是決定最佳路徑的方式，如果沒有路由器的話，就無法在不同網域之間傳送資料了。 例如，192.168.0.0 與 192.168.1.0 是不同網域，所以主機 A 與主機 B 是不能直接互通資料，必須有路由器找尋需要經過哪些網路才能到達 B 網域的主機 B。
+ 查詢 IP 封包的目標 IP 位址： 當主機 A 有 IP 封包需要傳送時，主機會查閱 IP 封包表頭的目標 IP 位址； 查詢主機所在的網域： 當主機 A 發現目標 IP 與本機 IP 的 Net_ID 相同時 (同一網域)，則主機 A 會直接透過區域網路功能，將資料直接傳送給目的地主機； 送出封包至路由器： 在本例中，主機 A 與主機 B 並非同一網域，因此主機 A 直接將該 IP 封包送到路由器上，路由器接收到這個封包後，會分析路由資料表當中與目的地網路之間的距離、 下一個負責中繼的路由器、與路由器互相連接的來源端 Port，然後繼續傳輸到正確的目標主機 B。如下圖所示：  參考
+http://dns-learning.twnic.net.tw/internet/intro7.html
+https://www.netadmin.com.tw/netadmin/zh-tw/technology/EFA52337DD5D4026BB9E594A3B71EC5B
+https://zh.wikipedia.org/wiki/%E4%B8%93%E7%94%A8%E7%BD%91%E7%BB%9C
+http://kevin.hwai.edu.tw/~kevin/material/EAssistant/IP_Class.htm
+</content>
+    </entry>
+    
+     <entry>
+        <title>Git_pull_error</title>
         <url>https://iankingh.github.io/post/git/git_error/</url>
         <categories>
           <category>筆記</category>
@@ -11,7 +61,9 @@
         </tags>
         <content type="html"> gi pull error筆記 當 git pull 出現
 error: Your local changes to the following files would be overwritten by merge: 意思是本地新修改的程式碼檔案，將會被git伺服器上的程式碼覆蓋
-解決方法如下：
+git pull == git fetch &#43; git merge
+發生衝突時 可以先試以下步驟
+先git fetch 再git merge origin/master 如果還是無法解決可以使用的解決方法如下：
 方法1： 使用stash 如果你想保留剛才本地修改的程式碼，並把git伺服器上的程式碼pull到本地（本地剛才修改的程式碼將會被暫時封存起來）
 $ git stash $ git pull origin master$ git stash pop **注：**用 pop 指令，可以把某個 Stash 拿出來並套用在目前的分支上。套用成功之後，那個套用過的 Stash 就會被刪除。
 方法2 : 放棄變更 如果你想完全地覆蓋本地的程式碼，只保留伺服器端程式碼，則直接回退到上一個版本，再進行pull： $ git reset --hard$ git pull origin master 注： 其中origin master表示git的主分支。
@@ -115,6 +167,28 @@ $ docker build -t svendowideit/ambassador . Sending build context to Docker dae
 參考
 Dockerfile 使用介紹 - 純潔的微笑博客
 http://www.ityouknow.com/docker/2018/03/12/docker-use-dockerfile.html
+</content>
+    </entry>
+    
+     <entry>
+        <title>AngularUseCompodoc</title>
+        <url>https://iankingh.github.io/post/angular/angularusecompodoc/</url>
+        <categories>
+          <category>筆記</category>
+        </categories>
+        <tags>
+          <tag>Angular</tag><tag>FrontEnd</tag>
+        </tags>
+        <content type="html"> Angularg use compodoc compodoc是一個用於產生 Angular 靜態網頁的工具
+Angular 使用 compodoc 產生說明文件
+安裝compodoc 以 local 模式安裝 $ npm install --save-dev @compodoc/compodoc 以global(全域) 模式安裝 $ npm install -g @compodoc/compodoc 產生文件 $ compodoc -p tsconfig.json compodoc -p src\tsconfig.app.json -s -r 8888compodoc -p tsconfig.app.json src -s -r 8888npx compodoc -p tsconfig.json -s -r 8888npx compodoc -p tsconfig.base.json -s -r 8888 啟用本地文件網站 compodoc -p tsconfig.json -s jsDoc Tags @Injectab()export class HelloService{constructor(){}/*** Represents a hellWord.* @param {string} UserName - The UserName of the hellWord.* @param {string} age - The age of the hellWord.*/hellWord(UserName: string, age : string) {}} 參考 Angular 工具篇之文档管理 | 前端修仙之路
+https://semlinker.com/ng-compodoc-intro/
+Angular #10 Angular Documentation
+https://tpu.thinkpower.com.tw/tpu/articleDetails/864
+Javascript文檔註解規則使用方式@use JSDoc | ucamc
+https://www.ucamc.com/e-learning/javascript/250-javascript-use-jsdoc
+你寫的文件別人看得懂嗎？：compodoc | Jonny Huang 的學習筆記
+https://jonny-huang.github.io/angular/training/23_compodoc/
 </content>
     </entry>
     
