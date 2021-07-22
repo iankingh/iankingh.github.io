@@ -1,3 +1,4 @@
+
 <!DOCTYPE HTML>
 <html lang="zh-TW">
 <head>
@@ -55,6 +56,19 @@
     <span class="btn-bar"></span>
   </button>
 </div>
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'G-WF6NBSJFE5', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
 
 <nav class="site-nav">
     <ul id="menu" class="menu">
@@ -156,7 +170,7 @@
     <i class="fa fa-eye"></i>
 </span>
 <span class="post-meta-item-text">閱讀：</span>
-<span class="leancloud-visitors-count">248 字 ~1分鐘</span>
+<span class="leancloud-visitors-count">244 字 ~1分鐘</span>
 </span>
       </div>
     </header>
@@ -174,17 +188,16 @@
 <h3 id="產生文件">產生文件</h3>
 <pre><code class="language-sh">$ compodoc -p tsconfig.json
 </code></pre>
+<h3 id="啟用本地文件網站">啟用本地文件網站</h3>
+<pre><code class="language-shell">compodoc -p tsconfig.json -s
+</code></pre>
 <pre><code class="language-sh">compodoc -p src\tsconfig.app.json -s -r 8888
-
 
 compodoc -p tsconfig.app.json src -s -r 8888
 
 npx compodoc -p tsconfig.json -s -r 8888
 
 npx compodoc -p tsconfig.base.json -s -r 8888
-</code></pre>
-<h3 id="啟用本地文件網站">啟用本地文件網站</h3>
-<pre><code class="language-shell">compodoc -p tsconfig.json -s
 </code></pre>
 <h3 id="jsdoc-tags">jsDoc Tags</h3>
 <pre><code class="language-typescript">
@@ -193,9 +206,7 @@ npx compodoc -p tsconfig.base.json -s -r 8888
 export class HelloService{
     
     constructor(){
-        
     }
-    
     /**
     * Represents a hellWord.
     * @param {string} UserName - The UserName of the hellWord.
@@ -206,14 +217,10 @@ export class HelloService{
 }
 </code></pre>
 <h2 id="參考">參考</h2>
-<p>Angular 工具篇之文档管理 | 前端修仙之路</p>
-<p><a href="https://semlinker.com/ng-compodoc-intro/">https://semlinker.com/ng-compodoc-intro/</a></p>
-<p>Angular #10 Angular Documentation</p>
-<p><a href="https://tpu.thinkpower.com.tw/tpu/articleDetails/864">https://tpu.thinkpower.com.tw/tpu/articleDetails/864</a></p>
-<p>Javascript文檔註解規則使用方式@use JSDoc | ucamc</p>
-<p><a href="https://www.ucamc.com/e-learning/javascript/250-javascript-use-jsdoc">https://www.ucamc.com/e-learning/javascript/250-javascript-use-jsdoc</a></p>
-<p>你寫的文件別人看得懂嗎？：compodoc | Jonny Huang 的學習筆記</p>
-<p><a href="https://jonny-huang.github.io/angular/training/23_compodoc/">https://jonny-huang.github.io/angular/training/23_compodoc/</a></p>
+<p><a href="https://semlinker.com/ng-compodoc-intro/">Angular 工具篇之文档管理 | 前端修仙之路</a></p>
+<p><a href="https://tpu.thinkpower.com.tw/tpu/articleDetails/864">Angular #10 Angular Documentation</a></p>
+<p><a href="https://www.ucamc.com/e-learning/javascript/250-javascript-use-jsdoc">Javascript文檔註解規則使用方式@use JSDoc | ucamc</a></p>
+<p><a href="https://jonny-huang.github.io/angular/training/23_compodoc/">你寫的文件別人看得懂嗎？：compodoc | Jonny Huang 的學習筆記</a></p>
     </div>
     <footer class="post-footer">
      
@@ -258,24 +265,26 @@ export class HelloService{
     <div class="disqus markdown">
       <div id="disqus_thread"></div>
 <script type="text/javascript">
-
     (function () {
         
         
         
         
-
-
-        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        var dsq = document.createElement('script');
+        dsq.type = 'text/javascript';
+        dsq.async = true;
         var disqus_shortname = 'https-iankingh-github-io';
         dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
         (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
     })();
 </script>
-<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by
-        Disqus.</a></noscript>
+<noscript>Please enable JavaScript to view the 
+    <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+</noscript>
 <a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
     </div>
+
+
   </article>
 </section>
 
@@ -312,14 +321,14 @@ export class HelloService{
       <nav class="site-state motion-element">
     <div class="site-state-item site-state-posts">
       <a href="https://iankingh.github.io/post/">
-        <span class="site-state-item-count">19</span>
+        <span class="site-state-item-count">32</span>
         <span class="site-state-item-name">日誌</span>
       </a>
     </div>
     <div class="site-state-item site-state-categories">    
         <a href="https://iankingh.github.io/categories/">      
          
-        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-count">4</span>
         
         <span class="site-state-item-name">分類</span>
         
@@ -329,7 +338,7 @@ export class HelloService{
     <div class="site-state-item site-state-tags">
         <a href="https://iankingh.github.io/tags/">
          
-        <span class="site-state-item-count">14</span>
+        <span class="site-state-item-count">23</span>
         
         <span class="site-state-item-name">標籤</span>
         </a>

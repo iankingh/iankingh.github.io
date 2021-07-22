@@ -1,16 +1,17 @@
+
 <!DOCTYPE HTML>
 <html lang="zh-TW">
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" /> 
-    <title>[從 0 開始的 JAVA 生活]No.0 java環境變數 (Environment Variable)設定 - ianhuang筆記</title>
+    <title>[從 0 開始的 JAVA 生活] No.0  JAVA 環境安裝 - ianhuang筆記</title>
     <meta name="keywords" content="程式師,架構師,個人,筆記,技術">
     
-    <meta property="og:title" content="[從 0 開始的 JAVA 生活]No.0 java環境變數 (Environment Variable)設定">
+    <meta property="og:title" content="[從 0 開始的 JAVA 生活] No.0  JAVA 環境安裝">
     <meta property="og:site_name" content="ianhuang筆記">
     <meta property="og:image" content="/img/author.jpg"> 
-    <meta name="title" content="[從 0 開始的 JAVA 生活]No.0 java環境變數 (Environment Variable)設定 - ianhuang筆記" />
+    <meta name="title" content="[從 0 開始的 JAVA 生活] No.0  JAVA 環境安裝 - ianhuang筆記" />
     <meta name="description" content="筆記 | 軟體 | 架構 | Java "> 
     <link rel="shortcut icon" href="https://iankingh.github.io/img/favicon.ico" />
     <link rel="apple-touch-icon" href="https://iankingh.github.io/img/apple-touch-icon.png" />
@@ -55,6 +56,19 @@
     <span class="btn-bar"></span>
   </button>
 </div>
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'G-WF6NBSJFE5', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
 
 <nav class="site-nav">
     <ul id="menu" class="menu">
@@ -118,7 +132,7 @@
     <header class="post-header">
       <h1 class="post-title" itemprop="name headline">
         <a class="post-title-link" href="https://iankingh.github.io/post/java/java_tutorial_0/" itemprop="url">
-        [從 0 開始的 JAVA 生活]No.0 java環境變數 (Environment Variable)設定
+        [從 0 開始的 JAVA 生活] No.0  JAVA 環境安裝
         </a>
       </h1>
       <div class="post-meta">
@@ -127,8 +141,8 @@
     <i class="fa fa-calendar-o"></i>
 </span>
 <span class="post-meta-item-text">時間：</span>
-<time itemprop="dateCreated" datetime="2016-03-22T13:04:35+08:00" content="2020-05-25">
-    2020-05-25
+<time itemprop="dateCreated" datetime="2016-03-22T13:04:35+08:00" content="2020-05-19">
+    2020-05-19
 </time>
 </span> 
       
@@ -163,23 +177,33 @@
     <i class="fa fa-eye"></i>
 </span>
 <span class="post-meta-item-text">閱讀：</span>
-<span class="leancloud-visitors-count">54 字 ~1分鐘</span>
+<span class="leancloud-visitors-count">140 字 ~1分鐘</span>
 </span>
       </div>
     </header>
     <div class="post-body" itemprop="articleBody">
-    <h2 id="設定java_home">設定JAVA_HOME</h2>
-<p>C:\Program Files\Java\jdk1.8.0_111(後面為自己的jdk)
-<img src="https://iankingh.github.io/images/java/JAVA_HOME.png" alt="JAVA_HOME"></p>
-<h2 id="path">Path</h2>
-<p>%JAVA_HOME%\bin;
+    <h2 id="java-環境安裝">JAVA 環境安裝</h2>
+<h3 id="第一步-設定環境變數-java_home">第一步 設定環境變數-JAVA_HOME</h3>
+<p>於系統path 添加 java環境變數 (Environment Variable)</p>
+<pre><code>C:\Program Files\Java\jdk1.8.0_111(後面為自己的jdk)
+</code></pre>
+<p>如下圖</p>
+<p><img src="https://iankingh.github.io/images/java/JAVA_HOME.png" alt="JAVA_HOME"></p>
+<h3 id="第二步-path設定-environment-variable">第二步 Path設定 (environment variable)</h3>
+<p>於Path設定啟動 (environment variable)</p>
+<pre><code>%JAVA_HOME%\bin;
+</code></pre>
+<p>如下圖
 <img src="https://iankingh.github.io/images/java/Path.png" alt="Path"></p>
-<h2 id="測試">測試</h2>
+<h3 id="第三步-測試">第三步 測試</h3>
+<p>打開terminal，輸入以下指令</p>
 <pre><code class="language-shell">java -vresion
 
 javac -version
 </code></pre>
+<p>輸出如下圖</p>
 <p><img src="https://iankingh.github.io/images/java/test_java_version.png" alt="test_java_version"></p>
+<h2 id="參考">參考</h2>
     </div>
     <footer class="post-footer">
      
@@ -195,16 +219,16 @@ javac -version
      <div class="post-nav">
     <div class="post-nav-next post-nav-item">
     
-        <a href="https://iankingh.github.io/post/java/java_decimalformat/" rel="next" title="Java DecimalFormat(數字格式)">
-        <i class="fa fa-chevron-left"></i> Java DecimalFormat(數字格式)
+        <a href="https://iankingh.github.io/post/redis/redisinstall/" rel="next" title="Redis簡介">
+        <i class="fa fa-chevron-left"></i> Redis簡介
         </a>
     
     </div>
 
     <div class="post-nav-prev post-nav-item">
     
-        <a href="https://iankingh.github.io/post/redis/redisinstall/" rel="prev" title="RedisInstall">
-        RedisInstall <i class="fa fa-chevron-right"></i>
+        <a href="https://iankingh.github.io/post/eclipse/opentypehierarchy/" rel="prev" title="Eclipse 用 Open Type Hierarchy 查看類的繼承關係">
+        Eclipse 用 Open Type Hierarchy 查看類的繼承關係 <i class="fa fa-chevron-right"></i>
         </a>
     
     </div>
@@ -222,24 +246,26 @@ javac -version
     <div class="disqus markdown">
       <div id="disqus_thread"></div>
 <script type="text/javascript">
-
     (function () {
         
         
         
         
-
-
-        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        var dsq = document.createElement('script');
+        dsq.type = 'text/javascript';
+        dsq.async = true;
         var disqus_shortname = 'https-iankingh-github-io';
         dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
         (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
     })();
 </script>
-<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by
-        Disqus.</a></noscript>
+<noscript>Please enable JavaScript to view the 
+    <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+</noscript>
 <a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
     </div>
+
+
   </article>
 </section>
 
@@ -276,14 +302,14 @@ javac -version
       <nav class="site-state motion-element">
     <div class="site-state-item site-state-posts">
       <a href="https://iankingh.github.io/post/">
-        <span class="site-state-item-count">19</span>
+        <span class="site-state-item-count">32</span>
         <span class="site-state-item-name">日誌</span>
       </a>
     </div>
     <div class="site-state-item site-state-categories">    
         <a href="https://iankingh.github.io/categories/">      
          
-        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-count">4</span>
         
         <span class="site-state-item-name">分類</span>
         
@@ -293,7 +319,7 @@ javac -version
     <div class="site-state-item site-state-tags">
         <a href="https://iankingh.github.io/tags/">
          
-        <span class="site-state-item-count">14</span>
+        <span class="site-state-item-count">23</span>
         
         <span class="site-state-item-name">標籤</span>
         </a>
@@ -325,9 +351,14 @@ javac -version
     <div class="post-toc">
         <div class="post-toc-content"><nav id="TableOfContents">
   <ul>
-    <li><a href="#設定java_home">設定JAVA_HOME</a></li>
-    <li><a href="#path">Path</a></li>
-    <li><a href="#測試">測試</a></li>
+    <li><a href="#java-環境安裝">JAVA 環境安裝</a>
+      <ul>
+        <li><a href="#第一步-設定環境變數-java_home">第一步 設定環境變數-JAVA_HOME</a></li>
+        <li><a href="#第二步-path設定-environment-variable">第二步 Path設定 (environment variable)</a></li>
+        <li><a href="#第三步-測試">第三步 測試</a></li>
+      </ul>
+    </li>
+    <li><a href="#參考">參考</a></li>
   </ul>
 </nav></div>
     </div>

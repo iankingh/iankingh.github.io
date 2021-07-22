@@ -6,10 +6,39 @@
     <description>Recent content in git on ianhuang筆記</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-TW</language>
-    <lastBuildDate>Tue, 06 Oct 2020 21:45:42 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 13 Jul 2021 22:07:36 +0800</lastBuildDate>
     
 	<atom:link href="https://iankingh.github.io/tags/git/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>GitNote</title>
+      <link>https://iankingh.github.io/post/git/gitnote/</link>
+      <pubDate>Tue, 13 Jul 2021 22:07:36 +0800</pubDate>
+      
+      <guid>https://iankingh.github.io/post/git/gitnote/</guid>
+      <description>&lt;h2 id=&#34;git-實戰用法&#34;&gt;git 實戰用法&lt;/h2&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;紀錄一些 git 用法&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>GitCommitMessage</title>
+      <link>https://iankingh.github.io/post/git/gitcommitmessage/</link>
+      <pubDate>Thu, 04 Feb 2021 12:52:04 +0800</pubDate>
+      
+      <guid>https://iankingh.github.io/post/git/gitcommitmessage/</guid>
+      <description>&lt;h1 id=&#34;git-commit-message-規範&#34;&gt;Git Commit Message 規範&lt;/h1&gt;</description>
+    </item>
+    
+    <item>
+      <title>GitBranchUpdateMaster</title>
+      <link>https://iankingh.github.io/post/git/gitbranchupdatemaster/</link>
+      <pubDate>Tue, 02 Feb 2021 22:04:27 +0800</pubDate>
+      
+      <guid>https://iankingh.github.io/post/git/gitbranchupdatemaster/</guid>
+      <description>&lt;h2 id=&#34;git-dev-branch-update-master-branch&#34;&gt;Git dev-branch Update master-branch&lt;/h2&gt;</description>
+    </item>
     
     <item>
       <title>Git_pull_error</title>
@@ -17,15 +46,15 @@
       <pubDate>Tue, 06 Oct 2020 21:45:42 +0800</pubDate>
       
       <guid>https://iankingh.github.io/post/git/git_error/</guid>
-      <description>&lt;h2 id=&#34;gi-pull-error筆記&#34;&gt;gi pull error筆記&lt;/h2&gt;</description>
+      <description>&lt;h2 id=&#34;git-pull-error筆記&#34;&gt;git pull error筆記&lt;/h2&gt;</description>
     </item>
     
     <item>
-      <title>GitLab error</title>
-      <link>https://iankingh.github.io/post/git/gitlab%E5%95%8F%E9%A1%8C/</link>
+      <title>連線GitLab問題處理</title>
+      <link>https://iankingh.github.io/post/git/gitlaberror/</link>
       <pubDate>Fri, 15 May 2020 16:36:13 +0800</pubDate>
       
-      <guid>https://iankingh.github.io/post/git/gitlab%E5%95%8F%E9%A1%8C/</guid>
+      <guid>https://iankingh.github.io/post/git/gitlaberror/</guid>
       <description></description>
     </item>
     

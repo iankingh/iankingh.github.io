@@ -1,3 +1,4 @@
+
 <!DOCTYPE HTML>
 <html lang="zh-TW">
 <head>
@@ -55,6 +56,19 @@
     <span class="btn-bar"></span>
   </button>
 </div>
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'G-WF6NBSJFE5', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
 
 <nav class="site-nav">
     <ul id="menu" class="menu">
@@ -163,21 +177,17 @@
     <div class="post-body" itemprop="articleBody">
     <h2 id="spring-data-jpa-介紹">Spring Data JPA 介紹</h2>
 <h3 id="spring-data-概述">Spring-Data 概述</h3>
-<blockquote>
 <p><strong>Spring Data</strong> 是一個資料訪問框架 ，用於簡化資料庫訪問，旨在提供一致的資料庫訪問模型，同時仍然保留不同資料庫底層資料存儲的特點，<strong>Spring</strong> <strong>Data</strong> 採用了<strong>領域驅動模型</strong>的設計思想，實現了訪問關係型數據庫、非關係型數據庫的統一的介面，只需要定義好領域模型（<strong>Entity</strong>），後續的創建表、<strong>CURD</strong>、排序操作不需要手動添加任何<strong>SQL</strong>語句，同時也支持手動擴展功能。</p>
 <p><strong>Spring Data</strong> 只要定義介面，遵循 <strong>Spring Data</strong> 的規範，就無需寫實現類。</p>
 <p><strong>Spring Data</strong> 提供了預設的交易處理方式，即所有的查詢均聲明為唯讀事務。</p>
 <p><strong>Spring Data</strong> 專案所支援 <strong>NoSQL</strong> 存儲：<strong>MongoDB</strong> （文檔資料庫）、<strong>Neo4j</strong>（圖形資料庫）、Redis（<strong>鍵</strong>/值存儲）、<strong>Hbase</strong>（列族資料庫）</p>
 <p><strong>Spring Data</strong> 專案所支援的關係資料存儲技術：<strong>JDBC、JPA</strong></p>
-</blockquote>
 <h3 id="spring-data-jpa-概述">Spring Data JPA 概述</h3>
-<blockquote>
 <p>JPA(Java Persistence API)是 <strong>Sun</strong> 官方提出的 <strong>Java</strong> 持久化規範。</p>
 <p><strong>JPA</strong>主要是為了簡化現有的持久化開發工作和整合 <strong>ORM</strong> 技術， 是在充分吸收了現有 <strong>Hibernate、TopLink、JDO</strong> 等 <strong>ORM</strong> 框架的基礎上發展而來的，具有易於使用、伸縮性強等優點。</p>
 <p><strong>Spring Data JPA</strong> 是 <strong>Spring</strong> 基於 <strong>ORM</strong> 框架、<strong>JPA</strong> 規範的基礎上封裝的一套 <strong>JPA</strong> 應用框架，可使開發者用簡單代碼即可實現對資料的訪問和操作。</p>
 <p>它提供了包括增刪改查等在內的常用功能，且易於擴展！通常我們寫持久層，都是先寫一個介面，再寫介面對應的實現類，在實現類中進行持久層的業務邏輯處理。而現在，<strong>Spring Data JPA</strong>幫助我們自動完成了持久層的業務邏輯處理，開發者唯一要做的，就只是聲明持久層的介面，其他都交給 <strong>Spring Data JPA</strong> 來幫你完成！</p>
 <p><code>注意：JPA 是一套規範，不是一套產品， Hibernate、TopLink、JDO 它們是一套產品，如果說這些產品實現了這個 JPA 規範，那麼就可以叫它們為 JPA 的實現產品。</code></p>
-</blockquote>
 <h2 id="repository">Repository</h2>
 <h3 id="repository介面">Repository介面</h3>
 <p><strong>Repository</strong> 介面是 <strong>Spring Data</strong> 的一個核心介面，是一個抽象的介面，使用者通過繼承該介面來實現資料的訪問，它不提供任何方法，開發者需要在自己定義的介面中聲明需要的方法</p>
@@ -628,8 +638,8 @@ public class ProductInfoService {
      <div class="post-nav">
     <div class="post-nav-next post-nav-item">
     
-        <a href="https://iankingh.github.io/post/angular/angularbsn02/" rel="next" title="AngularBsN02">
-        <i class="fa fa-chevron-left"></i> AngularBsN02
+        <a href="https://iankingh.github.io/post/linux/linuxcommand/" rel="next" title="Linux指令">
+        <i class="fa fa-chevron-left"></i> Linux指令
         </a>
     
     </div>
@@ -655,24 +665,26 @@ public class ProductInfoService {
     <div class="disqus markdown">
       <div id="disqus_thread"></div>
 <script type="text/javascript">
-
     (function () {
         
         
         
         
-
-
-        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        var dsq = document.createElement('script');
+        dsq.type = 'text/javascript';
+        dsq.async = true;
         var disqus_shortname = 'https-iankingh-github-io';
         dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
         (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
     })();
 </script>
-<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by
-        Disqus.</a></noscript>
+<noscript>Please enable JavaScript to view the 
+    <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+</noscript>
 <a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
     </div>
+
+
   </article>
 </section>
 
@@ -709,14 +721,14 @@ public class ProductInfoService {
       <nav class="site-state motion-element">
     <div class="site-state-item site-state-posts">
       <a href="https://iankingh.github.io/post/">
-        <span class="site-state-item-count">19</span>
+        <span class="site-state-item-count">32</span>
         <span class="site-state-item-name">日誌</span>
       </a>
     </div>
     <div class="site-state-item site-state-categories">    
         <a href="https://iankingh.github.io/categories/">      
          
-        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-count">4</span>
         
         <span class="site-state-item-name">分類</span>
         
@@ -726,7 +738,7 @@ public class ProductInfoService {
     <div class="site-state-item site-state-tags">
         <a href="https://iankingh.github.io/tags/">
          
-        <span class="site-state-item-count">14</span>
+        <span class="site-state-item-count">23</span>
         
         <span class="site-state-item-name">標籤</span>
         </a>

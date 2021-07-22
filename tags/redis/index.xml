@@ -12,13 +12,13 @@
     
     
     <item>
-      <title>RedisInstall</title>
+      <title>Redis簡介</title>
       <link>https://iankingh.github.io/post/redis/redisinstall/</link>
       <pubDate>Wed, 20 May 2020 10:11:13 +0800</pubDate>
       
       <guid>https://iankingh.github.io/post/redis/redisinstall/</guid>
-      <description>&lt;h2 id=&#34;簡介&#34;&gt;簡介&lt;/h2&gt;
-&lt;p&gt;Redis是一個使用ANSI C編寫的開源、支援網路、基於記憶體、可選永續性的鍵值對儲存資料庫。&lt;/p&gt;</description>
+      <description>&lt;h2 id=&#34;redis-install&#34;&gt;Redis Install&lt;/h2&gt;
+&lt;!-- raw HTML omitted --&gt;</description>
     </item>
     
   </channel>

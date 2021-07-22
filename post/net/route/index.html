@@ -1,0 +1,602 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" /> 
+    <title>Route - ianhuang筆記</title>
+    <meta name="keywords" content="程式師,架構師,個人,筆記,技術">
+    
+    <meta property="og:title" content="Route">
+    <meta property="og:site_name" content="ianhuang筆記">
+    <meta property="og:image" content="/img/author.jpg"> 
+    <meta name="title" content="Route - ianhuang筆記" />
+    <meta name="description" content="筆記 | 軟體 | 架構 | Java "> 
+    <link rel="shortcut icon" href="https://iankingh.github.io/img/favicon.ico" />
+    <link rel="apple-touch-icon" href="https://iankingh.github.io/img/apple-touch-icon.png" />
+    <link rel="apple-touch-icon-precomposed" href="https://iankingh.github.io/img/apple-touch-icon.png" />
+    <link href="https://iankingh.github.io/js/vendor/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+    <link href="https://iankingh.github.io/js/vendor/fancybox/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+    <link href="https://iankingh.github.io/css/main.css" rel="stylesheet" type="text/css" />
+    
+    <link href="https://iankingh.github.io/prism.css" rel="stylesheet"   type="text/css"/>
+    <script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Pisces',
+    sidebar: {"position":"left","display":"post"},
+     fancybox: true, 
+    motion: true
+  };
+</script>
+</head>
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+<div class="container one-collumn sidebar-position-left page-home  ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"> <div class="site-meta  custom-logo ">
+
+  <div class="custom-logo-site-title">
+    <a href="https://iankingh.github.io/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">ianhuang筆記</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle">總有一天，你的日積月累，會變成他人的望塵莫及</p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'G-WF6NBSJFE5', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+<nav class="site-nav">
+    <ul id="menu" class="menu">
+      
+      
+        <li class="menu-item ">
+          <a href="https://iankingh.github.io/" rel="section">
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />首頁
+          </a>
+        </li>
+      
+        <li class="menu-item ">
+          <a href="https://iankingh.github.io/categories/%E6%8A%80%E8%A1%93/" rel="section">
+              <i class="menu-item-icon fa fa-fw fa-code"></i> <br />技術
+          </a>
+        </li>
+      
+        <li class="menu-item ">
+          <a href="https://iankingh.github.io/categories/%E7%AD%86%E8%A8%98/" rel="section">
+              <i class="menu-item-icon fa fa-fw fa-book"></i> <br />筆記
+          </a>
+        </li>
+      
+        <li class="menu-item ">
+          <a href="https://iankingh.github.io/post/" rel="section">
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />歸檔
+          </a>
+        </li>
+      
+        <li class="menu-item ">
+          <a href="https://iankingh.github.io/about/" rel="section">
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />關於
+          </a>
+        </li>
+      
+      <li class="menu-item menu-item-search">
+        <a href="javascript:;" class="popup-trigger"> <i class="menu-item-icon fa fa-search fa-fw"></i> <br /> 搜索</a>
+      </li>
+    </ul>
+    <div class="site-search">
+      <div class="popup">
+ <span class="search-icon fa fa-search"></span>
+ <input type="text" id="local-search-input">
+ <div id="local-search-result"></div>
+ <span class="popup-btn-close">close</span>
+</div>
+
+    </div>
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+<section id="posts" class="posts-expand">
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+      <h1 class="post-title" itemprop="name headline">
+        <a class="post-title-link" href="https://iankingh.github.io/post/net/route/" itemprop="url">
+        Route
+        </a>
+      </h1>
+      <div class="post-meta">
+      <span class="post-time">
+<span class="post-meta-item-icon">
+    <i class="fa fa-calendar-o"></i>
+</span>
+<span class="post-meta-item-text">時間：</span>
+<time itemprop="dateCreated" datetime="2016-03-22T13:04:35+08:00" content="2021-02-01">
+    2021-02-01
+</time>
+</span> 
+      
+
+  <span class="post-category" >
+  &nbsp; | &nbsp;
+  <span class="post-meta-item-icon">
+    <i class="fa fa-folder-o"></i>
+  </span>
+  <span class="post-meta-item-text">分類：</span>
+  
+    <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+      <a href="https://iankingh.github.io/categories/categories" itemprop="url" rel="index">
+        <span itemprop="name">categories</span>
+      </a>
+      &nbsp; 
+    </span>
+  
+</span>
+
+
+       <span>
+&nbsp; | &nbsp;
+<span class="post-meta-item-icon">
+    <i class="fa fa-eye"></i>
+</span>
+<span class="post-meta-item-text">閱讀：</span>
+<span class="leancloud-visitors-count">1604 字 ~4分鐘</span>
+</span>
+      </div>
+    </header>
+    <div class="post-body" itemprop="articleBody">
+    <h2 id="在-windows-設定-route">在 Windows 設定 Route</h2>
+<!-- raw HTML omitted -->
+<p>駐點在外，客戶端不能上Internet是件痛苦事。幸虧一位contract介紹用route，可以同時連測試機與無線外網，有陣子可以通，雖然有時秀逗。在DOS下執行以下的command：</p>
+<p>前一陣子到總公司上課時，臨時要使用內部網路走VPN連回公司處理問題，而同時間又需要使用Wireless上網。可是當我的Wireless連接上時，Notebook的Default Gateway就會變成Wireless設定的Gateway，此時就無法透過內部的網路走VPN連回公司。</p>
+<p>使用Windows的『route』指令可以設定Static Route，變更順序。</p>
+<h3 id="一指令說明">一、指令說明：</h3>
+<pre><code>ROUTE [-f] [-p] [command [destination]
+                  [MASK netmask]  [gateway] [METRIC metric]  [IF interface]
+</code></pre>
+<p>-f      清除路由
+-p      保留設定值，不會因電腦重開機而失效。</p>
+<p>Command    包含以下命令
+PRINT   列出目前的路由表
+ADD    增加一筆靜態路由
+DELETE  刪除一筆靜態路由
+CHANGE  修改現存的路由</p>
+<p>destination  路由的目標IP位址或網段。
+netmask    子網路遮罩
+gateway     指定要走的Gateway
+interface   指定送出封包時的網卡ID
+METRIC    可視為封包傳遞的優先權，數字愈低優先權愈高。</p>
+<p>intra 內部</p>
+<p>DMZ</p>
+<p>sticky 黏</p>
+<p>subnet</p>
+<p>HA</p>
+<p>tls</p>
+<p>dtls</p>
+<p>render</p>
+<p>local decode encode</p>
+<p>ipref</p>
+<p>checkpoint</p>
+<p>bandwidth</p>
+<p>question</p>
+<p>which</p>
+<p>F5 VIP</p>
+<p>SNAT</p>
+<p>NAT</p>
+<p>port forwarding</p>
+<p>pass-through</p>
+<p>pooling</p>
+<p>UDP hole punching</p>
+<p>STUN TURN</p>
+<p>port mapping</p>
+<p>ICMP</p>
+<p>high latency</p>
+<h3 id="一查詢route">一、查詢route：</h3>
+<h1 id="ipv4-路由表">IPv4 路由表</h1>
+<p>route print：
+為了閱讀方便，將使用Route Print查詢的結果以表格呈現如下：</p>
+<table>
+<thead>
+<tr>
+<th>Network Destination網路目的地</th>
+<th>Netmask 網路遮罩</th>
+<th>Gateway 閘道</th>
+<th>Interface 介面</th>
+<th>Metric 公制</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.0.0.0</td>
+<td>0.0.0.0</td>
+<td>10.10.1.1</td>
+<td>10.10.1.101</td>
+<td>20</td>
+</tr>
+<tr>
+<td>0.0.0.0</td>
+<td>0.0.0.0</td>
+<td>192.168.1.1</td>
+<td>192.168.1.101</td>
+<td>20</td>
+</tr>
+<tr>
+<td>127.0.0.0</td>
+<td>255.0.0.0</td>
+<td>127.0.0.1</td>
+<td>127.0.0.1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>192.168.1.0</td>
+<td>255.255.255.0</td>
+<td>192.168.1.1</td>
+<td>192.168.1.101</td>
+<td>20</td>
+</tr>
+<tr>
+<td>192.168.1.101</td>
+<td>255.255.255.255</td>
+<td>127.0.0.1</td>
+<td>127.0.0.1</td>
+<td>20</td>
+</tr>
+<tr>
+<td>192.168.1.255</td>
+<td>255.255.255.255</td>
+<td>192.168.1.101</td>
+<td>192.168.1.101</td>
+<td>20</td>
+</tr>
+<tr>
+<td>10.10.1.0</td>
+<td>255.255.255.0</td>
+<td>10.10.1.101</td>
+<td>10.10.10.101</td>
+<td>20</td>
+</tr>
+<tr>
+<td>10.10.1.101</td>
+<td>255.255.255.255</td>
+<td>127.0.0.1</td>
+<td>127.0.0.1</td>
+<td>20</td>
+</tr>
+<tr>
+<td>10.10.1.255</td>
+<td>255.255.255.255</td>
+<td>10.10.1.101</td>
+<td>10.10.10.101</td>
+<td>20</td>
+</tr>
+<tr>
+<td>255.255.255.255</td>
+<td>255.255.255.255</td>
+<td>192.168.1.101</td>
+<td>192.168.1.101</td>
+<td>1</td>
+</tr>
+<tr>
+<td>255.255.255.255</td>
+<td>255.255.255.255</td>
+<td>10.10.1.101</td>
+<td>10.10.1.101</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+<p>Network Destination： 表示路由的網路目的地，可以是 IP 網段或IP位址。
+Netmask：表示子網路遮罩，用來配合 Network Destination 的運算。
+Gateway：是封包欲送往的 IP 位址，如果目的 IP 位址與 Netmask 作 AND 邏輯運算，剛好與 Network Destination 相同，封包就會送到此 Gateway 的 IP 位址。
+Interface： 是此電腦送出封包的 IP 位址。
+Metric： 則是傳送成本的參考數字，通常與網路連接速度有關，越低的 Metric 表示速度越快。</p>
+<p>前2筆代表著，要連至不存在Routing Table中的其他所有位址都由該Gateway出去。
+但由於2者的Metric都是20，因此無法控制固定由哪個Gateway出去</p>
+<p>因此可使用以下的命令來修改Metric的值【調整Gateway的優先權】，讓所有對外的連線固定透過無線網卡出去。
+<code>route change 0.0.0.0 mask 0.0.0.0 10.10.1.1 if 0x2 metric 10</code></p>
+<p>另外，若要透過有線網卡連VPN回公司，則可新增下列一筆路由
+<code>route add 192.168.99.0 mask 255.255.255.0 192.168.1.1 if 0x2 metric 20</code></p>
+<p>如果要刪除新增的路由，則可使用以下命令
+<code>route delete 192.168.99.0 mask 255.255.255.0</code></p>
+<p>　　上表的紅色粗體字的資訊，介面192.168.11.27是無線網路分配給我的IP，192.168.11.1則是無線站台的Gateway，處在第一列表示為default route，所以會先搜到無線站台，就可以上網；第二列起是Local Network的IP迴路。
+至於像胖兄介紹的迴路路徑不是在第二列，而排得那麼後面，不得而知，也許和我下設定的command有關。</p>
+<p>二、設定route</p>
+<p>Wireless LAN adapter Wi-Fi:</p>
+<p>Connection-specific DNS Suffix  . :
+Link-local IPv6 Address . . . . . : fe80::f0e5:c960:e1a5:7faa%3
+IPv4 Address. . . . . . . . . . . : 192.168.43.246
+Subnet Mask . . . . . . . . . . . : 255.255.255.0
+Default Gateway . . . . . . . . . : 192.168.43.1</p>
+<p>Wifl 網卡 gateway ip :192.168.43.1</p>
+<p>route delete 0.0.0.0
+route delete 10.0.0.0
+route delete 172.0.0.0
+route ADD 0.0.0.0 MASK 0.0.0.0 192.168.43.1
+route ADD 10.0.0.0 MASK 255.0.0.0 10.204.1.126
+route ADD 172.0.0.0 MASK 255.0.0.0 10.204.1.126
+pause</p>
+<p>route change 0.0.0.0 mask 0.0.0.0 192.168.43.1
+route add 192.168.70.0 mask 255.255.255.0 192.168.14.251
+route add 192.168.51.0 mask 255.255.255.0 192.168.14.251
+route add 192.168.53.0 mask 255.255.255.0 192.168.14.251
+route add 192.168.211.0 mask 255.255.255.0 192.168.14.251
+pause</p>
+<p>最後一個pause(暫停)是我加的，加pause是為了避免執行後馬上Close DOS視窗。可以看每一條命令是否回應&quot;確定&rdquo;。</p>
+<p>route delete語法還OK，route add語法是：</p>
+<p>route ADD <!-- raw HTML omitted --> MASK <!-- raw HTML omitted --> <!-- raw HTML omitted --> (if <!-- raw HTML omitted --> metric <!-- raw HTML omitted -->)</p>
+<p>刪除0.0.0.0 route目的在取代default</p>
+<p>route；刪除10.0.0.0是內部網路的網段，至於刪除172.0.0.0的目的…我猜是和給我這個批次的contract，和他自身設定有關，應該可以忽略。</p>
+<p>很妙的是Gateway可以用Local IP替代，而不是尾數是1。</p>
+<p>最後還要再執行兩個命令讓重設的route起作用。</p>
+<p>ipconfig /release
+ipconfig /renew</p>
+<p>參考
+Windows route初體驗 @ Jemmy Walker :: 痞客邦 ::
+<a href="https://jemmywalker.pixnet.net/blog/post/38323627">https://jemmywalker.pixnet.net/blog/post/38323627</a></p>
+<p><a href="http://ctwivan.blogspot.com/2010/08/windowsstatic-route.html">http://ctwivan.blogspot.com/2010/08/windowsstatic-route.html</a></p>
+    </div>
+    <footer class="post-footer">
+     
+ 
+<div class="post-tags">     
+     
+    <a href="https://iankingh.github.io/tags/windows" rel="tag" title="Windows">#Windows#</a>
+    
+    <a href="https://iankingh.github.io/tags/cmd" rel="tag" title="Cmd">#Cmd#</a>
+    
+</div>
+
+
+
+     <div class="post-nav">
+    <div class="post-nav-next post-nav-item">
+    
+        <a href="https://iankingh.github.io/post/git/gitbranchupdatemaster/" rel="next" title="GitBranchUpdateMaster">
+        <i class="fa fa-chevron-left"></i> GitBranchUpdateMaster
+        </a>
+    
+    </div>
+
+    <div class="post-nav-prev post-nav-item">
+    
+        <a href="https://iankingh.github.io/post/angular/angularusejs/" rel="prev" title="AngularUseJS">
+        AngularUseJS <i class="fa fa-chevron-right"></i>
+        </a>
+    
+    </div>
+</div>
+      
+     
+     
+     
+
+
+
+     
+    </footer>
+
+    <div class="disqus markdown">
+      <div id="disqus_thread"></div>
+<script type="text/javascript">
+    (function () {
+        
+        
+        
+        
+        var dsq = document.createElement('script');
+        dsq.type = 'text/javascript';
+        dsq.async = true;
+        var disqus_shortname = 'https-iankingh-github-io';
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the 
+    <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+</noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </div>
+
+
+  </article>
+</section>
+
+          </div>
+        </div>
+        <div class="sidebar-toggle">
+  <div class="sidebar-toggle-line-wrap">
+    <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+    <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+    <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+  </div>
+</div>
+<aside id="sidebar" class="sidebar">
+  <div class="sidebar-inner">
+
+  <ul class="sidebar-nav motion-element">
+    <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+      文章目錄
+    </li>
+    <li class="sidebar-nav-overview" data-target="site-overview">
+      網站概覽
+    </li>
+  </ul>
+
+    <section class="site-overview sidebar-panel ">
+      <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image"
+        src="https://iankingh.github.io/img/author.jpg"
+        alt="ianhuang" />
+    <p class="site-author-name" itemprop="name">ianhuang</p>
+    <p class="site-description motion-element" itemprop="description"> 
+        Programmer &amp; Architect</p>
+</div>
+      <nav class="site-state motion-element">
+    <div class="site-state-item site-state-posts">
+      <a href="https://iankingh.github.io/post/">
+        <span class="site-state-item-count">32</span>
+        <span class="site-state-item-name">日誌</span>
+      </a>
+    </div>
+    <div class="site-state-item site-state-categories">    
+        <a href="https://iankingh.github.io/categories/">      
+         
+        <span class="site-state-item-count">4</span>
+        
+        <span class="site-state-item-name">分類</span>
+        
+        </a>
+    </div>
+
+    <div class="site-state-item site-state-tags">
+        <a href="https://iankingh.github.io/tags/">
+         
+        <span class="site-state-item-count">23</span>
+        
+        <span class="site-state-item-name">標籤</span>
+        </a>
+    </div>
+</nav>
+      
+      
+<div class="links-of-author motion-element">
+    
+        <span class="links-of-author-item">
+        <a href="https://github.com/iankingh" target="_blank" title="GitHub">
+            <i class="fa fa-fw fa-github"></i>
+            GitHub
+        </a>
+        </span>
+    
+</div>
+
+
+      
+
+      <div class="links-of-blogroll motion-element inline">
+<script type="text/javascript" src="//rf.revolvermaps.com/0/0/8.js?i=5b4f2ucxar6&amp;m=0&amp;s=220&amp;c=ff0000&amp;cr1=ffffff&amp;f=arial&amp;l=33&amp;bv=35" async="async"></script>
+</div>
+
+    </section>
+    
+<section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+    <div class="post-toc">
+        <div class="post-toc-content"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#在-windows-設定-route">在 Windows 設定 Route</a>
+      <ul>
+        <li><a href="#一指令說明">一、指令說明：</a></li>
+        <li><a href="#一查詢route">一、查詢route：</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+    </div>
+</section>
+
+  </div>
+</aside>
+
+      </div>
+    </main>
+   
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  <span itemprop="copyrightYear">  &copy; 
+  2009 - 2021</span>
+  <span class="with-love"><i class="fa fa-heart"></i></span>
+  <span class="author" itemprop="copyrightHolder">ianhuang筆記</span>
+</div>
+<div class="powered-by">
+  Powered by - <a class="theme-link" href="http://gohugo.io" target="_blank" title="hugo" >Hugo v0.68.3</a>
+</div>
+<div class="theme-info">
+  Theme by - <a class="theme-link" href="https://github.com/xtfly/hugo-theme-next" target="_blank"> NexT
+  </a>
+</div>
+
+
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+      <span id="scrollpercent"><span>0</span>%</span>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+<script type="text/javascript" src="https://iankingh.github.io/js/vendor/jquery/index.js?v=2.1.3"></script>
+<script type="text/javascript" src="https://iankingh.github.io/js/vendor/fastclick/lib/fastclick.min.js?v=1.0.6"></script> 
+<script type="text/javascript" src="https://iankingh.github.io/js/vendor/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+<script type="text/javascript" src="https://iankingh.github.io/js/vendor/velocity/velocity.min.js?v=1.2.1"></script>
+<script type="text/javascript" src="https://iankingh.github.io/js/vendor/velocity/velocity.ui.min.js?v=1.2.1"></script>
+<script src="https://iankingh.github.io/js/vendor/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
+
+<script src="https://iankingh.github.io/js/vendor/fancybox/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+<script type="text/javascript" src="https://iankingh.github.io/js/utils.js"></script>
+<script type="text/javascript" src="https://iankingh.github.io/js/motion.js"></script>
+<script type="text/javascript" src="https://iankingh.github.io/js/affix.js"></script>
+<script type="text/javascript" src="https://iankingh.github.io/js/schemes/pisces.js"></script>
+
+<script type="text/javascript" src="https://iankingh.github.io/js/scrollspy.js"></script>
+<script type="text/javascript" src="https://iankingh.github.io/js/post-details.js"></script>
+<script type="text/javascript" src="https://iankingh.github.io/js/toc.js"></script>
+
+<script type="text/javascript" src="https://iankingh.github.io/js/bootstrap.js"></script>
+
+<script type="text/javascript" src="https://iankingh.github.io/js/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX", "output/HTML-CSS"],
+    tex2jax: {
+      inlineMath: [ ['$','$'] ],
+      displayMath: [ ['$$','$$'] ],
+      processEscapes: true
+    },
+    "HTML-CSS": { fonts: ["TeX"] }
+  });
+</script>
+<script src="https://iankingh.github.io/prism.js"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML' async></script>
+</body>
+</html>

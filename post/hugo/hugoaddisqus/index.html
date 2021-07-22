@@ -1,3 +1,4 @@
+
 <!DOCTYPE HTML>
 <html lang="zh-TW">
 <head>
@@ -55,6 +56,19 @@
     <span class="btn-bar"></span>
   </button>
 </div>
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'G-WF6NBSJFE5', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
 
 <nav class="site-nav">
     <ul id="menu" class="menu">
@@ -156,19 +170,21 @@
     <i class="fa fa-eye"></i>
 </span>
 <span class="post-meta-item-text">閱讀：</span>
-<span class="leancloud-visitors-count">597 字 ~2分鐘</span>
+<span class="leancloud-visitors-count">602 字 ~2分鐘</span>
 </span>
       </div>
     </header>
     <div class="post-body" itemprop="articleBody">
-    <h1 id="hugo-add-disqus">Hugo ADD disqus</h1>
+    <h2 id="hugo-使用-disqus">Hugo 使用 disqus</h2>
 <p>Disqus（/dɪsˈkʌs/，與英語「discuss」同音）是一家使用社群網路形式，向網路社區提供網站留言服務的公司。
 該公司的平台提供不同的功能，例如與不同社群網路服務連結、社群網路、用戶個人檔案、垃圾宣傳及審核工具、資料分析、電子郵件通知和在行動裝置留言等。</p>
-<h2 id="configtoml">Config.toml</h2>
+<h3 id="先申請-disqus">先申請 disqus</h3>
+<p>取得 disqusShortname</p>
+<h3 id="configtoml">Config.toml</h3>
 <p>開啟Hugo配置檔 Config.toml，設定 DisqusShortname。</p>
 <pre><code class="language-toml">disqusShortname = &quot;yourDisqusShortname&quot;
 </code></pre>
-<h2 id="新增-disqushtml">新增 disqus.html</h2>
+<h3 id="新增-disqushtml">新增 disqus.html</h3>
 <p>在根目錄 /layouts/partials/ 裡新增 disqus.html 檔案，
 然後把官方提供的 Script 貼到 disqus.html 檔案裡並存檔。
 官方提供的 Script 如下：</p>
@@ -191,7 +207,7 @@
     &lt;a href=&quot;http://disqus.com/&quot; class=&quot;dsq-brlink&quot;&gt;comments powered by &lt;span class=&quot;logo-disqus&quot;&gt;Disqus&lt;/span&gt;&lt;/a&gt;
 
 </code></pre>
-<h2 id="設定--disqushtml">設定  disqus.html</h2>
+<h3 id="設定--disqushtml">設定  disqus.html</h3>
 <p>到 Hugo 主題的目錄下，找到 single.html 檔案，
 將 Hugo 主題的目錄下 single.html Copy 至 /layouts/_default/ 下。
 開啟 /layouts/_default/single.html 檔案，貼上下方語法</p>
@@ -199,19 +215,16 @@
   {{ partial &quot;disqus.html&quot; . }}
 &lt;/div&gt;
 </code></pre>
-<h2 id="解決-localhost-不顯示-的問題">解決 localhost 不顯示 的問題</h2>
+<h3 id="解決-localhost-不顯示-的問題">解決 localhost 不顯示 的問題</h3>
 <p>這是因為官方所提供的 Script 裡面其中一段語法的關係
 if (window.location.hostname == &ldquo;localhost&rdquo;)
 return;
 它的作用是當本地端 Server 運行時，就 return 中止，所以我們才會看不到 Disqus，這是因為當自己在編輯文章並運行 Server 進行預覽時，不需要用到留言的功能，所以才會採用這個判斷式來避免本地端的 Server 模式啟用Disqus功能。若您希望在本地端 Server 模式下，也能看到 Disqus，只要把上述那二行給註解掉並存檔就可以了。
 ShowDisqus</p>
-<h1 id="參考">參考</h1>
-<p>Hugo 加入 Disqus 整合性留言管理系統<br>
-<a href="https://coreychen71.github.io/posts/2019-05/hugoadddisqus/">https://coreychen71.github.io/posts/2019-05/hugoadddisqus/</a></p>
-<p>给Hugo添加disqus评论服务 - Marvin&rsquo;s Blog【程式人生】<br>
-<a href="https://zh4ui.net/post/2017-04-20-hugo-with-disqus/">https://zh4ui.net/post/2017-04-20-hugo-with-disqus/</a></p>
-<p>为你博客添加disqus评论系统 | 23.9K | Vineo<br>
-<a href="https://vineo.cn/config-disqus.html">https://vineo.cn/config-disqus.html</a></p>
+<h2 id="參考">參考</h2>
+<p><a href="https://coreychen71.github.io/posts/2019-05/hugoadddisqus/">Hugo 加入 Disqus 整合性留言管理系統</a></p>
+<p><a href="https://zh4ui.net/post/2017-04-20-hugo-with-disqus/">给Hugo添加disqus评论服务 - Marvin&rsquo;s Blog【程式人生】</a></p>
+<p><a href="https://vineo.cn/config-disqus.html">为你博客添加disqus评论系统 | 23.9K | Vineo</a></p>
     </div>
     <footer class="post-footer">
      
@@ -227,8 +240,8 @@ ShowDisqus</p>
      <div class="post-nav">
     <div class="post-nav-next post-nav-item">
     
-        <a href="https://iankingh.github.io/post/eclipse/opentypehierarchy/" rel="next" title="OpenTypeHierarchy">
-        <i class="fa fa-chevron-left"></i> OpenTypeHierarchy
+        <a href="https://iankingh.github.io/post/git/gitlaberror/" rel="next" title="連線GitLab問題處理">
+        <i class="fa fa-chevron-left"></i> 連線GitLab問題處理
         </a>
     
     </div>
@@ -254,24 +267,26 @@ ShowDisqus</p>
     <div class="disqus markdown">
       <div id="disqus_thread"></div>
 <script type="text/javascript">
-
     (function () {
         
         
         
         
-
-
-        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        var dsq = document.createElement('script');
+        dsq.type = 'text/javascript';
+        dsq.async = true;
         var disqus_shortname = 'https-iankingh-github-io';
         dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
         (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
     })();
 </script>
-<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by
-        Disqus.</a></noscript>
+<noscript>Please enable JavaScript to view the 
+    <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+</noscript>
 <a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
     </div>
+
+
   </article>
 </section>
 
@@ -299,14 +314,14 @@ ShowDisqus</p>
       <nav class="site-state motion-element">
     <div class="site-state-item site-state-posts">
       <a href="https://iankingh.github.io/post/">
-        <span class="site-state-item-count">19</span>
+        <span class="site-state-item-count">32</span>
         <span class="site-state-item-name">日誌</span>
       </a>
     </div>
     <div class="site-state-item site-state-categories">    
         <a href="https://iankingh.github.io/categories/">      
          
-        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-count">4</span>
         
         <span class="site-state-item-name">分類</span>
         
@@ -316,7 +331,7 @@ ShowDisqus</p>
     <div class="site-state-item site-state-tags">
         <a href="https://iankingh.github.io/tags/">
          
-        <span class="site-state-item-count">14</span>
+        <span class="site-state-item-count">23</span>
         
         <span class="site-state-item-name">標籤</span>
         </a>

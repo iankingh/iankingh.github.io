@@ -1,3 +1,4 @@
+
 <!DOCTYPE HTML>
 <html lang="zh-TW">
 <head>
@@ -55,6 +56,19 @@
     <span class="btn-bar"></span>
   </button>
 </div>
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'G-WF6NBSJFE5', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
 
 <nav class="site-nav">
     <ul id="menu" class="menu">
@@ -156,37 +170,35 @@
     <i class="fa fa-eye"></i>
 </span>
 <span class="post-meta-item-text">閱讀：</span>
-<span class="leancloud-visitors-count">250 字 ~1分鐘</span>
+<span class="leancloud-visitors-count">255 字 ~1分鐘</span>
 </span>
       </div>
     </header>
     <div class="post-body" itemprop="articleBody">
-    <h1 id="hugo使用prismjs">hugo使用Prism.js</h1>
+    <h2 id="hugo使用prismjs">hugo使用Prism.js</h2>
 <p>使用 prism.js 做為代碼高量的工具</p>
 <p>Prism是一種輕量級的，可擴展的語法突出顯示工具，其構建考慮了現代Web標準。它已在數千個網站中使用，包括您每天訪問的一些網站。</p>
-<h2 id="下載">下載</h2>
+<h3 id="下載">下載</h3>
 <p><a href="https://prismjs.com/">https://prismjs.com/</a></p>
-<h2 id="使用">使用</h2>
-<pre><code class="language-Shell">你的Hugo部落格資料夾位置
+<h3 id="使用">使用</h3>
+<p>放在Hugo部落格資料夾（static）位置</p>
+<pre><code class="language-Shell">
 ├── static
 │   ├── prism.js
 │   └── prism.css
 
 
 </code></pre>
-<h2 id="configtoml">Config.toml</h2>
+<h3 id="configtoml">Config.toml</h3>
 <p>開啟Hugo配置檔 Config.toml，設定將預設代碼高亮設定false</p>
 <pre><code class="language-toml">#預設代碼區塊
 pygmentsCodefences = false
 pygmentsCodefencesGuessSyntax = false
 </code></pre>
-<h1 id="參考">參考</h1>
-<p>Hugo動態加載prism.js <br>
-<a href="https://www.ariesme.com/post/2019/add_prism_for_hugo_automatically/">https://www.ariesme.com/post/2019/add_prism_for_hugo_automatically/</a></p>
-<p>Hugo / 如何在 Hugo 中用 Prism.js 提供程式碼色彩標註 | sujj blog<br>
-<a href="https://sujingjhong.com/posts/how-to-add-prismjs-into-hugo/">https://sujingjhong.com/posts/how-to-add-prismjs-into-hugo/</a></p>
-<p>漂亮的代碼語法高亮插件Prism.js簡單使用文檔 - 嚴穎專欄 -SegmentFault 思否<br>
-<a href="https://segmentfault.com/a/1190000009122617">https://segmentfault.com/a/1190000009122617</a></p>
+<h2 id="參考">參考</h2>
+<p><a href="https://www.ariesme.com/post/2019/add_prism_for_hugo_automatically/">Hugo動態加載prism.js</a></p>
+<p><a href="https://sujingjhong.com/posts/how-to-add-prismjs-into-hugo/">Hugo / 如何在 Hugo 中用 Prism.js 提供程式碼色彩標註 | sujj blog</a></p>
+<p><a href="https://segmentfault.com/a/1190000009122617">漂亮的代碼語法高亮插件Prism.js簡單使用文檔 - 嚴穎專欄 -SegmentFault 思否</a></p>
     </div>
     <footer class="post-footer">
      
@@ -229,24 +241,26 @@ pygmentsCodefencesGuessSyntax = false
     <div class="disqus markdown">
       <div id="disqus_thread"></div>
 <script type="text/javascript">
-
     (function () {
         
         
         
         
-
-
-        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        var dsq = document.createElement('script');
+        dsq.type = 'text/javascript';
+        dsq.async = true;
         var disqus_shortname = 'https-iankingh-github-io';
         dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
         (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
     })();
 </script>
-<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by
-        Disqus.</a></noscript>
+<noscript>Please enable JavaScript to view the 
+    <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+</noscript>
 <a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
     </div>
+
+
   </article>
 </section>
 
@@ -262,7 +276,16 @@ pygmentsCodefencesGuessSyntax = false
 <aside id="sidebar" class="sidebar">
   <div class="sidebar-inner">
 
-    <section class="site-overview sidebar-panel  sidebar-panel-active ">
+  <ul class="sidebar-nav motion-element">
+    <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+      文章目錄
+    </li>
+    <li class="sidebar-nav-overview" data-target="site-overview">
+      網站概覽
+    </li>
+  </ul>
+
+    <section class="site-overview sidebar-panel ">
       <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
     <img class="site-author-image" itemprop="image"
         src="https://iankingh.github.io/img/author.jpg"
@@ -274,14 +297,14 @@ pygmentsCodefencesGuessSyntax = false
       <nav class="site-state motion-element">
     <div class="site-state-item site-state-posts">
       <a href="https://iankingh.github.io/post/">
-        <span class="site-state-item-count">19</span>
+        <span class="site-state-item-count">32</span>
         <span class="site-state-item-name">日誌</span>
       </a>
     </div>
     <div class="site-state-item site-state-categories">    
         <a href="https://iankingh.github.io/categories/">      
          
-        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-count">4</span>
         
         <span class="site-state-item-name">分類</span>
         
@@ -291,7 +314,7 @@ pygmentsCodefencesGuessSyntax = false
     <div class="site-state-item site-state-tags">
         <a href="https://iankingh.github.io/tags/">
          
-        <span class="site-state-item-count">14</span>
+        <span class="site-state-item-count">23</span>
         
         <span class="site-state-item-name">標籤</span>
         </a>
@@ -319,6 +342,23 @@ pygmentsCodefencesGuessSyntax = false
 
     </section>
     
+<section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+    <div class="post-toc">
+        <div class="post-toc-content"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#hugo使用prismjs">hugo使用Prism.js</a>
+      <ul>
+        <li><a href="#下載">下載</a></li>
+        <li><a href="#使用">使用</a></li>
+        <li><a href="#configtoml">Config.toml</a></li>
+      </ul>
+    </li>
+    <li><a href="#參考">參考</a></li>
+  </ul>
+</nav></div>
+    </div>
+</section>
+
   </div>
 </aside>
 

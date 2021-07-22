@@ -1,3 +1,4 @@
+
 <!DOCTYPE HTML>
 <html lang="zh-TW">
 <head>
@@ -55,6 +56,19 @@
     <span class="btn-bar"></span>
   </button>
 </div>
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'G-WF6NBSJFE5', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
 
 <nav class="site-nav">
     <ul id="menu" class="menu">
@@ -156,23 +170,25 @@
     <i class="fa fa-eye"></i>
 </span>
 <span class="post-meta-item-text">閱讀：</span>
-<span class="leancloud-visitors-count">765 字 ~2分鐘</span>
+<span class="leancloud-visitors-count">779 字 ~2分鐘</span>
 </span>
       </div>
     </header>
     <div class="post-body" itemprop="articleBody">
-    <h2 id="images">images</h2>
-<h3 id="see-images看映像">see images(看映像)</h3>
+    <h1 id="docker-指令">Docker 指令</h1>
+<h2 id="images-相關的指令">Images 相關的指令</h2>
+<h4 id="bulid-images">bulid images</h4>
+<h4 id="see-images看映像">see images(看映像)</h4>
 <pre><code class="language-shell">docker images
 </code></pre>
-<h3 id="docker-pull下載映像">docker pull(下載映像)</h3>
+<h4 id="docker-pull下載映像">docker pull(下載映像)</h4>
 <pre><code class="language-sell">docker pull
 </code></pre>
-<h2 id="see-registry-images">see registry images</h2>
-<pre><code class="language-sell">curl -XGET 172.22.11.11:5000/v2/_catalog
+<h4 id="see-registry-images">see registry images()</h4>
+<pre><code class="language-sell">curl -XGET 192.168.x.x:5000/v2/_catalog
 </code></pre>
 <h2 id="container">container</h2>
-<h3 id="docker-container-ls-看容器">docker container ls (看容器)</h3>
+<h4 id="docker-container-ls-看容器">docker container ls (看容器)</h4>
 <pre><code class="language-sell">docker container ls
 </code></pre>
 <h3 id="docker-ps-看容器">docker ps (看容器)</h3>
@@ -273,11 +289,9 @@
 <pre><code class="language-sell">docker service update --image 172.22.11.11:5000/dockerImageName:tag swarmS_Name
 </code></pre>
 <h2 id="參考">參考</h2>
-<p>docker 官網</p>
-<p>Docker常用命令小记_程序员欣宸的博客-CSDN博客</p>
-<p><a href="https://blog.csdn.net/boling_cavalry/article/details/101145739">https://blog.csdn.net/boling_cavalry/article/details/101145739</a></p>
-<p>docker container ls命令 - Docker教程™</p>
-<p><a href="https://www.yiibai.com/docker/container_ls.html">https://www.yiibai.com/docker/container_ls.html</a></p>
+<p><a href="https://blog.csdn.net/boling_cavalry/article/details/101145739">Docker常用命令小记_程序员欣宸的博客-CSDN博客</a></p>
+<p><a href="https://www.yiibai.com/docker/container_ls.html">docker container ls命令 - Docker教程™</a></p>
+<p><a href="https://mileslin.github.io/2019/04/Docker-%E6%8C%87%E4%BB%A4%E5%B0%8F%E6%8A%84/">[Docker] Docker 指令小抄 - Miles&rsquo;s Journey</a></p>
     </div>
     <footer class="post-footer">
      
@@ -301,8 +315,8 @@
 
     <div class="post-nav-prev post-nav-item">
     
-        <a href="https://iankingh.github.io/post/java/java_decimalformat/" rel="prev" title="Java DecimalFormat(數字格式)">
-        Java DecimalFormat(數字格式) <i class="fa fa-chevron-right"></i>
+        <a href="https://iankingh.github.io/post/java/java_tutorial_2/" rel="prev" title="[從 0 開始的 JAVA 生活]No.2 Java 基本的資料型態(Primitive Data Types)">
+        [從 0 開始的 JAVA 生活]No.2 Java 基本的資料型態(Primitive Data Types) <i class="fa fa-chevron-right"></i>
         </a>
     
     </div>
@@ -320,24 +334,26 @@
     <div class="disqus markdown">
       <div id="disqus_thread"></div>
 <script type="text/javascript">
-
     (function () {
         
         
         
         
-
-
-        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        var dsq = document.createElement('script');
+        dsq.type = 'text/javascript';
+        dsq.async = true;
         var disqus_shortname = 'https-iankingh-github-io';
         dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
         (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
     })();
 </script>
-<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by
-        Disqus.</a></noscript>
+<noscript>Please enable JavaScript to view the 
+    <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+</noscript>
 <a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
     </div>
+
+
   </article>
 </section>
 
@@ -374,14 +390,14 @@
       <nav class="site-state motion-element">
     <div class="site-state-item site-state-posts">
       <a href="https://iankingh.github.io/post/">
-        <span class="site-state-item-count">19</span>
+        <span class="site-state-item-count">32</span>
         <span class="site-state-item-name">日誌</span>
       </a>
     </div>
     <div class="site-state-item site-state-categories">    
         <a href="https://iankingh.github.io/categories/">      
          
-        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-count">4</span>
         
         <span class="site-state-item-name">分類</span>
         
@@ -391,7 +407,7 @@
     <div class="site-state-item site-state-tags">
         <a href="https://iankingh.github.io/tags/">
          
-        <span class="site-state-item-count">14</span>
+        <span class="site-state-item-count">23</span>
         
         <span class="site-state-item-name">標籤</span>
         </a>
@@ -423,16 +439,14 @@
     <div class="post-toc">
         <div class="post-toc-content"><nav id="TableOfContents">
   <ul>
-    <li><a href="#images">images</a>
+    <li><a href="#images-相關的指令">Images 相關的指令</a>
       <ul>
-        <li><a href="#see-images看映像">see images(看映像)</a></li>
-        <li><a href="#docker-pull下載映像">docker pull(下載映像)</a></li>
+        <li></li>
       </ul>
     </li>
-    <li><a href="#see-registry-images">see registry images</a></li>
     <li><a href="#container">container</a>
       <ul>
-        <li><a href="#docker-container-ls-看容器">docker container ls (看容器)</a></li>
+        <li></li>
         <li><a href="#docker-ps-看容器">docker ps (看容器)</a></li>
         <li><a href="#container-stop-停掉container">Container Stop (停掉Container)</a></li>
         <li><a href="#container-remove移除停掉的container">Container remove(移除停掉的Container)</a></li>

@@ -1,3 +1,4 @@
+
 <!DOCTYPE HTML>
 <html lang="zh-TW">
 <head>
@@ -55,6 +56,19 @@
     <span class="btn-bar"></span>
   </button>
 </div>
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'G-WF6NBSJFE5', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
 
 <nav class="site-nav">
     <ul id="menu" class="menu">
@@ -161,7 +175,7 @@
       </div>
     </header>
     <div class="post-body" itemprop="articleBody">
-    <p>WindowsNetCmd筆記</p>
+    <h2 id="windowsnetcmd筆記">WindowsNetCmd筆記</h2>
 <h2 id="前言">前言</h2>
 <p>在網路的世界有 Client 端 及 Server 端 ，有時Server 時要對Cleint 端 開放 特殊服務的Port 才可以正常使用服務</p>
 <h2 id="windows網路指令">Windows網路指令:</h2>
@@ -190,8 +204,8 @@ netstat -au # 列出所有UDP埠
 <p>tracert 是一個簡單的網絡診斷工具，可以列出分組經過的路由節點（通過tracert命令，就能知道本機與目標主機之間經過多台主機，即經過多少路由。）</p>
 <pre><code>tracert www.google.com
 </code></pre>
-<p>參考</p>
-<p>ping、telnet、tracert簡介與使用 - IT閱讀<br>
+<p>參考
+ping、telnet、tracert簡介與使用 - IT閱讀<br>
 <a href="https://www.itread01.com/content/1550289784.html">https://www.itread01.com/content/1550289784.html</a></p>
 <p>windows網絡命令：ping、ipconfig、tracert、netstat、arp - 每日頭條<br>
 <a href="https://kknews.cc/zh-tw/code/o3jx8z5.html">https://kknews.cc/zh-tw/code/o3jx8z5.html</a></p>
@@ -212,12 +226,16 @@ netstat -au # 列出所有UDP埠
      <div class="post-nav">
     <div class="post-nav-next post-nav-item">
     
+        <a href="https://iankingh.github.io/post/angular/angularusejs/" rel="next" title="AngularUseJS">
+        <i class="fa fa-chevron-left"></i> AngularUseJS
+        </a>
+    
     </div>
 
     <div class="post-nav-prev post-nav-item">
     
-        <a href="https://iankingh.github.io/post/net/ip/" rel="prev" title="IP">
-        IP <i class="fa fa-chevron-right"></i>
+        <a href="https://iankingh.github.io/post/net/sslandtlsandhttps/" rel="prev" title="SSlAndTLS">
+        SSlAndTLS <i class="fa fa-chevron-right"></i>
         </a>
     
     </div>
@@ -235,24 +253,26 @@ netstat -au # 列出所有UDP埠
     <div class="disqus markdown">
       <div id="disqus_thread"></div>
 <script type="text/javascript">
-
     (function () {
         
         
         
         
-
-
-        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        var dsq = document.createElement('script');
+        dsq.type = 'text/javascript';
+        dsq.async = true;
         var disqus_shortname = 'https-iankingh-github-io';
         dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
         (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
     })();
 </script>
-<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by
-        Disqus.</a></noscript>
+<noscript>Please enable JavaScript to view the 
+    <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+</noscript>
 <a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
     </div>
+
+
   </article>
 </section>
 
@@ -289,14 +309,14 @@ netstat -au # 列出所有UDP埠
       <nav class="site-state motion-element">
     <div class="site-state-item site-state-posts">
       <a href="https://iankingh.github.io/post/">
-        <span class="site-state-item-count">19</span>
+        <span class="site-state-item-count">32</span>
         <span class="site-state-item-name">日誌</span>
       </a>
     </div>
     <div class="site-state-item site-state-categories">    
         <a href="https://iankingh.github.io/categories/">      
          
-        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-count">4</span>
         
         <span class="site-state-item-name">分類</span>
         
@@ -306,7 +326,7 @@ netstat -au # 列出所有UDP埠
     <div class="site-state-item site-state-tags">
         <a href="https://iankingh.github.io/tags/">
          
-        <span class="site-state-item-count">14</span>
+        <span class="site-state-item-count">23</span>
         
         <span class="site-state-item-name">標籤</span>
         </a>
@@ -338,6 +358,7 @@ netstat -au # 列出所有UDP埠
     <div class="post-toc">
         <div class="post-toc-content"><nav id="TableOfContents">
   <ul>
+    <li><a href="#windowsnetcmd筆記">WindowsNetCmd筆記</a></li>
     <li><a href="#前言">前言</a></li>
     <li><a href="#windows網路指令">Windows網路指令:</a>
       <ul>

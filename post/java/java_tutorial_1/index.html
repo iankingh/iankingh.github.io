@@ -1,16 +1,17 @@
+
 <!DOCTYPE HTML>
 <html lang="zh-TW">
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" /> 
-    <title>[從 0 開始的 JAVA 生活]No.2 Java 基本的資料型態(Primitive Data Types) - ianhuang筆記</title>
+    <title>[從 0 開始的 JAVA 生活] No.1 Java 第一支 java 程式 - ianhuang筆記</title>
     <meta name="keywords" content="程式師,架構師,個人,筆記,技術">
     
-    <meta property="og:title" content="[從 0 開始的 JAVA 生活]No.2 Java 基本的資料型態(Primitive Data Types)">
+    <meta property="og:title" content="[從 0 開始的 JAVA 生活] No.1 Java 第一支 java 程式">
     <meta property="og:site_name" content="ianhuang筆記">
     <meta property="og:image" content="/img/author.jpg"> 
-    <meta name="title" content="[從 0 開始的 JAVA 生活]No.2 Java 基本的資料型態(Primitive Data Types) - ianhuang筆記" />
+    <meta name="title" content="[從 0 開始的 JAVA 生活] No.1 Java 第一支 java 程式 - ianhuang筆記" />
     <meta name="description" content="筆記 | 軟體 | 架構 | Java "> 
     <link rel="shortcut icon" href="https://iankingh.github.io/img/favicon.ico" />
     <link rel="apple-touch-icon" href="https://iankingh.github.io/img/apple-touch-icon.png" />
@@ -55,6 +56,19 @@
     <span class="btn-bar"></span>
   </button>
 </div>
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'G-WF6NBSJFE5', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
 
 <nav class="site-nav">
     <ul id="menu" class="menu">
@@ -118,7 +132,7 @@
     <header class="post-header">
       <h1 class="post-title" itemprop="name headline">
         <a class="post-title-link" href="https://iankingh.github.io/post/java/java_tutorial_1/" itemprop="url">
-        [從 0 開始的 JAVA 生活]No.2 Java 基本的資料型態(Primitive Data Types)
+        [從 0 開始的 JAVA 生活] No.1 Java 第一支 java 程式
         </a>
       </h1>
       <div class="post-meta">
@@ -127,8 +141,8 @@
     <i class="fa fa-calendar-o"></i>
 </span>
 <span class="post-meta-item-text">時間：</span>
-<time itemprop="dateCreated" datetime="2016-03-22T13:04:35+08:00" content="2020-05-19">
-    2020-05-19
+<time itemprop="dateCreated" datetime="2016-03-22T13:04:35+08:00" content="2020-05-29">
+    2020-05-29
 </time>
 </span> 
       
@@ -163,170 +177,35 @@
     <i class="fa fa-eye"></i>
 </span>
 <span class="post-meta-item-text">閱讀：</span>
-<span class="leancloud-visitors-count">1208 字 ~3分鐘</span>
+<span class="leancloud-visitors-count">74 字 ~1分鐘</span>
 </span>
       </div>
     </header>
     <div class="post-body" itemprop="articleBody">
-    <h2 id="java-基本的資料型態primitive-data-types">Java 基本的資料型態(Primitive Data Types)</h2>
-<table>
-<thead>
-<tr>
-<th align="left">序號</th>
-<th>數據類型</th>
-<th>大小/位</th>
-<th>封裝類</th>
-<th>默認值</th>
-<th>可表示數據范圍</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">1</td>
-<td>byte</td>
-<td>8bit</td>
-<td>Byte</td>
-<td>0</td>
-<td>-128~127</td>
-</tr>
-<tr>
-<td align="left">2</td>
-<td>short</td>
-<td>16bit</td>
-<td>Short</td>
-<td>0</td>
-<td>-32768~32767</td>
-</tr>
-<tr>
-<td align="left">3</td>
-<td>int</td>
-<td>32bit</td>
-<td>Integer</td>
-<td>0</td>
-<td>-2147483648~2147483647</td>
-</tr>
-<tr>
-<td align="left">4</td>
-<td>long</td>
-<td>64bit</td>
-<td>Long</td>
-<td>0L</td>
-<td>-9223372036854775808~9223372036854775807</td>
-</tr>
-<tr>
-<td align="left">5</td>
-<td>float</td>
-<td>32bit</td>
-<td>Float</td>
-<td>0.0F</td>
-<td>1.4E-45~3.4028235E38</td>
-</tr>
-<tr>
-<td align="left">6</td>
-<td>double</td>
-<td>64bit</td>
-<td>Double</td>
-<td>0.0D</td>
-<td>4.9E-324~1.7976931348623157E308</td>
-</tr>
-<tr>
-<td align="left">7</td>
-<td>char</td>
-<td>16bit</td>
-<td>Character</td>
-<td>&lsquo;\u0000&rsquo;</td>
-<td>0~65535</td>
-</tr>
-<tr>
-<td align="left">8</td>
-<td>boolean</td>
-<td>8bit</td>
-<td>Boolean</td>
-<td>false</td>
-<td>true或false</td>
-</tr>
-</tbody>
-</table>
-<h3 id="範例">範例</h3>
-<pre><code class="language-java">package ch1;
-
-/**
- * 
- * 
- * &lt;p/&gt;
- * Package: ch1 &lt;br&gt;
- * File Name: PrimitiveDataTypesTest &lt;br&gt;
- * &lt;p/&gt;
- * Purpose: &lt;br&gt;
- * 
- * @ClassName: ch1.PrimitiveDataTypesTest
- * @Description: 測試基本數據類型
- * @Copyright : Copyright (c) Corp. 2020. All Rights Reserved.
- * @Company: ian Team.
- * @author ian
- * @version 1.0, 2020年5月18日
- */
-public class PrimitiveDataTypesTest {
-
-        static byte b;
-        static short s;
-        static int i;
-        static long l;
-        static float f;
-        static double d;
-        static char c;
-        static boolean bo;
-
-        // String不是基本類型
-        static String str1 = &quot;&quot;;// 生成一個String類型的引用，而且分配記憶體空間來存放&quot;&quot;;
-        static String str2; // 只生成一個string類型的引用；不分配記憶體空間,預設為null
-
-        public static void main(String[] args) {
-
-                System.out.println(&quot;byte的大小：&quot; + Byte.SIZE + &quot; byte的預設值：&quot; + b + &quot; byte的資料範圍：&quot; + Byte.MIN_VALUE + &quot;~&quot;
-                                + Byte.MAX_VALUE);
-                System.out.println(&quot;----------------------------------------------------&quot;);
-                System.out.println(&quot;short的大小：&quot; + Short.SIZE + &quot; short的預設值：&quot; + s + &quot; short的資料範圍：&quot; + Short.MIN_VALUE + &quot;~&quot;
-                                + Short.MAX_VALUE);
-                System.out.println(&quot;----------------------------------------------------&quot;);
-                System.out.println(&quot;int的大小：&quot; + Integer.SIZE + &quot; int的預設值：&quot; + i + &quot; int的資料範圍：&quot; + Integer.MIN_VALUE + &quot;~&quot;
-                                + Integer.MAX_VALUE);
-                System.out.println(&quot;----------------------------------------------------&quot;);
-                System.out.println(&quot;long的大小：&quot; + Long.SIZE + &quot; long的預設值：&quot; + l + &quot; long的資料範圍：&quot; + Long.MIN_VALUE + &quot;~&quot;
-                                + Long.MAX_VALUE);
-                System.out.println(&quot;----------------------------------------------------&quot;);
-                System.out.println(&quot;float的大小：&quot; + Float.SIZE + &quot; float的預設值：&quot; + f + &quot; float的資料範圍：&quot; + Float.MIN_VALUE + &quot;~&quot;
-                                + Float.MAX_VALUE);
-                System.out.println(&quot;----------------------------------------------------&quot;);
-                System.out.println(&quot;double的大小：&quot; + Double.SIZE + &quot; double的預設值：&quot; + d + &quot; double的資料範圍：&quot; + Double.MIN_VALUE
-                                + &quot;~&quot; + Double.MAX_VALUE);
-                System.out.println(&quot;----------------------------------------------------&quot;);
-                System.out.println(&quot;char的大小：&quot; + Character.SIZE + &quot; char的預設值：&quot; + c + &quot; char的資料範圍：&quot; + Character.MIN_VALUE
-                                + &quot;~&quot; + Character.MAX_VALUE);
-                System.out.println(&quot;----------------------------------------------------&quot;);
-                System.out.println(&quot;boolean的大小：&quot; + Byte.SIZE + &quot; boolean的預設值：&quot; + bo + &quot; boolean的資料範圍：&quot; + Byte.MIN_VALUE
-                                + &quot;~&quot; + Byte.MAX_VALUE);
-
-                System.out.println(&quot;String字串的預設值：&quot; + str1 + &quot;str的默認長度：&quot; + str1.length());
-                System.out.println(&quot;String字串的預設值：&quot; + str2);
-
-        }
+    <h2 id="從-0-開始的-java-生活-no1-java-第一支-java-程式">從 0 開始的 JAVA 生活 No.1 Java 第一支 java 程式</h2>
+<h3 id="建立一個hellojavajava-的檔案">建立一個HelloJava.java 的檔案</h3>
+<pre><code class="language-java">class HelloJava{
+    public static void main(String args[]){
+        System.out.println(&quot;Hello Java&quot;);
+    }
 }
 </code></pre>
-<h2 id="java--跳脫字元-escape-characters">JAVA  跳脫字元 Escape Characters</h2>
-<pre><code>- \' : 單引號
-- \&quot; : 雙引號
-- \\ : 反斜線
-- \n : 換行
-- \t : tab鍵
-- \b : 倒退一格
-- \f : 換頁
-- \r : Enter 鍵
+<h3 id="編譯程式">編譯程式</h3>
+<p>語法 ：</p>
+<pre><code class="language-shell">javac xxxx.java
+</code></pre>
+<p>EX :</p>
+<pre><code class="language-shell">javac HelloJava.java
+</code></pre>
+<h3 id="執行程式">執行程式</h3>
+<p>語法 ：</p>
+<pre><code class="language-shell">
+java xxxx
 
 </code></pre>
-<p>參考</p>
-<p>Java中8種基本數據類型默認的默認值_java_飛月程序人生-CSDN博客</p>
-<p><a href="https://blog.csdn.net/fysuccess/article/details/40656761">https://blog.csdn.net/fysuccess/article/details/40656761</a></p>
+<p>EX :</p>
+<pre><code class="language-shell">java HelloJava
+</code></pre>
     </div>
     <footer class="post-footer">
      
@@ -342,16 +221,16 @@ public class PrimitiveDataTypesTest {
      <div class="post-nav">
     <div class="post-nav-next post-nav-item">
     
-        <a href="https://iankingh.github.io/post/redis/redisinstall/" rel="next" title="RedisInstall">
-        <i class="fa fa-chevron-left"></i> RedisInstall
+        <a href="https://iankingh.github.io/post/java/java_tutorial_2/" rel="next" title="[從 0 開始的 JAVA 生活]No.2 Java 基本的資料型態(Primitive Data Types)">
+        <i class="fa fa-chevron-left"></i> [從 0 開始的 JAVA 生活]No.2 Java 基本的資料型態(Primitive Data Types)
         </a>
     
     </div>
 
     <div class="post-nav-prev post-nav-item">
     
-        <a href="https://iankingh.github.io/post/git/gitlab%E5%95%8F%E9%A1%8C/" rel="prev" title="GitLab error">
-        GitLab error <i class="fa fa-chevron-right"></i>
+        <a href="https://iankingh.github.io/post/java/java_decimalformat/" rel="prev" title="Java DecimalFormat(數字格式)">
+        Java DecimalFormat(數字格式) <i class="fa fa-chevron-right"></i>
         </a>
     
     </div>
@@ -369,24 +248,26 @@ public class PrimitiveDataTypesTest {
     <div class="disqus markdown">
       <div id="disqus_thread"></div>
 <script type="text/javascript">
-
     (function () {
         
         
         
         
-
-
-        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        var dsq = document.createElement('script');
+        dsq.type = 'text/javascript';
+        dsq.async = true;
         var disqus_shortname = 'https-iankingh-github-io';
         dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
         (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
     })();
 </script>
-<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by
-        Disqus.</a></noscript>
+<noscript>Please enable JavaScript to view the 
+    <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+</noscript>
 <a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
     </div>
+
+
   </article>
 </section>
 
@@ -423,14 +304,14 @@ public class PrimitiveDataTypesTest {
       <nav class="site-state motion-element">
     <div class="site-state-item site-state-posts">
       <a href="https://iankingh.github.io/post/">
-        <span class="site-state-item-count">19</span>
+        <span class="site-state-item-count">32</span>
         <span class="site-state-item-name">日誌</span>
       </a>
     </div>
     <div class="site-state-item site-state-categories">    
         <a href="https://iankingh.github.io/categories/">      
          
-        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-count">4</span>
         
         <span class="site-state-item-name">分類</span>
         
@@ -440,7 +321,7 @@ public class PrimitiveDataTypesTest {
     <div class="site-state-item site-state-tags">
         <a href="https://iankingh.github.io/tags/">
          
-        <span class="site-state-item-count">14</span>
+        <span class="site-state-item-count">23</span>
         
         <span class="site-state-item-name">標籤</span>
         </a>
@@ -472,12 +353,13 @@ public class PrimitiveDataTypesTest {
     <div class="post-toc">
         <div class="post-toc-content"><nav id="TableOfContents">
   <ul>
-    <li><a href="#java-基本的資料型態primitive-data-types">Java 基本的資料型態(Primitive Data Types)</a>
+    <li><a href="#從-0-開始的-java-生活-no1-java-第一支-java-程式">從 0 開始的 JAVA 生活 No.1 Java 第一支 java 程式</a>
       <ul>
-        <li><a href="#範例">範例</a></li>
+        <li><a href="#建立一個hellojavajava-的檔案">建立一個HelloJava.java 的檔案</a></li>
+        <li><a href="#編譯程式">編譯程式</a></li>
+        <li><a href="#執行程式">執行程式</a></li>
       </ul>
     </li>
-    <li><a href="#java--跳脫字元-escape-characters">JAVA  跳脫字元 Escape Characters</a></li>
   </ul>
 </nav></div>
     </div>

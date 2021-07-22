@@ -1,0 +1,452 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" /> 
+    <title>AndroidBsN01 - ianhuang筆記</title>
+    <meta name="keywords" content="程式師,架構師,個人,筆記,技術">
+    
+    <meta property="og:title" content="AndroidBsN01">
+    <meta property="og:site_name" content="ianhuang筆記">
+    <meta property="og:image" content="/img/author.jpg"> 
+    <meta name="title" content="AndroidBsN01 - ianhuang筆記" />
+    <meta name="description" content="筆記 | 軟體 | 架構 | Java "> 
+    <link rel="shortcut icon" href="https://iankingh.github.io/img/favicon.ico" />
+    <link rel="apple-touch-icon" href="https://iankingh.github.io/img/apple-touch-icon.png" />
+    <link rel="apple-touch-icon-precomposed" href="https://iankingh.github.io/img/apple-touch-icon.png" />
+    <link href="https://iankingh.github.io/js/vendor/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+    <link href="https://iankingh.github.io/js/vendor/fancybox/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+    <link href="https://iankingh.github.io/css/main.css" rel="stylesheet" type="text/css" />
+    
+    <link href="https://iankingh.github.io/prism.css" rel="stylesheet"   type="text/css"/>
+    <script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Pisces',
+    sidebar: {"position":"left","display":"post"},
+     fancybox: true, 
+    motion: true
+  };
+</script>
+</head>
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+<div class="container one-collumn sidebar-position-left page-home  ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"> <div class="site-meta  custom-logo ">
+
+  <div class="custom-logo-site-title">
+    <a href="https://iankingh.github.io/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">ianhuang筆記</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle">總有一天，你的日積月累，會變成他人的望塵莫及</p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'G-WF6NBSJFE5', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+<nav class="site-nav">
+    <ul id="menu" class="menu">
+      
+      
+        <li class="menu-item ">
+          <a href="https://iankingh.github.io/" rel="section">
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />首頁
+          </a>
+        </li>
+      
+        <li class="menu-item ">
+          <a href="https://iankingh.github.io/categories/%E6%8A%80%E8%A1%93/" rel="section">
+              <i class="menu-item-icon fa fa-fw fa-code"></i> <br />技術
+          </a>
+        </li>
+      
+        <li class="menu-item ">
+          <a href="https://iankingh.github.io/categories/%E7%AD%86%E8%A8%98/" rel="section">
+              <i class="menu-item-icon fa fa-fw fa-book"></i> <br />筆記
+          </a>
+        </li>
+      
+        <li class="menu-item ">
+          <a href="https://iankingh.github.io/post/" rel="section">
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />歸檔
+          </a>
+        </li>
+      
+        <li class="menu-item ">
+          <a href="https://iankingh.github.io/about/" rel="section">
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />關於
+          </a>
+        </li>
+      
+      <li class="menu-item menu-item-search">
+        <a href="javascript:;" class="popup-trigger"> <i class="menu-item-icon fa fa-search fa-fw"></i> <br /> 搜索</a>
+      </li>
+    </ul>
+    <div class="site-search">
+      <div class="popup">
+ <span class="search-icon fa fa-search"></span>
+ <input type="text" id="local-search-input">
+ <div id="local-search-result"></div>
+ <span class="popup-btn-close">close</span>
+</div>
+
+    </div>
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+<section id="posts" class="posts-expand">
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+      <h1 class="post-title" itemprop="name headline">
+        <a class="post-title-link" href="https://iankingh.github.io/post/android/androidbsn01/" itemprop="url">
+        AndroidBsN01
+        </a>
+      </h1>
+      <div class="post-meta">
+      <span class="post-time">
+<span class="post-meta-item-icon">
+    <i class="fa fa-calendar-o"></i>
+</span>
+<span class="post-meta-item-text">時間：</span>
+<time itemprop="dateCreated" datetime="2016-03-22T13:04:35+08:00" content="2020-05-25">
+    2020-05-25
+</time>
+</span> 
+      
+
+  <span class="post-category" >
+  &nbsp; | &nbsp;
+  <span class="post-meta-item-icon">
+    <i class="fa fa-folder-o"></i>
+  </span>
+  <span class="post-meta-item-text">分類：</span>
+  
+    <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+      <a href="https://iankingh.github.io/categories/%E7%AD%86%E8%A8%98" itemprop="url" rel="index">
+        <span itemprop="name">筆記</span>
+      </a>
+      &nbsp; 
+    </span>
+  
+</span>
+
+
+       <span>
+&nbsp; | &nbsp;
+<span class="post-meta-item-icon">
+    <i class="fa fa-eye"></i>
+</span>
+<span class="post-meta-item-text">閱讀：</span>
+<span class="leancloud-visitors-count">877 字 ~2分鐘</span>
+</span>
+      </div>
+    </header>
+    <div class="post-body" itemprop="articleBody">
+    <h2 id="create-an-android-project創建一個android項目">Create an Android project(創建一個Android項目)</h2>
+<p>要創建新的Android項目，請按照以下步驟操作：</p>
+<ol>
+<li>
+<p>安裝最新版本的 <a href="https://developer.android.com/studio/">Android Studio</a>。</p>
+</li>
+<li>
+<p>在<strong>Welcome to Android Studio</strong>窗口中，單擊啟動新的<strong>Strat a new Android Studio project</strong>。
+<img src="https://iankingh.github.io/images/Android/Welcome_to_Android_Studio.png" alt="Welcome to Android Studio"></p>
+</li>
+<li>
+<p>在<strong>Select a Project Template</strong>窗口中，選擇&rdquo; <strong>Empty Activity</strong>，然後單擊<strong>next</strong>。</p>
+</li>
+</ol>
+<p><img src="https://iankingh.github.io/images/Android/Select_a_Project_Template.png" alt="Configure Your Project"></p>
+<ol start="4">
+<li>在<strong>Configure Your Project</strong>窗口中，完成以下操作：</li>
+</ol>
+<p><img src="https://iankingh.github.io/images/Android/Configure_Your_Project.png" alt="Configure Your Project"></p>
+<p>·    在<strong>Name</strong>輸入 &ldquo;Myfirstapp&rdquo; 。</p>
+<p>·    在<strong>Package name</strong>字段中輸入&quot;com.example.myfirstapp&rdquo; 。</p>
+<p>·    Save Location 預設專案放置位置，如果要將項目放置在其他文件夾中，請更改其<strong>保存</strong>位置。</p>
+<p>·    從&rdquo; Language&quot;下拉菜單中選擇<strong>Java</strong>或<strong>Kotlin</strong>。</p>
+<p>·    在&quot;Minimum SDK&quot;選擇您的應用將支持的<strong>最低</strong> Android版本。</p>
+<p>·    保留其他選項不變。</p>
+<ol>
+<li>點擊<strong>完成</strong>。</li>
+</ol>
+<p>經過一段時間的處理後，出現Android Studio主窗口。</p>
+<p>Android Studio主窗口</p>
+<p>現在花點時間查看最重要的文件。</p>
+<p>首先，請確保已打開項目窗口（選擇“視圖&gt;工具窗口&gt;項目），並且從該窗口頂部的下拉列表中選擇了Android視圖。然後，您可以看到以下文件：</p>
+<p>應用&gt; Java&gt; com.example.myfirstapp&gt; MainActivity</p>
+<p>這是主要活動。這是您的應用程序的切入點。在構建和運行應用程序時，系統將啟動該應用程序的實例 <a href="https://developer.android.com/reference/android/app/Activity">Activity</a> 並加載其佈局。</p>
+<p>應用程序&gt; res&gt;佈局&gt; activity_main.xml</p>
+<p>此XML文件定義活動的用戶界面（UI）的佈局。它包含一個<a href="https://developer.android.com/reference/android/widget/TextView">TextView</a>帶有文本“ Hello，World！” 的 元素。</p>
+<p><strong>應用&gt;清單****&gt; AndroidManifest.xml</strong></p>
+<p>該<a href="https://developer.android.com/guide/topics/manifest/manifest-intro">清單文件</a>描述了應用程序的基本特徵，並限定它的每一個組件。</p>
+<p><strong>Gradle<strong><strong>腳本</strong></strong>&gt; build.gradle</strong></p>
+<p>有兩個名稱相同的文件：一個用於項目“ Project：My First App”，另一個用於應用程序模塊“ Module：app”。每個模塊都有自己的build.gradle文件，但是該項目當前只有一個模塊。使用每個模塊build.file來控制<a href="https://developer.android.com/studio/releases/gradle-plugin">Gradle插件</a>如何構建您的應用程序。有關此文件的更多信息，請參見 <a href="https://developer.android.com/studio/build#module-level">配置構建</a>。</p>
+<p>參考</p>
+<p><a href="https://developer.android.com/training/basics/firstapp/creating-project">https://developer.android.com/training/basics/firstapp/creating-project</a></p>
+    </div>
+    <footer class="post-footer">
+     
+ 
+<div class="post-tags">     
+     
+    <a href="https://iankingh.github.io/tags/java" rel="tag" title="java">#java#</a>
+    
+    <a href="https://iankingh.github.io/tags/kotlin" rel="tag" title="Kotlin">#Kotlin#</a>
+    
+    <a href="https://iankingh.github.io/tags/android" rel="tag" title="Android">#Android#</a>
+    
+</div>
+
+
+
+     <div class="post-nav">
+    <div class="post-nav-next post-nav-item">
+    
+        <a href="https://iankingh.github.io/post/java/java_decimalformat/" rel="next" title="Java DecimalFormat(數字格式)">
+        <i class="fa fa-chevron-left"></i> Java DecimalFormat(數字格式)
+        </a>
+    
+    </div>
+
+    <div class="post-nav-prev post-nav-item">
+    
+        <a href="https://iankingh.github.io/post/redis/redisinstall/" rel="prev" title="Redis簡介">
+        Redis簡介 <i class="fa fa-chevron-right"></i>
+        </a>
+    
+    </div>
+</div>
+      
+     
+     
+     
+
+
+
+     
+    </footer>
+
+    <div class="disqus markdown">
+      <div id="disqus_thread"></div>
+<script type="text/javascript">
+    (function () {
+        
+        
+        
+        
+        var dsq = document.createElement('script');
+        dsq.type = 'text/javascript';
+        dsq.async = true;
+        var disqus_shortname = 'https-iankingh-github-io';
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the 
+    <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+</noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </div>
+
+
+  </article>
+</section>
+
+          </div>
+        </div>
+        <div class="sidebar-toggle">
+  <div class="sidebar-toggle-line-wrap">
+    <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+    <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+    <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+  </div>
+</div>
+<aside id="sidebar" class="sidebar">
+  <div class="sidebar-inner">
+
+  <ul class="sidebar-nav motion-element">
+    <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+      文章目錄
+    </li>
+    <li class="sidebar-nav-overview" data-target="site-overview">
+      網站概覽
+    </li>
+  </ul>
+
+    <section class="site-overview sidebar-panel ">
+      <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image"
+        src="https://iankingh.github.io/img/author.jpg"
+        alt="ianhuang" />
+    <p class="site-author-name" itemprop="name">ianhuang</p>
+    <p class="site-description motion-element" itemprop="description"> 
+        Programmer &amp; Architect</p>
+</div>
+      <nav class="site-state motion-element">
+    <div class="site-state-item site-state-posts">
+      <a href="https://iankingh.github.io/post/">
+        <span class="site-state-item-count">32</span>
+        <span class="site-state-item-name">日誌</span>
+      </a>
+    </div>
+    <div class="site-state-item site-state-categories">    
+        <a href="https://iankingh.github.io/categories/">      
+         
+        <span class="site-state-item-count">4</span>
+        
+        <span class="site-state-item-name">分類</span>
+        
+        </a>
+    </div>
+
+    <div class="site-state-item site-state-tags">
+        <a href="https://iankingh.github.io/tags/">
+         
+        <span class="site-state-item-count">23</span>
+        
+        <span class="site-state-item-name">標籤</span>
+        </a>
+    </div>
+</nav>
+      
+      
+<div class="links-of-author motion-element">
+    
+        <span class="links-of-author-item">
+        <a href="https://github.com/iankingh" target="_blank" title="GitHub">
+            <i class="fa fa-fw fa-github"></i>
+            GitHub
+        </a>
+        </span>
+    
+</div>
+
+
+      
+
+      <div class="links-of-blogroll motion-element inline">
+<script type="text/javascript" src="//rf.revolvermaps.com/0/0/8.js?i=5b4f2ucxar6&amp;m=0&amp;s=220&amp;c=ff0000&amp;cr1=ffffff&amp;f=arial&amp;l=33&amp;bv=35" async="async"></script>
+</div>
+
+    </section>
+    
+<section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+    <div class="post-toc">
+        <div class="post-toc-content"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#create-an-android-project創建一個android項目">Create an Android project(創建一個Android項目)</a></li>
+  </ul>
+</nav></div>
+    </div>
+</section>
+
+  </div>
+</aside>
+
+      </div>
+    </main>
+   
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  <span itemprop="copyrightYear">  &copy; 
+  2009 - 2021</span>
+  <span class="with-love"><i class="fa fa-heart"></i></span>
+  <span class="author" itemprop="copyrightHolder">ianhuang筆記</span>
+</div>
+<div class="powered-by">
+  Powered by - <a class="theme-link" href="http://gohugo.io" target="_blank" title="hugo" >Hugo v0.68.3</a>
+</div>
+<div class="theme-info">
+  Theme by - <a class="theme-link" href="https://github.com/xtfly/hugo-theme-next" target="_blank"> NexT
+  </a>
+</div>
+
+
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+      <span id="scrollpercent"><span>0</span>%</span>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+<script type="text/javascript" src="https://iankingh.github.io/js/vendor/jquery/index.js?v=2.1.3"></script>
+<script type="text/javascript" src="https://iankingh.github.io/js/vendor/fastclick/lib/fastclick.min.js?v=1.0.6"></script> 
+<script type="text/javascript" src="https://iankingh.github.io/js/vendor/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+<script type="text/javascript" src="https://iankingh.github.io/js/vendor/velocity/velocity.min.js?v=1.2.1"></script>
+<script type="text/javascript" src="https://iankingh.github.io/js/vendor/velocity/velocity.ui.min.js?v=1.2.1"></script>
+<script src="https://iankingh.github.io/js/vendor/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
+
+<script src="https://iankingh.github.io/js/vendor/fancybox/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+<script type="text/javascript" src="https://iankingh.github.io/js/utils.js"></script>
+<script type="text/javascript" src="https://iankingh.github.io/js/motion.js"></script>
+<script type="text/javascript" src="https://iankingh.github.io/js/affix.js"></script>
+<script type="text/javascript" src="https://iankingh.github.io/js/schemes/pisces.js"></script>
+
+<script type="text/javascript" src="https://iankingh.github.io/js/scrollspy.js"></script>
+<script type="text/javascript" src="https://iankingh.github.io/js/post-details.js"></script>
+<script type="text/javascript" src="https://iankingh.github.io/js/toc.js"></script>
+
+<script type="text/javascript" src="https://iankingh.github.io/js/bootstrap.js"></script>
+
+<script type="text/javascript" src="https://iankingh.github.io/js/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX", "output/HTML-CSS"],
+    tex2jax: {
+      inlineMath: [ ['$','$'] ],
+      displayMath: [ ['$$','$$'] ],
+      processEscapes: true
+    },
+    "HTML-CSS": { fonts: ["TeX"] }
+  });
+</script>
+<script src="https://iankingh.github.io/prism.js"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML' async></script>
+</body>
+</html>

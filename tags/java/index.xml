@@ -6,10 +6,31 @@
     <description>Recent content in java on ianhuang筆記</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-TW</language>
-    <lastBuildDate>Thu, 04 Jun 2020 05:45:59 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 03 Mar 2021 13:33:50 +0800</lastBuildDate>
     
 	<atom:link href="https://iankingh.github.io/tags/java/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>tomcatSetingUser</title>
+      <link>https://iankingh.github.io/post/server/tomcatsetinguser/</link>
+      <pubDate>Wed, 03 Mar 2021 13:33:50 +0800</pubDate>
+      
+      <guid>https://iankingh.github.io/post/server/tomcatsetinguser/</guid>
+      <description>&lt;h2 id=&#34;配置tomcat-的使用者&#34;&gt;配置Tomcat 的使用者&lt;/h2&gt;</description>
+    </item>
+    
+    <item>
+      <title>Java_heap_space</title>
+      <link>https://iankingh.github.io/post/java/java_heap_space/</link>
+      <pubDate>Tue, 02 Mar 2021 14:35:25 +0800</pubDate>
+      
+      <guid>https://iankingh.github.io/post/java/java_heap_space/</guid>
+      <description>&lt;h2 id=&#34;javalangoutofmemoryerror-java-heap-space-jvm記憶體設定&#34;&gt;java.lang.OutOfMemoryError: Java heap space JVM記憶體設定&lt;/h2&gt;
+&lt;p&gt;使用Java程式從資料庫中查詢大量的資料時出現異常:java.lang.OutOfMemoryError: Java heap space
+在JVM中如果98%的時間是用於GC且可用的 Heap size 不足2%的時候將丟擲此異常資訊。
+JVM堆的設定是指java程式執行過程中JVM可以調配使用的記憶體空間的設定.JVM在啟動的時候會自動設定Heap size的值,其初始空間(即-Xms)是實體記憶體的1/64,最大空間(-Xmx)是實體記憶體的1/4。可以利用JVM提供的-Xmn -Xms -Xmx等選項可進行設定。&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>SpringDataJapNotes</title>
@@ -19,13 +40,29 @@
       <guid>https://iankingh.github.io/post/spring/springdatajapnotes/</guid>
       <description>&lt;h2 id=&#34;spring-data-jpa-介紹&#34;&gt;Spring Data JPA 介紹&lt;/h2&gt;
 &lt;h3 id=&#34;spring-data-概述&#34;&gt;Spring-Data 概述&lt;/h3&gt;
-&lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;Spring Data&lt;/strong&gt; 是一個資料訪問框架 ，用於簡化資料庫訪問，旨在提供一致的資料庫訪問模型，同時仍然保留不同資料庫底層資料存儲的特點，&lt;strong&gt;Spring&lt;/strong&gt; &lt;strong&gt;Data&lt;/strong&gt; 採用了&lt;strong&gt;領域驅動模型&lt;/strong&gt;的設計思想，實現了訪問關係型數據庫、非關係型數據庫的統一的介面，只需要定義好領域模型（&lt;strong&gt;Entity&lt;/strong&gt;），後續的創建表、&lt;strong&gt;CURD&lt;/strong&gt;、排序操作不需要手動添加任何&lt;strong&gt;SQL&lt;/strong&gt;語句，同時也支持手動擴展功能。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Spring Data&lt;/strong&gt; 只要定義介面，遵循 &lt;strong&gt;Spring Data&lt;/strong&gt; 的規範，就無需寫實現類。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Spring Data&lt;/strong&gt; 提供了預設的交易處理方式，即所有的查詢均聲明為唯讀事務。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Spring Data&lt;/strong&gt; 專案所支援 &lt;strong&gt;NoSQL&lt;/strong&gt; 存儲：&lt;strong&gt;MongoDB&lt;/strong&gt; （文檔資料庫）、&lt;strong&gt;Neo4j&lt;/strong&gt;（圖形資料庫）、Redis（&lt;strong&gt;鍵&lt;/strong&gt;/值存儲）、&lt;strong&gt;Hbase&lt;/strong&gt;（列族資料庫）&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Spring Data&lt;/strong&gt; 專案所支援的關係資料存儲技術：&lt;strong&gt;JDBC、JPA&lt;/strong&gt;&lt;/p&gt;
-&lt;/blockquote&gt;</description>
+&lt;p&gt;&lt;strong&gt;Spring Data&lt;/strong&gt; 專案所支援的關係資料存儲技術：&lt;strong&gt;JDBC、JPA&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>[從 0 開始的 JAVA 生活]No.2 Java 基本的資料型態(Primitive Data Types)</title>
+      <link>https://iankingh.github.io/post/java/java_tutorial_2/</link>
+      <pubDate>Sat, 30 May 2020 06:22:46 +0800</pubDate>
+      
+      <guid>https://iankingh.github.io/post/java/java_tutorial_2/</guid>
+      <description>&lt;!-- raw HTML omitted --&gt;</description>
+    </item>
+    
+    <item>
+      <title>[從 0 開始的 JAVA 生活] No.1 Java 第一支 java 程式</title>
+      <link>https://iankingh.github.io/post/java/java_tutorial_1/</link>
+      <pubDate>Fri, 29 May 2020 06:50:51 +0800</pubDate>
+      
+      <guid>https://iankingh.github.io/post/java/java_tutorial_1/</guid>
+      <description>&lt;h2 id=&#34;從-0-開始的-java-生活-no1-java-第一支-java-程式&#34;&gt;從 0 開始的 JAVA 生活 No.1 Java 第一支 java 程式&lt;/h2&gt;</description>
     </item>
     
     <item>
@@ -40,20 +77,20 @@
     </item>
     
     <item>
-      <title>[從 0 開始的 JAVA 生活]No.0 java環境變數 (Environment Variable)設定</title>
-      <link>https://iankingh.github.io/post/java/java_tutorial_0/</link>
-      <pubDate>Mon, 25 May 2020 07:54:27 +0800</pubDate>
+      <title>AndroidBsN01</title>
+      <link>https://iankingh.github.io/post/android/androidbsn01/</link>
+      <pubDate>Mon, 25 May 2020 10:50:35 +0800</pubDate>
       
-      <guid>https://iankingh.github.io/post/java/java_tutorial_0/</guid>
-      <description></description>
+      <guid>https://iankingh.github.io/post/android/androidbsn01/</guid>
+      <description>&lt;h2 id=&#34;create-an-android-project創建一個android項目&#34;&gt;Create an Android project(創建一個Android項目)&lt;/h2&gt;</description>
     </item>
     
     <item>
-      <title>[從 0 開始的 JAVA 生活]No.2 Java 基本的資料型態(Primitive Data Types)</title>
-      <link>https://iankingh.github.io/post/java/java_tutorial_1/</link>
+      <title>[從 0 開始的 JAVA 生活] No.0  JAVA 環境安裝</title>
+      <link>https://iankingh.github.io/post/java/java_tutorial_0/</link>
       <pubDate>Tue, 19 May 2020 06:22:46 +0800</pubDate>
       
-      <guid>https://iankingh.github.io/post/java/java_tutorial_1/</guid>
+      <guid>https://iankingh.github.io/post/java/java_tutorial_0/</guid>
       <description></description>
     </item>
     

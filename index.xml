@@ -12,12 +12,114 @@
     
     
     <item>
+      <title>GitNote</title>
+      <link>https://iankingh.github.io/post/git/gitnote/</link>
+      <pubDate>Tue, 13 Jul 2021 22:07:36 +0800</pubDate>
+      
+      <guid>https://iankingh.github.io/post/git/gitnote/</guid>
+      <description>&lt;h2 id=&#34;git-實戰用法&#34;&gt;git 實戰用法&lt;/h2&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;紀錄一些 git 用法&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Vagrant</title>
+      <link>https://iankingh.github.io/post/other/vagrant/</link>
+      <pubDate>Wed, 03 Mar 2021 13:45:46 +0800</pubDate>
+      
+      <guid>https://iankingh.github.io/post/other/vagrant/</guid>
+      <description>&lt;h1 id=&#34;vagrant-使用筆記&#34;&gt;vagrant 使用筆記&lt;/h1&gt;</description>
+    </item>
+    
+    <item>
+      <title>前後端分離</title>
+      <link>https://iankingh.github.io/post/other/%E5%89%8D%E5%BE%8C%E7%AB%AF%E5%88%86%E9%9B%A2/</link>
+      <pubDate>Wed, 03 Mar 2021 13:45:46 +0800</pubDate>
+      
+      <guid>https://iankingh.github.io/post/other/%E5%89%8D%E5%BE%8C%E7%AB%AF%E5%88%86%E9%9B%A2/</guid>
+      <description>前後端分離: 分開部屬 , EX: 有 2包專案web(Angular) + Api(Spring) 在部屬 web,Api可以不用下來 加速部屬 , Project 可以比較小部屬也會比較快 節省流量,</description>
+    </item>
+    
+    <item>
+      <title>tomcatSetingUser</title>
+      <link>https://iankingh.github.io/post/server/tomcatsetinguser/</link>
+      <pubDate>Wed, 03 Mar 2021 13:33:50 +0800</pubDate>
+      
+      <guid>https://iankingh.github.io/post/server/tomcatsetinguser/</guid>
+      <description>&lt;h2 id=&#34;配置tomcat-的使用者&#34;&gt;配置Tomcat 的使用者&lt;/h2&gt;</description>
+    </item>
+    
+    <item>
+      <title>Java_heap_space</title>
+      <link>https://iankingh.github.io/post/java/java_heap_space/</link>
+      <pubDate>Tue, 02 Mar 2021 14:35:25 +0800</pubDate>
+      
+      <guid>https://iankingh.github.io/post/java/java_heap_space/</guid>
+      <description>&lt;h2 id=&#34;javalangoutofmemoryerror-java-heap-space-jvm記憶體設定&#34;&gt;java.lang.OutOfMemoryError: Java heap space JVM記憶體設定&lt;/h2&gt;
+&lt;p&gt;使用Java程式從資料庫中查詢大量的資料時出現異常:java.lang.OutOfMemoryError: Java heap space
+在JVM中如果98%的時間是用於GC且可用的 Heap size 不足2%的時候將丟擲此異常資訊。
+JVM堆的設定是指java程式執行過程中JVM可以調配使用的記憶體空間的設定.JVM在啟動的時候會自動設定Heap size的值,其初始空間(即-Xms)是實體記憶體的1/64,最大空間(-Xmx)是實體記憶體的1/4。可以利用JVM提供的-Xmn -Xms -Xmx等選項可進行設定。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>GitCommitMessage</title>
+      <link>https://iankingh.github.io/post/git/gitcommitmessage/</link>
+      <pubDate>Thu, 04 Feb 2021 12:52:04 +0800</pubDate>
+      
+      <guid>https://iankingh.github.io/post/git/gitcommitmessage/</guid>
+      <description>&lt;h1 id=&#34;git-commit-message-規範&#34;&gt;Git Commit Message 規範&lt;/h1&gt;</description>
+    </item>
+    
+    <item>
+      <title>GitBranchUpdateMaster</title>
+      <link>https://iankingh.github.io/post/git/gitbranchupdatemaster/</link>
+      <pubDate>Tue, 02 Feb 2021 22:04:27 +0800</pubDate>
+      
+      <guid>https://iankingh.github.io/post/git/gitbranchupdatemaster/</guid>
+      <description>&lt;h2 id=&#34;git-dev-branch-update-master-branch&#34;&gt;Git dev-branch Update master-branch&lt;/h2&gt;</description>
+    </item>
+    
+    <item>
+      <title>Route</title>
+      <link>https://iankingh.github.io/post/net/route/</link>
+      <pubDate>Mon, 01 Feb 2021 18:04:51 +0800</pubDate>
+      
+      <guid>https://iankingh.github.io/post/net/route/</guid>
+      <description>&lt;h2 id=&#34;在-windows-設定-route&#34;&gt;在 Windows 設定 Route&lt;/h2&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;駐點在外，客戶端不能上Internet是件痛苦事。幸虧一位contract介紹用route，可以同時連測試機與無線外網，有陣子可以通，雖然有時秀逗。在DOS下執行以下的command：&lt;/p&gt;
+&lt;p&gt;前一陣子到總公司上課時，臨時要使用內部網路走VPN連回公司處理問題，而同時間又需要使用Wireless上網。可是當我的Wireless連接上時，Notebook的Default Gateway就會變成Wireless設定的Gateway，此時就無法透過內部的網路走VPN連回公司。&lt;/p&gt;
+&lt;p&gt;使用Windows的『route』指令可以設定Static Route，變更順序。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>AngularUseJS</title>
+      <link>https://iankingh.github.io/post/angular/angularusejs/</link>
+      <pubDate>Fri, 22 Jan 2021 13:38:06 +0800</pubDate>
+      
+      <guid>https://iankingh.github.io/post/angular/angularusejs/</guid>
+      <description>&lt;h1 id=&#34;angular-使用-javascript&#34;&gt;Angular 使用 JavaScript&lt;/h1&gt;</description>
+    </item>
+    
+    <item>
       <title>WindowsNetCmd</title>
       <link>https://iankingh.github.io/post/net/windowsnetcmd/</link>
       <pubDate>Sun, 10 Jan 2021 18:04:51 +0800</pubDate>
       
       <guid>https://iankingh.github.io/post/net/windowsnetcmd/</guid>
-      <description>&lt;p&gt;WindowsNetCmd筆記&lt;/p&gt;</description>
+      <description>&lt;h2 id=&#34;windowsnetcmd筆記&#34;&gt;WindowsNetCmd筆記&lt;/h2&gt;</description>
+    </item>
+    
+    <item>
+      <title>SSlAndTLS</title>
+      <link>https://iankingh.github.io/post/net/sslandtlsandhttps/</link>
+      <pubDate>Wed, 23 Dec 2020 11:38:01 +0800</pubDate>
+      
+      <guid>https://iankingh.github.io/post/net/sslandtlsandhttps/</guid>
+      <description>&lt;h1 id=&#34;ssltls-以及-https&#34;&gt;SSL、TLS 以及 HTTPS&lt;/h1&gt;
+&lt;p&gt;當我們瀏覽網頁時：網址列的開頭是不是有個 🔒鎖的圖案。&lt;/p&gt;
+&lt;p&gt;這個鎖代表你現在連線到的網站是安全可信任的。&lt;/p&gt;
+&lt;p&gt;即使用&lt;a href=&#34;https://en.wikipedia.org/wiki/HTTPS&#34;&gt;HTTPS (HTTP Secure)&lt;/a&gt; 連線，而不是使用不安全的&lt;a href=&#34;https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol&#34;&gt; HTTP protocol&lt;/a&gt;。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -49,7 +151,7 @@ IP 位址是一個 32 位元的二進制數字，具有全域性，用來唯一�
       <pubDate>Tue, 06 Oct 2020 21:45:42 +0800</pubDate>
       
       <guid>https://iankingh.github.io/post/git/git_error/</guid>
-      <description>&lt;h2 id=&#34;gi-pull-error筆記&#34;&gt;gi pull error筆記&lt;/h2&gt;</description>
+      <description>&lt;h2 id=&#34;git-pull-error筆記&#34;&gt;git pull error筆記&lt;/h2&gt;</description>
     </item>
     
     <item>
@@ -58,7 +160,7 @@ IP 位址是一個 32 位元的二進制數字，具有全域性，用來唯一�
       <pubDate>Mon, 28 Sep 2020 21:53:46 +0800</pubDate>
       
       <guid>https://iankingh.github.io/post/docker/docker_compose/</guid>
-      <description>&lt;h1 id=&#34;docker_compose筆記&#34;&gt;Docker_Compose筆記&lt;/h1&gt;</description>
+      <description>&lt;h2 id=&#34;docker_compose-筆記&#34;&gt;Docker_Compose 筆記&lt;/h2&gt;</description>
     </item>
     
     <item>
@@ -100,6 +202,15 @@ IP 位址是一個 32 位元的二進制數字，具有全域性，用來唯一�
     </item>
     
     <item>
+      <title>Linux指令</title>
+      <link>https://iankingh.github.io/post/linux/linuxcommand/</link>
+      <pubDate>Mon, 22 Jun 2020 19:01:50 +0800</pubDate>
+      
+      <guid>https://iankingh.github.io/post/linux/linuxcommand/</guid>
+      <description>&lt;h2 id=&#34;linux指令&#34;&gt;Linux指令&lt;/h2&gt;</description>
+    </item>
+    
+    <item>
       <title>SpringDataJapNotes</title>
       <link>https://iankingh.github.io/post/spring/springdatajapnotes/</link>
       <pubDate>Thu, 04 Jun 2020 05:45:59 +0800</pubDate>
@@ -107,13 +218,11 @@ IP 位址是一個 32 位元的二進制數字，具有全域性，用來唯一�
       <guid>https://iankingh.github.io/post/spring/springdatajapnotes/</guid>
       <description>&lt;h2 id=&#34;spring-data-jpa-介紹&#34;&gt;Spring Data JPA 介紹&lt;/h2&gt;
 &lt;h3 id=&#34;spring-data-概述&#34;&gt;Spring-Data 概述&lt;/h3&gt;
-&lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;Spring Data&lt;/strong&gt; 是一個資料訪問框架 ，用於簡化資料庫訪問，旨在提供一致的資料庫訪問模型，同時仍然保留不同資料庫底層資料存儲的特點，&lt;strong&gt;Spring&lt;/strong&gt; &lt;strong&gt;Data&lt;/strong&gt; 採用了&lt;strong&gt;領域驅動模型&lt;/strong&gt;的設計思想，實現了訪問關係型數據庫、非關係型數據庫的統一的介面，只需要定義好領域模型（&lt;strong&gt;Entity&lt;/strong&gt;），後續的創建表、&lt;strong&gt;CURD&lt;/strong&gt;、排序操作不需要手動添加任何&lt;strong&gt;SQL&lt;/strong&gt;語句，同時也支持手動擴展功能。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Spring Data&lt;/strong&gt; 只要定義介面，遵循 &lt;strong&gt;Spring Data&lt;/strong&gt; 的規範，就無需寫實現類。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Spring Data&lt;/strong&gt; 提供了預設的交易處理方式，即所有的查詢均聲明為唯讀事務。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Spring Data&lt;/strong&gt; 專案所支援 &lt;strong&gt;NoSQL&lt;/strong&gt; 存儲：&lt;strong&gt;MongoDB&lt;/strong&gt; （文檔資料庫）、&lt;strong&gt;Neo4j&lt;/strong&gt;（圖形資料庫）、Redis（&lt;strong&gt;鍵&lt;/strong&gt;/值存儲）、&lt;strong&gt;Hbase&lt;/strong&gt;（列族資料庫）&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Spring Data&lt;/strong&gt; 專案所支援的關係資料存儲技術：&lt;strong&gt;JDBC、JPA&lt;/strong&gt;&lt;/p&gt;
-&lt;/blockquote&gt;</description>
+&lt;p&gt;&lt;strong&gt;Spring Data&lt;/strong&gt; 專案所支援的關係資料存儲技術：&lt;strong&gt;JDBC、JPA&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -122,7 +231,25 @@ IP 位址是一個 32 位元的二進制數字，具有全域性，用來唯一�
       <pubDate>Sun, 31 May 2020 17:40:46 +0800</pubDate>
       
       <guid>https://iankingh.github.io/post/docker/docker_command/</guid>
-      <description></description>
+      <description>&lt;h1 id=&#34;docker-指令&#34;&gt;Docker 指令&lt;/h1&gt;</description>
+    </item>
+    
+    <item>
+      <title>[從 0 開始的 JAVA 生活]No.2 Java 基本的資料型態(Primitive Data Types)</title>
+      <link>https://iankingh.github.io/post/java/java_tutorial_2/</link>
+      <pubDate>Sat, 30 May 2020 06:22:46 +0800</pubDate>
+      
+      <guid>https://iankingh.github.io/post/java/java_tutorial_2/</guid>
+      <description>&lt;!-- raw HTML omitted --&gt;</description>
+    </item>
+    
+    <item>
+      <title>[從 0 開始的 JAVA 生活] No.1 Java 第一支 java 程式</title>
+      <link>https://iankingh.github.io/post/java/java_tutorial_1/</link>
+      <pubDate>Fri, 29 May 2020 06:50:51 +0800</pubDate>
+      
+      <guid>https://iankingh.github.io/post/java/java_tutorial_1/</guid>
+      <description>&lt;h2 id=&#34;從-0-開始的-java-生活-no1-java-第一支-java-程式&#34;&gt;從 0 開始的 JAVA 生活 No.1 Java 第一支 java 程式&lt;/h2&gt;</description>
     </item>
     
     <item>
@@ -137,49 +264,49 @@ IP 位址是一個 32 位元的二進制數字，具有全域性，用來唯一�
     </item>
     
     <item>
-      <title>[從 0 開始的 JAVA 生活]No.0 java環境變數 (Environment Variable)設定</title>
+      <title>AndroidBsN01</title>
+      <link>https://iankingh.github.io/post/android/androidbsn01/</link>
+      <pubDate>Mon, 25 May 2020 10:50:35 +0800</pubDate>
+      
+      <guid>https://iankingh.github.io/post/android/androidbsn01/</guid>
+      <description>&lt;h2 id=&#34;create-an-android-project創建一個android項目&#34;&gt;Create an Android project(創建一個Android項目)&lt;/h2&gt;</description>
+    </item>
+    
+    <item>
+      <title>Redis簡介</title>
+      <link>https://iankingh.github.io/post/redis/redisinstall/</link>
+      <pubDate>Wed, 20 May 2020 10:11:13 +0800</pubDate>
+      
+      <guid>https://iankingh.github.io/post/redis/redisinstall/</guid>
+      <description>&lt;h2 id=&#34;redis-install&#34;&gt;Redis Install&lt;/h2&gt;
+&lt;!-- raw HTML omitted --&gt;</description>
+    </item>
+    
+    <item>
+      <title>[從 0 開始的 JAVA 生活] No.0  JAVA 環境安裝</title>
       <link>https://iankingh.github.io/post/java/java_tutorial_0/</link>
-      <pubDate>Mon, 25 May 2020 07:54:27 +0800</pubDate>
+      <pubDate>Tue, 19 May 2020 06:22:46 +0800</pubDate>
       
       <guid>https://iankingh.github.io/post/java/java_tutorial_0/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>RedisInstall</title>
-      <link>https://iankingh.github.io/post/redis/redisinstall/</link>
-      <pubDate>Wed, 20 May 2020 10:11:13 +0800</pubDate>
-      
-      <guid>https://iankingh.github.io/post/redis/redisinstall/</guid>
-      <description>&lt;h2 id=&#34;簡介&#34;&gt;簡介&lt;/h2&gt;
-&lt;p&gt;Redis是一個使用ANSI C編寫的開源、支援網路、基於記憶體、可選永續性的鍵值對儲存資料庫。&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>[從 0 開始的 JAVA 生活]No.2 Java 基本的資料型態(Primitive Data Types)</title>
-      <link>https://iankingh.github.io/post/java/java_tutorial_1/</link>
-      <pubDate>Tue, 19 May 2020 06:22:46 +0800</pubDate>
-      
-      <guid>https://iankingh.github.io/post/java/java_tutorial_1/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>GitLab error</title>
-      <link>https://iankingh.github.io/post/git/gitlab%E5%95%8F%E9%A1%8C/</link>
-      <pubDate>Fri, 15 May 2020 16:36:13 +0800</pubDate>
-      
-      <guid>https://iankingh.github.io/post/git/gitlab%E5%95%8F%E9%A1%8C/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>OpenTypeHierarchy</title>
+      <title>Eclipse 用 Open Type Hierarchy 查看類的繼承關係</title>
       <link>https://iankingh.github.io/post/eclipse/opentypehierarchy/</link>
       <pubDate>Fri, 15 May 2020 16:36:13 +0800</pubDate>
       
       <guid>https://iankingh.github.io/post/eclipse/opentypehierarchy/</guid>
-      <description>&lt;h1 id=&#34;eclipse-用-open-type-hierarchy-查看類的繼承關係&#34;&gt;Eclipse 用 Open Type Hierarchy 查看類的繼承關係&lt;/h1&gt;</description>
+      <description>&lt;h2 id=&#34;eclipse-用-open-type-hierarchy-查看類的繼承關係&#34;&gt;Eclipse 用 Open Type Hierarchy 查看類的繼承關係&lt;/h2&gt;</description>
+    </item>
+    
+    <item>
+      <title>連線GitLab問題處理</title>
+      <link>https://iankingh.github.io/post/git/gitlaberror/</link>
+      <pubDate>Fri, 15 May 2020 16:36:13 +0800</pubDate>
+      
+      <guid>https://iankingh.github.io/post/git/gitlaberror/</guid>
+      <description></description>
     </item>
     
     <item>
@@ -188,7 +315,7 @@ IP 位址是一個 32 位元的二進制數字，具有全域性，用來唯一�
       <pubDate>Fri, 08 May 2020 22:29:36 +0800</pubDate>
       
       <guid>https://iankingh.github.io/post/hugo/hugoaddisqus/</guid>
-      <description>&lt;h1 id=&#34;hugo-add-disqus&#34;&gt;Hugo ADD disqus&lt;/h1&gt;
+      <description>&lt;h2 id=&#34;hugo-使用-disqus&#34;&gt;Hugo 使用 disqus&lt;/h2&gt;
 &lt;p&gt;Disqus（/dɪsˈkʌs/，與英語「discuss」同音）是一家使用社群網路形式，向網路社區提供網站留言服務的公司。
 該公司的平台提供不同的功能，例如與不同社群網路服務連結、社群網路、用戶個人檔案、垃圾宣傳及審核工具、資料分析、電子郵件通知和在行動裝置留言等。&lt;/p&gt;</description>
     </item>
@@ -199,7 +326,7 @@ IP 位址是一個 32 位元的二進制數字，具有全域性，用來唯一�
       <pubDate>Wed, 22 Apr 2020 22:29:36 +0800</pubDate>
       
       <guid>https://iankingh.github.io/post/hugo/hugoaddprism/</guid>
-      <description>&lt;h1 id=&#34;hugo使用prismjs&#34;&gt;hugo使用Prism.js&lt;/h1&gt;
+      <description>&lt;h2 id=&#34;hugo使用prismjs&#34;&gt;hugo使用Prism.js&lt;/h2&gt;
 &lt;p&gt;使用 prism.js 做為代碼高量的工具&lt;/p&gt;
 &lt;p&gt;Prism是一種輕量級的，可擴展的語法突出顯示工具，其構建考慮了現代Web標準。它已在數千個網站中使用，包括您每天訪問的一些網站。&lt;/p&gt;</description>
     </item>
@@ -210,7 +337,8 @@ IP 位址是一個 32 位元的二進制數字，具有全域性，用來唯一�
       <pubDate>Tue, 21 Apr 2020 22:29:36 +0800</pubDate>
       
       <guid>https://iankingh.github.io/post/hugo/hugonotes/</guid>
-      <description>&lt;h1 id=&#34;hugo使用筆記&#34;&gt;Hugo使用筆記&lt;/h1&gt;</description>
+      <description>&lt;h2 id=&#34;hugo使用筆記&#34;&gt;Hugo使用筆記&lt;/h2&gt;
+&lt;p&gt;前言&lt;/p&gt;</description>
     </item>
     
     <item>

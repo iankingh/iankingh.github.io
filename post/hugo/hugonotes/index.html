@@ -1,3 +1,4 @@
+
 <!DOCTYPE HTML>
 <html lang="zh-TW">
 <head>
@@ -55,6 +56,19 @@
     <span class="btn-bar"></span>
   </button>
 </div>
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'G-WF6NBSJFE5', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
 
 <nav class="site-nav">
     <ul id="menu" class="menu">
@@ -156,31 +170,41 @@
     <i class="fa fa-eye"></i>
 </span>
 <span class="post-meta-item-text">閱讀：</span>
-<span class="leancloud-visitors-count">305 字 ~1分鐘</span>
+<span class="leancloud-visitors-count">347 字 ~1分鐘</span>
 </span>
       </div>
     </header>
     <div class="post-body" itemprop="articleBody">
-    <h1 id="hugo使用筆記">Hugo使用筆記</h1>
-<h2 id="安裝">安裝</h2>
-<pre><code class="language-shell">scoop install hugo
-hugo version
+    <h2 id="hugo使用筆記">Hugo使用筆記</h2>
+<p>前言</p>
+<h2 id="hugo-基本指令">Hugo 基本指令</h2>
+<h3 id="安裝">安裝</h3>
+<p>透過Chocolatey 安裝</p>
+<pre><code class="language-shell">choco install hugo -confirm
 </code></pre>
-<h2 id="建立新blog">建立新Blog</h2>
-<pre><code>hugo new site blog
+<p><strong>Check version:</strong></p>
+<pre><code class="language-shell">hugo version
 </code></pre>
-<h2 id="新增文章">新增文章</h2>
+<h3 id="建立新blog">建立新Blog</h3>
+<pre><code class="language-shell">hugo new site blog
+</code></pre>
+<h3 id="新增文章">新增文章</h3>
 <pre><code class="language-shell">hugo new post/文章名稱.md
 </code></pre>
 <p>生成的文件默認為會帶上 draft: true標記，不會發布。</p>
+<h3 id="run-server">run server</h3>
+<p><strong>不 run  draft: true 的標記(未發布)</strong></p>
+<pre><code class="language-shell">hugo server
+</code></pre>
+<p><strong>run  全部</strong></p>
 <pre><code class="language-shell">hugo server -D
 </code></pre>
-<h2 id="插入圖片">插入圖片</h2>
+<h3 id="插入圖片">插入圖片</h3>
 <pre><code class="language-shell">![Example image](/static/image.png)
 </code></pre>
-<p><img src="images/hugo/useImageRootPath.png" alt="useImageRootPath"></p>
+<p><img src="https://iankingh.github.io/images/hugo/useImageRootPath.png" alt="useImageRootPath"></p>
 <p><img src="C:%5CUsers%5CIan%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200930075548139.png" alt="image-20200930075548139"></p>
-<p>建立及設定部落格專案</p>
+<h2 id="建立及設定部落格專案">建立及設定部落格專案</h2>
 <p>我們先使用 hugo 命令新增一個空白專案，然後下載一個Template到我們的專案裡面</p>
 <p>接著新增四個我們想加到模板 Menu 的頁面: about, history, tags, categories</p>
 <p>最後則是新增一篇空白的文章到專案內。</p>
@@ -206,21 +230,14 @@ $ hugo new post/welcome.md
 hugo server -D
 
 </code></pre>
-<h1 id="參考">參考</h1>
-<p>右上角github 貓<br>
-GitHub Corners<br>
-<a href="http://tholman.com/github-corners/">http://tholman.com/github-corners/</a></p>
-<p>在 Github Pages 建立 Hugo 靜態網站 · Kaichu.io<br>
-<a href="https://kaichu.io/2015/07/12/my-first-post/">https://kaichu.io/2015/07/12/my-first-post/</a></p>
-<p>使用Github部署Hugo靜態網站<br>
-<a href="https://kira5033.github.io/2019/05/%E4%BD%BF%E7%94%A8github%E9%83%A8%E7%BD%B2hugo%E9%9D%9C%E6%85%8B%E7%B6%B2%E7%AB%99/">https://kira5033.github.io/2019/05/%E4%BD%BF%E7%94%A8github%E9%83%A8%E7%BD%B2hugo%E9%9D%9C%E6%85%8B%E7%B6%B2%E7%AB%99/</a></p>
-<p><a href="https://github.com/xtfly/xtfly.github.io/tree/hugo/themes/next">https://github.com/xtfly/xtfly.github.io/tree/hugo/themes/next</a></p>
-<p>使用 Hugo 打造個人部落格<br>
-<a href="https://blog.walker088.tw/post/intro-hugo/">https://blog.walker088.tw/post/intro-hugo/</a></p>
-<p>hugo搭建静态博客 | 生信笔记
-<a href="https://www.bioinfo-scrounger.com/archives/809/">https://www.bioinfo-scrounger.com/archives/809/</a></p>
-<p>使用Hugo搭建博客系统 - XniLe - Ops 2.0</p>
-<p><a href="https://blog.dianduidian.com/post/%E4%BD%BF%E7%94%A8hugo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E7%B3%BB%E7%BB%9F/">https://blog.dianduidian.com/post/%E4%BD%BF%E7%94%A8hugo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E7%B3%BB%E7%BB%9F/</a></p>
+<h2 id="參考">參考</h2>
+<p><a href="https://tholman.com/github-corners/#">右上角github 貓 GitHub Corners</a></p>
+<p><a href="https://kaichu.io/2015/07/12/my-first-post/">在 Github Pages 建立 Hugo 靜態網站 · Kaichu.io</a></p>
+<p><a href="https://kira5033.github.io/2019/05/%E4%BD%BF%E7%94%A8github%E9%83%A8%E7%BD%B2hugo%E9%9D%9C%E6%85%8B%E7%B6%B2%E7%AB%99/">使用Github部署Hugo靜態網站</a></p>
+<p><a href="https://github.com/xtfly/xtfly.github.io/tree/hugo/themes/next">next模版</a></p>
+<p><a href="https://blog.walker088.tw/post/intro-hugo/">使用 Hugo 打造個人部落格</a></p>
+<p><a href="https://www.bioinfo-scrounger.com/archives/809/">hugo搭建静态博客 | 生信笔记</a></p>
+<p><a href="https://blog.dianduidian.com/post/%E4%BD%BF%E7%94%A8hugo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E7%B3%BB%E7%BB%9F/">使用Hugo搭建博客系统 - XniLe - Ops 2.0</a></p>
     </div>
     <footer class="post-footer">
      
@@ -263,24 +280,26 @@ GitHub Corners<br>
     <div class="disqus markdown">
       <div id="disqus_thread"></div>
 <script type="text/javascript">
-
     (function () {
         
         
         
         
-
-
-        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        var dsq = document.createElement('script');
+        dsq.type = 'text/javascript';
+        dsq.async = true;
         var disqus_shortname = 'https-iankingh-github-io';
         dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
         (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
     })();
 </script>
-<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by
-        Disqus.</a></noscript>
+<noscript>Please enable JavaScript to view the 
+    <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+</noscript>
 <a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
     </div>
+
+
   </article>
 </section>
 
@@ -296,7 +315,16 @@ GitHub Corners<br>
 <aside id="sidebar" class="sidebar">
   <div class="sidebar-inner">
 
-    <section class="site-overview sidebar-panel  sidebar-panel-active ">
+  <ul class="sidebar-nav motion-element">
+    <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+      文章目錄
+    </li>
+    <li class="sidebar-nav-overview" data-target="site-overview">
+      網站概覽
+    </li>
+  </ul>
+
+    <section class="site-overview sidebar-panel ">
       <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
     <img class="site-author-image" itemprop="image"
         src="https://iankingh.github.io/img/author.jpg"
@@ -308,14 +336,14 @@ GitHub Corners<br>
       <nav class="site-state motion-element">
     <div class="site-state-item site-state-posts">
       <a href="https://iankingh.github.io/post/">
-        <span class="site-state-item-count">19</span>
+        <span class="site-state-item-count">32</span>
         <span class="site-state-item-name">日誌</span>
       </a>
     </div>
     <div class="site-state-item site-state-categories">    
         <a href="https://iankingh.github.io/categories/">      
          
-        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-count">4</span>
         
         <span class="site-state-item-name">分類</span>
         
@@ -325,7 +353,7 @@ GitHub Corners<br>
     <div class="site-state-item site-state-tags">
         <a href="https://iankingh.github.io/tags/">
          
-        <span class="site-state-item-count">14</span>
+        <span class="site-state-item-count">23</span>
         
         <span class="site-state-item-name">標籤</span>
         </a>
@@ -353,6 +381,27 @@ GitHub Corners<br>
 
     </section>
     
+<section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+    <div class="post-toc">
+        <div class="post-toc-content"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#hugo使用筆記">Hugo使用筆記</a></li>
+    <li><a href="#hugo-基本指令">Hugo 基本指令</a>
+      <ul>
+        <li><a href="#安裝">安裝</a></li>
+        <li><a href="#建立新blog">建立新Blog</a></li>
+        <li><a href="#新增文章">新增文章</a></li>
+        <li><a href="#run-server">run server</a></li>
+        <li><a href="#插入圖片">插入圖片</a></li>
+      </ul>
+    </li>
+    <li><a href="#建立及設定部落格專案">建立及設定部落格專案</a></li>
+    <li><a href="#參考">參考</a></li>
+  </ul>
+</nav></div>
+    </div>
+</section>
+
   </div>
 </aside>
 

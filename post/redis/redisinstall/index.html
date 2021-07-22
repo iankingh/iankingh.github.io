@@ -1,16 +1,17 @@
+
 <!DOCTYPE HTML>
 <html lang="zh-TW">
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" /> 
-    <title>RedisInstall - ianhuang筆記</title>
+    <title>Redis簡介 - ianhuang筆記</title>
     <meta name="keywords" content="程式師,架構師,個人,筆記,技術">
     
-    <meta property="og:title" content="RedisInstall">
+    <meta property="og:title" content="Redis簡介">
     <meta property="og:site_name" content="ianhuang筆記">
     <meta property="og:image" content="/img/author.jpg"> 
-    <meta name="title" content="RedisInstall - ianhuang筆記" />
+    <meta name="title" content="Redis簡介 - ianhuang筆記" />
     <meta name="description" content="筆記 | 軟體 | 架構 | Java "> 
     <link rel="shortcut icon" href="https://iankingh.github.io/img/favicon.ico" />
     <link rel="apple-touch-icon" href="https://iankingh.github.io/img/apple-touch-icon.png" />
@@ -55,6 +56,19 @@
     <span class="btn-bar"></span>
   </button>
 </div>
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'G-WF6NBSJFE5', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
 
 <nav class="site-nav">
     <ul id="menu" class="menu">
@@ -118,7 +132,7 @@
     <header class="post-header">
       <h1 class="post-title" itemprop="name headline">
         <a class="post-title-link" href="https://iankingh.github.io/post/redis/redisinstall/" itemprop="url">
-        RedisInstall
+        Redis簡介
         </a>
       </h1>
       <div class="post-meta">
@@ -156,15 +170,21 @@
     <i class="fa fa-eye"></i>
 </span>
 <span class="post-meta-item-text">閱讀：</span>
-<span class="leancloud-visitors-count">189 字 ~1分鐘</span>
+<span class="leancloud-visitors-count">657 字 ~2分鐘</span>
 </span>
       </div>
     </header>
     <div class="post-body" itemprop="articleBody">
-    <h2 id="簡介">簡介</h2>
-<p>Redis是一個使用ANSI C編寫的開源、支援網路、基於記憶體、可選永續性的鍵值對儲存資料庫。</p>
-<h2 id="安裝">安裝</h2>
-<h3 id="window-下-安裝">Window 下 安裝</h3>
+    <h2 id="redis-install">Redis Install</h2>
+<!-- raw HTML omitted -->
+<h2 id="redis簡介">Redis簡介</h2>
+<p>Redis是一個使用ANSI C編寫的開源、支援、基於記憶體、可選永續性的鍵值對儲存資料庫。</p>
+<p><code>Redis</code> 是一个使用 <code>ANSI C</code> 編寫的開源、支援 <strong>網路</strong>、基於<strong>記憶體(內存)</strong>、<strong>單線程</strong>、**可選永續性 **的 <strong>鍵值儲存資料庫</strong>。</p>
+<p>以官方的解釋，Redis是一套Open source的In-memory NoSQL database，可以應用在Cache、Database及簡單的Message broker。</p>
+<p>作者則說它是一個Data Structures Server，顧名思義，它提供了很多種資料結構及相對應的指令去操作這些資料。由於它是以In-Memory的方式為主，另一個很明顯的特性就是它很快，非常快，正確使用下可以輕鬆的處理每秒上萬的請求。</p>
+<!-- raw HTML omitted -->
+<h2 id="redis-install-1">Redis Install</h2>
+<h3 id="1window-下-安裝">1.Window 下 安裝</h3>
 <h4 id="安裝網址">安裝網址</h4>
 <p><a href="https://github.com/microsoftarchive/redis/releases">https://github.com/microsoftarchive/redis/releases</a></p>
 <h4 id="啟動指令">啟動指令</h4>
@@ -173,16 +193,18 @@
 <h4 id="啟動畫面">啟動畫面</h4>
 <p><img src="https://iankingh.github.io/images/redis/runRedisWin.png" alt="runRedisWin"></p>
 <h4 id="測試">測試</h4>
-<pre><code class="language-powershell">//連線指令
+<pre><code class="language-powershell">#連線指令
 redis-cli.exe -h 127.0.0.1 -p 6379
-// 塞值
+#塞值
 Set testkey testvalue
-// 取值
+#取值
 Get testkey
 </code></pre>
 <p><img src="https://iankingh.github.io/images/redis/redisWinTest.png" alt="redisWinTest"></p>
-<h3 id="linux-安裝">Linux 安裝</h3>
-<pre><code class="language-shell">$ wget http://download.redis.io/releases/redis-6.0.3.tar.gz
+<h3 id="2linux-安裝">2.Linux 安裝</h3>
+<pre><code class="language-shell">#用wget從Redis官網下載最新的Redis安裝包，
+#下載完成後解壓縮到你想要放的位置，然後執行make進行編譯
+$ wget http://download.redis.io/releases/redis-6.0.3.tar.gz
 $ tar xzf redis-6.0.3.tar.gz
 $ cd redis-6.0.3
 $ make
@@ -193,12 +215,52 @@ $ make
 <p><img src="https://iankingh.github.io/images/redis/runRedisUbuntu.png" alt="runRedisUbuntu"></p>
 <h4 id="測試-1">測試</h4>
 <p><img src="https://iankingh.github.io/images/redis/redisUbuntuTest.png" alt="redisUbuntuTest"></p>
-<pre><code class="language-shell">//連線指令
+<pre><code class="language-shell">#連線指令
 src/redis-cli  
-// 塞值
+# 塞值
 redis&gt; set foo bar  
-// 取值
+# 取值
 redis&gt; get foo  
+</code></pre>
+<h3 id="3-cntos-install-redis">3. cntos install redis</h3>
+<h4 id="更新-dnf">更新 dnf</h4>
+<pre><code>sudo dnf update -y
+</code></pre>
+<h4 id="下載-redis">下載 redis</h4>
+<ol>
+<li>下載</li>
+</ol>
+<pre><code>sudo dnf install redis -y
+</code></pre>
+<ol start="2">
+<li>啟動</li>
+</ol>
+<pre><code>sudo systemctl start redis 
+
+sudo systemctl enable redis
+</code></pre>
+<ol start="3">
+<li>確認啟動</li>
+</ol>
+<pre><code>sudo systemctl status redis
+</code></pre>
+<ol start="4">
+<li>看占用的port</li>
+</ol>
+<p>sudo netstat -pnltu | grep redis</p>
+<h3 id="3使用docker">3.使用Docker</h3>
+<h4 id="安裝">安裝</h4>
+<p>已經安裝好Docker的環境，只要輸入下列指令就能快速的跑起來一個Redis instance</p>
+<pre><code>docker run --name MyRedisCache -d -p 6379:6369 redis
+</code></pre>
+<h4 id="測試-2">測試</h4>
+<p><strong>進入 container 測試</strong></p>
+<pre><code>#連線指令
+redis-cli
+# 塞值
+127.0.0.1:6379&gt; set hello &quot;hello world&quot;
+# 取值
+127.0.0.1:6379&gt; get hello
 </code></pre>
 <h2 id="參考">參考</h2>
 <p>Redis - 維基百科，自由的百科全書<br>
@@ -207,6 +269,8 @@ redis&gt; get foo
 <a href="https://skychang.github.io/2017/04/09/Redis-Create_Redis_HA/">https://skychang.github.io/2017/04/09/Redis-Create_Redis_HA/</a></p>
 <p>Redis系列 - 環境建置篇 - Jed&rsquo;s blog<br>
 <a href="https://jed1978.github.io/2018/05/02/Redis-Environment-Installation-Configuration.html">https://jed1978.github.io/2018/05/02/Redis-Environment-Installation-Configuration.html</a></p>
+<p>如何在CentOS 8 / RHEL 8上安裝Redis服務器
+<a href="https://www.linuxtechi.com/install-redis-server-on-centos-8-rhel-8/">https://www.linuxtechi.com/install-redis-server-on-centos-8-rhel-8/</a></p>
     </div>
     <footer class="post-footer">
      
@@ -222,16 +286,16 @@ redis&gt; get foo
      <div class="post-nav">
     <div class="post-nav-next post-nav-item">
     
-        <a href="https://iankingh.github.io/post/java/java_tutorial_0/" rel="next" title="[從 0 開始的 JAVA 生活]No.0 java環境變數 (Environment Variable)設定">
-        <i class="fa fa-chevron-left"></i> [從 0 開始的 JAVA 生活]No.0 java環境變數 (Environment Variable)設定
+        <a href="https://iankingh.github.io/post/android/androidbsn01/" rel="next" title="AndroidBsN01">
+        <i class="fa fa-chevron-left"></i> AndroidBsN01
         </a>
     
     </div>
 
     <div class="post-nav-prev post-nav-item">
     
-        <a href="https://iankingh.github.io/post/java/java_tutorial_1/" rel="prev" title="[從 0 開始的 JAVA 生活]No.2 Java 基本的資料型態(Primitive Data Types)">
-        [從 0 開始的 JAVA 生活]No.2 Java 基本的資料型態(Primitive Data Types) <i class="fa fa-chevron-right"></i>
+        <a href="https://iankingh.github.io/post/java/java_tutorial_0/" rel="prev" title="[從 0 開始的 JAVA 生活] No.0  JAVA 環境安裝">
+        [從 0 開始的 JAVA 生活] No.0  JAVA 環境安裝 <i class="fa fa-chevron-right"></i>
         </a>
     
     </div>
@@ -249,24 +313,26 @@ redis&gt; get foo
     <div class="disqus markdown">
       <div id="disqus_thread"></div>
 <script type="text/javascript">
-
     (function () {
         
         
         
         
-
-
-        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        var dsq = document.createElement('script');
+        dsq.type = 'text/javascript';
+        dsq.async = true;
         var disqus_shortname = 'https-iankingh-github-io';
         dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
         (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
     })();
 </script>
-<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by
-        Disqus.</a></noscript>
+<noscript>Please enable JavaScript to view the 
+    <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+</noscript>
 <a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
     </div>
+
+
   </article>
 </section>
 
@@ -303,14 +369,14 @@ redis&gt; get foo
       <nav class="site-state motion-element">
     <div class="site-state-item site-state-posts">
       <a href="https://iankingh.github.io/post/">
-        <span class="site-state-item-count">19</span>
+        <span class="site-state-item-count">32</span>
         <span class="site-state-item-name">日誌</span>
       </a>
     </div>
     <div class="site-state-item site-state-categories">    
         <a href="https://iankingh.github.io/categories/">      
          
-        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-count">4</span>
         
         <span class="site-state-item-name">分類</span>
         
@@ -320,7 +386,7 @@ redis&gt; get foo
     <div class="site-state-item site-state-tags">
         <a href="https://iankingh.github.io/tags/">
          
-        <span class="site-state-item-count">14</span>
+        <span class="site-state-item-count">23</span>
         
         <span class="site-state-item-name">標籤</span>
         </a>
@@ -352,11 +418,14 @@ redis&gt; get foo
     <div class="post-toc">
         <div class="post-toc-content"><nav id="TableOfContents">
   <ul>
-    <li><a href="#簡介">簡介</a></li>
-    <li><a href="#安裝">安裝</a>
+    <li><a href="#redis-install">Redis Install</a></li>
+    <li><a href="#redis簡介">Redis簡介</a></li>
+    <li><a href="#redis-install-1">Redis Install</a>
       <ul>
-        <li><a href="#window-下-安裝">Window 下 安裝</a></li>
-        <li><a href="#linux-安裝">Linux 安裝</a></li>
+        <li><a href="#1window-下-安裝">1.Window 下 安裝</a></li>
+        <li><a href="#2linux-安裝">2.Linux 安裝</a></li>
+        <li><a href="#3-cntos-install-redis">3. cntos install redis</a></li>
+        <li><a href="#3使用docker">3.使用Docker</a></li>
       </ul>
     </li>
     <li><a href="#參考">參考</a></li>

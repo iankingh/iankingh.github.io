@@ -1,3 +1,4 @@
+
 <!DOCTYPE HTML>
 <html lang="zh-TW">
 <head>
@@ -55,6 +56,19 @@
     <span class="btn-bar"></span>
   </button>
 </div>
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'G-WF6NBSJFE5', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
 
 <nav class="site-nav">
     <ul id="menu" class="menu">
@@ -156,36 +170,36 @@
     <i class="fa fa-eye"></i>
 </span>
 <span class="post-meta-item-text">閱讀：</span>
-<span class="leancloud-visitors-count">477 字 ~1分鐘</span>
+<span class="leancloud-visitors-count">468 字 ~1分鐘</span>
 </span>
       </div>
     </header>
     <div class="post-body" itemprop="articleBody">
-    <h2 id="gi-pull-error筆記">gi pull error筆記</h2>
+    <h2 id="git-pull-error筆記">git pull error筆記</h2>
 <p>當 git pull  出現</p>
-<pre><code>error: Your local changes to the following files would be overwritten by merge:
+<pre><code class="language-shell">error: Your local changes to the following files would be overwritten by merge:
 </code></pre>
 <p>意思是本地新修改的程式碼檔案，將會被git伺服器上的程式碼覆蓋</p>
 <p>git pull == git fetch + git merge</p>
 <p>發生衝突時 可以先試以下步驟</p>
-<pre><code>先
-git fetch 
-再
-git merge origin/master
+<p>先</p>
+<pre><code class="language-shell">git fetch 
+</code></pre>
+<p>再</p>
+<pre><code class="language-shell">git merge origin/master
 </code></pre>
 <p>如果還是無法解決可以使用的解決方法如下：</p>
-<h3 id="方法1-使用stash">方法1： 使用stash</h3>
+<h3 id="方法1使用stash">方法1：使用stash</h3>
 <p>如果你想保留剛才本地修改的程式碼，並把git伺服器上的程式碼pull到本地（本地剛才修改的程式碼將會被暫時封存起來）</p>
-<pre><code class="language-shell">$ git stash 
-$ git pull origin master
-$ git stash pop
+<pre><code class="language-shell">git stash 
+git pull origin master
+git stash pop
 </code></pre>
 <p>**注：**用 <code>pop</code> 指令，可以把某個 Stash 拿出來並套用在目前的分支上。套用成功之後，那個套用過的 Stash 就會被刪除。</p>
 <h3 id="方法2--放棄變更">方法2 : 放棄變更</h3>
-<pre><code>如果你想完全地覆蓋本地的程式碼，只保留伺服器端程式碼，則直接回退到上一個版本，再進行pull：
-</code></pre>
-<pre><code class="language-shell">$ git reset --hard
-$ git pull origin master
+<p>如果你想完全地覆蓋本地的程式碼，只保留伺服器端程式碼，則直接回退到上一個版本，再進行pull：</p>
+<pre><code class="language-shell">git reset --hard
+git pull origin master
 </code></pre>
 <p><strong>注：</strong> 其中origin master表示git的主分支。</p>
 <h3 id="方法3--使用分支-推薦-正統">方法3 : 使用分支( 推薦 正統)</h3>
@@ -194,17 +208,18 @@ $ git pull origin master
 <li>在切回 master fetch</li>
 <li>再進行 merge</li>
 </ol>
-<pre><code class="language-shell">$ git checkout -b &lt;branch&gt;
-$ git commit -m &quot;add dev&quot; 
-$ git checkout master 
-$ git merge master
+<pre><code class="language-shell">git checkout -b &lt;branch&gt;
+git commit -m &quot;add dev&quot; 
+git checkout master 
+git merge branch
+</code></pre>
+<p>EX :</p>
+<pre><code class="language-shell">
 </code></pre>
 <p><strong>注：</strong>  感謝 <strong>KFC 前輩</strong>的提供正確解決衝突的教學</p>
-<h2 id="參考">參考</h2>
-<p>git pull遇到錯誤：error: Your local changes to the following files would be overwritten by merge:解決方法</p>
-<p><a href="https://www.itread01.com/content/1545046022.html">https://www.itread01.com/content/1545046022.html</a></p>
-<p>【狀況題】手邊的工作做到一半，臨時要切換到別的任務 - 為你自己學 Git | 高見龍</p>
-<p><a href="https://gitbook.tw/chapters/faq/stash.html">https://gitbook.tw/chapters/faq/stash.html</a></p>
+<h3 id="參考">參考</h3>
+<p><a href="https://www.itread01.com/content/1545046022.html">git pull遇到錯誤：error: Your local changes to the following files would be overwritten by merge:解決方法</a></p>
+<p><a href="https://gitbook.tw/chapters/faq/stash.html">【狀況題】手邊的工作做到一半，臨時要切換到別的任務 - 為你自己學 Git | 高見龍</a></p>
     </div>
     <footer class="post-footer">
      
@@ -247,24 +262,26 @@ $ git merge master
     <div class="disqus markdown">
       <div id="disqus_thread"></div>
 <script type="text/javascript">
-
     (function () {
         
         
         
         
-
-
-        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        var dsq = document.createElement('script');
+        dsq.type = 'text/javascript';
+        dsq.async = true;
         var disqus_shortname = 'https-iankingh-github-io';
         dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
         (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
     })();
 </script>
-<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by
-        Disqus.</a></noscript>
+<noscript>Please enable JavaScript to view the 
+    <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+</noscript>
 <a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
     </div>
+
+
   </article>
 </section>
 
@@ -301,14 +318,14 @@ $ git merge master
       <nav class="site-state motion-element">
     <div class="site-state-item site-state-posts">
       <a href="https://iankingh.github.io/post/">
-        <span class="site-state-item-count">19</span>
+        <span class="site-state-item-count">32</span>
         <span class="site-state-item-name">日誌</span>
       </a>
     </div>
     <div class="site-state-item site-state-categories">    
         <a href="https://iankingh.github.io/categories/">      
          
-        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-count">4</span>
         
         <span class="site-state-item-name">分類</span>
         
@@ -318,7 +335,7 @@ $ git merge master
     <div class="site-state-item site-state-tags">
         <a href="https://iankingh.github.io/tags/">
          
-        <span class="site-state-item-count">14</span>
+        <span class="site-state-item-count">23</span>
         
         <span class="site-state-item-name">標籤</span>
         </a>
@@ -350,14 +367,14 @@ $ git merge master
     <div class="post-toc">
         <div class="post-toc-content"><nav id="TableOfContents">
   <ul>
-    <li><a href="#gi-pull-error筆記">gi pull error筆記</a>
+    <li><a href="#git-pull-error筆記">git pull error筆記</a>
       <ul>
-        <li><a href="#方法1-使用stash">方法1： 使用stash</a></li>
+        <li><a href="#方法1使用stash">方法1：使用stash</a></li>
         <li><a href="#方法2--放棄變更">方法2 : 放棄變更</a></li>
         <li><a href="#方法3--使用分支-推薦-正統">方法3 : 使用分支( 推薦 正統)</a></li>
+        <li><a href="#參考">參考</a></li>
       </ul>
     </li>
-    <li><a href="#參考">參考</a></li>
   </ul>
 </nav></div>
     </div>

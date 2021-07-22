@@ -35,20 +35,29 @@ IP 位址是一個 32 位元的二進制數字，具有全域性，用來唯一�
     </item>
     
     <item>
-      <title>[從 0 開始的 JAVA 生活]No.0 java環境變數 (Environment Variable)設定</title>
-      <link>https://iankingh.github.io/post/java/java_tutorial_0/</link>
-      <pubDate>Mon, 25 May 2020 07:54:27 +0800</pubDate>
+      <title>[從 0 開始的 JAVA 生活]No.2 Java 基本的資料型態(Primitive Data Types)</title>
+      <link>https://iankingh.github.io/post/java/java_tutorial_2/</link>
+      <pubDate>Sat, 30 May 2020 06:22:46 +0800</pubDate>
       
-      <guid>https://iankingh.github.io/post/java/java_tutorial_0/</guid>
-      <description></description>
+      <guid>https://iankingh.github.io/post/java/java_tutorial_2/</guid>
+      <description>&lt;!-- raw HTML omitted --&gt;</description>
     </item>
     
     <item>
-      <title>[從 0 開始的 JAVA 生活]No.2 Java 基本的資料型態(Primitive Data Types)</title>
+      <title>[從 0 開始的 JAVA 生活] No.1 Java 第一支 java 程式</title>
       <link>https://iankingh.github.io/post/java/java_tutorial_1/</link>
-      <pubDate>Tue, 19 May 2020 06:22:46 +0800</pubDate>
+      <pubDate>Fri, 29 May 2020 06:50:51 +0800</pubDate>
       
       <guid>https://iankingh.github.io/post/java/java_tutorial_1/</guid>
+      <description>&lt;h2 id=&#34;從-0-開始的-java-生活-no1-java-第一支-java-程式&#34;&gt;從 0 開始的 JAVA 生活 No.1 Java 第一支 java 程式&lt;/h2&gt;</description>
+    </item>
+    
+    <item>
+      <title>[從 0 開始的 JAVA 生活] No.0  JAVA 環境安裝</title>
+      <link>https://iankingh.github.io/post/java/java_tutorial_0/</link>
+      <pubDate>Tue, 19 May 2020 06:22:46 +0800</pubDate>
+      
+      <guid>https://iankingh.github.io/post/java/java_tutorial_0/</guid>
       <description></description>
     </item>
     
