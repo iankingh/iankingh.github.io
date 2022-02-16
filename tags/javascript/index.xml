@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>javaScript on ianhuang筆記</title>
+    <link>https://iankingh.github.io/tags/javascript/</link>
+    <description>Recent content in javaScript on ianhuang筆記</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-TW</language>
+    <lastBuildDate>Mon, 22 Mar 2021 11:14:01 +0800</lastBuildDate><atom:link href="https://iankingh.github.io/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>算錢用浮點，遲早被人扁</title>
+      <link>https://iankingh.github.io/post/other/%E7%AE%97%E9%8C%A2%E7%94%A8%E6%B5%AE%E9%BB%9E%E9%81%B2%E6%97%A9%E8%A2%AB%E4%BA%BA%E6%89%81/</link>
+      <pubDate>Mon, 22 Mar 2021 11:14:01 +0800</pubDate>
+      
+      <guid>https://iankingh.github.io/post/other/%E7%AE%97%E9%8C%A2%E7%94%A8%E6%B5%AE%E9%BB%9E%E9%81%B2%E6%97%A9%E8%A2%AB%E4%BA%BA%E6%89%81/</guid>
+      <description>&lt;h2 id=&#34;算錢用浮點遲早被人扁&#34;&gt;算錢用浮點，遲早被人扁&lt;/h2&gt;
+&lt;!-- raw HTML omitted --&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

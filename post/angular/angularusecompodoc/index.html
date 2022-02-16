@@ -168,7 +168,7 @@
     <i class="fa fa-eye"></i>
 </span>
 <span class="post-meta-item-text">閱讀：</span>
-<span class="leancloud-visitors-count">244 字 ~1分鐘</span>
+<span class="leancloud-visitors-count">259 字 ~1分鐘</span>
 </span>
       </div>
     </header>
@@ -178,25 +178,29 @@
 <p>Angular 使用 compodoc 產生說明文件</p>
 <h2 id="安裝compodoc">安裝compodoc</h2>
 <h3 id="以-local-模式安裝">以 local 模式安裝</h3>
-<pre><code class="language-shell">$ npm install --save-dev @compodoc/compodoc
+<pre><code class="language-shell">npm install --save-dev @compodoc/compodoc
+</code></pre>
+<h4 id="產生檔案">產生檔案</h4>
+<pre><code class="language-shell">./node_modules/.bin/compodoc -p tsconfig.json
+</code></pre>
+<h4 id="run-server">RUN server</h4>
+<pre><code class="language-shell">./node_modules/.bin/compodoc -s 
 </code></pre>
 <h3 id="以global全域-模式安裝">以global(全域) 模式安裝</h3>
-<pre><code class="language-shell">$ npm install -g @compodoc/compodoc
+<pre><code class="language-shell">npm install -g @compodoc/compodoc
 </code></pre>
-<h3 id="產生文件">產生文件</h3>
-<pre><code class="language-sh">$ compodoc -p tsconfig.json
+<h4 id="產生文件">產生文件</h4>
+<pre><code class="language-sh">compodoc -p tsconfig.json
 </code></pre>
-<h3 id="啟用本地文件網站">啟用本地文件網站</h3>
+<h4 id="啟用本地文件網站">啟用本地文件網站</h4>
 <pre><code class="language-shell">compodoc -p tsconfig.json -s
 </code></pre>
-<pre><code class="language-sh">compodoc -p src\tsconfig.app.json -s -r 8888
-
-compodoc -p tsconfig.app.json src -s -r 8888
-
-npx compodoc -p tsconfig.json -s -r 8888
-
-npx compodoc -p tsconfig.base.json -s -r 8888
+<h3 id="使用-npx推薦">使用 npx(推薦)</h3>
+<pre><code class="language-shell">npx compodoc -p tsconfig.json -s -r 8888
 </code></pre>
+<h3 id="指令">指令</h3>
+<p>-p : 表示 產生文件</p>
+<p>-s : 啟用文件網站</p>
 <h3 id="jsdoc-tags">jsDoc Tags</h3>
 <pre><code class="language-typescript">
 
@@ -319,14 +323,14 @@ export class HelloService{
       <nav class="site-state motion-element">
     <div class="site-state-item site-state-posts">
       <a href="https://iankingh.github.io/post/">
-        <span class="site-state-item-count">32</span>
+        <span class="site-state-item-count">37</span>
         <span class="site-state-item-name">日誌</span>
       </a>
     </div>
     <div class="site-state-item site-state-categories">    
         <a href="https://iankingh.github.io/categories/">      
          
-        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-count">5</span>
         
         <span class="site-state-item-name">分類</span>
         
@@ -336,7 +340,7 @@ export class HelloService{
     <div class="site-state-item site-state-tags">
         <a href="https://iankingh.github.io/tags/">
          
-        <span class="site-state-item-count">23</span>
+        <span class="site-state-item-count">25</span>
         
         <span class="site-state-item-name">標籤</span>
         </a>
@@ -372,8 +376,8 @@ export class HelloService{
       <ul>
         <li><a href="#以-local-模式安裝">以 local 模式安裝</a></li>
         <li><a href="#以global全域-模式安裝">以global(全域) 模式安裝</a></li>
-        <li><a href="#產生文件">產生文件</a></li>
-        <li><a href="#啟用本地文件網站">啟用本地文件網站</a></li>
+        <li><a href="#使用-npx推薦">使用 npx(推薦)</a></li>
+        <li><a href="#指令">指令</a></li>
         <li><a href="#jsdoc-tags">jsDoc Tags</a></li>
       </ul>
     </li>
@@ -393,12 +397,12 @@ export class HelloService{
       <div class="footer-inner">
         <div class="copyright" >
   <span itemprop="copyrightYear">  &copy; 
-  2009 - 2021</span>
+  2009 - 2022</span>
   <span class="with-love"><i class="fa fa-heart"></i></span>
   <span class="author" itemprop="copyrightHolder">ianhuang筆記</span>
 </div>
 <div class="powered-by">
-  Powered by - <a class="theme-link" href="http://gohugo.io" target="_blank" title="hugo" >Hugo v0.68.3</a>
+  Powered by - <a class="theme-link" href="http://gohugo.io" target="_blank" title="hugo" >Hugo v0.89.3</a>
 </div>
 <div class="theme-info">
   Theme by - <a class="theme-link" href="https://github.com/xtfly/hugo-theme-next" target="_blank"> NexT

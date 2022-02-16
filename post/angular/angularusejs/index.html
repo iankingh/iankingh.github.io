@@ -168,29 +168,61 @@
     <i class="fa fa-eye"></i>
 </span>
 <span class="post-meta-item-text">閱讀：</span>
-<span class="leancloud-visitors-count">198 字 ~1分鐘</span>
+<span class="leancloud-visitors-count">338 字 ~1分鐘</span>
 </span>
       </div>
     </header>
     <div class="post-body" itemprop="articleBody">
-    <h1 id="angular-使用-javascript">Angular 使用 JavaScript</h1>
-<p>第一步 : 把js文件放到assets 目錄下</p>
-<p>第二步 : 在tsconfig.json，属性compilerOptions，添加 &ldquo;allowJs&rdquo;: true,
+    <h2 id="angular-使用-javascript">Angular 使用 JavaScript</h2>
+<h2 id="前言">前言</h2>
+<p>在實務上我們可以在npm上面找到要用的 js 來引用 , 有時可能找不到 , 有時可能要匯入自己寫的js ,如果功能不複雜 ,可以轉成ts</p>
+<h2 id="方法一">方法一</h2>
+<p>如果JS 不複雜可以轉成 ts</p>
+<h2 id="方法-二-引入第三方的js">方法 二 引入第三方的JS</h2>
+<h2 id="第一步-安裝下載js">第一步 安裝下載js</h2>
+<p>把js文件放到 /assets目錄下</p>
+<pre><code>eX: /assets/Hello.js
+</code></pre>
+<h2 id="第二步-設定-allowjs-true">第二步 設定 &ldquo;allowJs&rdquo;: true</h2>
+<p>在tsconfig.json，属性compilerOptions，添加 &ldquo;allowJs&rdquo;: true,
 &ldquo;allowJs&rdquo;: true,</p>
-<p>第三步 : 引入JS</p>
+<pre><code class="language-json">{
+  &quot;compileOnSave&quot;: false,
+  &quot;compilerOptions&quot;: {
+    &quot;baseUrl&quot;: &quot;./&quot;,
+    &quot;outDir&quot;: &quot;./dist/out-tsc&quot;,
+    &quot;sourceMap&quot;: true,
+    &quot;declaration&quot;: false,
+    &quot;downlevelIteration&quot;: true,
+    &quot;experimentalDecorators&quot;: true,
+    &quot;module&quot;: &quot;esnext&quot;,
+    &quot;moduleResolution&quot;: &quot;node&quot;,
+    &quot;allowJs&quot;: true,
+    &quot;importHelpers&quot;: true,
+    &quot;target&quot;: &quot;es5&quot;,
+    &quot;lib&quot;: [
+      &quot;es2018&quot;,
+      &quot;dom&quot;
+    ]
+  },
+  &quot;angularCompilerOptions&quot;: {
+    &quot;fullTemplateTypeCheck&quot;: true,
+    &quot;strictInjectionParameters&quot;: true,
+    &quot;enableIvy&quot;: false
+  }
+}
+
+
+</code></pre>
+<h2 id="第三步--引入js">第三步 : 引入JS</h2>
 <ol>
 <li>可以在 angular.json文件，在scripts中配置js文件路径</li>
 <li>或是在 index.html 引入</li>
 </ol>
 <p>第四步，在當前组件.ts中使用函数添加js</p>
-<pre><code>
-
-</code></pre>
-<p>參考
-angular在ts中使用第三方js_weixin_43182222的博客-CSDN博客
-<a href="https://blog.csdn.net/weixin_43182222/article/details/105205283?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromBaidu-2.control&amp;depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromBaidu-2.control">https://blog.csdn.net/weixin_43182222/article/details/105205283?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromBaidu-2.control&amp;depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromBaidu-2.control</a></p>
-<p>How to call JavaScript functions from Typescript in Angular 5? - Stack Overflow
-<a href="https://stackoverflow.com/questions/49526681/how-to-call-javascript-functions-from-typescript-in-angular-5">https://stackoverflow.com/questions/49526681/how-to-call-javascript-functions-from-typescript-in-angular-5</a></p>
+<h2 id="參考">參考</h2>
+<p><a href="https://blog.csdn.net/weixin_43182222/article/details/105205283?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromBaidu-2.control&amp;depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromBaidu-2.control">angular在ts中使用第三方js_weixin_43182222的博客-CSDN博客</a></p>
+<p><a href="https://stackoverflow.com/questions/49526681/how-to-call-javascript-functions-from-typescript-in-angular-5">How to call JavaScript functions from Typescript in Angular 5? - Stack Overflow</a></p>
     </div>
     <footer class="post-footer">
      
@@ -291,14 +323,14 @@ angular在ts中使用第三方js_weixin_43182222的博客-CSDN博客
       <nav class="site-state motion-element">
     <div class="site-state-item site-state-posts">
       <a href="https://iankingh.github.io/post/">
-        <span class="site-state-item-count">32</span>
+        <span class="site-state-item-count">37</span>
         <span class="site-state-item-name">日誌</span>
       </a>
     </div>
     <div class="site-state-item site-state-categories">    
         <a href="https://iankingh.github.io/categories/">      
          
-        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-count">5</span>
         
         <span class="site-state-item-name">分類</span>
         
@@ -308,7 +340,7 @@ angular在ts中使用第三方js_weixin_43182222的博客-CSDN博客
     <div class="site-state-item site-state-tags">
         <a href="https://iankingh.github.io/tags/">
          
-        <span class="site-state-item-count">23</span>
+        <span class="site-state-item-count">25</span>
         
         <span class="site-state-item-name">標籤</span>
         </a>
@@ -338,7 +370,18 @@ angular在ts中使用第三方js_weixin_43182222的博客-CSDN博客
     
 <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
     <div class="post-toc">
-        <div class="post-toc-content"><nav id="TableOfContents"></nav></div>
+        <div class="post-toc-content"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#angular-使用-javascript">Angular 使用 JavaScript</a></li>
+    <li><a href="#前言">前言</a></li>
+    <li><a href="#方法一">方法一</a></li>
+    <li><a href="#方法-二-引入第三方的js">方法 二 引入第三方的JS</a></li>
+    <li><a href="#第一步-安裝下載js">第一步 安裝下載js</a></li>
+    <li><a href="#第二步-設定-allowjs-true">第二步 設定 &ldquo;allowJs&rdquo;: true</a></li>
+    <li><a href="#第三步--引入js">第三步 : 引入JS</a></li>
+    <li><a href="#參考">參考</a></li>
+  </ul>
+</nav></div>
     </div>
 </section>
 
@@ -352,12 +395,12 @@ angular在ts中使用第三方js_weixin_43182222的博客-CSDN博客
       <div class="footer-inner">
         <div class="copyright" >
   <span itemprop="copyrightYear">  &copy; 
-  2009 - 2021</span>
+  2009 - 2022</span>
   <span class="with-love"><i class="fa fa-heart"></i></span>
   <span class="author" itemprop="copyrightHolder">ianhuang筆記</span>
 </div>
 <div class="powered-by">
-  Powered by - <a class="theme-link" href="http://gohugo.io" target="_blank" title="hugo" >Hugo v0.68.3</a>
+  Powered by - <a class="theme-link" href="http://gohugo.io" target="_blank" title="hugo" >Hugo v0.89.3</a>
 </div>
 <div class="theme-info">
   Theme by - <a class="theme-link" href="https://github.com/xtfly/hugo-theme-next" target="_blank"> NexT

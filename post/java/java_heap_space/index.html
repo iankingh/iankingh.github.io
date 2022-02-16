@@ -168,7 +168,7 @@
     <i class="fa fa-eye"></i>
 </span>
 <span class="post-meta-item-text">閱讀：</span>
-<span class="leancloud-visitors-count">747 字 ~2分鐘</span>
+<span class="leancloud-visitors-count">704 字 ~2分鐘</span>
 </span>
       </div>
     </header>
@@ -179,19 +179,14 @@
 JVM堆的設定是指java程式執行過程中JVM可以調配使用的記憶體空間的設定.JVM在啟動的時候會自動設定Heap size的值,其初始空間(即-Xms)是實體記憶體的1/64,最大空間(-Xmx)是實體記憶體的1/4。可以利用JVM提供的-Xmn -Xms -Xmx等選項可進行設定。</p>
 <p>這個問題的根源是jvm虛擬機器的預設Heap大小是64M,可以通過設定其最大和最小值來實現.設定的方法主要是幾個.</p>
 <h3 id="可以在windows-更改系統環境變數加上-java_opts--catalina_opts">可以在windows 更改系統環境變數加上 JAVA_OPTS &amp;&amp; CATALINA_OPTS</h3>
-<pre><code>```shell
-JAVA_OPTS=-Xms1024m -Xmx2048m
-CATALINA_OPTS=-Xms2048M -Xmx4096M
-```
-
-EX:
-```shell
-Variable name : CATALINA_OPTS
-Variable value: =-Xms2048M -Xmx4096M
-```
-
-![JAVA_HOME](/images/java/調整JVM的大小.png)
+<pre><code class="language-shell">    JAVA_OPTS=-Xms1024m -Xmx2048m
+    CATALINA_OPTS=-Xms2048M -Xmx4096M
 </code></pre>
+<p>EX:</p>
+<pre><code class="language-shell">    Variable name : CATALINA_OPTS
+    Variable value: =-Xms2048M -Xmx4096M
+</code></pre>
+<p><img src="https://iankingh.github.io/images/java/%E8%AA%BF%E6%95%B4JVM%E7%9A%84%E5%A4%A7%E5%B0%8F.png" alt="JAVA_HOME"></p>
 <h3 id="程式的寫法要注意要-close-資料流">程式的寫法要注意要 close 資料流</h3>
 <h3 id="imageio讀取jpeg文件">IMAGEIO讀取JPEG文件</h3>
 <p>JPEG可以很好地壓縮圖像。但是在內存中，僅用於原始數據的BufferedImage通常每個像素需要4個字節，因此無論文件有多大，其大小均為6480 * 4320 * 4 = 112 MB。</p>
@@ -226,8 +221,8 @@ Variable value: =-Xms2048M -Xmx4096M
 
     <div class="post-nav-prev post-nav-item">
     
-        <a href="https://iankingh.github.io/post/git/gitcommitmessage/" rel="prev" title="GitCommitMessage">
-        GitCommitMessage <i class="fa fa-chevron-right"></i>
+        <a href="https://iankingh.github.io/post/windows/cmd/" rel="prev" title="Cmd">
+        Cmd <i class="fa fa-chevron-right"></i>
         </a>
     
     </div>
@@ -301,14 +296,14 @@ Variable value: =-Xms2048M -Xmx4096M
       <nav class="site-state motion-element">
     <div class="site-state-item site-state-posts">
       <a href="https://iankingh.github.io/post/">
-        <span class="site-state-item-count">32</span>
+        <span class="site-state-item-count">37</span>
         <span class="site-state-item-name">日誌</span>
       </a>
     </div>
     <div class="site-state-item site-state-categories">    
         <a href="https://iankingh.github.io/categories/">      
          
-        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-count">5</span>
         
         <span class="site-state-item-name">分類</span>
         
@@ -318,7 +313,7 @@ Variable value: =-Xms2048M -Xmx4096M
     <div class="site-state-item site-state-tags">
         <a href="https://iankingh.github.io/tags/">
          
-        <span class="site-state-item-count">23</span>
+        <span class="site-state-item-count">25</span>
         
         <span class="site-state-item-name">標籤</span>
         </a>
@@ -373,12 +368,12 @@ Variable value: =-Xms2048M -Xmx4096M
       <div class="footer-inner">
         <div class="copyright" >
   <span itemprop="copyrightYear">  &copy; 
-  2009 - 2021</span>
+  2009 - 2022</span>
   <span class="with-love"><i class="fa fa-heart"></i></span>
   <span class="author" itemprop="copyrightHolder">ianhuang筆記</span>
 </div>
 <div class="powered-by">
-  Powered by - <a class="theme-link" href="http://gohugo.io" target="_blank" title="hugo" >Hugo v0.68.3</a>
+  Powered by - <a class="theme-link" href="http://gohugo.io" target="_blank" title="hugo" >Hugo v0.89.3</a>
 </div>
 <div class="theme-info">
   Theme by - <a class="theme-link" href="https://github.com/xtfly/hugo-theme-next" target="_blank"> NexT

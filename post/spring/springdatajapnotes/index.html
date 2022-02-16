@@ -168,7 +168,7 @@
     <i class="fa fa-eye"></i>
 </span>
 <span class="post-meta-item-text">閱讀：</span>
-<span class="leancloud-visitors-count">4846 字 ~10分鐘</span>
+<span class="leancloud-visitors-count">4833 字 ~10分鐘</span>
 </span>
       </div>
     </header>
@@ -437,22 +437,22 @@ public class CustomerRepositoryTest {
 </tr>
 <tr>
 <td>LessThan</td>
-<td>等價於SQL中的&quot;&lt;&rdquo;</td>
+<td>等價於SQL中的&quot;&lt;&quot;</td>
 <td>findBySalaryLessThan(int max)；</td>
 </tr>
 <tr>
 <td>GreaterThan</td>
-<td>等價於SQL中的&quot;&gt;&rdquo;</td>
+<td>等價於SQL中的&quot;&gt;&quot;</td>
 <td>findBySalaryGreaterThan(intmin)；</td>
 </tr>
 <tr>
 <td>IsNull</td>
-<td>等價於SQL中的&quot;is null&rdquo;</td>
+<td>等價於SQL中的&quot;is null&quot;</td>
 <td>findByUsernameIsNull()；</td>
 </tr>
 <tr>
 <td>IsNotNull</td>
-<td>等價於SQL中的&quot;is not null&rdquo;</td>
+<td>等價於SQL中的&quot;is not null&quot;</td>
 <td>findByUsernameIsNotNull()；</td>
 </tr>
 <tr>
@@ -462,32 +462,32 @@ public class CustomerRepositoryTest {
 </tr>
 <tr>
 <td>Like</td>
-<td>等價於SQL中的&quot;like&rdquo;</td>
+<td>等價於SQL中的&quot;like&quot;</td>
 <td>findByUsernameLike(String user)；</td>
 </tr>
 <tr>
 <td>NotLike</td>
-<td>等價於SQL中的&quot;not like&rdquo;</td>
+<td>等價於SQL中的&quot;not like&quot;</td>
 <td>findByUsernameNotLike(Stringuser)；</td>
 </tr>
 <tr>
 <td>OrderBy</td>
-<td>等價於SQL中的&quot;order by&rdquo;</td>
+<td>等價於SQL中的&quot;order by&quot;</td>
 <td>findByUsernameOrderBySalaryAsc(String user)；</td>
 </tr>
 <tr>
 <td>Not</td>
-<td>等價於SQL中的&rdquo;！ =&rdquo;</td>
+<td>等價於SQL中的&quot;！ =&quot;</td>
 <td>findByUsernameNot(String user)；</td>
 </tr>
 <tr>
 <td>In</td>
-<td>等價於SQL中的&quot;in&rdquo;</td>
+<td>等價於SQL中的&quot;in&quot;</td>
 <td>findByUsernameIn(Collection<!-- raw HTML omitted --> userList)，方法的參數可以是 Collection類型，也可以是陣列或者不定長參數；</td>
 </tr>
 <tr>
 <td>NotIn</td>
-<td>等價於SQL中的&quot;not in&rdquo;</td>
+<td>等價於SQL中的&quot;not in&quot;</td>
 <td>findByUsernameNotIn(Collection<!-- raw HTML omitted --> userList)，方法的參數可以是 Collection類型，也可以是陣列或者不定長參數；</td>
 </tr>
 </tbody>
@@ -507,7 +507,7 @@ public class CustomerRepositoryTest {
 <pre><code class="language-java">@Query(&quot;select o from UserModel o where o.name like %?1&quot;)
 </code></pre>
 <h3 id="query來指定本地查詢">@Query來指定本地查詢</h3>
-<p>使用**@Query**來指定本地查詢，只要設置**nativeQuery**為**true**</p>
+<p>使用**@Query<strong>來指定本地查詢，只要設置</strong>nativeQuery<strong>為</strong>true**</p>
 <pre><code class="language-java">@Query(value=&quot;select * from tbl_user where name like %?1&quot; ,nativeQuery=true)
 </code></pre>
 <p><strong>@Query</strong> 與 <strong>@Modifying</strong> 這兩個 <strong>annotation</strong>一起聲明，可定義個性化更新操作，例如只涉及某些欄位更新時最為常用</p>
@@ -636,8 +636,8 @@ public class ProductInfoService {
      <div class="post-nav">
     <div class="post-nav-next post-nav-item">
     
-        <a href="https://iankingh.github.io/post/linux/linuxcommand/" rel="next" title="Linux指令">
-        <i class="fa fa-chevron-left"></i> Linux指令
+        <a href="https://iankingh.github.io/post/java/java_tutorial_3./" rel="next" title="[從 0 開始的 JAVA 生活]No.3 變數與它的小夥伴們">
+        <i class="fa fa-chevron-left"></i> [從 0 開始的 JAVA 生活]No.3 變數與它的小夥伴們
         </a>
     
     </div>
@@ -719,14 +719,14 @@ public class ProductInfoService {
       <nav class="site-state motion-element">
     <div class="site-state-item site-state-posts">
       <a href="https://iankingh.github.io/post/">
-        <span class="site-state-item-count">32</span>
+        <span class="site-state-item-count">37</span>
         <span class="site-state-item-name">日誌</span>
       </a>
     </div>
     <div class="site-state-item site-state-categories">    
         <a href="https://iankingh.github.io/categories/">      
          
-        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-count">5</span>
         
         <span class="site-state-item-name">分類</span>
         
@@ -736,7 +736,7 @@ public class ProductInfoService {
     <div class="site-state-item site-state-tags">
         <a href="https://iankingh.github.io/tags/">
          
-        <span class="site-state-item-count">23</span>
+        <span class="site-state-item-count">25</span>
         
         <span class="site-state-item-name">標籤</span>
         </a>
@@ -805,12 +805,12 @@ public class ProductInfoService {
       <div class="footer-inner">
         <div class="copyright" >
   <span itemprop="copyrightYear">  &copy; 
-  2009 - 2021</span>
+  2009 - 2022</span>
   <span class="with-love"><i class="fa fa-heart"></i></span>
   <span class="author" itemprop="copyrightHolder">ianhuang筆記</span>
 </div>
 <div class="powered-by">
-  Powered by - <a class="theme-link" href="http://gohugo.io" target="_blank" title="hugo" >Hugo v0.68.3</a>
+  Powered by - <a class="theme-link" href="http://gohugo.io" target="_blank" title="hugo" >Hugo v0.89.3</a>
 </div>
 <div class="theme-info">
   Theme by - <a class="theme-link" href="https://github.com/xtfly/hugo-theme-next" target="_blank"> NexT

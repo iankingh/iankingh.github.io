@@ -6,10 +6,15 @@
     <description>Recent content in 技術 on ianhuang筆記</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-TW</language>
-    <lastBuildDate>Tue, 06 Oct 2020 22:18:37 +0800</lastBuildDate>
-    
-	<atom:link href="https://iankingh.github.io/categories/%E6%8A%80%E8%A1%93/index.xml" rel="self" type="application/rss+xml" />
-    
+    <lastBuildDate>Sun, 25 Jul 2021 20:58:15 +0800</lastBuildDate><atom:link href="https://iankingh.github.io/categories/%E6%8A%80%E8%A1%93/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Java_tutorial_4</title>
+      <link>https://iankingh.github.io/post/java/java_tutorial_4/</link>
+      <pubDate>Sun, 25 Jul 2021 20:58:15 +0800</pubDate>
+      
+      <guid>https://iankingh.github.io/post/java/java_tutorial_4/</guid>
+      <description>&lt;h1 id=&#34;從-0-開始的-java-生活no4-java-物件導向簡介&#34;&gt;[從 0 開始的 JAVA 生活]No.4 java 物件導向簡介&lt;/h1&gt;</description>
+    </item>
     
     <item>
       <title>IP</title>
@@ -29,9 +34,18 @@ IP 位址是一個 32 位元的二進制數字，具有全域性，用來唯一�
 &lt;p&gt;&lt;strong&gt;IP 位址是唯一的。&lt;/strong&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;strong&gt;IPv4 的位址空間為 232 或 4,294,967,296。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;IPv4 的位址空間為 232 或 4,294,967,296。&lt;/strong&gt; &lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;</description>
+    </item>
+    
+    <item>
+      <title>[從 0 開始的 JAVA 生活]No.3 變數與它的小夥伴們</title>
+      <link>https://iankingh.github.io/post/java/java_tutorial_3./</link>
+      <pubDate>Mon, 15 Jun 2020 06:20:37 +0800</pubDate>
+      
+      <guid>https://iankingh.github.io/post/java/java_tutorial_3./</guid>
+      <description>&lt;h1 id=&#34;從-0-開始的-java-生活no3-變數與它的小夥伴們&#34;&gt;[從 0 開始的 JAVA 生活]No.3 變數與它的小夥伴們&lt;/h1&gt;</description>
     </item>
     
     <item>
@@ -49,7 +63,7 @@ IP 位址是一個 32 位元的二進制數字，具有全域性，用來唯一�
       <pubDate>Fri, 29 May 2020 06:50:51 +0800</pubDate>
       
       <guid>https://iankingh.github.io/post/java/java_tutorial_1/</guid>
-      <description>&lt;h2 id=&#34;從-0-開始的-java-生活-no1-java-第一支-java-程式&#34;&gt;從 0 開始的 JAVA 生活 No.1 Java 第一支 java 程式&lt;/h2&gt;</description>
+      <description>&lt;h2 id=&#34;從-0-開始的-java-生活-no1-java-第一支-java-程式&#34;&gt;&lt;strong&gt;從 0 開始的 JAVA 生活 No.1 Java 第一支 java 程式&lt;/strong&gt;&lt;/h2&gt;</description>
     </item>
     
     <item>

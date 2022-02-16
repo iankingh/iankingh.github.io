@@ -6,11 +6,7 @@
     <description>Recent content in git on ianhuang筆記</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-TW</language>
-    <lastBuildDate>Tue, 13 Jul 2021 22:07:36 +0800</lastBuildDate>
-    
-	<atom:link href="https://iankingh.github.io/tags/git/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Tue, 13 Jul 2021 22:07:36 +0800</lastBuildDate><atom:link href="https://iankingh.github.io/tags/git/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>GitNote</title>
       <link>https://iankingh.github.io/post/git/gitnote/</link>

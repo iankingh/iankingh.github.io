@@ -168,7 +168,7 @@
     <i class="fa fa-eye"></i>
 </span>
 <span class="post-meta-item-text">閱讀：</span>
-<span class="leancloud-visitors-count">771 字 ~2分鐘</span>
+<span class="leancloud-visitors-count">790 字 ~2分鐘</span>
 </span>
       </div>
     </header>
@@ -176,7 +176,7 @@
     <h2 id="docker_compose-筆記">Docker_Compose 筆記</h2>
 <h2 id="安裝-docker-compose">安裝 docker-compose</h2>
 <h3 id="下載">下載</h3>
-<pre><code class="language-shell">$ sudo curl -L &quot;https://github.com/docker/compose/releases/download/1.29.0/docker-compose-$(uname -s)-$(uname -m)&quot; -o /usr/local/bin/docker-compose
+<pre><code class="language-shell">curl -L &quot;https://github.com/docker/compose/releases/download/1.29.0/docker-compose-$(uname -s)-$(uname -m)&quot; -o /usr/local/bin/docker-compose
 </code></pre>
 <h3 id="安裝">安裝</h3>
 <pre><code class="language-shell">chmod +x /usr/local/bin/docker-compose
@@ -186,9 +186,7 @@
 </code></pre>
 <h3 id="測試">測試</h3>
 <h4 id="第一步創建-spring-boot-服務">第一步，創建 Spring boot 服務</h4>
-<pre><code>
-
-
+<pre><code class="language-shell">
 
 </code></pre>
 <h3 id="第二步創建-dockerfile">第二步，創建 Dockerfile</h3>
@@ -216,13 +214,13 @@ services:
 <pre><code class="language-shell">docker-compose up
 </code></pre>
 <p>启动成功之后，在浏览器访问：<code>http://ipaddress:8080/</code> ，返回如下：</p>
-<pre><code>Hello World! I have been seen 1 times.
+<pre><code class="language-shell">Hello World! I have been seen 1 times.
 </code></pre>
-<p><img src="http://favorites.ren/assets/images/2018/docker/quick-hello-world-1.png" alt="img"></p>
+<h2 id="img--要放圖片">img  要放圖片</h2>
 <p>刷新再次访问返回</p>
-<pre><code>Hello World! I have been seen 2 times.
+<pre><code class="language-shell">Hello World! I have been seen 2 times.
 </code></pre>
-<p><img src="http://favorites.ren/assets/images/2018/docker/quick-hello-world-2.png" alt="img"></p>
+<h2 id="img-要放圖片">img 要放圖片</h2>
 <p>不断的刷新数字会不断的增长。</p>
 <h2 id="docker-compose-常用命令">Docker Compose 常用命令</h2>
 <p>使用<code>docker-compose up -d</code> 在後台啟動服務</p>
@@ -233,8 +231,8 @@ services:
 <p>列出專案中目前的所有容器</p>
 <pre><code class="language-shell">docker-compose ps
 </code></pre>
-<pre><code>       Name                      Command               State           Ports         
--------------------------------------------------------------------------------------
+<pre><code class="language-shell">Name    Command               State           Ports         
+-------------------------------------------------------------
 
 </code></pre>
 <p>使用<code>docker-compose stop</code>停止服務。</p>
@@ -244,30 +242,63 @@ services:
 Stopping composetest_redis_1 ... done
 </code></pre>
 <p><code>docker-compose restart</code> ：重啟專案中的服務</p>
-<p><code>docker-compose -h</code>查看幫助</p>
-<h1 id="-f--指定使用的-compose-範本檔預設為-docker-composeyml可以多次指定">-f  指定使用的 Compose 範本檔，預設為 docker-compose.yml，可以多次指定。</h1>
-<p>docker-compose -f docker-compose.yml up -d</p>
-<p>#停用移除所有容器以及網路相關
-docker-compose down</p>
-<p>#查看服務容器的輸出
-docker-compose logs</p>
-<p>#構建（重新構建）專案中的服務容器。服務容器一旦構建後，將會帶上一個標記名，例如對於 web 項目中的一個 db 容器，可能是 web_db。可以隨時在專案目錄下運行 docker-compose build 來重新構建服務
-docker-compose build</p>
-<p>#拉取服務依賴的鏡像
-docker-compose pull</p>
-<p>#刪除所有（停止狀態的）服務容器。推薦先執行 docker-compose stop 命令來停止容器。
-docker-compose rm</p>
-<p>#在指定服務上執行一個命令。
-docker-compose run ubuntu ping docker.com</p>
-<p>#設置指定服務運行的容器個數。通過 service=num 的參數來設置數量
-docker-compose scale web=3 db=2</p>
-<p>#啟動已經存在的服務容器。
-docker-compose start</p>
-<p>#停止已經處於運行狀態的容器，但不刪除它。通過 docker-compose start 可以再次啟動這些容器。
-docker-compose stop</p>
+<h2 id="docker-compose-命令">docker-compose 命令</h2>
+<h3 id="docker-compose--h-查看幫助">docker-compose -h 查看幫助</h3>
+<pre><code class="language-shell">docker-compose -h 
+</code></pre>
+<h3 id="create-and-start-containers">create and start containers</h3>
+<pre><code class="language-shell">docker-compose up
+</code></pre>
+<h3 id="start-services-with-detached-mode">start services with detached mode</h3>
+<pre><code class="language-shell">docker-compose -d up
+</code></pre>
+<h3 id="start-specific-service">start specific service</h3>
+<pre><code class="language-shell">docker-compose up &lt;service-name&gt;
+</code></pre>
+<h3 id="stop-services-停止已經處於運行狀態的容器但不刪除它通過-docker-compose-start-可以再次啟動這些容器">stop services 停止已經處於運行狀態的容器，但不刪除它。通過 docker-compose start 可以再次啟動這些容器</h3>
+<pre><code class="language-shell">docker-compose stop
+</code></pre>
+<h3 id="start-service-啟動已經存在的服務容器">start service 啟動已經存在的服務容器</h3>
+<pre><code class="language-shell">docker-compose start
+</code></pre>
+<h3 id="list-images">list images</h3>
+<pre><code class="language-shell">docker-compose images
+</code></pre>
+<h3 id="list-containers">list containers</h3>
+<pre><code class="language-shell">docker-compose ps
+</code></pre>
+<h3 id="display-running-containers">display running containers</h3>
+<pre><code class="language-shell">docker-compose top
+</code></pre>
+<h3 id="stop-all-contaners-and-remove-images-volumes-停用移除所有容器以及網路相關">stop all contaners and remove images, volumes 停用移除所有容器以及網路相關</h3>
+<pre><code class="language-shell">docker-compose down
+</code></pre>
+<h3 id="remove-stopped-containers-刪除所有停止狀態的服務容器推薦先執行-docker-compose-stop-命令來停止容器">remove stopped containers 刪除所有（停止狀態的）服務容器。推薦先執行 docker-compose stop 命令來停止容器</h3>
+<pre><code class="language-shell">docker-compose rm 
+</code></pre>
+<h3 id="kill-services">kill services</h3>
+<pre><code class="language-shell">docker-compose kill
+</code></pre>
+<h3 id="查看服務容器的輸出">查看服務容器的輸出</h3>
+<pre><code class="language-shell">docker-compose logs
+</code></pre>
+<h3 id="構建重新構建專案中的服務容器">構建（重新構建）專案中的服務容器</h3>
+<p>服務容器一旦構建後，將會帶上一個標記名，例如對於 web 項目中的一個 db 容器，可能是 web_db。可以隨時在專案目錄下運行 docker-compose build 來重新構建服務</p>
+<pre><code class="language-shell">docker-compose build
+</code></pre>
+<h3 id="拉取服務依賴的鏡像">拉取服務依賴的鏡像</h3>
+<pre><code class="language-shell">docker-compose pull
+</code></pre>
+<h3 id="在指定服務上執行一個命令">在指定服務上執行一個命令</h3>
+<pre><code class="language-shell">docker-compose run ubuntu ping docker.com
+</code></pre>
+<h3 id="設置指定服務運行的容器個數通過-servicenum-的參數來設置數量">設置指定服務運行的容器個數。通過 service=num 的參數來設置數量</h3>
+<pre><code class="language-shell">docker-compose scale web=3 db=2
+</code></pre>
 <h2 id="參考">參考</h2>
 <p><a href="https://docs.docker.com/compose/install/">Install Docker Compose | Docker Documentation</a></p>
 <p><a href="https://beginor.github.io/2017/06/08/use-compose-instead-of-run.html">使用 docker-compose 替代 docker run - 张志敏的技术专栏</a></p>
+<p><a href="https://medium.com/bb-tutorials-and-thoughts/angular-local-development-with-docker-compose-13719b998e42">Angular — Local Development With Docker-Compose | by Bhargav Bachina | Bachina Labs | Medium</a></p>
     </div>
     <footer class="post-footer">
      
@@ -366,14 +397,14 @@ docker-compose stop</p>
       <nav class="site-state motion-element">
     <div class="site-state-item site-state-posts">
       <a href="https://iankingh.github.io/post/">
-        <span class="site-state-item-count">32</span>
+        <span class="site-state-item-count">37</span>
         <span class="site-state-item-name">日誌</span>
       </a>
     </div>
     <div class="site-state-item site-state-categories">    
         <a href="https://iankingh.github.io/categories/">      
          
-        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-count">5</span>
         
         <span class="site-state-item-name">分類</span>
         
@@ -383,7 +414,7 @@ docker-compose stop</p>
     <div class="site-state-item site-state-tags">
         <a href="https://iankingh.github.io/tags/">
          
-        <span class="site-state-item-count">23</span>
+        <span class="site-state-item-count">25</span>
         
         <span class="site-state-item-name">標籤</span>
         </a>
@@ -427,10 +458,30 @@ docker-compose stop</p>
         <li><a href="#第四步使用-compose">第四步，使用 Compose</a></li>
       </ul>
     </li>
+    <li><a href="#img--要放圖片">img  要放圖片</a></li>
+    <li><a href="#img-要放圖片">img 要放圖片</a></li>
     <li><a href="#docker-compose-常用命令">Docker Compose 常用命令</a></li>
-  </ul>
-
-  <ul>
+    <li><a href="#docker-compose-命令">docker-compose 命令</a>
+      <ul>
+        <li><a href="#docker-compose--h-查看幫助">docker-compose -h 查看幫助</a></li>
+        <li><a href="#create-and-start-containers">create and start containers</a></li>
+        <li><a href="#start-services-with-detached-mode">start services with detached mode</a></li>
+        <li><a href="#start-specific-service">start specific service</a></li>
+        <li><a href="#stop-services-停止已經處於運行狀態的容器但不刪除它通過-docker-compose-start-可以再次啟動這些容器">stop services 停止已經處於運行狀態的容器，但不刪除它。通過 docker-compose start 可以再次啟動這些容器</a></li>
+        <li><a href="#start-service-啟動已經存在的服務容器">start service 啟動已經存在的服務容器</a></li>
+        <li><a href="#list-images">list images</a></li>
+        <li><a href="#list-containers">list containers</a></li>
+        <li><a href="#display-running-containers">display running containers</a></li>
+        <li><a href="#stop-all-contaners-and-remove-images-volumes-停用移除所有容器以及網路相關">stop all contaners and remove images, volumes 停用移除所有容器以及網路相關</a></li>
+        <li><a href="#remove-stopped-containers-刪除所有停止狀態的服務容器推薦先執行-docker-compose-stop-命令來停止容器">remove stopped containers 刪除所有（停止狀態的）服務容器。推薦先執行 docker-compose stop 命令來停止容器</a></li>
+        <li><a href="#kill-services">kill services</a></li>
+        <li><a href="#查看服務容器的輸出">查看服務容器的輸出</a></li>
+        <li><a href="#構建重新構建專案中的服務容器">構建（重新構建）專案中的服務容器</a></li>
+        <li><a href="#拉取服務依賴的鏡像">拉取服務依賴的鏡像</a></li>
+        <li><a href="#在指定服務上執行一個命令">在指定服務上執行一個命令</a></li>
+        <li><a href="#設置指定服務運行的容器個數通過-servicenum-的參數來設置數量">設置指定服務運行的容器個數。通過 service=num 的參數來設置數量</a></li>
+      </ul>
+    </li>
     <li><a href="#參考">參考</a></li>
   </ul>
 </nav></div>
@@ -447,12 +498,12 @@ docker-compose stop</p>
       <div class="footer-inner">
         <div class="copyright" >
   <span itemprop="copyrightYear">  &copy; 
-  2009 - 2021</span>
+  2009 - 2022</span>
   <span class="with-love"><i class="fa fa-heart"></i></span>
   <span class="author" itemprop="copyrightHolder">ianhuang筆記</span>
 </div>
 <div class="powered-by">
-  Powered by - <a class="theme-link" href="http://gohugo.io" target="_blank" title="hugo" >Hugo v0.68.3</a>
+  Powered by - <a class="theme-link" href="http://gohugo.io" target="_blank" title="hugo" >Hugo v0.89.3</a>
 </div>
 <div class="theme-info">
   Theme by - <a class="theme-link" href="https://github.com/xtfly/hugo-theme-next" target="_blank"> NexT

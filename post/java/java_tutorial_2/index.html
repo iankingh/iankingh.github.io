@@ -175,18 +175,18 @@
     <i class="fa fa-eye"></i>
 </span>
 <span class="post-meta-item-text">閱讀：</span>
-<span class="leancloud-visitors-count">1200 字 ~3分鐘</span>
+<span class="leancloud-visitors-count">1015 字 ~3分鐘</span>
 </span>
       </div>
     </header>
     <div class="post-body" itemprop="articleBody">
     <!-- raw HTML omitted -->
 <h2 id="java-基本的資料型態primitive-data-types">Java 基本的資料型態(Primitive Data Types)</h2>
-<p>8大</p>
+<p>基本數據類型（8種）</p>
 <table>
 <thead>
 <tr>
-<th align="left">數據類型</th>
+<th style="text-align:left">數據類型</th>
 <th>大小/位</th>
 <th>封裝類</th>
 <th>默認值</th>
@@ -195,56 +195,56 @@
 </thead>
 <tbody>
 <tr>
-<td align="left">byte</td>
+<td style="text-align:left">byte</td>
 <td>8bit</td>
 <td>Byte</td>
 <td>0</td>
 <td>-128~127</td>
 </tr>
 <tr>
-<td align="left">short</td>
+<td style="text-align:left">short</td>
 <td>16bit</td>
 <td>Short</td>
 <td>0</td>
 <td>-32768~32767</td>
 </tr>
 <tr>
-<td align="left">int</td>
+<td style="text-align:left">int</td>
 <td>32bit</td>
 <td>Integer</td>
 <td>0</td>
 <td>-2147483648~2147483647</td>
 </tr>
 <tr>
-<td align="left">long</td>
+<td style="text-align:left">long</td>
 <td>64bit</td>
 <td>Long</td>
 <td>0L</td>
 <td>-9223372036854775808~9223372036854775807</td>
 </tr>
 <tr>
-<td align="left">float</td>
+<td style="text-align:left">float</td>
 <td>32bit</td>
 <td>Float</td>
 <td>0.0F</td>
 <td>1.4E-45~3.4028235E38</td>
 </tr>
 <tr>
-<td align="left">double</td>
+<td style="text-align:left">double</td>
 <td>64bit</td>
 <td>Double</td>
 <td>0.0D</td>
 <td>4.9E-324~1.7976931348623157E308</td>
 </tr>
 <tr>
-<td align="left">char</td>
+<td style="text-align:left">char</td>
 <td>16bit</td>
 <td>Character</td>
 <td>&lsquo;\u0000&rsquo;</td>
 <td>0~65535</td>
 </tr>
 <tr>
-<td align="left">boolean</td>
+<td style="text-align:left">boolean</td>
 <td>8bit</td>
 <td>Boolean</td>
 <td>false</td>
@@ -252,9 +252,9 @@
 </tr>
 </tbody>
 </table>
+<p>如果兩運算為基本型別，至少會轉為int</p>
 <h3 id="範例">範例</h3>
-<pre><code class="language-java">package ch1;
-
+<pre><code class="language-java">
 /**
  * 
  * 
@@ -282,10 +282,6 @@ public class PrimitiveDataTypesTest {
         static char c;
         static boolean bo;
 
-        // String不是基本類型
-        static String str1 = &quot;&quot;;// 生成一個String類型的引用，而且分配記憶體空間來存放&quot;&quot;;
-        static String str2; // 只生成一個string類型的引用；不分配記憶體空間,預設為null
-
         public static void main(String[] args) {
 
                 System.out.println(&quot;byte的大小：&quot; + Byte.SIZE + &quot; byte的預設值：&quot; + b + &quot; byte的資料範圍：&quot; + Byte.MIN_VALUE + &quot;~&quot;
@@ -311,15 +307,11 @@ public class PrimitiveDataTypesTest {
                 System.out.println(&quot;----------------------------------------------------&quot;);
                 System.out.println(&quot;boolean的大小：&quot; + Byte.SIZE + &quot; boolean的預設值：&quot; + bo + &quot; boolean的資料範圍：&quot; + Byte.MIN_VALUE
                                 + &quot;~&quot; + Byte.MAX_VALUE);
-
-                System.out.println(&quot;String字串的預設值：&quot; + str1 + &quot;str的默認長度：&quot; + str1.length());
-                System.out.println(&quot;String字串的預設值：&quot; + str2);
-
         }
 }
 </code></pre>
 <h2 id="java--跳脫字元-escape-characters">JAVA  跳脫字元 Escape Characters</h2>
-<pre><code>- \' : 單引號
+<pre><code class="language-java">- \' : 單引號
 - \&quot; : 雙引號
 - \\ : 反斜線
 - \n : 換行
@@ -330,8 +322,7 @@ public class PrimitiveDataTypesTest {
 
 </code></pre>
 <h2 id="參考">參考</h2>
-<p>Java中8種基本數據類型默認的默認值_java_飛月程序人生-CSDN博客</p>
-<p><a href="https://blog.csdn.net/fysuccess/article/details/40656761">https://blog.csdn.net/fysuccess/article/details/40656761</a></p>
+<p><a href="https://blog.csdn.net/fysuccess/article/details/40656761">Java中8种基本数据类型及其默认值_飞月程序人生-CSDN博客_float默认值</a></p>
     </div>
     <footer class="post-footer">
      
@@ -430,14 +421,14 @@ public class PrimitiveDataTypesTest {
       <nav class="site-state motion-element">
     <div class="site-state-item site-state-posts">
       <a href="https://iankingh.github.io/post/">
-        <span class="site-state-item-count">32</span>
+        <span class="site-state-item-count">37</span>
         <span class="site-state-item-name">日誌</span>
       </a>
     </div>
     <div class="site-state-item site-state-categories">    
         <a href="https://iankingh.github.io/categories/">      
          
-        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-count">5</span>
         
         <span class="site-state-item-name">分類</span>
         
@@ -447,7 +438,7 @@ public class PrimitiveDataTypesTest {
     <div class="site-state-item site-state-tags">
         <a href="https://iankingh.github.io/tags/">
          
-        <span class="site-state-item-count">23</span>
+        <span class="site-state-item-count">25</span>
         
         <span class="site-state-item-name">標籤</span>
         </a>
@@ -501,12 +492,12 @@ public class PrimitiveDataTypesTest {
       <div class="footer-inner">
         <div class="copyright" >
   <span itemprop="copyrightYear">  &copy; 
-  2009 - 2021</span>
+  2009 - 2022</span>
   <span class="with-love"><i class="fa fa-heart"></i></span>
   <span class="author" itemprop="copyrightHolder">ianhuang筆記</span>
 </div>
 <div class="powered-by">
-  Powered by - <a class="theme-link" href="http://gohugo.io" target="_blank" title="hugo" >Hugo v0.68.3</a>
+  Powered by - <a class="theme-link" href="http://gohugo.io" target="_blank" title="hugo" >Hugo v0.89.3</a>
 </div>
 <div class="theme-info">
   Theme by - <a class="theme-link" href="https://github.com/xtfly/hugo-theme-next" target="_blank"> NexT

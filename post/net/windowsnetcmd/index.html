@@ -168,7 +168,7 @@
     <i class="fa fa-eye"></i>
 </span>
 <span class="post-meta-item-text">閱讀：</span>
-<span class="leancloud-visitors-count">693 字 ~2分鐘</span>
+<span class="leancloud-visitors-count">780 字 ~2分鐘</span>
 </span>
       </div>
     </header>
@@ -197,16 +197,23 @@ netstat -at # 列出所有TCP埠
 netstat -au # 列出所有UDP埠 
 </code></pre>
 <p>&ldquo;-a&quot;選項意在顯示所有連接，當不附加&rdquo;-n&quot;選項時，它顯示的是本地計算機的 netbios名字+埠號。
-加了&rdquo;-n&quot;選項後，它顯示的是本地IP位址+埠號。</p>
+加了&quot;-n&quot;選項後，它顯示的是本地IP位址+埠號。</p>
 <h3 id="tracert">tracert</h3>
 <p>tracert 是一個簡單的網絡診斷工具，可以列出分組經過的路由節點（通過tracert命令，就能知道本機與目標主機之間經過多台主機，即經過多少路由。）</p>
 <pre><code>tracert www.google.com
 </code></pre>
-<p>參考
-ping、telnet、tracert簡介與使用 - IT閱讀<br>
-<a href="https://www.itread01.com/content/1550289784.html">https://www.itread01.com/content/1550289784.html</a></p>
-<p>windows網絡命令：ping、ipconfig、tracert、netstat、arp - 每日頭條<br>
-<a href="https://kknews.cc/zh-tw/code/o3jx8z5.html">https://kknews.cc/zh-tw/code/o3jx8z5.html</a></p>
+<p>網頁出不來故障排除</p>
+<p>如果連不上先ping 看看</p>
+<p>如果ping 不成功表示 DNS 或是防火牆沒有設定</p>
+<p>nslookup : DNS偵錯工具</p>
+<p>powershell指令 : tnc : 測試 port 有沒有通</p>
+<p>Test-NetConnection -ComputerName &ldquo;<a href="http://www.google.com">www.google.com</a>&rdquo; -Port 443</p>
+<p>可以簡寫tnc</p>
+<p>tnc  &ldquo;<a href="http://www.google.com">www.google.com</a>&rdquo; -Port 443</p>
+<h2 id="參考">參考</h2>
+<p><a href="https://www.itread01.com/content/1550289784.html">ping、telnet、tracert簡介與使用 - IT閱讀</a></p>
+<p><a href="https://kknews.cc/zh-tw/code/o3jx8z5.html">windows網絡命令：ping、ipconfig、tracert、netstat、arp - 每日頭條</a></p>
+<p><a href="https://medium.com/@CarterTsai/%E5%88%A9%E7%94%A8powershell%E7%9A%84test-netconnection%E4%BE%86%E5%8F%96%E4%BB%A3telnet%E4%BE%86%E6%AA%A2%E6%9F%A5%E7%B6%B2%E7%AB%99%E7%9A%84port%E6%9C%89%E6%B2%92%E6%9C%89%E8%A2%AB%E9%96%8B%E5%95%9F-5bc18909ce67">https://medium.com/@CarterTsai/%E5%88%A9%E7%94%A8powershell%E7%9A%84test-netconnection%E4%BE%86%E5%8F%96%E4%BB%A3telnet%E4%BE%86%E6%AA%A2%E6%9F%A5%E7%B6%B2%E7%AB%99%E7%9A%84port%E6%9C%89%E6%B2%92%E6%9C%89%E8%A2%AB%E9%96%8B%E5%95%9F-5bc18909ce67</a></p>
     </div>
     <footer class="post-footer">
      
@@ -307,14 +314,14 @@ ping、telnet、tracert簡介與使用 - IT閱讀<br>
       <nav class="site-state motion-element">
     <div class="site-state-item site-state-posts">
       <a href="https://iankingh.github.io/post/">
-        <span class="site-state-item-count">32</span>
+        <span class="site-state-item-count">37</span>
         <span class="site-state-item-name">日誌</span>
       </a>
     </div>
     <div class="site-state-item site-state-categories">    
         <a href="https://iankingh.github.io/categories/">      
          
-        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-count">5</span>
         
         <span class="site-state-item-name">分類</span>
         
@@ -324,7 +331,7 @@ ping、telnet、tracert簡介與使用 - IT閱讀<br>
     <div class="site-state-item site-state-tags">
         <a href="https://iankingh.github.io/tags/">
          
-        <span class="site-state-item-count">23</span>
+        <span class="site-state-item-count">25</span>
         
         <span class="site-state-item-name">標籤</span>
         </a>
@@ -366,6 +373,7 @@ ping、telnet、tracert簡介與使用 - IT閱讀<br>
         <li><a href="#tracert">tracert</a></li>
       </ul>
     </li>
+    <li><a href="#參考">參考</a></li>
   </ul>
 </nav></div>
     </div>
@@ -381,12 +389,12 @@ ping、telnet、tracert簡介與使用 - IT閱讀<br>
       <div class="footer-inner">
         <div class="copyright" >
   <span itemprop="copyrightYear">  &copy; 
-  2009 - 2021</span>
+  2009 - 2022</span>
   <span class="with-love"><i class="fa fa-heart"></i></span>
   <span class="author" itemprop="copyrightHolder">ianhuang筆記</span>
 </div>
 <div class="powered-by">
-  Powered by - <a class="theme-link" href="http://gohugo.io" target="_blank" title="hugo" >Hugo v0.68.3</a>
+  Powered by - <a class="theme-link" href="http://gohugo.io" target="_blank" title="hugo" >Hugo v0.89.3</a>
 </div>
 <div class="theme-info">
   Theme by - <a class="theme-link" href="https://github.com/xtfly/hugo-theme-next" target="_blank"> NexT

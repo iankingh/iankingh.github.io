@@ -6,10 +6,25 @@
     <description>Recent content in Windows on ianhuang筆記</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-TW</language>
-    <lastBuildDate>Mon, 01 Feb 2021 18:04:51 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 15 Mar 2021 09:50:02 +0800</lastBuildDate><atom:link href="https://iankingh.github.io/tags/windows/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>使用notepad指令救援資料</title>
+      <link>https://iankingh.github.io/post/other/%E4%BD%BF%E7%94%A8notepad%E6%8C%87%E4%BB%A4%E6%95%91%E6%8F%B4%E8%B3%87%E6%96%99/</link>
+      <pubDate>Mon, 15 Mar 2021 09:50:02 +0800</pubDate>
+      
+      <guid>https://iankingh.github.io/post/other/%E4%BD%BF%E7%94%A8notepad%E6%8C%87%E4%BB%A4%E6%95%91%E6%8F%B4%E8%B3%87%E6%96%99/</guid>
+      <description>&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;</description>
+    </item>
     
-	<atom:link href="https://iankingh.github.io/tags/windows/index.xml" rel="self" type="application/rss+xml" />
-    
+    <item>
+      <title>Cmd</title>
+      <link>https://iankingh.github.io/post/windows/cmd/</link>
+      <pubDate>Thu, 04 Feb 2021 13:33:19 +0800</pubDate>
+      
+      <guid>https://iankingh.github.io/post/windows/cmd/</guid>
+      <description>&lt;h2 id=&#34;windows-cmd指令&#34;&gt;Windows CMD指令&lt;/h2&gt;</description>
+    </item>
     
     <item>
       <title>Route</title>

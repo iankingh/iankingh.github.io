@@ -168,120 +168,140 @@
     <i class="fa fa-eye"></i>
 </span>
 <span class="post-meta-item-text">閱讀：</span>
-<span class="leancloud-visitors-count">987 字 ~2分鐘</span>
+<span class="leancloud-visitors-count">806 字 ~2分鐘</span>
 </span>
       </div>
     </header>
     <div class="post-body" itemprop="articleBody">
-    <h1 id="從-0-開始的-angular-生活-第2天-認識-angular-cli-建立的專案架構">從 0 開始的 Angular 生活 第2天-認識 Angular CLI 建立的專案架構</h1>
-<h2 id="angularjson">angular.json</h2>
-<p>Angular CLI 的設定檔 ，Angular CLI v6 之前檔名 angular-cli.json為。</p>
-<h2 id="editorconfig">.editorconfig</h2>
-<p>編輯器設定檔，設定處理 tab 符號、換行等等。</p>
-<p><a href="https://editorconfig.org/">官網</a>。</p>
-<h2 id="gitignore">.gitignore</h2>
+    <h2 id="從-0-開始的-angular-生活-第2天--angular-cli-建立的專案架構"><strong>從 0 開始的 Angular 生活 第2天- Angular CLI 建立的專案架構</strong></h2>
+<h3 id="angularjson"><strong>angular.json</strong></h3>
+<p>Angular CLI 的設定檔 ，可以在這邊看到專案的一些設定 ,EX: 輸出目錄 , bulid 之類的。</p>
+<h3 id="editorconfig"><strong>.editorconfig</strong></h3>
+<p>編輯器設定檔，設定處理 tab 符號、換行等等。<a href="https://editorconfig.org/">EditorConfig</a></p>
+<h3 id="gitignore"><strong>.gitignore</strong></h3>
 <p>設定git 忽略那些檔案不要加入版本控管。</p>
-<h2 id="karmaconfjs">karma.conf.js</h2>
-<p>karma.conf.js: 是一個單元測試工具。</p>
-<p><a href="https://karma-runner.github.io/latest/index.html">官網</a></p>
-<h2 id="protractorconfjs">protractor.conf.js</h2>
-<p>E2E 測試，主要是測試使用者操作與想要的結果是否符合規格。</p>
-<h2 id="tsconfigjson">tsconfig.json</h2>
+<h3 id="karmaconfjs"><strong>karma.conf.js</strong></h3>
+<p>karma.conf.js: Angular 單元測試的工具。</p>
+<p><a href="https://karma-runner.github.io/latest/index.html">Karma - Spectacular Test Runner for Javascript (karma-runner.github.io)</a></p>
+<h3 id="tsconfigjson"><strong>tsconfig.json</strong></h3>
 <p>TypeScript 編譯設定。</p>
-<h2 id="tslintjson">tslint.json</h2>
+<h3 id="tslintjson"><strong>tslint.json</strong></h3>
 <p>TypeScript 程式碼風格檢查器。</p>
-<h2 id="packagejson">package.json</h2>
-<p>npm 的設定檔， <code>scripts</code> 區塊定義了在開發 Angular 時用到的命令 。</p>
-<h2 id="node_modeles-資料夾">node_modeles 資料夾</h2>
+<h3 id="packagejson"><strong>package.json</strong></h3>
+<p>npm 的設定檔， <code>scripts</code> 區塊定義了在開發 Angular 時用到的命令 EX: ng serve  。</p>
+<h3 id="node_modeles--folder"><strong>node_modeles  Folder</strong></h3>
 <p>存放<code>npm install</code> 後所有被下載下來所有的套件。</p>
-<h2 id="e2e-資料夾">e2e 資料夾</h2>
-<p>存放 End-To-End Testing 所有測試的指定檔都被放在這裡。</p>
-<h2 id="src-資料夾重要">src 資料夾(重要)</h2>
+<h3 id="src-folder重要"><strong>src Folder(重要)</strong></h3>
 <p>根據 Angular 官網的 Style Guide 建立而成Angular 應用程式主要的原始碼。</p>
-<h3 id="app-資料夾重要">app 資料夾(重要)</h3>
-<p>存放app.module 的地方</p>
-<h3 id="indexhtml">index.html</h3>
-<p>angular 應用程式地進入點。</p>
-<h3 id="stylecss">style.css</h3>
+<h3 id="app-folder重要"><strong>app Folder(重要)</strong></h3>
+<p>app.module 在這一個資料夾中 作為啟動的 module</p>
+<h3 id="indexhtml"><strong>index.html</strong></h3>
+<p>SPA 的html , build 好的js 都會放到這邊 ,也可以當作一個入口。</p>
+<h3 id="stylecss"><strong>style.css</strong></h3>
 <p>在這裡它是 「global styles」也就是整個應用程式都會套用到的 CSS 定義，全部都可以寫在這裡。</p>
-<h3 id="maints">main.ts</h3>
+<h3 id="maints"><strong>main.ts</strong></h3>
 <p>main.ts 是 Angular 中 JavaScript 程式的進入點。(.ts 代表 TypeScript)</p>
-<pre><code class="language-typescript">import { enableProdMode } from '@angular/core';
+<p><strong>bootstrapModule</strong>  表示以引入<strong>AppModule</strong> 啟動</p>
+<pre><code class="language-tsx">import { enableProdMode } from '@angular/core';
+
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 
 import { AppModule } from './app/app.module';
+
 import { environment } from './environments/environment';
 
 if (environment.production) {
-  enableProdMode();
+
+enableProdMode();
+
 }
 
 platformBrowserDynamic().bootstrapModule(AppModule)
-  .catch(err =&gt; console.error(err));
+
+.catch(err =&gt; console.error(err));
 </code></pre>
-<p><code>bootstrapModule</code>  表示以引入<code> AppModule</code> 啟動</p>
-<h3 id="appmodulets">app.module.ts</h3>
+<h3 id="appmodulets"><strong>app.module.ts</strong></h3>
 <p>根目錄的TS module</p>
-<pre><code class="language-typescript">
-import { BrowserModule } from '@angular/platform-browser';
+<pre><code class="language-tsx">import { BrowserModule } from '@angular/platform-browser';
+
 import { NgModule } from '@angular/core';
+
 import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
+
 import { AppComponent } from './app.component';
 
-
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    FormsModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+
+declarations: [
+
+AppComponent
+
+],
+
+imports: [
+
+BrowserModule,
+
+AppRoutingModule,
+
+FormsModule
+
+],
+
+providers: [],
+
+bootstrap: [AppComponent]
+
 })
+
 export class AppModule { }
 </code></pre>
-<h3 id="appcomponentts">app.component.ts</h3>
-<pre><code class="language-typescript">import { Component } from '@angular/core';
+<h3 id="appcomponentts"><strong>app.component.ts</strong></h3>
+<p>根目錄的 component  ,進入的第一支 component</p>
+<pre><code class="language-tsx">import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+
+selector: 'app-root',
+
+templateUrl: './app.component.html',
+
+styleUrls: ['./app.component.scss']
+
 })
+
 export class AppComponent {
-  title = 'firstAngular';
+
+title = 'firstAngular';
+
 }
 </code></pre>
-<p>根目錄的TS controller</p>
-<h3 id="assets資產-資料夾">assets(資產) 資料夾</h3>
+<h3 id="assets資產-folder"><strong>assets(資產) folder</strong></h3>
 <p>放置所有的靜態檔案的資料夾，如額外的 JavaScript、JQery、CSS、圖片&hellip;&hellip;&hellip;等等。</p>
-<h3 id="gitkeep">.gitkeep</h3>
-<p>Git 無法添加完全空目錄 ，希望跟蹤Git中空目錄的人就創建了將名為&quot;gitkeep &ldquo;的文件，把它放在這些目錄中的慣例，該文件可以被稱為任何東西;Git對此名稱沒有特殊意義。</p>
-<h3 id="environments-資料夾">environments 資料夾</h3>
-<p>這個資料夾裡面所定義的是 Angular 專案內的環境變數，透過 TypeScript 定義一些環境變數。</p>
-<p>這個資料夾內有兩個檔案，分別是 environment.ts 與 environment.prod.ts ，差別在於 environment.prod.ts 是只有當 build 出 production 版的應用程式時才用得上，否則在開發時期都是使用另一個設定檔。</p>
-<h3 id="faviconico">favicon.ico</h3>
+<h3 id="environments-folder"><strong>environments folder</strong></h3>
+<p>透過 TypeScript 定義一些環境變數。</p>
+<p>這個資料夾內有預設有兩個檔案，分別是 environment.ts 與 environment.prod.ts 。</p>
+<p>一般來說會有開發 ,sit ,uat ,prod 4種</p>
+<ol>
+<li>environment.ts</li>
+<li>environment.sit.ts</li>
+<li>environment.uat.ts</li>
+<li>environment.prod.ts</li>
+</ol>
+<h3 id="faviconico"><strong>favicon.ico</strong></h3>
 <p>瀏覽器業籤上面的圖示。</p>
-<h3 id="polyfillsts">polyfills.ts</h3>
-<p>當你的 Angular 應用程式同時要符合 IE 或舊版瀏覽器時，會用 <a href="https://en.wikipedia.org/wiki/Polyfill_(programming)">Polyfill</a> 來填充缺少的 HTML5/JS APIs</p>
-<h3 id="testts">test.ts</h3>
-<p>測試 - Angular 的檔案</p>
-<h3 id="tsconfigappjson">tsconfig.app.json</h3>
+<h3 id="polyfillsts"><strong>polyfills.ts</strong></h3>
+<p>當你的 Angular 應用程式同時要符合 IE 或舊版瀏覽器時。</p>
+<h3 id="testts"><strong>test.ts</strong></h3>
+<p>測試設定檔決定是否要跑甚麼測試檔案</p>
+<h3 id="tsconfigappjson"><strong>tsconfig.app.json</strong></h3>
 <p>Typescripe編譯成Javascript時的編譯設定</p>
-<h3 id="tsconfigspecjson">tsconfig.spec.json</h3>
-<p>Typescripe編譯成Javascript時的編譯設定</p>
-<h1 id="參考">參考</h1>
-<p>Angular CLI 7.3 使用 ES2015 的 nomodule 屬性載入 Polyfills 函式庫 | The Will Will Web
-<a href="https://blog.miniasp.com/post/2019/02/03/Angular-CLI-73-Use-ES2015-nomodule-load-polyfills">https://blog.miniasp.com/post/2019/02/03/Angular-CLI-73-Use-ES2015-nomodule-load-polyfills</a></p>
-<p>[DAY-19] Angular架構與學習資源介紹 - iT 邦幫忙::一起幫忙解決難題，拯救 IT 人的一天
-<a href="https://ithelp.ithome.com.tw/articles/10225044">https://ithelp.ithome.com.tw/articles/10225044</a></p>
-<p>[從 0 開始的 Angular 生活]No.2 檔案架構 | pvt5r486&rsquo;s Blog
-<a href="https://pvt5r486.github.io/f2e/20190520/3222844657/">https://pvt5r486.github.io/f2e/20190520/3222844657/</a></p>
+<h2 id="參考"><strong>參考</strong></h2>
+<p><a href="https://pvt5r486.github.io/f2e/20190520/3222844657/">[從 0 開始的 Angular 生活]No.2 檔案架構 | pvt5r486&rsquo;s Blog</a></p>
+<p><a href="https://blog.miniasp.com/post/2019/02/03/Angular-CLI-73-Use-ES2015-nomodule-load-polyfills">Angular CLI 7.3 使用 ES2015 的 nomodule 屬性載入 Polyfills 函式庫 | The Will Will Web (miniasp.com)</a></p>
+<p><a href="https://ithelp.ithome.com.tw/articles/10225044">[DAY-19] Angular架構與學習資源介紹 - iT 邦幫忙::一起幫忙解決難題，拯救 IT 人的一天 (ithome.com.tw)</a></p>
     </div>
     <footer class="post-footer">
      
@@ -382,14 +402,14 @@ export class AppComponent {
       <nav class="site-state motion-element">
     <div class="site-state-item site-state-posts">
       <a href="https://iankingh.github.io/post/">
-        <span class="site-state-item-count">32</span>
+        <span class="site-state-item-count">37</span>
         <span class="site-state-item-name">日誌</span>
       </a>
     </div>
     <div class="site-state-item site-state-categories">    
         <a href="https://iankingh.github.io/categories/">      
          
-        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-count">5</span>
         
         <span class="site-state-item-name">分類</span>
         
@@ -399,7 +419,7 @@ export class AppComponent {
     <div class="site-state-item site-state-tags">
         <a href="https://iankingh.github.io/tags/">
          
-        <span class="site-state-item-count">23</span>
+        <span class="site-state-item-count">25</span>
         
         <span class="site-state-item-name">標籤</span>
         </a>
@@ -431,34 +451,32 @@ export class AppComponent {
     <div class="post-toc">
         <div class="post-toc-content"><nav id="TableOfContents">
   <ul>
-    <li><a href="#angularjson">angular.json</a></li>
-    <li><a href="#editorconfig">.editorconfig</a></li>
-    <li><a href="#gitignore">.gitignore</a></li>
-    <li><a href="#karmaconfjs">karma.conf.js</a></li>
-    <li><a href="#protractorconfjs">protractor.conf.js</a></li>
-    <li><a href="#tsconfigjson">tsconfig.json</a></li>
-    <li><a href="#tslintjson">tslint.json</a></li>
-    <li><a href="#packagejson">package.json</a></li>
-    <li><a href="#node_modeles-資料夾">node_modeles 資料夾</a></li>
-    <li><a href="#e2e-資料夾">e2e 資料夾</a></li>
-    <li><a href="#src-資料夾重要">src 資料夾(重要)</a>
+    <li><a href="#從-0-開始的-angular-生活-第2天--angular-cli-建立的專案架構"><strong>從 0 開始的 Angular 生活 第2天- Angular CLI 建立的專案架構</strong></a>
       <ul>
-        <li><a href="#app-資料夾重要">app 資料夾(重要)</a></li>
-        <li><a href="#indexhtml">index.html</a></li>
-        <li><a href="#stylecss">style.css</a></li>
-        <li><a href="#maints">main.ts</a></li>
-        <li><a href="#appmodulets">app.module.ts</a></li>
-        <li><a href="#appcomponentts">app.component.ts</a></li>
-        <li><a href="#assets資產-資料夾">assets(資產) 資料夾</a></li>
-        <li><a href="#gitkeep">.gitkeep</a></li>
-        <li><a href="#environments-資料夾">environments 資料夾</a></li>
-        <li><a href="#faviconico">favicon.ico</a></li>
-        <li><a href="#polyfillsts">polyfills.ts</a></li>
-        <li><a href="#testts">test.ts</a></li>
-        <li><a href="#tsconfigappjson">tsconfig.app.json</a></li>
-        <li><a href="#tsconfigspecjson">tsconfig.spec.json</a></li>
+        <li><a href="#angularjson"><strong>angular.json</strong></a></li>
+        <li><a href="#editorconfig"><strong>.editorconfig</strong></a></li>
+        <li><a href="#gitignore"><strong>.gitignore</strong></a></li>
+        <li><a href="#karmaconfjs"><strong>karma.conf.js</strong></a></li>
+        <li><a href="#tsconfigjson"><strong>tsconfig.json</strong></a></li>
+        <li><a href="#tslintjson"><strong>tslint.json</strong></a></li>
+        <li><a href="#packagejson"><strong>package.json</strong></a></li>
+        <li><a href="#node_modeles--folder"><strong>node_modeles  Folder</strong></a></li>
+        <li><a href="#src-folder重要"><strong>src Folder(重要)</strong></a></li>
+        <li><a href="#app-folder重要"><strong>app Folder(重要)</strong></a></li>
+        <li><a href="#indexhtml"><strong>index.html</strong></a></li>
+        <li><a href="#stylecss"><strong>style.css</strong></a></li>
+        <li><a href="#maints"><strong>main.ts</strong></a></li>
+        <li><a href="#appmodulets"><strong>app.module.ts</strong></a></li>
+        <li><a href="#appcomponentts"><strong>app.component.ts</strong></a></li>
+        <li><a href="#assets資產-folder"><strong>assets(資產) folder</strong></a></li>
+        <li><a href="#environments-folder"><strong>environments folder</strong></a></li>
+        <li><a href="#faviconico"><strong>favicon.ico</strong></a></li>
+        <li><a href="#polyfillsts"><strong>polyfills.ts</strong></a></li>
+        <li><a href="#testts"><strong>test.ts</strong></a></li>
+        <li><a href="#tsconfigappjson"><strong>tsconfig.app.json</strong></a></li>
       </ul>
     </li>
+    <li><a href="#參考"><strong>參考</strong></a></li>
   </ul>
 </nav></div>
     </div>
@@ -474,12 +492,12 @@ export class AppComponent {
       <div class="footer-inner">
         <div class="copyright" >
   <span itemprop="copyrightYear">  &copy; 
-  2009 - 2021</span>
+  2009 - 2022</span>
   <span class="with-love"><i class="fa fa-heart"></i></span>
   <span class="author" itemprop="copyrightHolder">ianhuang筆記</span>
 </div>
 <div class="powered-by">
-  Powered by - <a class="theme-link" href="http://gohugo.io" target="_blank" title="hugo" >Hugo v0.68.3</a>
+  Powered by - <a class="theme-link" href="http://gohugo.io" target="_blank" title="hugo" >Hugo v0.89.3</a>
 </div>
 <div class="theme-info">
   Theme by - <a class="theme-link" href="https://github.com/xtfly/hugo-theme-next" target="_blank"> NexT

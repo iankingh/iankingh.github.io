@@ -6,10 +6,25 @@
     <description>Recent content in java on ianhuang筆記</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-TW</language>
-    <lastBuildDate>Wed, 03 Mar 2021 13:33:50 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 25 Jul 2021 20:58:15 +0800</lastBuildDate><atom:link href="https://iankingh.github.io/tags/java/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Java_tutorial_4</title>
+      <link>https://iankingh.github.io/post/java/java_tutorial_4/</link>
+      <pubDate>Sun, 25 Jul 2021 20:58:15 +0800</pubDate>
+      
+      <guid>https://iankingh.github.io/post/java/java_tutorial_4/</guid>
+      <description>&lt;h1 id=&#34;從-0-開始的-java-生活no4-java-物件導向簡介&#34;&gt;[從 0 開始的 JAVA 生活]No.4 java 物件導向簡介&lt;/h1&gt;</description>
+    </item>
     
-	<atom:link href="https://iankingh.github.io/tags/java/index.xml" rel="self" type="application/rss+xml" />
-    
+    <item>
+      <title>算錢用浮點，遲早被人扁</title>
+      <link>https://iankingh.github.io/post/other/%E7%AE%97%E9%8C%A2%E7%94%A8%E6%B5%AE%E9%BB%9E%E9%81%B2%E6%97%A9%E8%A2%AB%E4%BA%BA%E6%89%81/</link>
+      <pubDate>Mon, 22 Mar 2021 11:14:01 +0800</pubDate>
+      
+      <guid>https://iankingh.github.io/post/other/%E7%AE%97%E9%8C%A2%E7%94%A8%E6%B5%AE%E9%BB%9E%E9%81%B2%E6%97%A9%E8%A2%AB%E4%BA%BA%E6%89%81/</guid>
+      <description>&lt;h2 id=&#34;算錢用浮點遲早被人扁&#34;&gt;算錢用浮點，遲早被人扁&lt;/h2&gt;
+&lt;!-- raw HTML omitted --&gt;</description>
+    </item>
     
     <item>
       <title>tomcatSetingUser</title>
@@ -30,6 +45,15 @@
 &lt;p&gt;使用Java程式從資料庫中查詢大量的資料時出現異常:java.lang.OutOfMemoryError: Java heap space
 在JVM中如果98%的時間是用於GC且可用的 Heap size 不足2%的時候將丟擲此異常資訊。
 JVM堆的設定是指java程式執行過程中JVM可以調配使用的記憶體空間的設定.JVM在啟動的時候會自動設定Heap size的值,其初始空間(即-Xms)是實體記憶體的1/64,最大空間(-Xmx)是實體記憶體的1/4。可以利用JVM提供的-Xmn -Xms -Xmx等選項可進行設定。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>[從 0 開始的 JAVA 生活]No.3 變數與它的小夥伴們</title>
+      <link>https://iankingh.github.io/post/java/java_tutorial_3./</link>
+      <pubDate>Mon, 15 Jun 2020 06:20:37 +0800</pubDate>
+      
+      <guid>https://iankingh.github.io/post/java/java_tutorial_3./</guid>
+      <description>&lt;h1 id=&#34;從-0-開始的-java-生活no3-變數與它的小夥伴們&#34;&gt;[從 0 開始的 JAVA 生活]No.3 變數與它的小夥伴們&lt;/h1&gt;</description>
     </item>
     
     <item>
@@ -62,7 +86,7 @@ JVM堆的設定是指java程式執行過程中JVM可以調配使用的記憶體�
       <pubDate>Fri, 29 May 2020 06:50:51 +0800</pubDate>
       
       <guid>https://iankingh.github.io/post/java/java_tutorial_1/</guid>
-      <description>&lt;h2 id=&#34;從-0-開始的-java-生活-no1-java-第一支-java-程式&#34;&gt;從 0 開始的 JAVA 生活 No.1 Java 第一支 java 程式&lt;/h2&gt;</description>
+      <description>&lt;h2 id=&#34;從-0-開始的-java-生活-no1-java-第一支-java-程式&#34;&gt;&lt;strong&gt;從 0 開始的 JAVA 生活 No.1 Java 第一支 java 程式&lt;/strong&gt;&lt;/h2&gt;</description>
     </item>
     
     <item>
@@ -74,15 +98,6 @@ JVM堆的設定是指java程式執行過程中JVM可以調配使用的記憶體�
       <description>&lt;h2 id=&#34;簡介&#34;&gt;簡介&lt;/h2&gt;
 &lt;p&gt;&lt;code&gt;java.text&lt;/code&gt;提供了&lt;code&gt;NumberFormat&lt;/code&gt;類別來讓我們更方便的格式化數字的呈現方式&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;DecimalFormat&lt;/code&gt;是&lt;code&gt;NumberFormat&lt;/code&gt;該格式的具體子類， 其格式為小數。它具有多種功能，旨在使可以在任何語言環境中解析和格式化數字，包括對西方，阿拉伯和印度數字的支持。它還支持各種數字，包括整數（123），定點數字（123.4），科學計數法（1.23E4），百分比（12％）和貨幣金額（$ 123）。所有這些都可以本地化。&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>AndroidBsN01</title>
-      <link>https://iankingh.github.io/post/android/androidbsn01/</link>
-      <pubDate>Mon, 25 May 2020 10:50:35 +0800</pubDate>
-      
-      <guid>https://iankingh.github.io/post/android/androidbsn01/</guid>
-      <description>&lt;h2 id=&#34;create-an-android-project創建一個android項目&#34;&gt;Create an Android project(創建一個Android項目)&lt;/h2&gt;</description>
     </item>
     
     <item>

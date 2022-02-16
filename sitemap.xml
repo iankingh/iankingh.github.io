@@ -1,6 +1,21 @@
 <search>
     
      <entry>
+        <title>Java_tutorial_4</title>
+        <url>https://iankingh.github.io/post/java/java_tutorial_4/</url>
+        <categories>
+          <category>筆記</category><category>技術</category>
+        </categories>
+        <tags>
+          <tag>java</tag>
+        </tags>
+        <content type="html"> [從 0 開始的 JAVA 生活]No.4 java 物件導向簡介 物件導向的三種特性   封裝
+ public proteced default(預設) private    繼承
+ 共同的 data 只要描述一次 子類別 可以 ADD or override Method    多型
+  參考</content>
+    </entry>
+    
+     <entry>
         <title>GitNote</title>
         <url>https://iankingh.github.io/post/git/gitnote/</url>
         <categories>
@@ -14,6 +29,45 @@ git status 看目前訊息 取得目前 Git 工作目錄的狀態用這個指令
 把檔案push 到遠端儲存庫  git remote add origin 遠端儲存庫URL 新增遠端儲存庫到本地 git push &amp;ndash;set-upstream origin master 建立連結 git push -u origin master(分支) 發布分支(簡寫)  git reset -p 修改索引&amp;mdash;用途:避免本地設定檔上傳
 git push &amp;ndash;tags &amp;hellip;.&amp;gt; 推送tag
 回復到上一個（或更前的）版本 git reset &amp;ndash;hard HEAD 回復到最新提交版本 git reset &amp;ndash;hard HEAD~ // 等於 ~1 回復到上一個提交版本 git reset &amp;ndash;hard HEAD~n // n 等於往上第幾個提交版本 回復之前指定的提交版本
+參考</content>
+    </entry>
+    
+     <entry>
+        <title>算錢用浮點，遲早被人扁</title>
+        <url>https://iankingh.github.io/post/other/%E7%AE%97%E9%8C%A2%E7%94%A8%E6%B5%AE%E9%BB%9E%E9%81%B2%E6%97%A9%E8%A2%AB%E4%BA%BA%E6%89%81/</url>
+        <categories>
+          <category>筆記</category>
+        </categories>
+        <tags>
+          <tag>java</tag><tag>javaScript</tag>
+        </tags>
+        <content type="html"> 算錢用浮點，遲早被人扁 前言 簡單來說 , 在部分程式語言 ,在計算&#43;法時是使用 float 來計算的
+EX : JavaScript 0.1&#43;0.2 = ?
+0.1&#43;0.20.30000000000000004 會有誤差
+有個網站叫
+https://0.30000000000000004.com/
+提供許多 解法
+例如 : java 使用 BigDecimal
+參考 算錢學問大 | iThome
+CODE-分贓程式的寫法-黑暗執行緒
+https://0.30000000000000004.com/
+</content>
+    </entry>
+    
+     <entry>
+        <title>使用notepad指令救援資料</title>
+        <url>https://iankingh.github.io/post/other/%E4%BD%BF%E7%94%A8notepad%E6%8C%87%E4%BB%A4%E6%95%91%E6%8F%B4%E8%B3%87%E6%96%99/</url>
+        <categories>
+          <category>other</category>
+        </categories>
+        <tags>
+          <tag>windows</tag><tag>other</tag>
+        </tags>
+        <content type="html"> 前言 當電腦壞軌時要從裡面拉資料
+使用 notepad指令救援資料 當電腦無法進入安全模式時，但可以進入修復電腦時，就可以使用，狂按F8進入修復你的電腦，之後選擇命令提示字元
+步驟一 : 進入CMD 進入此畫面
+步驟二 : 進入編輯畫面 輸入notepad 按下enter&amp;gt;點開起舊檔 步驟三 : 拷貝檔案 點所有檔案&amp;gt;這時按所有檔案
+再把檔案放入隨身硬碟
 參考</content>
     </entry>
     
@@ -42,7 +96,8 @@ vagrant plugin install vagrant-scp Usage
         <tags>
           <tag>前後端分離</tag>
         </tags>
-        <content type="html"> 前後端分離:  分開部屬 , EX: 有 2包專案web(Angular) &#43; Api(Spring) 在部屬 web,Api可以不用下來 加速部屬 , Project 可以比較小部屬也會比較快 節省流量, 開放API ,  動態資源和靜態資源全部耦合在一起，伺服器壓力大，因為伺服器會收到各種http請求，例如css的http請求，js的，圖片的等等。一旦伺服器出現狀況，前後台一起玩完，用戶體驗極差。
+        <content type="html"> 前言 前後端分離帶來的影響
+前後端分離 好處  分開部屬 , EX: 有 2包專案web(Angular) &#43; Api(Spring) 在部屬 web,Api可以不用下來 加速部屬 , Project 可以比較小部屬也會比較快 節省流量, 開放API ,  動態資源和靜態資源全部耦合在一起，伺服器壓力大，因為伺服器會收到各種http請求，例如css的http請求，js的，圖片的等等。一旦伺服器出現狀況，前後台一起玩完，用戶體驗極差。
 2、UI出好設計圖後，前端工程師只負責將設計圖切成html，需要由java工程師來將html套成jsp頁面，出錯率較高（因為頁面中經常會出現大量的js代碼），修改問題時需要雙方協同開發，效率低下。
 3、jsp必須要在支持java的web伺服器里運行（例如tomcat，jetty，resin等），無法使用nginx等（nginx據說單實例http並發高達5w，這個優勢要用上），性能提不上來。
 4、第一次請求jsp，必須要在web伺服器中編譯成servlet，第一次運行會較慢。
@@ -63,9 +118,9 @@ https://kknews.cc/zh-tw/code/8oomk6q.html
         <tags>
           <tag>java</tag><tag>tomcat</tag>
         </tags>
-        <content type="html"> 配置Tomcat 的使用者 配置Tomcat 的使用者 於 tomcat 的 conf/tomcat-users.xml
- &amp;lt;!-- 配置角色 --&amp;gt;&amp;lt;role rolename=&amp;quot;manager-gui&amp;quot;/&amp;gt;&amp;lt;role rolename=&amp;quot;admin-gui&amp;quot;/&amp;gt;&amp;lt;!-- 配置管理帳號及權限 --&amp;gt;&amp;lt;user username=&amp;quot;用戶名&amp;quot; password=&amp;quot;密碼&amp;quot; roles=&amp;quot;admin-gui,manager-gui&amp;quot;/&amp;gt; 參考 tomcat配置管理员-走后门 - WhyWin - 博客园 https://www.cnblogs.com/0201zcr/p/6668010.html
-如何进入tomcat的管理页面 - begin27的博客 - CSDN博客 https://blog.csdn.net/begin27/article/details/50966261
+        <content type="html"> 配置Tomcat 的使用者 配置 Tomcat 的使用者 於 tomcat 的 conf/tomcat-users.xml
+&amp;lt;!-- 配置角色 --&amp;gt;&amp;lt;role rolename=&amp;quot;manager-gui&amp;quot;/&amp;gt;&amp;lt;role rolename=&amp;quot;admin-gui&amp;quot;/&amp;gt;&amp;lt;!-- 配置管理帳號及權限 --&amp;gt;&amp;lt;user username=&amp;quot;用戶名&amp;quot; password=&amp;quot;密碼&amp;quot; roles=&amp;quot;admin-gui,manager-gui&amp;quot;/&amp;gt; 參考 tomcat配置管理员-走后门 - WhyWin - 博客园
+如何进入tomcat的管理页面 - begin27的博客 - CSDN博客
 </content>
     </entry>
     
@@ -80,7 +135,8 @@ https://kknews.cc/zh-tw/code/8oomk6q.html
         </tags>
         <content type="html"> java.lang.OutOfMemoryError: Java heap space JVM記憶體設定 使用Java程式從資料庫中查詢大量的資料時出現異常:java.lang.OutOfMemoryError: Java heap space 在JVM中如果98%的時間是用於GC且可用的 Heap size 不足2%的時候將丟擲此異常資訊。 JVM堆的設定是指java程式執行過程中JVM可以調配使用的記憶體空間的設定.JVM在啟動的時候會自動設定Heap size的值,其初始空間(即-Xms)是實體記憶體的1/64,最大空間(-Xmx)是實體記憶體的1/4。可以利用JVM提供的-Xmn -Xms -Xmx等選項可進行設定。
 這個問題的根源是jvm虛擬機器的預設Heap大小是64M,可以通過設定其最大和最小值來實現.設定的方法主要是幾個.
-可以在windows 更改系統環境變數加上 JAVA_OPTS &amp;amp;&amp;amp; CATALINA_OPTS ```shellJAVA_OPTS=-Xms1024m -Xmx2048mCATALINA_OPTS=-Xms2048M -Xmx4096M```EX:```shellVariable name : CATALINA_OPTSVariable value: =-Xms2048M -Xmx4096M```![JAVA_HOME](/images/java/調整JVM的大小.png) 程式的寫法要注意要 close 資料流 IMAGEIO讀取JPEG文件 JPEG可以很好地壓縮圖像。但是在內存中，僅用於原始數據的BufferedImage通常每個像素需要4個字節，因此無論文件有多大，其大小均為6480 * 4320 * 4 = 112 MB。
+可以在windows 更改系統環境變數加上 JAVA_OPTS &amp;amp;&amp;amp; CATALINA_OPTS JAVA_OPTS=-Xms1024m -Xmx2048mCATALINA_OPTS=-Xms2048M -Xmx4096M EX:
+Variable name : CATALINA_OPTSVariable value: =-Xms2048M -Xmx4096M 程式的寫法要注意要 close 資料流 IMAGEIO讀取JPEG文件 JPEG可以很好地壓縮圖像。但是在內存中，僅用於原始數據的BufferedImage通常每個像素需要4個字節，因此無論文件有多大，其大小均為6480 * 4320 * 4 = 112 MB。
 參考 若系統運行一段時間後無法連線，且tomcat或jboss的log裡出現java.lang.OutOfMemoryError: Java heap space，應如何避免此狀況?　(2008/11/25) | TAIR User Group
 读写文件时内存溢出问题思考（OutOfMemoryError: Java heap space）_WolfShadow的博客-CSDN博客
 JAVA遇到大批資料處理時會出現Java heap space的報錯的解決方案 - IT閱讀
@@ -88,6 +144,25 @@ tomcat記憶體溢位設定JAVA_OPTS - IT閱讀
 How to Change JVM Heap Setting (-Xms -Xmx) of Tomcat - Configure setenv.sh file - Run catalina.sh • Crunchify
 How To Increase The Java Heap size in Tomcat Application Server | Aprentis
 OutofMemory while reading JPEG file Using IMAGEIO (Performance forum at Coderanch)
+</content>
+    </entry>
+    
+     <entry>
+        <title>Cmd</title>
+        <url>https://iankingh.github.io/post/windows/cmd/</url>
+        <categories>
+          <category>筆記</category>
+        </categories>
+        <tags>
+          <tag>windows</tag><tag>CMD</tag>
+        </tags>
+        <content type="html"> Windows CMD指令 快速打開
+1.CTRL &#43; R ——打開 &amp;ldquo;運行&amp;rdquo;
+2.在&amp;quot;運行&amp;quot;輸入&amp;quot;cmd&amp;quot;彈出DOS命令列視窗
+ipconfig : 查IP
+使用
+ipconfig cls : 清空命令
+查看哪些進程佔用了埠 3.假如我要查的是埠&amp;quot;8080&amp;quot;，則輸入命令：netstat -aon|findstr &amp;quot;8080&amp;quot;4.如上，得到了進程號&amp;quot;4060&amp;quot;，再輸入命令：tasklist|findstr &amp;quot;4060&amp;quot;,得到了進程映射名稱，好了，下一步我們將解決埠號佔用的問題，就是kill掉該進程映射名稱的進程。5.CTRL &#43; ALT &#43; delete彈出工作管理員，找到名字為&amp;quot;javaw.exe&amp;quot;的進程，點擊它，並殺死它(結束進程)。6.再在DOS下輸入命令查看下該埠是否還被佔用：netstat -aon|findstr &amp;quot;8080&amp;quot;7.可以看到，再也沒有進程佔用了該埠，OK，佔用該埠的進程被殺死了，那麼埠被佔用也已經解決了。 參考 查看哪些進程佔用了埠 - zhuxiongxian的挨踢博客 - CSDN博客
 </content>
     </entry>
     
@@ -183,7 +258,7 @@ Connection-specific DNS Suffix . : Link-local IPv6 Address . . . . . : fe80::f0e
 Wifl 網卡 gateway ip :192.168.43.1
 route delete 0.0.0.0 route delete 10.0.0.0 route delete 172.0.0.0 route ADD 0.0.0.0 MASK 0.0.0.0 192.168.43.1 route ADD 10.0.0.0 MASK 255.0.0.0 10.204.1.126 route ADD 172.0.0.0 MASK 255.0.0.0 10.204.1.126 pause
 route change 0.0.0.0 mask 0.0.0.0 192.168.43.1 route add 192.168.70.0 mask 255.255.255.0 192.168.14.251 route add 192.168.51.0 mask 255.255.255.0 192.168.14.251 route add 192.168.53.0 mask 255.255.255.0 192.168.14.251 route add 192.168.211.0 mask 255.255.255.0 192.168.14.251 pause
-最後一個pause(暫停)是我加的，加pause是為了避免執行後馬上Close DOS視窗。可以看每一條命令是否回應&amp;quot;確定&amp;rdquo;。
+最後一個pause(暫停)是我加的，加pause是為了避免執行後馬上Close DOS視窗。可以看每一條命令是否回應&amp;quot;確定&amp;quot;。
 route delete語法還OK，route add語法是：
 route ADD MASK (if metric )
 刪除0.0.0.0 route目的在取代default
@@ -205,12 +280,13 @@ http://ctwivan.blogspot.com/2010/08/windowsstatic-route.html
         <tags>
           <tag>Angular</tag><tag>FrontEnd</tag>
         </tags>
-        <content type="html"> Angular 使用 JavaScript 第一步 : 把js文件放到assets 目錄下
-第二步 : 在tsconfig.json，属性compilerOptions，添加 &amp;ldquo;allowJs&amp;rdquo;: true, &amp;ldquo;allowJs&amp;rdquo;: true,
-第三步 : 引入JS
- 可以在 angular.json文件，在scripts中配置js文件路径 或是在 index.html 引入  第四步，在當前组件.ts中使用函数添加js
- 參考 angular在ts中使用第三方js_weixin_43182222的博客-CSDN博客 https://blog.csdn.net/weixin_43182222/article/details/105205283?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromBaidu-2.control&amp;amp;depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromBaidu-2.control
-How to call JavaScript functions from Typescript in Angular 5? - Stack Overflow https://stackoverflow.com/questions/49526681/how-to-call-javascript-functions-from-typescript-in-angular-5
+        <content type="html"> Angular 使用 JavaScript 前言 在實務上我們可以在npm上面找到要用的 js 來引用 , 有時可能找不到 , 有時可能要匯入自己寫的js ,如果功能不複雜 ,可以轉成ts
+方法一 如果JS 不複雜可以轉成 ts
+方法 二 引入第三方的JS 第一步 安裝下載js 把js文件放到 /assets目錄下
+eX: /assets/Hello.js 第二步 設定 &amp;ldquo;allowJs&amp;rdquo;: true 在tsconfig.json，属性compilerOptions，添加 &amp;ldquo;allowJs&amp;rdquo;: true, &amp;ldquo;allowJs&amp;rdquo;: true,
+{&amp;quot;compileOnSave&amp;quot;: false,&amp;quot;compilerOptions&amp;quot;: {&amp;quot;baseUrl&amp;quot;: &amp;quot;./&amp;quot;,&amp;quot;outDir&amp;quot;: &amp;quot;./dist/out-tsc&amp;quot;,&amp;quot;sourceMap&amp;quot;: true,&amp;quot;declaration&amp;quot;: false,&amp;quot;downlevelIteration&amp;quot;: true,&amp;quot;experimentalDecorators&amp;quot;: true,&amp;quot;module&amp;quot;: &amp;quot;esnext&amp;quot;,&amp;quot;moduleResolution&amp;quot;: &amp;quot;node&amp;quot;,&amp;quot;allowJs&amp;quot;: true,&amp;quot;importHelpers&amp;quot;: true,&amp;quot;target&amp;quot;: &amp;quot;es5&amp;quot;,&amp;quot;lib&amp;quot;: [&amp;quot;es2018&amp;quot;,&amp;quot;dom&amp;quot;]},&amp;quot;angularCompilerOptions&amp;quot;: {&amp;quot;fullTemplateTypeCheck&amp;quot;: true,&amp;quot;strictInjectionParameters&amp;quot;: true,&amp;quot;enableIvy&amp;quot;: false}} 第三步 : 引入JS  可以在 angular.json文件，在scripts中配置js文件路径 或是在 index.html 引入  第四步，在當前组件.ts中使用函数添加js
+參考 angular在ts中使用第三方js_weixin_43182222的博客-CSDN博客
+How to call JavaScript functions from Typescript in Angular 5? - Stack Overflow
 </content>
     </entry>
     
@@ -228,12 +304,19 @@ Windows網路指令: ping ip ping命令是用來檢測網路是否暢通的 ping
 ping www.google.com telnet ip port Telnet是一種應用層協定，可以用來確認某個 ip的port 有沒有 TCP 服務。
 telnet 192.168.70.33 80 netstat 查看目前所在機器有那些網路連線，包含 TCP 和 UDP。 了解網絡的整體使用情況。它可以顯示當前正在活動的網絡連接的詳細信息，如採用的協議類型（看tcp，udp）、當前主機與遠端相連主機（一個或多個）的IP位址以及 它們之間的連接狀態等。
 netstat監控TCP/IP網絡的非常有用的工具，它可以顯示路由表、實際的網絡連接以及每一個網絡接口設備的狀態信息。
-netstat -a # 列出所有埠 netstat -n #顯示所有已建立的有效連接。 netstat -at # 列出所有TCP埠 netstat -au # 列出所有UDP埠  &amp;ldquo;-a&amp;quot;選項意在顯示所有連接，當不附加&amp;rdquo;-n&amp;quot;選項時，它顯示的是本地計算機的 netbios名字&#43;埠號。 加了&amp;rdquo;-n&amp;quot;選項後，它顯示的是本地IP位址&#43;埠號。
+netstat -a # 列出所有埠 netstat -n #顯示所有已建立的有效連接。 netstat -at # 列出所有TCP埠 netstat -au # 列出所有UDP埠  &amp;ldquo;-a&amp;quot;選項意在顯示所有連接，當不附加&amp;rdquo;-n&amp;quot;選項時，它顯示的是本地計算機的 netbios名字&#43;埠號。 加了&amp;quot;-n&amp;quot;選項後，它顯示的是本地IP位址&#43;埠號。
 tracert tracert 是一個簡單的網絡診斷工具，可以列出分組經過的路由節點（通過tracert命令，就能知道本機與目標主機之間經過多台主機，即經過多少路由。）
-tracert www.google.com 參考 ping、telnet、tracert簡介與使用 - IT閱讀
-https://www.itread01.com/content/1550289784.html
+tracert www.google.com 網頁出不來故障排除
+如果連不上先ping 看看
+如果ping 不成功表示 DNS 或是防火牆沒有設定
+nslookup : DNS偵錯工具
+powershell指令 : tnc : 測試 port 有沒有通
+Test-NetConnection -ComputerName &amp;ldquo;www.google.com&amp;rdquo; -Port 443
+可以簡寫tnc
+tnc &amp;ldquo;www.google.com&amp;rdquo; -Port 443
+參考 ping、telnet、tracert簡介與使用 - IT閱讀
 windows網絡命令：ping、ipconfig、tracert、netstat、arp - 每日頭條
-https://kknews.cc/zh-tw/code/o3jx8z5.html
+https://medium.com/@CarterTsai/%E5%88%A9%E7%94%A8powershell%E7%9A%84test-netconnection%E4%BE%86%E5%8F%96%E4%BB%A3telnet%E4%BE%86%E6%AA%A2%E6%9F%A5%E7%B6%B2%E7%AB%99%E7%9A%84port%E6%9C%89%E6%B2%92%E6%9C%89%E8%A2%AB%E9%96%8B%E5%95%9F-5bc18909ce67
 </content>
     </entry>
     
@@ -360,8 +443,7 @@ https://www.netadmin.com.tw/netadmin/zh-tw/technology/6F6D669EB83E4DC9BEA42F1C94
         <content type="html"> 前言 在 TCP/IP 通訊協定組的 IP 層裡，用來辨識每台電腦的東西，稱為網際網路位址 ( Internet address ) 或 IP 位址 ( IP address )。 IP 位址是一個 32 位元的二進制數字，具有全域性，用來唯一的定義 Internet 上的一台電腦或一台路由器。 所有 IP 位址都是唯一的。「唯一」是指一個位址只定義一個與 Internet 的連接 ( connection )。Internet 上不可以有兩台裝置有著相同的 IP 位址。
   一個 IP 位址為一個 32 位元的位址。
   IP 位址是唯一的。
-  IPv4 的位址空間為 232 或 4,294,967,296。
-  私有網路 IP 範圍    RFC1918 規定區塊名 IP位址區段 IP數量 分類網路 說明 最大CIDR區塊 （子網路遮罩） 主機端位長     24位元區塊 10.0.0.0 – 10.255.255.255 16,777,216 單個A類網路 10.0.0.0/8 (255.0.0.0) 24位元   20位區塊 172.16.0.0 – 172.31.255.255 1,048,576 16個連續B類網路 172.16.0.0/12 (255.240.0.0) 20位   16位元區塊 192.168.0.0 – 192.168.255.255 65,536 256個連續C類網路 192.168.0.0/16 (255.255.0.0) 16位元    正是由於這些限制，當我們使用這些私有位址來設定網路的時候，就無需擔心會和其它也使用相同位址的網路衝突。而這些無需註冊就能自由使用的 IP ，我們稱之為 私有 IP( Private IP )。當我們架設 IP 網路的時候，私有 IP 給與我們很大的方便。比方說：您目前的公司還沒有連上Internet，且也沒有或得公共 IP 的註冊。倘若使用公共 IP 的話，等到以後真正要連上網路的時候，就很可能和別人衝突了。其壞處是：由於您的 IP 不是合法授權使用的，別人跟本連不進來，而且，與您衝突的 IP 您卻永遠沒法連上去(若對方是您的最大客戶可就慘了)。若是那時候再重新規劃 IP 的話，將是件非常頭痛的問題！
+  IPv4 的位址空間為 232 或 4,294,967,296。   私有網路 IP 範圍    RFC1918 規定區塊名 IP位址區段 IP數量 分類網路 說明 最大CIDR區塊 （子網路遮罩） 主機端位長     24位元區塊 10.0.0.0 – 10.255.255.255 16,777,216 單個A類網路 10.0.0.0/8 (255.0.0.0) 24位元   20位區塊 172.16.0.0 – 172.31.255.255 1,048,576 16個連續B類網路 172.16.0.0/12 (255.240.0.0) 20位   16位元區塊 192.168.0.0 – 192.168.255.255 65,536 256個連續C類網路 192.168.0.0/16 (255.255.0.0) 16位元    正是由於這些限制，當我們使用這些私有位址來設定網路的時候，就無需擔心會和其它也使用相同位址的網路衝突。而這些無需註冊就能自由使用的 IP ，我們稱之為 私有 IP( Private IP )。當我們架設 IP 網路的時候，私有 IP 給與我們很大的方便。比方說：您目前的公司還沒有連上Internet，且也沒有或得公共 IP 的註冊。倘若使用公共 IP 的話，等到以後真正要連上網路的時候，就很可能和別人衝突了。其壞處是：由於您的 IP 不是合法授權使用的，別人跟本連不進來，而且，與您衝突的 IP 您卻永遠沒法連上去(若對方是您的最大客戶可就慘了)。若是那時候再重新規劃 IP 的話，將是件非常頭痛的問題！
 解決的辦法是：我們可以先利用私有位址來架設網路，等到真要連上 intetnet 的時候，我們可以使用代理伺服器( proxy )或 IP 轉換( NAT &amp;mdash; Network Addresss Translation) 等技術，配合新註冊的 IP 就可以了。
 由於私有位址在 Internet 上是不能路由的，用來架設企業內部網路，在安全上面也是有所幫助的。
 路由器 兩個不同的網域是無法透過廣播來資料的傳遞，此時便需要 IP 的路徑選擇 (routing) 功能，才能決定要透過哪個網路來傳送封包， 路由器乃是決定最佳路徑的方式，如果沒有路由器的話，就無法在不同網域之間傳送資料了。 例如，192.168.0.0 與 192.168.1.0 是不同網域，所以主機 A 與主機 B 是不能直接互通資料，必須有路由器找尋需要經過哪些網路才能到達 B 網域的主機 B。
@@ -409,30 +491,21 @@ git reset --hardgit pull origin master 注： 其中origin master表示git的�
         <tags>
           <tag>docker</tag>
         </tags>
-        <content type="html"> Docker_Compose 筆記 安裝 docker-compose 下載 $ sudo curl -L &amp;quot;https://github.com/docker/compose/releases/download/1.29.0/docker-compose-$(uname -s)-$(uname -m)&amp;quot; -o /usr/local/bin/docker-compose 安裝 chmod &#43;x /usr/local/bin/docker-compose 查看版本 docker-compose version 測試 第一步，創建 Spring boot 服務  第二步，創建 Dockerfile  第三步，使用 docker-compose 定義一個文件 version: &#39;2&#39;services:web:build: .ports:- &amp;quot;5000:5000&amp;quot;redis:image: &amp;quot;redis:alpine&amp;quot; 這個 compose.yml 定義2個服務，一是Spring boot 一個是 redis 服務。
+        <content type="html"> Docker_Compose 筆記 安裝 docker-compose 下載 curl -L &amp;quot;https://github.com/docker/compose/releases/download/1.29.0/docker-compose-$(uname -s)-$(uname -m)&amp;quot; -o /usr/local/bin/docker-compose 安裝 chmod &#43;x /usr/local/bin/docker-compose 查看版本 docker-compose version 測試 第一步，創建 Spring boot 服務  第二步，創建 Dockerfile  第三步，使用 docker-compose 定義一個文件 version: &#39;2&#39;services:web:build: .ports:- &amp;quot;5000:5000&amp;quot;redis:image: &amp;quot;redis:alpine&amp;quot; 這個 compose.yml 定義2個服務，一是Spring boot 一個是 redis 服務。
  Pyhon Web 服务：使用 Dockerfile 构建了当前镜像。将 Web 容器内部的5000端口映射到 host 的5000端口；并将 Web 容器与 redis 容器连接。 redis服务：该容器直接由官方的 redis 镜像创建。  第四步，使用 Compose 使用命令docker-compose up启动
 docker-compose up 启动成功之后，在浏览器访问：http://ipaddress:8080/ ，返回如下：
-Hello World! I have been seen 1 times. 刷新再次访问返回
-Hello World! I have been seen 2 times. 不断的刷新数字会不断的增长。
+Hello World! I have been seen 1 times. img 要放圖片 刷新再次访问返回
+Hello World! I have been seen 2 times. img 要放圖片 不断的刷新数字会不断的增长。
 Docker Compose 常用命令 使用docker-compose up -d 在後台啟動服務
 啟動所有容器，-d 將會在後臺啟動並運行所有的容器
 docker-compose up -d 使用docker-compose ps 查看啟動的服務
 列出專案中目前的所有容器
-docker-compose ps  Name Command State Ports ------------------------------------------------------------------------------------- 使用docker-compose stop停止服務。
+docker-compose ps Name Command State Ports ------------------------------------------------------------- 使用docker-compose stop停止服務。
 docker-compose stop Stopping composetest_web_1 ... doneStopping composetest_redis_1 ... done docker-compose restart ：重啟專案中的服務
-docker-compose -h查看幫助
--f 指定使用的 Compose 範本檔，預設為 docker-compose.yml，可以多次指定。 docker-compose -f docker-compose.yml up -d
-#停用移除所有容器以及網路相關 docker-compose down
-#查看服務容器的輸出 docker-compose logs
-#構建（重新構建）專案中的服務容器。服務容器一旦構建後，將會帶上一個標記名，例如對於 web 項目中的一個 db 容器，可能是 web_db。可以隨時在專案目錄下運行 docker-compose build 來重新構建服務 docker-compose build
-#拉取服務依賴的鏡像 docker-compose pull
-#刪除所有（停止狀態的）服務容器。推薦先執行 docker-compose stop 命令來停止容器。 docker-compose rm
-#在指定服務上執行一個命令。 docker-compose run ubuntu ping docker.com
-#設置指定服務運行的容器個數。通過 service=num 的參數來設置數量 docker-compose scale web=3 db=2
-#啟動已經存在的服務容器。 docker-compose start
-#停止已經處於運行狀態的容器，但不刪除它。通過 docker-compose start 可以再次啟動這些容器。 docker-compose stop
-參考 Install Docker Compose | Docker Documentation
+docker-compose 命令 docker-compose -h 查看幫助 docker-compose -h  create and start containers docker-compose up start services with detached mode docker-compose -d up start specific service docker-compose up &amp;lt;service-name&amp;gt; stop services 停止已經處於運行狀態的容器，但不刪除它。通過 docker-compose start 可以再次啟動這些容器 docker-compose stop start service 啟動已經存在的服務容器 docker-compose start list images docker-compose images list containers docker-compose ps display running containers docker-compose top stop all contaners and remove images, volumes 停用移除所有容器以及網路相關 docker-compose down remove stopped containers 刪除所有（停止狀態的）服務容器。推薦先執行 docker-compose stop 命令來停止容器 docker-compose rm  kill services docker-compose kill 查看服務容器的輸出 docker-compose logs 構建（重新構建）專案中的服務容器 服務容器一旦構建後，將會帶上一個標記名，例如對於 web 項目中的一個 db 容器，可能是 web_db。可以隨時在專案目錄下運行 docker-compose build 來重新構建服務
+docker-compose build 拉取服務依賴的鏡像 docker-compose pull 在指定服務上執行一個命令 docker-compose run ubuntu ping docker.com 設置指定服務運行的容器個數。通過 service=num 的參數來設置數量 docker-compose scale web=3 db=2 參考 Install Docker Compose | Docker Documentation
 使用 docker-compose 替代 docker run - 张志敏的技术专栏
+Angular — Local Development With Docker-Compose | by Bhargav Bachina | Bachina Labs | Medium
 </content>
     </entry>
     
@@ -446,29 +519,28 @@ docker-compose -h查看幫助
           <tag>Angular</tag>
         </tags>
         <content type="html"> Angular Deploy Tomcat 1. 編譯 到專案目錄執行 編譯指令如下
-ng build --prod --base-href /project_Name/  匯出 index.html 如下
-&amp;lt;!doctype html&amp;gt; &amp;lt;html lang=&amp;quot;en&amp;quot;&amp;gt; &amp;lt;head&amp;gt; &amp;lt;meta charset=&amp;quot;utf-8&amp;quot;&amp;gt; &amp;lt;title&amp;gt;Title&amp;lt;/title&amp;gt; &amp;lt;base href=&amp;quot;/project_Name/&amp;quot;&amp;gt; &amp;lt;meta name=&amp;quot;viewport&amp;quot; content=&amp;quot;width=device-width, initial-scale=1&amp;quot;&amp;gt; &amp;lt;link rel=&amp;quot;icon&amp;quot; type=&amp;quot;image/x-icon&amp;quot; href=&amp;quot;favicon.ico&amp;quot;&amp;gt; &amp;lt;link href=&amp;quot;https://fonts.googleapis.com/css?family=Roboto:300,400,500&amp;amp;display=swap&amp;quot; rel=&amp;quot;stylesheet&amp;quot;&amp;gt; &amp;lt;link href=&amp;quot;https://fonts.googleapis.com/icon?family=Material&#43;Icons&amp;quot; rel=&amp;quot;stylesheet&amp;quot;&amp;gt; &amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;styles.479444a78a429503e78e.css&amp;quot;&amp;gt;&amp;lt;/head&amp;gt; &amp;lt;body class=&amp;quot;mat-typography&amp;quot;&amp;gt; &amp;lt;app-root&amp;gt;&amp;lt;/app-root&amp;gt; &amp;lt;script src=&amp;quot;runtime.c51bd5b1c616d9ffddc1.js&amp;quot; defer&amp;gt;&amp;lt;/script&amp;gt; &amp;lt;script src=&amp;quot;polyfills-es5.272209ba9e789fcad1c2.js&amp;quot; nomodule defer&amp;gt;&amp;lt;/script&amp;gt; &amp;lt;script src=&amp;quot;polyfills.7f244a820a4deda6d9fd.js&amp;quot; defer&amp;gt;&amp;lt;/script&amp;gt; &amp;lt;script src=&amp;quot;main.d604dab66ca826078124.js&amp;quot; defer&amp;gt;&amp;lt;/script&amp;gt; &amp;lt;/body&amp;gt; &amp;lt;/html&amp;gt;  &amp;ndash;prod : 把 src/environments/environment.ts 檔案替換成針對特定目標的版本 , 且編譯出來的檔案會小很多
+ng build --prod --base-href /project_Name/ 匯出 index.html 如下
+&amp;lt;!doctype html&amp;gt;&amp;lt;html lang=&amp;quot;en&amp;quot;&amp;gt;&amp;lt;head&amp;gt;&amp;lt;meta charset=&amp;quot;utf-8&amp;quot;&amp;gt;&amp;lt;title&amp;gt;Title&amp;lt;/title&amp;gt;&amp;lt;base href=&amp;quot;/project_Name/&amp;quot;&amp;gt;&amp;lt;meta name=&amp;quot;viewport&amp;quot; content=&amp;quot;width=device-width, initial-scale=1&amp;quot;&amp;gt;&amp;lt;link rel=&amp;quot;icon&amp;quot; type=&amp;quot;image/x-icon&amp;quot; href=&amp;quot;favicon.ico&amp;quot;&amp;gt;&amp;lt;link href=&amp;quot;https://fonts.googleapis.com/css?family=Roboto:300,400,500&amp;amp;display=swap&amp;quot; rel=&amp;quot;stylesheet&amp;quot;&amp;gt;&amp;lt;link href=&amp;quot;https://fonts.googleapis.com/icon?family=Material&#43;Icons&amp;quot; rel=&amp;quot;stylesheet&amp;quot;&amp;gt;&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;styles.479444a78a429503e78e.css&amp;quot;&amp;gt;&amp;lt;/head&amp;gt;&amp;lt;body class=&amp;quot;mat-typography&amp;quot;&amp;gt;&amp;lt;app-root&amp;gt;&amp;lt;/app-root&amp;gt;&amp;lt;script src=&amp;quot;runtime.c51bd5b1c616d9ffddc1.js&amp;quot; defer&amp;gt;&amp;lt;/script&amp;gt;&amp;lt;script src=&amp;quot;polyfills-es5.272209ba9e789fcad1c2.js&amp;quot; nomodule defer&amp;gt;&amp;lt;/script&amp;gt;&amp;lt;script src=&amp;quot;polyfills.7f244a820a4deda6d9fd.js&amp;quot; defer&amp;gt;&amp;lt;/script&amp;gt;&amp;lt;script src=&amp;quot;main.d604dab66ca826078124.js&amp;quot; defer&amp;gt;&amp;lt;/script&amp;gt;&amp;lt;/body&amp;gt;&amp;lt;/html&amp;gt; &amp;ndash;prod : 把 src/environments/environment.ts 檔案替換成針對特定目標的版本 , 且編譯出來的檔案會小很多
 &amp;ndash;output-path : 表示輸出路徑 : ex : 輸出到當前目錄的 web資料夾底下
 &amp;ndash;base-href : 修改 index.html 裡的 : ex : 2.部屬 把project/dist裡的project的資料夾 移動到 $Tomcat/webapps
 3. Deploy Tomcat9 調整 server.xml，將 http port 改為 80，https port 改為 443。
-&amp;lt;Connector port=&amp;quot;80&amp;quot; protocol=&amp;quot;HTTP/1.1&amp;quot; connectionTimeout=&amp;quot;20000&amp;quot; redirectPort=&amp;quot;443&amp;quot; /&amp;gt;  4. Installing services Install the service named &amp;lsquo;Tomcat9&amp;rsquo;
-service.bat install  5. 404 如何解決 因為 Angular 是 SPA，所以在網頁伺服器要將所有的 request 全部導回到 index.html 才可以正常地顯示，如果在沒有設定下直接打開網址 web/home，他會去找 home 資料夾下的 index.html
+&amp;lt;Connector port=&amp;quot;80&amp;quot; protocol=&amp;quot;HTTP/1.1&amp;quot;connectionTimeout=&amp;quot;20000&amp;quot;redirectPort=&amp;quot;443&amp;quot; /&amp;gt; 4. Installing services Install the service named &amp;lsquo;Tomcat9&amp;rsquo;
+service.bat install 5. 404 如何解決 因為 Angular 是 SPA，所以在網頁伺服器要將所有的 request 全部導回到 index.html 才可以正常地顯示，如果在沒有設定下直接打開網址 web/home，他會去找 home 資料夾下的 index.html
 (1)將以下代碼放在部署文件夾的web.xml中：
-&amp;lt;error-page&amp;gt; &amp;lt;error-code&amp;gt;404&amp;lt;/error-code&amp;gt; &amp;lt;location&amp;gt;/index.html&amp;lt;/location&amp;gt; &amp;lt;/error-page&amp;gt;  (2)將HashLocationStrategy與路由的URL中的＃一起使用
+&amp;lt;error-page&amp;gt;&amp;lt;error-code&amp;gt;404&amp;lt;/error-code&amp;gt;&amp;lt;location&amp;gt;/index.html&amp;lt;/location&amp;gt;&amp;lt;/error-page&amp;gt; (2)將HashLocationStrategy與路由的URL中的＃一起使用
 修改 app-routing.module.ts
 使用: RouterModule.forRoot(routes, { useHash: true }) 代替: RouterModule.forRoot(routes)
 使用HashLocationStrategy，您的網址將類似於：
 http://localhost/#/route
 app-routing.module.ts
-@NgModule({ imports: [RouterModule.forRoot(routes, { useHash: true })], exports: [RouterModule] })  (3) Tomcat URL Rewrite Valve：如果找不到資源，則使用服務器級別的配置來重寫URL，以重定向到index.html。
+@NgModule({imports: [RouterModule.forRoot(routes, { useHash: true })],exports: [RouterModule]}) (3) Tomcat URL Rewrite Valve：如果找不到資源，則使用服務器級別的配置來重寫URL，以重定向到index.html。
 (3.1)在server.xml中配置RewriteValve
-&amp;lt;?xml version=&amp;quot;1.0&amp;quot; encoding=&amp;quot;utf-8&amp;quot;?&amp;gt; &amp;lt;Context&amp;gt; &amp;lt;Valve className=&amp;quot;org.apache.catalina.valves.rewrite.RewriteValve&amp;quot; /&amp;gt; &amp;lt;/Context&amp;gt;  (3.2)在rewrite.config中寫入重寫規則
+&amp;lt;?xml version=&amp;quot;1.0&amp;quot; encoding=&amp;quot;utf-8&amp;quot;?&amp;gt;&amp;lt;Context&amp;gt;&amp;lt;Valve className=&amp;quot;org.apache.catalina.valves.rewrite.RewriteValve&amp;quot; /&amp;gt;&amp;lt;/Context&amp;gt; (3.2)在rewrite.config中寫入重寫規則
 創建目錄結構–〜/ conf / Catalina / localhost /並使用以下內容在其中創建rewrite.config文件。注意-這裡我考慮將其/web作為應用程序的上下文路徑。
-RewriteCond %{REQUEST_PATH} !-f RewriteRule ^/web/(.*) /web/index.html  參考
-https://angular.io/guide/deployment
-https://tomcat.apache.org/tomcat-9.0-doc/windows-service-howto.html
-https://stackoverflow.com/questions/51042875/url-rewriting-angular-4-on-tomcat-8-server
-https://blog.miniasp.com/post/2017/01/17/Angular-2-deploy-on-IIS
+RewriteCond %{REQUEST_PATH} !-fRewriteRule ^/web/(.*) /web/index.html 參考 Angular
+Apache Tomcat 9 (9.0.53) - Windows Service How-To
+maven - Url rewriting Angular 4 on tomcat 8 server - Stack Overflow
+如何將 Angular 2 含有路由機制的 SPA 網頁應用程式部署到 IIS 網站伺服器 | The Will Will Web
 https://forum.angular.tw/t/topic/881/12
 https://forum.angular.tw/t/topic/1839/2
 </content>
@@ -514,7 +586,9 @@ http://www.ityouknow.com/docker/2018/03/12/docker-use-dockerfile.html
         </tags>
         <content type="html"> Angularg use compodoc compodoc是一個用於產生 Angular 靜態網頁的工具
 Angular 使用 compodoc 產生說明文件
-安裝compodoc 以 local 模式安裝 $ npm install --save-dev @compodoc/compodoc 以global(全域) 模式安裝 $ npm install -g @compodoc/compodoc 產生文件 $ compodoc -p tsconfig.json 啟用本地文件網站 compodoc -p tsconfig.json -s compodoc -p src\tsconfig.app.json -s -r 8888compodoc -p tsconfig.app.json src -s -r 8888npx compodoc -p tsconfig.json -s -r 8888npx compodoc -p tsconfig.base.json -s -r 8888 jsDoc Tags @Injectab()export class HelloService{constructor(){}/*** Represents a hellWord.* @param {string} UserName - The UserName of the hellWord.* @param {string} age - The age of the hellWord.*/hellWord(UserName: string, age : string) {}} 參考 Angular 工具篇之文档管理 | 前端修仙之路
+安裝compodoc 以 local 模式安裝 npm install --save-dev @compodoc/compodoc 產生檔案 ./node_modules/.bin/compodoc -p tsconfig.json RUN server ./node_modules/.bin/compodoc -s  以global(全域) 模式安裝 npm install -g @compodoc/compodoc 產生文件 compodoc -p tsconfig.json 啟用本地文件網站 compodoc -p tsconfig.json -s 使用 npx(推薦) npx compodoc -p tsconfig.json -s -r 8888 指令 -p : 表示 產生文件
+-s : 啟用文件網站
+jsDoc Tags @Injectab()export class HelloService{constructor(){}/*** Represents a hellWord.* @param {string} UserName - The UserName of the hellWord.* @param {string} age - The age of the hellWord.*/hellWord(UserName: string, age : string) {}} 參考 Angular 工具篇之文档管理 | 前端修仙之路
 Angular #10 Angular Documentation
 Javascript文檔註解規則使用方式@use JSDoc | ucamc
 你寫的文件別人看得懂嗎？：compodoc | Jonny Huang 的學習筆記
@@ -530,38 +604,34 @@ Javascript文檔註解規則使用方式@use JSDoc | ucamc
         <tags>
           <tag>Angular</tag><tag>FrontEnd</tag>
         </tags>
-        <content type="html"> 從 0 開始的 Angular 生活 第2天-認識 Angular CLI 建立的專案架構 angular.json Angular CLI 的設定檔 ，Angular CLI v6 之前檔名 angular-cli.json為。
-.editorconfig 編輯器設定檔，設定處理 tab 符號、換行等等。
-官網。
+        <content type="html"> 從 0 開始的 Angular 生活 第2天- Angular CLI 建立的專案架構 angular.json Angular CLI 的設定檔 ，可以在這邊看到專案的一些設定 ,EX: 輸出目錄 , bulid 之類的。
+.editorconfig 編輯器設定檔，設定處理 tab 符號、換行等等。EditorConfig
 .gitignore 設定git 忽略那些檔案不要加入版本控管。
-karma.conf.js karma.conf.js: 是一個單元測試工具。
-官網
-protractor.conf.js E2E 測試，主要是測試使用者操作與想要的結果是否符合規格。
+karma.conf.js karma.conf.js: Angular 單元測試的工具。
+Karma - Spectacular Test Runner for Javascript (karma-runner.github.io)
 tsconfig.json TypeScript 編譯設定。
 tslint.json TypeScript 程式碼風格檢查器。
-package.json npm 的設定檔， scripts 區塊定義了在開發 Angular 時用到的命令 。
-node_modeles 資料夾 存放npm install 後所有被下載下來所有的套件。
-e2e 資料夾 存放 End-To-End Testing 所有測試的指定檔都被放在這裡。
-src 資料夾(重要) 根據 Angular 官網的 Style Guide 建立而成Angular 應用程式主要的原始碼。
-app 資料夾(重要) 存放app.module 的地方
-index.html angular 應用程式地進入點。
+package.json npm 的設定檔， scripts 區塊定義了在開發 Angular 時用到的命令 EX: ng serve 。
+node_modeles Folder 存放npm install 後所有被下載下來所有的套件。
+src Folder(重要) 根據 Angular 官網的 Style Guide 建立而成Angular 應用程式主要的原始碼。
+app Folder(重要) app.module 在這一個資料夾中 作為啟動的 module
+index.html SPA 的html , build 好的js 都會放到這邊 ,也可以當作一個入口。
 style.css 在這裡它是 「global styles」也就是整個應用程式都會套用到的 CSS 定義，全部都可以寫在這裡。
 main.ts main.ts 是 Angular 中 JavaScript 程式的進入點。(.ts 代表 TypeScript)
-import { enableProdMode } from &#39;@angular/core&#39;;import { platformBrowserDynamic } from &#39;@angular/platform-browser-dynamic&#39;;import { AppModule } from &#39;./app/app.module&#39;;import { environment } from &#39;./environments/environment&#39;;if (environment.production) {enableProdMode();}platformBrowserDynamic().bootstrapModule(AppModule).catch(err =&amp;gt; console.error(err)); bootstrapModule 表示以引入 AppModule 啟動
-app.module.ts 根目錄的TS module
-import { BrowserModule } from &#39;@angular/platform-browser&#39;;import { NgModule } from &#39;@angular/core&#39;;import { FormsModule } from &#39;@angular/forms&#39;;import { AppRoutingModule } from &#39;./app-routing.module&#39;;import { AppComponent } from &#39;./app.component&#39;;@NgModule({declarations: [AppComponent],imports: [BrowserModule,AppRoutingModule,FormsModule],providers: [],bootstrap: [AppComponent]})export class AppModule { } app.component.ts import { Component } from &#39;@angular/core&#39;;@Component({selector: &#39;app-root&#39;,templateUrl: &#39;./app.component.html&#39;,styleUrls: [&#39;./app.component.scss&#39;]})export class AppComponent {title = &#39;firstAngular&#39;;} 根目錄的TS controller
-assets(資產) 資料夾 放置所有的靜態檔案的資料夾，如額外的 JavaScript、JQery、CSS、圖片&amp;hellip;&amp;hellip;&amp;hellip;等等。
-.gitkeep Git 無法添加完全空目錄 ，希望跟蹤Git中空目錄的人就創建了將名為&amp;quot;gitkeep &amp;ldquo;的文件，把它放在這些目錄中的慣例，該文件可以被稱為任何東西;Git對此名稱沒有特殊意義。
-environments 資料夾 這個資料夾裡面所定義的是 Angular 專案內的環境變數，透過 TypeScript 定義一些環境變數。
-這個資料夾內有兩個檔案，分別是 environment.ts 與 environment.prod.ts ，差別在於 environment.prod.ts 是只有當 build 出 production 版的應用程式時才用得上，否則在開發時期都是使用另一個設定檔。
-favicon.ico 瀏覽器業籤上面的圖示。
-polyfills.ts 當你的 Angular 應用程式同時要符合 IE 或舊版瀏覽器時，會用 Polyfill 來填充缺少的 HTML5/JS APIs
-test.ts 測試 - Angular 的檔案
+bootstrapModule 表示以引入AppModule 啟動
+import { enableProdMode } from &#39;@angular/core&#39;;import { platformBrowserDynamic } from &#39;@angular/platform-browser-dynamic&#39;;import { AppModule } from &#39;./app/app.module&#39;;import { environment } from &#39;./environments/environment&#39;;if (environment.production) {enableProdMode();}platformBrowserDynamic().bootstrapModule(AppModule).catch(err =&amp;gt; console.error(err)); app.module.ts 根目錄的TS module
+import { BrowserModule } from &#39;@angular/platform-browser&#39;;import { NgModule } from &#39;@angular/core&#39;;import { FormsModule } from &#39;@angular/forms&#39;;import { AppRoutingModule } from &#39;./app-routing.module&#39;;import { AppComponent } from &#39;./app.component&#39;;@NgModule({declarations: [AppComponent],imports: [BrowserModule,AppRoutingModule,FormsModule],providers: [],bootstrap: [AppComponent]})export class AppModule { } app.component.ts 根目錄的 component ,進入的第一支 component
+import { Component } from &#39;@angular/core&#39;;@Component({selector: &#39;app-root&#39;,templateUrl: &#39;./app.component.html&#39;,styleUrls: [&#39;./app.component.scss&#39;]})export class AppComponent {title = &#39;firstAngular&#39;;} assets(資產) folder 放置所有的靜態檔案的資料夾，如額外的 JavaScript、JQery、CSS、圖片&amp;hellip;&amp;hellip;&amp;hellip;等等。
+environments folder 透過 TypeScript 定義一些環境變數。
+這個資料夾內有預設有兩個檔案，分別是 environment.ts 與 environment.prod.ts 。
+一般來說會有開發 ,sit ,uat ,prod 4種
+ environment.ts environment.sit.ts environment.uat.ts environment.prod.ts  favicon.ico 瀏覽器業籤上面的圖示。
+polyfills.ts 當你的 Angular 應用程式同時要符合 IE 或舊版瀏覽器時。
+test.ts 測試設定檔決定是否要跑甚麼測試檔案
 tsconfig.app.json Typescripe編譯成Javascript時的編譯設定
-tsconfig.spec.json Typescripe編譯成Javascript時的編譯設定
-參考 Angular CLI 7.3 使用 ES2015 的 nomodule 屬性載入 Polyfills 函式庫 | The Will Will Web https://blog.miniasp.com/post/2019/02/03/Angular-CLI-73-Use-ES2015-nomodule-load-polyfills
-[DAY-19] Angular架構與學習資源介紹 - iT 邦幫忙::一起幫忙解決難題，拯救 IT 人的一天 https://ithelp.ithome.com.tw/articles/10225044
-[從 0 開始的 Angular 生活]No.2 檔案架構 | pvt5r486&amp;rsquo;s Blog https://pvt5r486.github.io/f2e/20190520/3222844657/
+參考 [從 0 開始的 Angular 生活]No.2 檔案架構 | pvt5r486&amp;rsquo;s Blog
+Angular CLI 7.3 使用 ES2015 的 nomodule 屬性載入 Polyfills 函式庫 | The Will Will Web (miniasp.com)
+[DAY-19] Angular架構與學習資源介紹 - iT 邦幫忙::一起幫忙解決難題，拯救 IT 人的一天 (ithome.com.tw)
 </content>
     </entry>
     
@@ -575,6 +645,24 @@ tsconfig.spec.json Typescripe編譯成Javascript時的編譯設定
           <tag>Linux</tag>
         </tags>
         <content type="html"> Linux指令 修改檔案權限 chmod 777 file(資料夾名)chmod 777 -R file(資料夾名) R--&amp;gt;全部chmod -R 777 * --&amp;gt; 修改權 看目錄 pwd ---&amp;gt;當前目錄ll 看目錄ls -ltr ---&amp;gt;看目錄資料權限ls -al &amp;gt;&amp;gt;&amp;gt; 看權限cd $home //到現在使用者下的目錄 參考 :</content>
+    </entry>
+    
+     <entry>
+        <title>[從 0 開始的 JAVA 生活]No.3 變數與它的小夥伴們</title>
+        <url>https://iankingh.github.io/post/java/java_tutorial_3./</url>
+        <categories>
+          <category>筆記</category><category>技術</category>
+        </categories>
+        <tags>
+          <tag>java</tag>
+        </tags>
+        <content type="html"> [從 0 開始的 JAVA 生活]No.3 變數與它的小夥伴們 變數的命名規則 變數名稱 ：
+變數的種類與有效範圍(Variable Scope) 變數的種類 -local variables (區域變數): -區域變數只能在它們被宣告的(method)內存取 -又稱 automatic , temporary , 或stack variables
+-insance variables (實體變數): -宣告在(method)之外，並且沒有static修飾子 -實體變數可被類別內的任何非static method 所存取 -又稱 成員變數 (member variables) ,屬性變數(attribute variables)
+** 加上static 修飾子的類別變數(class variables)又稱靜態變數(sttic variables)
+變數的宣告(Declaration)與初始化(Initializtion) 基本觀念 -變數被使用前須有初值,否則(compile)時會有錯誤 -基本的宣告方式 : &amp;lt;變數型態&amp;gt;&amp;lt;變數名稱&amp;gt;; EX : int i ; -宣告之後,在指定初始值[區域變數]才可以 EX : int i = 0;
+實體變數的初始化 參考 :
+</content>
     </entry>
     
      <entry>
@@ -623,12 +711,12 @@ findByLastNameAndFirstName(String lastName,String firstName); 假如創建如�
 Page&amp;lt;UserModel&amp;gt; findByName(String name, Pageable pageable);List&amp;lt;UserModel&amp;gt; findByName(String name, Sort sort); 如果覺得curdrepository提供的查詢不符合要求，可以繼承該介面進行擴展，
 Spring Data JPA為此提供了一些表達條件查詢的關鍵字，大致如下：
 條件的屬性名稱與個數要與參數的位置與個數一一對應 直接在介面中定義查詢方法，如果是符合規範的，可以不用寫實現，目前支援的關鍵字寫法如下：
-   Keyword Description Sample     And 等價於SQL中的and 關鍵字 findByUsernameAndPassword(String user, Striang pwd)；   Or 等價於SQL中的or 關鍵字 findByUsernameOrAddress(String user, String addr);   Between 等價於SQL中的between 關鍵字 findBySalaryBetween(int max,int min)；   LessThan 等價於SQL中的&amp;quot;&amp;lt;&amp;rdquo; findBySalaryLessThan(int max)；   GreaterThan 等價於SQL中的&amp;quot;&amp;gt;&amp;rdquo; findBySalaryGreaterThan(intmin)；   IsNull 等價於SQL中的&amp;quot;is null&amp;rdquo; findByUsernameIsNull()；   IsNotNull 等價於SQL中的&amp;quot;is not null&amp;rdquo; findByUsernameIsNotNull()；   NotNull 與IsNotNull等價    Like 等價於SQL中的&amp;quot;like&amp;rdquo; findByUsernameLike(String user)；   NotLike 等價於SQL中的&amp;quot;not like&amp;rdquo; findByUsernameNotLike(Stringuser)；   OrderBy 等價於SQL中的&amp;quot;order by&amp;rdquo; findByUsernameOrderBySalaryAsc(String user)；   Not 等價於SQL中的&amp;rdquo;！ =&amp;rdquo; findByUsernameNot(String user)；   In 等價於SQL中的&amp;quot;in&amp;rdquo; findByUsernameIn(CollectionuserList)，方法的參數可以是 Collection類型，也可以是陣列或者不定長參數；   NotIn 等價於SQL中的&amp;quot;not in&amp;rdquo; findByUsernameNotIn(CollectionuserList)，方法的參數可以是 Collection類型，也可以是陣列或者不定長參數；    @Query注解 Spring Data 這個小型的DSL依舊有其局限性,有時候通過方法名表達預期的查詢很繁瑣,甚至無法實現.如果與呆這種情況,Spring Data能讓我們通過**@Query**注解來解決問題
+   Keyword Description Sample     And 等價於SQL中的and 關鍵字 findByUsernameAndPassword(String user, Striang pwd)；   Or 等價於SQL中的or 關鍵字 findByUsernameOrAddress(String user, String addr);   Between 等價於SQL中的between 關鍵字 findBySalaryBetween(int max,int min)；   LessThan 等價於SQL中的&amp;quot;&amp;lt;&amp;quot; findBySalaryLessThan(int max)；   GreaterThan 等價於SQL中的&amp;quot;&amp;gt;&amp;quot; findBySalaryGreaterThan(intmin)；   IsNull 等價於SQL中的&amp;quot;is null&amp;quot; findByUsernameIsNull()；   IsNotNull 等價於SQL中的&amp;quot;is not null&amp;quot; findByUsernameIsNotNull()；   NotNull 與IsNotNull等價    Like 等價於SQL中的&amp;quot;like&amp;quot; findByUsernameLike(String user)；   NotLike 等價於SQL中的&amp;quot;not like&amp;quot; findByUsernameNotLike(Stringuser)；   OrderBy 等價於SQL中的&amp;quot;order by&amp;quot; findByUsernameOrderBySalaryAsc(String user)；   Not 等價於SQL中的&amp;quot;！ =&amp;quot; findByUsernameNot(String user)；   In 等價於SQL中的&amp;quot;in&amp;quot; findByUsernameIn(CollectionuserList)，方法的參數可以是 Collection類型，也可以是陣列或者不定長參數；   NotIn 等價於SQL中的&amp;quot;not in&amp;quot; findByUsernameNotIn(CollectionuserList)，方法的參數可以是 Collection類型，也可以是陣列或者不定長參數；    @Query注解 Spring Data 這個小型的DSL依舊有其局限性,有時候通過方法名表達預期的查詢很繁瑣,甚至無法實現.如果與呆這種情況,Spring Data能讓我們通過**@Query**注解來解決問題
 這種查詢可以聲明在 Repository 方法中，擺脫像命名查詢那樣的約束，將查詢直接在相應的介面方法中聲明，結構更為清晰，這是 Spring data 的特有實現。
 如果是 @Query 中有 LIKE 關鍵字，後面的參數需要前面或者後面加 %，這樣在傳遞參數值的時候就可以不加 %：
 @Query注解 這種查詢可以聲明在 Repository 方法中，擺脫像命名查詢那樣的約束，將查詢直接在相應的介面方法中聲明，結構更為清晰，這是 Spring data 的特有實現。
 自訂 Repository 方法 定義一個介面: 聲明要添加的, 並自實現的方法 提供該介面的實現類: 類名需在要聲明的 Repository 後添加 Impl, 並實現方法 聲明 Repository 介面, 並繼承 1) 聲明的介面 使用. 注意: 預設情況下, Spring Data 會在 base-package 中查找 &amp;ldquo;介面名Impl&amp;rdquo; 作為實現類. 也可以通過　repository-impl-postfix　聲明尾碼
-@Query(&amp;quot;select o from UserModel o where o.name like %?1&amp;quot;) @Query來指定本地查詢 使用**@Query**來指定本地查詢，只要設置**nativeQuery**為**true**
+@Query(&amp;quot;select o from UserModel o where o.name like %?1&amp;quot;) @Query來指定本地查詢 使用**@Query來指定本地查詢，只要設置nativeQuery為true**
 @Query(value=&amp;quot;select * from tbl_user where name like %?1&amp;quot; ,nativeQuery=true) @Query 與 @Modifying 這兩個 annotation一起聲明，可定義個性化更新操作，例如只涉及某些欄位更新時最為常用
 Springdata支援JPQL 語句對查詢進行擴展，
 例子如下：
@@ -673,9 +761,9 @@ docker container ls命令 - Docker教程™
         <tags>
           <tag>java</tag>
         </tags>
-        <content type="html"> Java 基本的資料型態(Primitive Data Types) 8大
-   數據類型 大小/位 封裝類 默認值 可表示數據范圍     byte 8bit Byte 0 -128~127   short 16bit Short 0 -32768~32767   int 32bit Integer 0 -2147483648~2147483647   long 64bit Long 0L -9223372036854775808~9223372036854775807   float 32bit Float 0.0F 1.4E-45~3.4028235E38   double 64bit Double 0.0D 4.9E-324~1.7976931348623157E308   char 16bit Character &amp;lsquo;\u0000&amp;rsquo; 0~65535   boolean 8bit Boolean false true或false    範例 package ch1;/*** * * &amp;lt;p/&amp;gt;* Package: ch1 &amp;lt;br&amp;gt;* File Name: PrimitiveDataTypesTest &amp;lt;br&amp;gt;* &amp;lt;p/&amp;gt;* Purpose: &amp;lt;br&amp;gt;* * @ClassName: ch1.PrimitiveDataTypesTest* @Description: 測試基本數據類型* @Copyright : Copyright (c) Corp. 2020. All Rights Reserved.* @Company: ian Team.* @author ian* @version 1.0, 2020年5月18日*/public class PrimitiveDataTypesTest {static byte b;static short s;static int i;static long l;static float f;static double d;static char c;static boolean bo;// String不是基本類型static String str1 = &amp;quot;&amp;quot;;// 生成一個String類型的引用，而且分配記憶體空間來存放&amp;quot;&amp;quot;;static String str2; // 只生成一個string類型的引用；不分配記憶體空間,預設為nullpublic static void main(String[] args) {System.out.println(&amp;quot;byte的大小：&amp;quot; &#43; Byte.SIZE &#43; &amp;quot; byte的預設值：&amp;quot; &#43; b &#43; &amp;quot; byte的資料範圍：&amp;quot; &#43; Byte.MIN_VALUE &#43; &amp;quot;~&amp;quot;&#43; Byte.MAX_VALUE);System.out.println(&amp;quot;----------------------------------------------------&amp;quot;);System.out.println(&amp;quot;short的大小：&amp;quot; &#43; Short.SIZE &#43; &amp;quot; short的預設值：&amp;quot; &#43; s &#43; &amp;quot; short的資料範圍：&amp;quot; &#43; Short.MIN_VALUE &#43; &amp;quot;~&amp;quot;&#43; Short.MAX_VALUE);System.out.println(&amp;quot;----------------------------------------------------&amp;quot;);System.out.println(&amp;quot;int的大小：&amp;quot; &#43; Integer.SIZE &#43; &amp;quot; int的預設值：&amp;quot; &#43; i &#43; &amp;quot; int的資料範圍：&amp;quot; &#43; Integer.MIN_VALUE &#43; &amp;quot;~&amp;quot;&#43; Integer.MAX_VALUE);System.out.println(&amp;quot;----------------------------------------------------&amp;quot;);System.out.println(&amp;quot;long的大小：&amp;quot; &#43; Long.SIZE &#43; &amp;quot; long的預設值：&amp;quot; &#43; l &#43; &amp;quot; long的資料範圍：&amp;quot; &#43; Long.MIN_VALUE &#43; &amp;quot;~&amp;quot;&#43; Long.MAX_VALUE);System.out.println(&amp;quot;----------------------------------------------------&amp;quot;);System.out.println(&amp;quot;float的大小：&amp;quot; &#43; Float.SIZE &#43; &amp;quot; float的預設值：&amp;quot; &#43; f &#43; &amp;quot; float的資料範圍：&amp;quot; &#43; Float.MIN_VALUE &#43; &amp;quot;~&amp;quot;&#43; Float.MAX_VALUE);System.out.println(&amp;quot;----------------------------------------------------&amp;quot;);System.out.println(&amp;quot;double的大小：&amp;quot; &#43; Double.SIZE &#43; &amp;quot; double的預設值：&amp;quot; &#43; d &#43; &amp;quot; double的資料範圍：&amp;quot; &#43; Double.MIN_VALUE&#43; &amp;quot;~&amp;quot; &#43; Double.MAX_VALUE);System.out.println(&amp;quot;----------------------------------------------------&amp;quot;);System.out.println(&amp;quot;char的大小：&amp;quot; &#43; Character.SIZE &#43; &amp;quot; char的預設值：&amp;quot; &#43; c &#43; &amp;quot; char的資料範圍：&amp;quot; &#43; Character.MIN_VALUE&#43; &amp;quot;~&amp;quot; &#43; Character.MAX_VALUE);System.out.println(&amp;quot;----------------------------------------------------&amp;quot;);System.out.println(&amp;quot;boolean的大小：&amp;quot; &#43; Byte.SIZE &#43; &amp;quot; boolean的預設值：&amp;quot; &#43; bo &#43; &amp;quot; boolean的資料範圍：&amp;quot; &#43; Byte.MIN_VALUE&#43; &amp;quot;~&amp;quot; &#43; Byte.MAX_VALUE);System.out.println(&amp;quot;String字串的預設值：&amp;quot; &#43; str1 &#43; &amp;quot;str的默認長度：&amp;quot; &#43; str1.length());System.out.println(&amp;quot;String字串的預設值：&amp;quot; &#43; str2);}} JAVA 跳脫字元 Escape Characters - \&#39; : 單引號- \&amp;quot; : 雙引號- \\ : 反斜線- \n : 換行- \t : tab鍵- \b : 倒退一格- \f : 換頁- \r : Enter 鍵 參考 Java中8種基本數據類型默認的默認值_java_飛月程序人生-CSDN博客
-https://blog.csdn.net/fysuccess/article/details/40656761
+        <content type="html"> Java 基本的資料型態(Primitive Data Types) 基本數據類型（8種）
+   數據類型 大小/位 封裝類 默認值 可表示數據范圍     byte 8bit Byte 0 -128~127   short 16bit Short 0 -32768~32767   int 32bit Integer 0 -2147483648~2147483647   long 64bit Long 0L -9223372036854775808~9223372036854775807   float 32bit Float 0.0F 1.4E-45~3.4028235E38   double 64bit Double 0.0D 4.9E-324~1.7976931348623157E308   char 16bit Character &amp;lsquo;\u0000&amp;rsquo; 0~65535   boolean 8bit Boolean false true或false    如果兩運算為基本型別，至少會轉為int
+範例 /*** * * &amp;lt;p/&amp;gt;* Package: ch1 &amp;lt;br&amp;gt;* File Name: PrimitiveDataTypesTest &amp;lt;br&amp;gt;* &amp;lt;p/&amp;gt;* Purpose: &amp;lt;br&amp;gt;* * @ClassName: ch1.PrimitiveDataTypesTest* @Description: 測試基本數據類型* @Copyright : Copyright (c) Corp. 2020. All Rights Reserved.* @Company: ian Team.* @author ian* @version 1.0, 2020年5月18日*/public class PrimitiveDataTypesTest {static byte b;static short s;static int i;static long l;static float f;static double d;static char c;static boolean bo;public static void main(String[] args) {System.out.println(&amp;quot;byte的大小：&amp;quot; &#43; Byte.SIZE &#43; &amp;quot; byte的預設值：&amp;quot; &#43; b &#43; &amp;quot; byte的資料範圍：&amp;quot; &#43; Byte.MIN_VALUE &#43; &amp;quot;~&amp;quot;&#43; Byte.MAX_VALUE);System.out.println(&amp;quot;----------------------------------------------------&amp;quot;);System.out.println(&amp;quot;short的大小：&amp;quot; &#43; Short.SIZE &#43; &amp;quot; short的預設值：&amp;quot; &#43; s &#43; &amp;quot; short的資料範圍：&amp;quot; &#43; Short.MIN_VALUE &#43; &amp;quot;~&amp;quot;&#43; Short.MAX_VALUE);System.out.println(&amp;quot;----------------------------------------------------&amp;quot;);System.out.println(&amp;quot;int的大小：&amp;quot; &#43; Integer.SIZE &#43; &amp;quot; int的預設值：&amp;quot; &#43; i &#43; &amp;quot; int的資料範圍：&amp;quot; &#43; Integer.MIN_VALUE &#43; &amp;quot;~&amp;quot;&#43; Integer.MAX_VALUE);System.out.println(&amp;quot;----------------------------------------------------&amp;quot;);System.out.println(&amp;quot;long的大小：&amp;quot; &#43; Long.SIZE &#43; &amp;quot; long的預設值：&amp;quot; &#43; l &#43; &amp;quot; long的資料範圍：&amp;quot; &#43; Long.MIN_VALUE &#43; &amp;quot;~&amp;quot;&#43; Long.MAX_VALUE);System.out.println(&amp;quot;----------------------------------------------------&amp;quot;);System.out.println(&amp;quot;float的大小：&amp;quot; &#43; Float.SIZE &#43; &amp;quot; float的預設值：&amp;quot; &#43; f &#43; &amp;quot; float的資料範圍：&amp;quot; &#43; Float.MIN_VALUE &#43; &amp;quot;~&amp;quot;&#43; Float.MAX_VALUE);System.out.println(&amp;quot;----------------------------------------------------&amp;quot;);System.out.println(&amp;quot;double的大小：&amp;quot; &#43; Double.SIZE &#43; &amp;quot; double的預設值：&amp;quot; &#43; d &#43; &amp;quot; double的資料範圍：&amp;quot; &#43; Double.MIN_VALUE&#43; &amp;quot;~&amp;quot; &#43; Double.MAX_VALUE);System.out.println(&amp;quot;----------------------------------------------------&amp;quot;);System.out.println(&amp;quot;char的大小：&amp;quot; &#43; Character.SIZE &#43; &amp;quot; char的預設值：&amp;quot; &#43; c &#43; &amp;quot; char的資料範圍：&amp;quot; &#43; Character.MIN_VALUE&#43; &amp;quot;~&amp;quot; &#43; Character.MAX_VALUE);System.out.println(&amp;quot;----------------------------------------------------&amp;quot;);System.out.println(&amp;quot;boolean的大小：&amp;quot; &#43; Byte.SIZE &#43; &amp;quot; boolean的預設值：&amp;quot; &#43; bo &#43; &amp;quot; boolean的資料範圍：&amp;quot; &#43; Byte.MIN_VALUE&#43; &amp;quot;~&amp;quot; &#43; Byte.MAX_VALUE);}} JAVA 跳脫字元 Escape Characters - \&#39; : 單引號- \&amp;quot; : 雙引號- \\ : 反斜線- \n : 換行- \t : tab鍵- \b : 倒退一格- \f : 換頁- \r : Enter 鍵 參考 Java中8种基本数据类型及其默认值_飞月程序人生-CSDN博客_float默认值
 </content>
     </entry>
     
@@ -688,11 +776,9 @@ https://blog.csdn.net/fysuccess/article/details/40656761
         <tags>
           <tag>java</tag>
         </tags>
-        <content type="html"> 從 0 開始的 JAVA 生活 No.1 Java 第一支 java 程式 建立一個HelloJava.java 的檔案 class HelloJava{public static void main(String args[]){System.out.println(&amp;quot;Hello Java&amp;quot;);}} 編譯程式 語法 ：
-javac xxxx.java EX :
-javac HelloJava.java 執行程式 語法 ：
-java xxxx EX :
-java HelloJava</content>
+        <content type="html"> 從 0 開始的 JAVA 生活 No.1 Java 第一支 java 程式 建立一個HelloJava.java 的檔案 /*** HelloJava*/public class HelloJava {public static void main(String[] args) {System.out.println(&amp;quot;Hello java&amp;quot;);}} 編譯程式  **語法 ： javac xxxx.java** EX:
+javac HelloJava.java 執行程式 **語法 ： java xxxx** EX :
+java HelloJava 參考</content>
     </entry>
     
      <entry>
@@ -706,19 +792,16 @@ java HelloJava</content>
         </tags>
         <content type="html"> 簡介 java.text提供了NumberFormat類別來讓我們更方便的格式化數字的呈現方式
 DecimalFormat是NumberFormat該格式的具體子類， 其格式為小數。它具有多種功能，旨在使可以在任何語言環境中解析和格式化數字，包括對西方，阿拉伯和印度數字的支持。它還支持各種數字，包括整數（123），定點數字（123.4），科學計數法（1.23E4），百分比（12％）和貨幣金額（$ 123）。所有這些都可以本地化。
-基本用法 NumberFormat //	由於NumberFormat是一個抽象類別，必須用getInstance()來取得他裡面的方法NumberFormat nf = NumberFormat.getInstance();//	NumberFormat物件格式化的方式是固定的，都是以每三位數一個逗號的方式格式化數字，浮點數欄位則是有的時候顯示，沒有就不顯示。所以可以得到1,234,567.89。System.out.println(nf.format(1234567.89)); DecimalFormat ​	DecimalFormat實作了NumberFormat，並提供更客製化的格式選擇，用法如下：
-Double value = 123456.789;String pattern = &amp;quot;###,###.###&amp;quot; ;//	宣告了一個DecimalFormat物件，並可以在宣告時帶入要格式化的格式，若不帶入參數，格式規則和NumberFormat相同。DecimalFormat myFormatter = new DecimalFormat(pattern);String output = myFormatter.format(value);System.out.println(&amp;quot;執行結果為：&amp;quot; &#43; value &#43; &amp;quot; &amp;quot; &#43; pattern &#43; &amp;quot; &amp;quot; &#43; output); ​	下表描述了前幾行代碼的輸出. value 是要格式化的數字(double) ,pattern 是指定格式設置屬性的字符串.The output, 輸出是字符串，表示格式化的數字。
-   value pattern output Explanation     123456.789 ###,###.### 123,456.789 井號（＃）表示一個數字，逗號是分組分隔符的佔位符，句點是十進制分隔符的佔位符。   123456.789 ###.## 123456.79 value 在小數點右邊有三位數, 而 pattern 只有兩位. format通過四捨五入來解決這個問題。   123.78 000000.000 000123.780 pattern 指定前導零和尾隨零，因為使用0字符代替了井號（＃）。   12345.67 $###,###.### $12,345.67 pattern中的第一個字符是美元符號（$）。注意，它緊接在格式為output的最左邊的數字之前。   12345.67 \u00A5###,###.### ¥12,345.67 pattern 使用Unicode值00A5指定日元（¥）的貨幣符號。    其他用法 DecimalFormat df = new DecimalFormat(&amp;quot;$#,##0.00&amp;quot;);System.out.println(df.format(1234567.2)); ​	格式化的字串中0代表一定要有值，#則代表不一定要有值， 因此#,##0.00表示至少要有個位數及小數點後兩位，且每三位數以一個逗號分開，若格式化的數字沒有個位數或小數點後兩位，就會以0代替。
-​	根據需求在前後加上需要的文字，例如$符號，所以上例執行的結果就會是$1,234,567.20。
+基本用法 NumberFormat //由於NumberFormat是一個抽象類別，必須用getInstance()來取得他裡面的方法NumberFormat nf = NumberFormat.getInstance();//NumberFormat物件格式化的方式是固定的，都是以每三位數一個逗號的方式格式化數字，浮點數欄位則是有的時候顯示，沒有就不顯示。所以可以得到1,234,567.89。System.out.println(nf.format(1234567.89)); DecimalFormat ​DecimalFormat實作了NumberFormat，並提供更客製化的格式選擇，用法如下：
+Double value = 123456.789;String pattern = &amp;quot;###,###.###&amp;quot; ;//宣告了一個DecimalFormat物件，並可以在宣告時帶入要格式化的格式，若不帶入參數，格式規則和NumberFormat相同。DecimalFormat myFormatter = new DecimalFormat(pattern);String output = myFormatter.format(value);System.out.println(&amp;quot;執行結果為：&amp;quot; &#43; value &#43; &amp;quot; &amp;quot; &#43; pattern &#43; &amp;quot; &amp;quot; &#43; output); ​	下表描述了前幾行代碼的輸出. value 是要格式化的數字(double) ,pattern 是指定格式設置屬性的字符串.The output, 輸出是字符串，表示格式化的數字。
+   value pattern output Explanation     123456.789 ###,###.### 123,456.789 井號（＃）表示一個數字，逗號是分組分隔符的佔位符，句點是十進制分隔符的佔位符。   123456.789 ###.## 123456.79 value 在小數點右邊有三位數, 而 pattern 只有兩位. format通過四捨五入來解決這個問題。   123.78 000000.000 000123.780 pattern 指定前導零和尾隨零，因為使用0字符代替了井號（＃）。   12345.67 $###,###.### $12,345.67 pattern中的第一個字符是美元符號（$）。注意，它緊接在格式為output的最左邊的數字之前。   12345.67 \u00A5###,###.### ¥12,345.67 pattern 使用Unicode值00A5指定日元（¥）的貨幣符號。    其他用法 DecimalFormat df = new DecimalFormat(&amp;quot;$#,##0.00&amp;quot;);System.out.println(df.format(1234567.2)); ​格式化的字串中0代表一定要有值，#則代表不一定要有值， 因此#,##0.00表示至少要有個位數及小數點後兩位，且每三位數以一個逗號分開，若格式化的數字沒有個位數或小數點後兩位，就會以0代替。
+​根據需求在前後加上需要的文字，例如$符號，所以上例執行的結果就會是$1,234,567.20。
 這邊要注意若是我們在格式化字串結尾加上百分比符號『%』，DecimalFormat會自動幫我們將數值乘以100以符合字面意義，例如：
 DecimalFormat df = new DecimalFormat(&amp;quot;#,##0.00%&amp;quot;);System.out.println(&amp;quot;執行結果為：&amp;quot; &#43; df.format(1234567.2));// 執行結果為：123,456,720.00% DecimalFormat 類主要靠 # 和 0 兩種預留位置號來指定數位長度。
 0 表示如果位數不足則以 0 填充，# 表示只要有可能就把數字拉上這個位置。
 /*** DecimalFormatTest*/public class DecimalFormatTest {public static void main(String[] args) {double d = 123456789;DecimalFormat decimalFormat = new DecimalFormat(&amp;quot;#,###.##&amp;quot;);System.out.println(decimalFormat.format(d));DecimalFormat decimalFormat2 = new DecimalFormat(&amp;quot;#,###.00&amp;quot;);System.out.println(decimalFormat2.format(d));double pi = 3.1415927;// 圓周率// 取一位元整數System.out.println(new DecimalFormat(&amp;quot;0&amp;quot;).format(pi));// 3// 取一位元整數和兩位元小數System.out.println(new DecimalFormat(&amp;quot;0.00&amp;quot;).format(pi));// 3.14// 取兩位元整數和三位元小數，整數不足部分以0填補。System.out.println(new DecimalFormat(&amp;quot;00.000&amp;quot;).format(pi));// 03.142// 取所有整數部分System.out.println(new DecimalFormat(&amp;quot;#&amp;quot;).format(pi));// 3// 以百分比方式計數，並取兩位小數System.out.println(new DecimalFormat(&amp;quot;#.##%&amp;quot;).format(pi));// 314.16%long c = 299792458;// 光速// 顯示為科學計數法，並取五位小數System.out.println(new DecimalFormat(&amp;quot;#.#####E0&amp;quot;).format(c));// 2.99792E8// 顯示為兩位元整數的科學計數法，並取四位小數System.out.println(new DecimalFormat(&amp;quot;00.####E0&amp;quot;).format(c));// 29.9792E7// 每三位以逗號進行分隔。System.out.println(new DecimalFormat(&amp;quot;,###&amp;quot;).format(c));// 299,792,458// 將格式嵌入文本System.out.println(new DecimalFormat(&amp;quot;光速大小為每秒,###米&amp;quot;).format(c)); // 光速大小為每秒299,792,458米}} 參考 [Java] 13-8 數字輸出格式 @ 給你魚竿 :: 痞客邦
-https://rx1226.pixnet.net/blog/post/335106917
 數字格式(NumberFormat、DecimalFormat) @ Penguin 工作室，一起JAVA吧！ :: 隨意窩 Xuite日誌
-https://blog.xuite.net/jane17512001/PenguinDesign/116288108-%E6%95%B8%E5%AD%97%E6%A0%BC%E5%BC%8F%28NumberFormat%E3%80%81DecimalFormat%29
-（轉）Java DecimalFormat 用法（數位格式化） - 濫好人 - 博客園
-https://www.cnblogs.com/hq233/p/6539107.html
+（轉）Java DecimalFormat 用法（數位格式化） - 濫好人 - 博客園 
 https://docs.oracle.com/javase/tutorial/i18n/format/decimalFormat.html
 https://docs.oracle.com/javase/8/docs/api/java/text/DecimalFormat.html
 </content>
@@ -731,15 +814,15 @@ https://docs.oracle.com/javase/8/docs/api/java/text/DecimalFormat.html
           <category>筆記</category>
         </categories>
         <tags>
-          <tag>java</tag><tag>Kotlin</tag><tag>Android</tag>
+          <tag>Kotlin</tag><tag>Android</tag>
         </tags>
         <content type="html"> Create an Android project(創建一個Android項目) 要創建新的Android項目，請按照以下步驟操作：
   安裝最新版本的 Android Studio。
-  在Welcome to Android Studio窗口中，單擊啟動新的Strat a new Android Studio project。   在Select a Project Template窗口中，選擇&amp;rdquo; Empty Activity，然後單擊next。
+  在Welcome to Android Studio窗口中，單擊啟動新的Strat a new Android Studio project。   在Select a Project Template窗口中，選擇&amp;quot; Empty Activity，然後單擊next。
   在Configure Your Project窗口中，完成以下操作：  · 在Name輸入 &amp;ldquo;Myfirstapp&amp;rdquo; 。
-· 在Package name字段中輸入&amp;quot;com.example.myfirstapp&amp;rdquo; 。
+· 在Package name字段中輸入&amp;quot;com.example.myfirstapp&amp;quot; 。
 · Save Location 預設專案放置位置，如果要將項目放置在其他文件夾中，請更改其保存位置。
-· 從&amp;rdquo; Language&amp;quot;下拉菜單中選擇Java或Kotlin。
+· 從&amp;quot; Language&amp;quot;下拉菜單中選擇Java或Kotlin。
 · 在&amp;quot;Minimum SDK&amp;quot;選擇您的應用將支持的最低 Android版本。
 · 保留其他選項不變。
  點擊完成。  經過一段時間的處理後，出現Android Studio主窗口。
@@ -750,7 +833,7 @@ Android Studio主窗口
 這是主要活動。這是您的應用程序的切入點。在構建和運行應用程序時，系統將啟動該應用程序的實例 Activity 並加載其佈局。
 應用程序&amp;gt; res&amp;gt;佈局&amp;gt; activity_main.xml
 此XML文件定義活動的用戶界面（UI）的佈局。它包含一個TextView帶有文本“ Hello，World！” 的 元素。
-應用&amp;gt;清單****&amp;gt; AndroidManifest.xml
+應用&amp;gt;清單**&amp;gt; AndroidManifest.xml**
 該清單文件描述了應用程序的基本特徵，並限定它的每一個組件。
 Gradle腳本&amp;gt; build.gradle
 有兩個名稱相同的文件：一個用於項目“ Project：My First App”，另一個用於應用程序模塊“ Module：app”。每個模塊都有自己的build.gradle文件，但是該項目當前只有一個模塊。使用每個模塊build.file來控制Gradle插件如何構建您的應用程序。有關此文件的更多信息，請參見 配置構建。
@@ -871,8 +954,7 @@ Prism是一種輕量級的，可擴展的語法突出顯示工具，其構建考
 下載 https://prismjs.com/
 使用 放在Hugo部落格資料夾（static）位置
 ├── static│ ├── prism.js│ └── prism.css Config.toml 開啟Hugo配置檔 Config.toml，設定將預設代碼高亮設定false
-#預設代碼區塊pygmentsCodefences = falsepygmentsCodefencesGuessSyntax = false 參考 Hugo動態加載prism.js
-Hugo / 如何在 Hugo 中用 Prism.js 提供程式碼色彩標註 | sujj blog
+#預設代碼區塊pygmentsCodefences = falsepygmentsCodefencesGuessSyntax = false 參考 Hugo / 如何在 Hugo 中用 Prism.js 提供程式碼色彩標註 | sujj blog
 漂亮的代碼語法高亮插件Prism.js簡單使用文檔 - 嚴穎專欄 -SegmentFault 思否
 </content>
     </entry>
@@ -888,14 +970,14 @@ Hugo / 如何在 Hugo 中用 Prism.js 提供程式碼色彩標註 | sujj blog
         </tags>
         <content type="html"> Hugo使用筆記 前言
 Hugo 基本指令 安裝 透過Chocolatey 安裝
-choco install hugo -confirm  Check version:
-hugo version  建立新Blog hugo new site blog  新增文章 hugo new post/文章名稱.md  生成的文件默認為會帶上 draft: true標記，不會發布。
+choco install hugo -confirm Check version:
+hugo version 建立新Blog hugo new site blog 新增文章 hugo new post/文章名稱.md 生成的文件默認為會帶上 draft: true標記，不會發布。
 run server 不 run draft: true 的標記(未發布)
-hugo server  run 全部
-hugo server -D  插入圖片 ![Example image](/static/image.png)  建立及設定部落格專案 我們先使用 hugo 命令新增一個空白專案，然後下載一個Template到我們的專案裡面
+hugo server run 全部
+hugo server -D 插入圖片 ![Example image](/static/image.png) 建立及設定部落格專案 我們先使用 hugo 命令新增一個空白專案，然後下載一個Template到我們的專案裡面
 接著新增四個我們想加到模板 Menu 的頁面: about, history, tags, categories
 最後則是新增一篇空白的文章到專案內。
-1.create the project $ hugo new site myblog 2.add a theme $ git submodule add https://github.com/laozhu/hugo-nuo themes/hugo-nuo 3.add new pages $ hugo new about.md $ hugo new hisroty.md $ hugo new tags.md $ hugo new categories.md 4.add new article $ hugo new post/welcome.md hugo server -D  參考 右上角github 貓 GitHub Corners
+1.create the project$ hugo new site myblog2.add a theme$ git submodule add https://github.com/laozhu/hugo-nuo themes/hugo-nuo3.add new pages$ hugo new about.md$ hugo new hisroty.md$ hugo new tags.md$ hugo new categories.md4.add new article$ hugo new post/welcome.mdhugo server -D 參考 右上角github 貓 GitHub Corners
 在 Github Pages 建立 Hugo 靜態網站 · Kaichu.io
 使用Github部署Hugo靜態網站
 next模版
