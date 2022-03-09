@@ -1,990 +1,0 @@
-<search>
-    
-     <entry>
-        <title>Java_tutorial_4</title>
-        <url>https://iankingh.github.io/post/java/java_tutorial_4/</url>
-        <categories>
-          <category>筆記</category><category>技術</category>
-        </categories>
-        <tags>
-          <tag>java</tag>
-        </tags>
-        <content type="html"> [從 0 開始的 JAVA 生活]No.4 java 物件導向簡介 物件導向的三種特性   封裝
- public proteced default(預設) private    繼承
- 共同的 data 只要描述一次 子類別 可以 ADD or override Method    多型
-  參考</content>
-    </entry>
-    
-     <entry>
-        <title>GitNote</title>
-        <url>https://iankingh.github.io/post/git/gitnote/</url>
-        <categories>
-          <category>筆記</category>
-        </categories>
-        <tags>
-          <tag>git</tag>
-        </tags>
-        <content type="html"> git 實戰用法 紀錄一些 git 用法
-git status 看目前訊息 取得目前 Git 工作目錄的狀態用這個指令可以取得當前目錄的版控狀態，例如有檔案被變更、刪除、新增或其他。
-把檔案push 到遠端儲存庫  git remote add origin 遠端儲存庫URL 新增遠端儲存庫到本地 git push &amp;ndash;set-upstream origin master 建立連結 git push -u origin master(分支) 發布分支(簡寫)  git reset -p 修改索引&amp;mdash;用途:避免本地設定檔上傳
-git push &amp;ndash;tags &amp;hellip;.&amp;gt; 推送tag
-回復到上一個（或更前的）版本 git reset &amp;ndash;hard HEAD 回復到最新提交版本 git reset &amp;ndash;hard HEAD~ // 等於 ~1 回復到上一個提交版本 git reset &amp;ndash;hard HEAD~n // n 等於往上第幾個提交版本 回復之前指定的提交版本
-參考</content>
-    </entry>
-    
-     <entry>
-        <title>算錢用浮點，遲早被人扁</title>
-        <url>https://iankingh.github.io/post/other/%E7%AE%97%E9%8C%A2%E7%94%A8%E6%B5%AE%E9%BB%9E%E9%81%B2%E6%97%A9%E8%A2%AB%E4%BA%BA%E6%89%81/</url>
-        <categories>
-          <category>筆記</category>
-        </categories>
-        <tags>
-          <tag>java</tag><tag>javaScript</tag>
-        </tags>
-        <content type="html"> 算錢用浮點，遲早被人扁 前言 簡單來說 , 在部分程式語言 ,在計算&#43;法時是使用 float 來計算的
-EX : JavaScript 0.1&#43;0.2 = ?
-0.1&#43;0.20.30000000000000004 會有誤差
-有個網站叫
-https://0.30000000000000004.com/
-提供許多 解法
-例如 : java 使用 BigDecimal
-參考 算錢學問大 | iThome
-CODE-分贓程式的寫法-黑暗執行緒
-https://0.30000000000000004.com/
-</content>
-    </entry>
-    
-     <entry>
-        <title>使用notepad指令救援資料</title>
-        <url>https://iankingh.github.io/post/other/%E4%BD%BF%E7%94%A8notepad%E6%8C%87%E4%BB%A4%E6%95%91%E6%8F%B4%E8%B3%87%E6%96%99/</url>
-        <categories>
-          <category>other</category>
-        </categories>
-        <tags>
-          <tag>windows</tag><tag>other</tag>
-        </tags>
-        <content type="html"> 前言 當電腦壞軌時要從裡面拉資料
-使用 notepad指令救援資料 當電腦無法進入安全模式時，但可以進入修復電腦時，就可以使用，狂按F8進入修復你的電腦，之後選擇命令提示字元
-步驟一 : 進入CMD 進入此畫面
-步驟二 : 進入編輯畫面 輸入notepad 按下enter&amp;gt;點開起舊檔 步驟三 : 拷貝檔案 點所有檔案&amp;gt;這時按所有檔案
-再把檔案放入隨身硬碟
-參考</content>
-    </entry>
-    
-     <entry>
-        <title>Vagrant</title>
-        <url>https://iankingh.github.io/post/other/vagrant/</url>
-        <categories>
-          <category>筆記</category>
-        </categories>
-        <tags>
-          <tag>vagrant</tag>
-        </tags>
-        <content type="html"> vagrant 使用筆記 初始化虛擬機 vagrant init 啟動 虛擬機 vagrant up  啟動 已存在的 虛擬機 vagrant provision
-停止虛擬機 vagrant halt 新增 虛擬主機的 SSL private key  vagrant ssh-config 砍掉 虛擬機 vagrant destroy vagrant scp 安裝網址: https://github.com/invernizzi/vagrant-scp
-Install
-vagrant plugin install vagrant-scp Usage
- Vagrantfile Vagrant.configure(&amp;quot;2&amp;quot;) do |config|#pull images centos/8config.vm.box = &amp;quot;centos/8&amp;quot;#採用橋接，共享主機網絡config.vm.network &amp;quot;public_network&amp;quot;#虛擬機名字heaton-centos8，內存，核數config.vm.provider &amp;quot;virtualbox&amp;quot; do |vb|vb.memory = &amp;quot;4096&amp;quot;vb.name= &amp;quot;ian-centos8&amp;quot;vb.cpus= 2endend</content>
-    </entry>
-    
-     <entry>
-        <title>前後端分離</title>
-        <url>https://iankingh.github.io/post/other/%E5%89%8D%E5%BE%8C%E7%AB%AF%E5%88%86%E9%9B%A2/</url>
-        <categories>
-          <category>筆記</category>
-        </categories>
-        <tags>
-          <tag>前後端分離</tag>
-        </tags>
-        <content type="html"> 前言 前後端分離帶來的影響
-前後端分離 好處  分開部屬 , EX: 有 2包專案web(Angular) &#43; Api(Spring) 在部屬 web,Api可以不用下來 加速部屬 , Project 可以比較小部屬也會比較快 節省流量, 開放API ,  動態資源和靜態資源全部耦合在一起，伺服器壓力大，因為伺服器會收到各種http請求，例如css的http請求，js的，圖片的等等。一旦伺服器出現狀況，前後台一起玩完，用戶體驗極差。
-2、UI出好設計圖後，前端工程師只負責將設計圖切成html，需要由java工程師來將html套成jsp頁面，出錯率較高（因為頁面中經常會出現大量的js代碼），修改問題時需要雙方協同開發，效率低下。
-3、jsp必須要在支持java的web伺服器里運行（例如tomcat，jetty，resin等），無法使用nginx等（nginx據說單實例http並發高達5w，這個優勢要用上），性能提不上來。
-4、第一次請求jsp，必須要在web伺服器中編譯成servlet，第一次運行會較慢。
-5、每次請求jsp都是訪問servlet再用輸出流輸出的html頁面，效率沒有直接使用html高
-6、jsp內有較多標籤和表達式，前端工程師在修改頁面時會捉襟見肘，遇到很多痛點。
-7、如果jsp中的內容很多，頁面響應會很慢，因為是同步加載。
-參考
-https://kknews.cc/zh-tw/code/8oomk6q.html
-</content>
-    </entry>
-    
-     <entry>
-        <title>tomcatSetingUser</title>
-        <url>https://iankingh.github.io/post/server/tomcatsetinguser/</url>
-        <categories>
-          <category>筆記</category>
-        </categories>
-        <tags>
-          <tag>java</tag><tag>tomcat</tag>
-        </tags>
-        <content type="html"> 配置Tomcat 的使用者 配置 Tomcat 的使用者 於 tomcat 的 conf/tomcat-users.xml
-&amp;lt;!-- 配置角色 --&amp;gt;&amp;lt;role rolename=&amp;quot;manager-gui&amp;quot;/&amp;gt;&amp;lt;role rolename=&amp;quot;admin-gui&amp;quot;/&amp;gt;&amp;lt;!-- 配置管理帳號及權限 --&amp;gt;&amp;lt;user username=&amp;quot;用戶名&amp;quot; password=&amp;quot;密碼&amp;quot; roles=&amp;quot;admin-gui,manager-gui&amp;quot;/&amp;gt; 參考 tomcat配置管理员-走后门 - WhyWin - 博客园
-如何进入tomcat的管理页面 - begin27的博客 - CSDN博客
-</content>
-    </entry>
-    
-     <entry>
-        <title>Java_heap_space</title>
-        <url>https://iankingh.github.io/post/java/java_heap_space/</url>
-        <categories>
-          <category>筆記</category>
-        </categories>
-        <tags>
-          <tag>java</tag>
-        </tags>
-        <content type="html"> java.lang.OutOfMemoryError: Java heap space JVM記憶體設定 使用Java程式從資料庫中查詢大量的資料時出現異常:java.lang.OutOfMemoryError: Java heap space 在JVM中如果98%的時間是用於GC且可用的 Heap size 不足2%的時候將丟擲此異常資訊。 JVM堆的設定是指java程式執行過程中JVM可以調配使用的記憶體空間的設定.JVM在啟動的時候會自動設定Heap size的值,其初始空間(即-Xms)是實體記憶體的1/64,最大空間(-Xmx)是實體記憶體的1/4。可以利用JVM提供的-Xmn -Xms -Xmx等選項可進行設定。
-這個問題的根源是jvm虛擬機器的預設Heap大小是64M,可以通過設定其最大和最小值來實現.設定的方法主要是幾個.
-可以在windows 更改系統環境變數加上 JAVA_OPTS &amp;amp;&amp;amp; CATALINA_OPTS JAVA_OPTS=-Xms1024m -Xmx2048mCATALINA_OPTS=-Xms2048M -Xmx4096M EX:
-Variable name : CATALINA_OPTSVariable value: =-Xms2048M -Xmx4096M 程式的寫法要注意要 close 資料流 IMAGEIO讀取JPEG文件 JPEG可以很好地壓縮圖像。但是在內存中，僅用於原始數據的BufferedImage通常每個像素需要4個字節，因此無論文件有多大，其大小均為6480 * 4320 * 4 = 112 MB。
-參考 若系統運行一段時間後無法連線，且tomcat或jboss的log裡出現java.lang.OutOfMemoryError: Java heap space，應如何避免此狀況?　(2008/11/25) | TAIR User Group
-读写文件时内存溢出问题思考（OutOfMemoryError: Java heap space）_WolfShadow的博客-CSDN博客
-JAVA遇到大批資料處理時會出現Java heap space的報錯的解決方案 - IT閱讀
-tomcat記憶體溢位設定JAVA_OPTS - IT閱讀
-How to Change JVM Heap Setting (-Xms -Xmx) of Tomcat - Configure setenv.sh file - Run catalina.sh • Crunchify
-How To Increase The Java Heap size in Tomcat Application Server | Aprentis
-OutofMemory while reading JPEG file Using IMAGEIO (Performance forum at Coderanch)
-</content>
-    </entry>
-    
-     <entry>
-        <title>Cmd</title>
-        <url>https://iankingh.github.io/post/windows/cmd/</url>
-        <categories>
-          <category>筆記</category>
-        </categories>
-        <tags>
-          <tag>windows</tag><tag>CMD</tag>
-        </tags>
-        <content type="html"> Windows CMD指令 快速打開
-1.CTRL &#43; R ——打開 &amp;ldquo;運行&amp;rdquo;
-2.在&amp;quot;運行&amp;quot;輸入&amp;quot;cmd&amp;quot;彈出DOS命令列視窗
-ipconfig : 查IP
-使用
-ipconfig cls : 清空命令
-查看哪些進程佔用了埠 3.假如我要查的是埠&amp;quot;8080&amp;quot;，則輸入命令：netstat -aon|findstr &amp;quot;8080&amp;quot;4.如上，得到了進程號&amp;quot;4060&amp;quot;，再輸入命令：tasklist|findstr &amp;quot;4060&amp;quot;,得到了進程映射名稱，好了，下一步我們將解決埠號佔用的問題，就是kill掉該進程映射名稱的進程。5.CTRL &#43; ALT &#43; delete彈出工作管理員，找到名字為&amp;quot;javaw.exe&amp;quot;的進程，點擊它，並殺死它(結束進程)。6.再在DOS下輸入命令查看下該埠是否還被佔用：netstat -aon|findstr &amp;quot;8080&amp;quot;7.可以看到，再也沒有進程佔用了該埠，OK，佔用該埠的進程被殺死了，那麼埠被佔用也已經解決了。 參考 查看哪些進程佔用了埠 - zhuxiongxian的挨踢博客 - CSDN博客
-</content>
-    </entry>
-    
-     <entry>
-        <title>GitCommitMessage</title>
-        <url>https://iankingh.github.io/post/git/gitcommitmessage/</url>
-        <categories>
-          <category>學習</category>
-        </categories>
-        <tags>
-          <tag>git</tag>
-        </tags>
-        <content type="html"> Git Commit Message 規範 前言 一般來說Git Commit 要包含
-Commit Message 規範 commit message格式 &amp;lt;type&amp;gt;: scope : &amp;lt;subject&amp;gt; EX:
-feat:DAO:新增用戶(Customer)的DAO type 的規範：  feat: 新增/修改功能 (feature)。 modify：功能上的修正（非 bug） fix: 修補 bug (bug fix)。 delete：刪除檔案 docs: 文件 (documentation)。 style: 格式 (不影響程式碼運行的變動 white-space, formatting, missing semi colons, etc)。 refactor: 重構 (既不是新增功能，也不是修補 bug 的程式碼變動)。 test: 增加測試 (when adding missing tests)。 chore: 建構程序或輔助工具的變動 (maintain)。 revert: 撤銷回覆先前的 commit 例如：revert: type(scope): subject (回覆版本：xxxx)。 perf: 改善效能 (A code change that improves performance)。  Type 是用來告訴進行 Code Review 的人應該以什麼態度來檢視 Commit 內容。 例如： 看到 Type 為 fix，進行 Code Review 的人就可以用「觀察 Commit 如何解決錯誤」的角度來閱讀程式碼。 若是 refactor，則可以放輕鬆閱讀程式碼如何被重構，因為重構的本質是不會影響既有的功能。 利用不同的 Type 來決定進行 Code Review 檢視的角度，可以提升 Code Review 的速度。因此開發團隊應該要對這些 Type 的使用時機有一致的認同。
-scope 的規範： scope 用於說明 commit 影響的範圍，EX:Controller 、 Dao、 view
-如果修改影響不只一個scope，可以使用*代替。
-subject : subject是commit目的的臨時描述，不超過50個字符。
-建議使用中文（感覺中國人用中文描述問題能更清楚一些）。
-開頭不加句號或其他標點符號。 根據以上規範git commit message將是如下的格式：
-總結 參考 如何规范你的Git commit？-阿里云开发者社区
-Git Commit Message 這樣寫會更好，替專案引入規範與範例
-</content>
-    </entry>
-    
-     <entry>
-        <title>GitBranchUpdateMaster</title>
-        <url>https://iankingh.github.io/post/git/gitbranchupdatemaster/</url>
-        <categories>
-          <category>筆記</category>
-        </categories>
-        <tags>
-          <tag>git</tag>
-        </tags>
-        <content type="html"> Git dev-branch Update master-branch 前言 一般來說 我們會先 clone 一份到我們的自己的儲存庫 , 再開一個分支開發 checkout -b dev-1
-當主要分支有所變動時 可以使用以下方式更新主要分支
-從最新的master checkout 分支出去
-再把dev-1 跟新的分支合併
-參考 Git: 四種將分支與主線同步的方法 | Summer。桑莫。夏天
-</content>
-    </entry>
-    
-     <entry>
-        <title>Route</title>
-        <url>https://iankingh.github.io/post/net/route/</url>
-        <categories>
-          <category>categories</category>
-        </categories>
-        <tags>
-          <tag>Windows</tag><tag>Cmd</tag>
-        </tags>
-        <content type="html"> 在 Windows 設定 Route 駐點在外，客戶端不能上Internet是件痛苦事。幸虧一位contract介紹用route，可以同時連測試機與無線外網，有陣子可以通，雖然有時秀逗。在DOS下執行以下的command：
-前一陣子到總公司上課時，臨時要使用內部網路走VPN連回公司處理問題，而同時間又需要使用Wireless上網。可是當我的Wireless連接上時，Notebook的Default Gateway就會變成Wireless設定的Gateway，此時就無法透過內部的網路走VPN連回公司。
-使用Windows的『route』指令可以設定Static Route，變更順序。
-一、指令說明： ROUTE [-f] [-p] [command [destination][MASK netmask] [gateway] [METRIC metric] [IF interface] -f 清除路由 -p 保留設定值，不會因電腦重開機而失效。
-Command 包含以下命令 PRINT 列出目前的路由表 ADD 增加一筆靜態路由 DELETE 刪除一筆靜態路由 CHANGE 修改現存的路由
-destination 路由的目標IP位址或網段。 netmask 子網路遮罩 gateway 指定要走的Gateway interface 指定送出封包時的網卡ID METRIC 可視為封包傳遞的優先權，數字愈低優先權愈高。
-intra 內部
-DMZ
-sticky 黏
-subnet
-HA
-tls
-dtls
-render
-local decode encode
-ipref
-checkpoint
-bandwidth
-question
-which
-F5 VIP
-SNAT
-NAT
-port forwarding
-pass-through
-pooling
-UDP hole punching
-STUN TURN
-port mapping
-ICMP
-high latency
-一、查詢route： IPv4 路由表 route print： 為了閱讀方便，將使用Route Print查詢的結果以表格呈現如下：
-   Network Destination網路目的地 Netmask 網路遮罩 Gateway 閘道 Interface 介面 Metric 公制     0.0.0.0 0.0.0.0 10.10.1.1 10.10.1.101 20   0.0.0.0 0.0.0.0 192.168.1.1 192.168.1.101 20   127.0.0.0 255.0.0.0 127.0.0.1 127.0.0.1 1   192.168.1.0 255.255.255.0 192.168.1.1 192.168.1.101 20   192.168.1.101 255.255.255.255 127.0.0.1 127.0.0.1 20   192.168.1.255 255.255.255.255 192.168.1.101 192.168.1.101 20   10.10.1.0 255.255.255.0 10.10.1.101 10.10.10.101 20   10.10.1.101 255.255.255.255 127.0.0.1 127.0.0.1 20   10.10.1.255 255.255.255.255 10.10.1.101 10.10.10.101 20   255.255.255.255 255.255.255.255 192.168.1.101 192.168.1.101 1   255.255.255.255 255.255.255.255 10.10.1.101 10.10.1.101 1    Network Destination： 表示路由的網路目的地，可以是 IP 網段或IP位址。 Netmask：表示子網路遮罩，用來配合 Network Destination 的運算。 Gateway：是封包欲送往的 IP 位址，如果目的 IP 位址與 Netmask 作 AND 邏輯運算，剛好與 Network Destination 相同，封包就會送到此 Gateway 的 IP 位址。 Interface： 是此電腦送出封包的 IP 位址。 Metric： 則是傳送成本的參考數字，通常與網路連接速度有關，越低的 Metric 表示速度越快。
-前2筆代表著，要連至不存在Routing Table中的其他所有位址都由該Gateway出去。 但由於2者的Metric都是20，因此無法控制固定由哪個Gateway出去
-因此可使用以下的命令來修改Metric的值【調整Gateway的優先權】，讓所有對外的連線固定透過無線網卡出去。 route change 0.0.0.0 mask 0.0.0.0 10.10.1.1 if 0x2 metric 10
-另外，若要透過有線網卡連VPN回公司，則可新增下列一筆路由 route add 192.168.99.0 mask 255.255.255.0 192.168.1.1 if 0x2 metric 20
-如果要刪除新增的路由，則可使用以下命令 route delete 192.168.99.0 mask 255.255.255.0
-　上表的紅色粗體字的資訊，介面192.168.11.27是無線網路分配給我的IP，192.168.11.1則是無線站台的Gateway，處在第一列表示為default route，所以會先搜到無線站台，就可以上網；第二列起是Local Network的IP迴路。 至於像胖兄介紹的迴路路徑不是在第二列，而排得那麼後面，不得而知，也許和我下設定的command有關。
-二、設定route
-Wireless LAN adapter Wi-Fi:
-Connection-specific DNS Suffix . : Link-local IPv6 Address . . . . . : fe80::f0e5:c960:e1a5:7faa%3 IPv4 Address. . . . . . . . . . . : 192.168.43.246 Subnet Mask . . . . . . . . . . . : 255.255.255.0 Default Gateway . . . . . . . . . : 192.168.43.1
-Wifl 網卡 gateway ip :192.168.43.1
-route delete 0.0.0.0 route delete 10.0.0.0 route delete 172.0.0.0 route ADD 0.0.0.0 MASK 0.0.0.0 192.168.43.1 route ADD 10.0.0.0 MASK 255.0.0.0 10.204.1.126 route ADD 172.0.0.0 MASK 255.0.0.0 10.204.1.126 pause
-route change 0.0.0.0 mask 0.0.0.0 192.168.43.1 route add 192.168.70.0 mask 255.255.255.0 192.168.14.251 route add 192.168.51.0 mask 255.255.255.0 192.168.14.251 route add 192.168.53.0 mask 255.255.255.0 192.168.14.251 route add 192.168.211.0 mask 255.255.255.0 192.168.14.251 pause
-最後一個pause(暫停)是我加的，加pause是為了避免執行後馬上Close DOS視窗。可以看每一條命令是否回應&amp;quot;確定&amp;quot;。
-route delete語法還OK，route add語法是：
-route ADD MASK (if metric )
-刪除0.0.0.0 route目的在取代default
-route；刪除10.0.0.0是內部網路的網段，至於刪除172.0.0.0的目的…我猜是和給我這個批次的contract，和他自身設定有關，應該可以忽略。
-很妙的是Gateway可以用Local IP替代，而不是尾數是1。
-最後還要再執行兩個命令讓重設的route起作用。
-ipconfig /release ipconfig /renew
-參考 Windows route初體驗 @ Jemmy Walker :: 痞客邦 :: https://jemmywalker.pixnet.net/blog/post/38323627
-http://ctwivan.blogspot.com/2010/08/windowsstatic-route.html
-</content>
-    </entry>
-    
-     <entry>
-        <title>AngularUseJS</title>
-        <url>https://iankingh.github.io/post/angular/angularusejs/</url>
-        <categories>
-          <category>筆記</category>
-        </categories>
-        <tags>
-          <tag>Angular</tag><tag>FrontEnd</tag>
-        </tags>
-        <content type="html"> Angular 使用 JavaScript 前言 在實務上我們可以在npm上面找到要用的 js 來引用 , 有時可能找不到 , 有時可能要匯入自己寫的js ,如果功能不複雜 ,可以轉成ts
-方法一 如果JS 不複雜可以轉成 ts
-方法 二 引入第三方的JS 第一步 安裝下載js 把js文件放到 /assets目錄下
-eX: /assets/Hello.js 第二步 設定 &amp;ldquo;allowJs&amp;rdquo;: true 在tsconfig.json，属性compilerOptions，添加 &amp;ldquo;allowJs&amp;rdquo;: true, &amp;ldquo;allowJs&amp;rdquo;: true,
-{&amp;quot;compileOnSave&amp;quot;: false,&amp;quot;compilerOptions&amp;quot;: {&amp;quot;baseUrl&amp;quot;: &amp;quot;./&amp;quot;,&amp;quot;outDir&amp;quot;: &amp;quot;./dist/out-tsc&amp;quot;,&amp;quot;sourceMap&amp;quot;: true,&amp;quot;declaration&amp;quot;: false,&amp;quot;downlevelIteration&amp;quot;: true,&amp;quot;experimentalDecorators&amp;quot;: true,&amp;quot;module&amp;quot;: &amp;quot;esnext&amp;quot;,&amp;quot;moduleResolution&amp;quot;: &amp;quot;node&amp;quot;,&amp;quot;allowJs&amp;quot;: true,&amp;quot;importHelpers&amp;quot;: true,&amp;quot;target&amp;quot;: &amp;quot;es5&amp;quot;,&amp;quot;lib&amp;quot;: [&amp;quot;es2018&amp;quot;,&amp;quot;dom&amp;quot;]},&amp;quot;angularCompilerOptions&amp;quot;: {&amp;quot;fullTemplateTypeCheck&amp;quot;: true,&amp;quot;strictInjectionParameters&amp;quot;: true,&amp;quot;enableIvy&amp;quot;: false}} 第三步 : 引入JS  可以在 angular.json文件，在scripts中配置js文件路径 或是在 index.html 引入  第四步，在當前组件.ts中使用函数添加js
-參考 angular在ts中使用第三方js_weixin_43182222的博客-CSDN博客
-How to call JavaScript functions from Typescript in Angular 5? - Stack Overflow
-</content>
-    </entry>
-    
-     <entry>
-        <title>WindowsNetCmd</title>
-        <url>https://iankingh.github.io/post/net/windowsnetcmd/</url>
-        <categories>
-          <category>categories</category>
-        </categories>
-        <tags>
-          <tag>Windows</tag><tag>Cmd</tag>
-        </tags>
-        <content type="html"> WindowsNetCmd筆記 前言 在網路的世界有 Client 端 及 Server 端 ，有時Server 時要對Cleint 端 開放 特殊服務的Port 才可以正常使用服務
-Windows網路指令: ping ip ping命令是用來檢測網路是否暢通的 ping指的是端對端連通，通常用來作為可用性的檢查 一般來說server 都會開 ping service，所以 ping ip，就可以知道該 server 是否存在。
-ping www.google.com telnet ip port Telnet是一種應用層協定，可以用來確認某個 ip的port 有沒有 TCP 服務。
-telnet 192.168.70.33 80 netstat 查看目前所在機器有那些網路連線，包含 TCP 和 UDP。 了解網絡的整體使用情況。它可以顯示當前正在活動的網絡連接的詳細信息，如採用的協議類型（看tcp，udp）、當前主機與遠端相連主機（一個或多個）的IP位址以及 它們之間的連接狀態等。
-netstat監控TCP/IP網絡的非常有用的工具，它可以顯示路由表、實際的網絡連接以及每一個網絡接口設備的狀態信息。
-netstat -a # 列出所有埠 netstat -n #顯示所有已建立的有效連接。 netstat -at # 列出所有TCP埠 netstat -au # 列出所有UDP埠  &amp;ldquo;-a&amp;quot;選項意在顯示所有連接，當不附加&amp;rdquo;-n&amp;quot;選項時，它顯示的是本地計算機的 netbios名字&#43;埠號。 加了&amp;quot;-n&amp;quot;選項後，它顯示的是本地IP位址&#43;埠號。
-tracert tracert 是一個簡單的網絡診斷工具，可以列出分組經過的路由節點（通過tracert命令，就能知道本機與目標主機之間經過多台主機，即經過多少路由。）
-tracert www.google.com 網頁出不來故障排除
-如果連不上先ping 看看
-如果ping 不成功表示 DNS 或是防火牆沒有設定
-nslookup : DNS偵錯工具
-powershell指令 : tnc : 測試 port 有沒有通
-Test-NetConnection -ComputerName &amp;ldquo;www.google.com&amp;rdquo; -Port 443
-可以簡寫tnc
-tnc &amp;ldquo;www.google.com&amp;rdquo; -Port 443
-參考 ping、telnet、tracert簡介與使用 - IT閱讀
-windows網絡命令：ping、ipconfig、tracert、netstat、arp - 每日頭條
-https://medium.com/@CarterTsai/%E5%88%A9%E7%94%A8powershell%E7%9A%84test-netconnection%E4%BE%86%E5%8F%96%E4%BB%A3telnet%E4%BE%86%E6%AA%A2%E6%9F%A5%E7%B6%B2%E7%AB%99%E7%9A%84port%E6%9C%89%E6%B2%92%E6%9C%89%E8%A2%AB%E9%96%8B%E5%95%9F-5bc18909ce67
-</content>
-    </entry>
-    
-     <entry>
-        <title>SSlAndTLS</title>
-        <url>https://iankingh.github.io/post/net/sslandtlsandhttps/</url>
-        <categories>
-          <category>筆記</category>
-        </categories>
-        <tags>
-          <tag>SSL</tag><tag>TLS</tag>
-        </tags>
-        <content type="html"> SSL、TLS 以及 HTTPS 當我們瀏覽網頁時：網址列的開頭是不是有個 🔒鎖的圖案。
-這個鎖代表你現在連線到的網站是安全可信任的。
-即使用HTTPS (HTTP Secure) 連線，而不是使用不安全的HTTP protocol。
-SSL憑證(SSL certificate)的原理 SSL 的全名是 Secure Sockets Layer，即安全通訊端層，這是一種標準的技術，用於保持網際網路連線安全以及防止在兩個系統之間發送的所有敏感資料被罪犯讀取及修改任何傳輸的資訊，包括潛在的個人詳細資料。兩個系統可以是伺服器與用戶端 (例如購物網站與瀏覽器)，或者伺服器至伺服器 (例如，含有個人身份資訊或含有薪資資訊的應用程式)。
-這樣做是為了確保使用者與網站、或兩個系統之間傳輸的任何資料保持無法被讀取的狀態。此技術可使用加密演算法以混淆輸送中的資料，防止駭客在資料透過連線發送時讀取資料。此資訊可能是任何敏感或個人資訊，包括信用卡號與其他財務資訊、姓名與地址。
-SSL 讓瀏覽器（所謂的 client）要連到一個遠端網站（所謂的 server）之前，先要求這個網站提供身分認證，跟這個網站約定暗號（交換鑰匙），打好交情（建立加密的 session），才會心甘情願地跟這個網站連線。
-總共有 三個步驟 1. 建立連線 2. 憑證交換 3. 金鑰交換
-步驟如下：
-1.1 建立連線 - 客戶端和伺服器官表示想要發起 HTTPS 連線，說明自己支持的 SSL/TLS 版本和加密算法。伺服器端會回應客戶端說可以使用哪一種組合。瀏覽器對想要連線的網站送出連線請求，同時要求網站驗證自己。
-2.1 憑證交換 - 伺服器必須照明_自己是誰_。伺服器會拿出一張憑證，基本上這張憑證記載了伺服器的身份、位置（網址）、憑證的公鑰、有效日期和數位簽章。客戶端會確認是否要相信這張憑證，要麼這張憑證是被設定要信任，要麼這張憑證是由某個信任的機構 (CA) 簽署的。另外，這個機制其實可以雙向使用，伺服器端驗證客戶端的身份，不過這個機制很少用到
-2.2 憑證交換 - 網站將自己的 SSL 數位憑證 (SSL certificate) 回傳給 client，裡面包含了網站的 public key
-2.3 憑證交換 - 瀏覽器驗證網站回傳的的 root certificate，透過 chain of trust 機制 確認這個證明文件是否可以被信認，同時也確認這個憑證是否過期。
-3.1 金鑰交換- 當認證通過，瀏覽器會用網站的 public key 建立一個 symmetric session key。
-3.2 金鑰交換 - 網站用自己的 private key 解讀 session key，並且回傳一個確認訊息，開始一個被 SSL 保護的 session。
-3.3 金鑰交換 - 這個 session key 會被用來加密所有之後瀏覽器與網站之間傳送的資料。
-SSL Handshake 在 TCP Three-way Handshake 完成之後，如果 Alice 有希望使用 SSL 加密時就會開始做 SSL Handshake。
-時序圖如下：
-SSL在傳輸之前事先用來溝通雙方（用戶端與伺服器端）所使用的加密演算法或密鑰交換演算法，或是在伺服器和用戶端之間安全地交換密鑰及雙方的身分認證等相關規則，讓雙方有所遵循。在身分認證方面，SSLHandshake可用來認證伺服器的身分。SSL Handshake的運作流程如下所述：
-(1) SSL用戶端利用Client Hello訊息將本身支援的SSL版本、加密演算法、演算法等資訊發送給SSL伺服器。
-(2) SSL伺服器收到Client Hello訊息並確定本次通訊採用的SSL版本和加密套件後，利用Server Hello訊息回覆給SSL用戶端。
-(3) SSL伺服器將利用Certificate訊息將本身公鑰的數位憑證傳給SSL用戶端。
-(4) SSL伺服器發送Server Hello Done訊息，通知SSL用戶端版本和加密套件協商結束，並開始進行密鑰交換。
-(5) 當SSL用戶端驗證SSL伺服器的證書合法後，利用伺服器的證書中之公鑰加密SSL用戶端隨機生成的Premaster Secret（這是一個用在對稱加密密鑰產生中的46位元組的亂數字），並透過Client Key Exchange消息發送給SSL伺服器。
-(6) SSL用戶端發送Change Cipher Spec消息，通知SSL伺服器後續報文將採用協商好的密鑰和加密套件進行加密。
-(7) SSL用戶端計算已交互的握手消息的Hash值，利用協商好的密鑰和加密演算法處理Hash值，並透過Finished消息發送給SSL伺服器。SSL伺服器利用同樣的方法計算已交互的握手消息的Hash值，並與Finished消息的解密結果比較，如果兩者相同，則證明密鑰和加密套件協商成功。
-(8) SSL伺服器發送Change Cipher Spec訊息，通知SSL用戶端後續傳輸將採用協商好的密鑰和加密套件進行加密。
-(9) SSL伺服器計算已交互的握手消息的Hash值，利用協商好的密鑰和加密套件處理Hash值，並透過Finished消息發送給SSL用戶端。SSL用戶端利用同樣的方法計算已交互的握手消息的Hash值，並與Finished消息的解密結果比較，如果兩者相同，且MAC值驗證成功，則證明密鑰和加密套件協商成功。在SSL用戶端接收到SSL伺服器發送的Finished消息後，如果解密成功，則可以判斷SSL伺服器是數位證書的擁有者，即SSL伺服器身分驗證成功。這是因為只有擁有私鑰的SSL伺服器才能從Client Key Exchange消息中解密得到Premaster Secret，從而間接地實現了SSL用戶端對SSL伺服器的身分驗證。
- SSL 1.0 是由 Netscape 設計的，但時間不詳。 SSL 2.0 1995 年發布，2011 年棄用。 SSL 3.0 1996 年發布，2015 年棄用。後來 IETF 也將此協定特別發布了 RFC 6101 作為歷史記錄。  TLS TSL 的全名是 Transport Layer Security 傳輸層安全性)是更新、更安全的 SSL 版本。我們仍將安全性憑證稱為 SSL，因為這是較常用的詞彙，不過當您透過DigiCert購買 SSL 時，您所購買的其實是最新的 TLS 憑證及 ECC、RSA 或 DSA 的加密選項。
- TLS 1.0 1999 年 IETF 將 SSL 標準化，發布了 RFC 2246，同時改名為 TLS。也因此 SSL 3.0 和 TLS 1.0 其實沒有什麼太大差別，甚至可以說是一樣的東西。而 TLS 1.0 也支援相容 SSL 3.0 的功能，但這做法同時也降低了安全性。 TLS 1.1 2006 年發布 RFC 4346，雖然目前沒什麼問題，還是計劃於 2020 年棄用 TLS 1.2 2008 年發布 RFC 5246，可運作在 HTTP/2 上。 2014 年，Google 發現了 SSL 3.0 有致命的安全性漏洞，加上 TLS 1.0 因為加密模式設計不良，會造成加密內容被解密，因此馬上變成主要的資安檢核項目之一，建議早日關閉。 TLS 1.3 2018 年發布 RFC 8446  注意看了一下，TLS 每個 RFC 都是 46 結尾，不知道是不是故意的。
-值得一提的是，HTTP/2 協定是允許非加密的，同時也允許 TLS 1.2 或更新的版本，但目前主流瀏覽器都只實作加密的 HTTP/2，這讓 HTTP/2 &#43; TLS 變成了強制標準。
-TLS 運作原理 TLS 在 OSI 模型裡，它屬於傳輸層的協定，而簡介 HTTP 是有提到 HTTP 是應用層協定。而 OSI 模型在設計上是符合里氏替換原則與依賴反轉原則的，這代表傳輸層是否有 TLS 是不會影響應用層的 HTTP；反之，不管應用層是 HTTP、FTP 或 SMTP 等，都能使用 TLS 加密。
-TCP Three-way Handshake 傳輸層上還有另一個廣泛使用的協定－－RFC 793 - Transmission Control Protocol（TCP），裡面有提到一開始建立連線的方法，即為 Three-way Handshake。
-@startumlAlice -&amp;gt; Bob: SYNAlice &amp;lt;- Bob: SYN-ACKAlice -&amp;gt; Bob: ACK@enduml 簡單來說，這過程有點像在打電話：
-  Alice：「喂？」
-  Bob：「喂？有聽到嗎？」
-  Alice：「有聽到了！」
-  然後就可以開始正常講話了。
-HTTPS HTTPS 全名 超文本傳輸安全協定，那個 S 就是 Secure 的意思；HTTPS 透過 HTTP 進行通訊，但通訊過程使用 SSL/TLS 進行加密，藉由類似於前述的加密方式，在 HTTP 之上定義了相對安全的資料傳輸方法。
-由於非對稱加密的運算量較高，傳遞回應較慢；實際的架構上，會透過公開金鑰加密傳遞出共用的金鑰，再透過共用金鑰加密進行後續的傳遞，兼顧了安全性及傳遞速度。
-HTTPS (Hyper Text Transfer Protocol Secure，超級文字傳輸協議安全) 會在網站受到 SSL 憑證保護時在網址中出現。該憑證的詳細資料包括發行機構與網站擁有人的企業名稱，可以透過按一下瀏覽器列上的鎖定標記進行檢視。
-基本的public key, private key 和 https的關系如下：
-(1) 主機(server)上要先生成private key, public key兩把key。( 可以互相上鎖、解鎖 )
-其中，private key要留在主機裡，public key則是公開給全世界知道
-(2) 當一般使用者在瀏覽網頁時拿到這台主機的public key之後，browser就可以靠public key來加密，由此而建立https
-然而，實際上，在(2) 的步驟，一般使用者拿到public key時，他心裡有一個疑問，「我怎麼知道，現在給我public key的你，沒有被別人冒用了呢？」 這種時候，使用者的瀏覽器就會冒出警告訊息，說收到的public key並沒有被認證過。
-於是，為了電子商務的安全性，就要由第三方公正機關 「憑證中心」來代為處理這個「信賴」的問題。將上述的模型複雜化，引入了「憑證中心」這個角色之後，就變成如下：
-(1) 主機(server)上要先生成private key, public key兩把key。( 可以互相上鎖、解鎖 )
-其中，private key要留在主機裡，public key則是要先做加工之後，才可以讓全世界得知。
-(2) public key送給憑證中心簽署認證。這種時候，因為要送public key和相關的一些網站基本資訊出去給憑證中心簽署認證，需要把public key放進一個文件檔，這個文件檔就叫做certificate signing request，副檔名通常是CSR
-(3) 憑證中心簽署完畢後的public key，又可以稱之為ceriticate 。
-certificate自憑證中心取回之後，要安裝入主機(server)，作為SSL的public key 來使用
-(4) 當一般使用者在瀏覽網頁時拿到這台主機的public key( 這時候可以叫它certificate )之後，browser裡頭早就預先安裝好的憑證中心public key會認証這個certificate，然後回報說，這個網站的https是沒有問題的。於是browser就可以用public key來加密，由此而建立https ( 如此一來，browser就不會跳出警告訊息了。)
-憑證的信任機制 一般來說，憑證要被信任，要滿足以下兩種需求之一：
-  這張憑證是由某一個你信任的組織 (CA, Certificate Authority, 憑證授權中心) 簽發的 (root certificate, 根憑證)
-  憑證本身的 CA，又能夠證明是被 #1 裡面的 CA 信任的 (intermidiate certificate, 中介證書)
-  通常 #1 比較單純，各家瀏覽器都會內建一份清單，記載有什麼 CA 是可以被相信的。要進入這個名單的流程非常的嚴謹，而且，由於事關重大，若 CA 做了什麼不太好的事情，那很快就會從這個清單內驅逐出去。不過實務上，除了看瀏覽器裡面的清單以外，也會看作業系統內帶的清單。兩份清單都可以自己做增減。
-名單的控管，可以參考一下 Mozilla CA Certificate Store，至於從名單內被驅逐出的範例，可以參考一下 WoSign 和 中國官方的CA, CNNIC。
-至於 #2 的部分，會需要「數位簽章」的機制來做驗證。
-數位簽章 一張憑證可以被另一個授權中心做簽章的動作。正常狀況下，簽章代表著授權中心已經確認過原憑證持有方是真的擁有這個位置（網址）。實務上，這個授權中心會拿自己的私鑰去幫這張憑證的內容做加密，然後把這個密文嵌在憑證當中，當作數位簽章。這個流程和前述非對稱加密的流程是相反的，在數位簽章的狀況下，任何人都能拿這家憑證中心的公鑰去解開這張憑證，來確認這簽章是正常的。
-所以流程是這樣：
-  你要進行 HTTPS 連線，雙方做 Hello
-  伺服器丟一張憑證給你，憑證上面寫說他被某 CA 簽了
-  你剛好有這家 CA 的公鑰，拿公鑰解他的憑證，看是不是解的出來，內容是否正常
-  繼續下一步
-  另外，這個方式可以連結很多張憑證，不過憑證一多，就要多花一點時間去檢查（重複2和3）。
-常見的狀況：自簽憑證 因為之前提過，任何人都能夠隨便生憑證，重點是「這張憑證是否被大家相信」。有時候，在開發流程中，你會需要用 HTTPS，但你生不出一張正常的憑證（例如你根本沒網域，或是沒錢買，或是來不及弄），所以你就必須要自己當自己的 CA，然後自己用那個 CA 私鑰去生一張憑證出來。因為你自己的 CA 通常不會在信任名單裡面，所以大家跟你連線的時候，都會出現警示。
-這種狀況下，你還是正在使用 HTTPS，所以資料傳輸過程有加密。不過，除非你將這張憑證加入信任清單，不然你沒有辦法防止別人做「中間人攻擊（即假裝他是那台伺服器）」。
-機制弱點 前述提到，曾經發生過授權中心被除名的狀況。因為這些授權中心是可以讓任何憑證在大家的裝置上變得可用，因此，他們需要以非常嚴謹的態度來對待每一個憑證申請。被除名的 CNNIC，是因為某一間公司用中介證書簽了幾個 Google 網域底下的證書給其他人，而這張中介證書的根憑證是來自 CNNIC 的。因此，CNNIC 沒有做好管控措施，且這家公司是把憑證拿來做「竄改連線」的用途，因此就被除名了。
-HTTPS 或是任何一個系統，都不是完全安全的。他防止不了有 CA 違規的情形、也防止不了你在服務裡面寫 shit logic。但是它還是一個很有效的資料傳輸方式。
-SSL 相關名詞 TLS: Transport Layer Security Protocol 在上一篇文中有稍微提到 TLS 的歷史，簡而言之，由於 SSL 已經不再安全（POODLE 與 DROWN 是兩個曾經發生過的著名攻擊），所以現在已經被 TLS protocol 取代。慣性使然，當我們說 SSL（比如說 SSL 憑證）時，大部分情況其實是在說 TLS。
-CA: Certificate Authority 數位憑證認證機構，簡稱 CA，是負責發放與管理數位憑證 （certificate）的單位。前面提到進行 SSL 連線的前置作業是 server 要提供數位憑證讓瀏覽器驗證，但瀏覽器要怎麼驗證？它會去看這個憑證是不是被一個它相信的 CA 簽署的。如果是，那瀏覽器就相信這個 server 可以信任，如果不是，那瀏覽器就再看這個 CA 有沒有它自己的 certificate，如果有，而這個 certificate 是被一個瀏覽器信任的 CA 簽的，那就放行，如果沒有，就再往下找。如果一路找下去，找不到可以信任的 CA，就失敗。
-假設今天世界上有甲乙丙三家 CA。CA 丙簽了 CA 乙的憑證，而 CA 乙簽了 CA 甲的憑證。瀏覽器小明想連線到網站 A，而小明只知道 CA 丙。連線前，網站 A 傳了它的 certificate 們給小明。小明先看第一張，眉頭一皺，發現 A 的憑證是不認識的 CA 甲簽的，往下翻，看到 CA 乙簽了甲的憑證，但小明也不認識乙，所以繼續往下翻，下一張是乙的憑證，是 CA 丙簽署的 — bingo! 於是網站 A 順利與小明建立連線。
-所以 CA 其實很像保證人的角色，它向瀏覽器保證一個網域的合法性，讓想要連線的那一方確保自己的連線對象是安全的。
-Chain of Trust 這樣一層一層檢查 certificate，直到找到信任的 CA 的機制，叫做 chain of trust。你可能會疑惑，為什麼不直接讓所有 server 都帶著 CA 丙簽的 certificate 就好了？為什麼還需要經過這麼多層？主要原因是安全。如果今天壞人 B 找到一個破解 CA 甲的方法，可以偽造甲的簽名，這個漏洞一旦被發現，所有被甲簽過的憑證就都沒有意義了，那些網域必須要重新找 CA 來擔保自己的合法性。
-使用 chain of trust 的好處是，它可以降低 root CA（chain of trust 的源頭 CA，就是例子中的 CA 丙）被暴露的風險。不過這也代表，要成為一個 root CA，安全防護必須要做到謹慎再謹慎，不然如果 root CA 的私鑰被攻破了，後果不堪設想。
-OpenSSL SSL/TLS 是 protocol，而 OpenSSL 就是一個開源的實作（SSH 與 OpenSSH 也是同樣的關係）。如果你的電腦是 Unix 系列的，很大的機率是系統已經裝好 OpenSSL 了。如果是 Windows 系統，也可以直接去網站下載最新的版本。
-$ openssl versionLibreSSL 2.6.5 可以先打開終端機，試試 version 指令，如果有回傳版本給你，就代表你的電腦已經有 OpenSSL 了。
-用 $openssl help（或是任何 OpenSSL 不認得的指令…）就可以看到 OpenSSL 提供的指令包。
-openssh commands
-其中 s_client是一個挺實用的工具，讓我們診斷與測試 SSL 的安全連線。下面示範測試 jennycodes.me 網站的 SSL 狀態。
-$ openssl s_client -connect jennycodes.me:443 -servername jennycodes.meCONNECTED(00000005)depth=2 C = IE, O = Baltimore, OU = CyberTrust, CN = Baltimore CyberTrust Rootverify return:1depth=1 C = US, ST = CA, L = San Francisco, O = “CloudFlare, Inc.”, CN = CloudFlare Inc ECC CA-2verify return:1depth=0 C = US, ST = CA, L = San Francisco, O = “CloudFlare, Inc.”, CN = sni.cloudflaressl.comverify return:1— -Certificate chain0 s:/C=US/ST=CA/L=San Francisco/O=CloudFlare, Inc./CN=sni.cloudflaressl.comi:/C=US/ST=CA/L=San Francisco/O=CloudFlare, Inc./CN=CloudFlare Inc ECC CA-21 s:/C=US/ST=CA/L=San Francisco/O=CloudFlare, Inc./CN=CloudFlare Inc ECC CA-2i:/C=IE/O=Baltimore/OU=CyberTrust/CN=Baltimore CyberTrust Root— -Server certificate— — -BEGIN CERTIFICATE — — -（略）— — -END CERTIFICATE — — -subject=/C=US/ST=CA/L=San Francisco/O=CloudFlare, Inc./CN=sni.cloudflaressl.comissuer=/C=US/ST=CA/L=San Francisco/O=CloudFlare, Inc./CN=CloudFlare Inc ECC CA-2— -No client certificate CA names sentServer Temp Key: ECDH, X25519, 253 bits— -SSL handshake has read 2642 bytes and written 307 bytes— -New, TLSv1/SSLv3, Cipher is ECDHE-ECDSA-CHACHA20-POLY1305Server public key is 256 bitSecure Renegotiation IS supportedCompression: NONEExpansion: NONENo ALPN negotiatedSSL-Session:Protocol : TLSv1.2Cipher : ECDHE-ECDSA-CHACHA20-POLY1305Session-ID: 5FEF2BA2A72483061BEB18C92222BBC507A1A95749AE67094F2863D537B7C600（略）Verify return code: 0 (ok)— -closed 結果長這樣。解釋一下，我目前用的 SSL 是直接從 CloudFlare （CDN 伺服器）設定，不影響效用，但是 certificate 不會看到 jennycodes.me 的字樣。從上面一路看下來，certificate chain 的部分可以看到 openssl client 經過兩步 chain of trust 就認證了 jennycodes.me 網域（CloudFlare Inc ECC CA-2 -&amp;gt; Baltimore CyberTrust Root），緊接著的是 server certificate 內容，再下面可以注意的是 SSL-Session 下的 protocol 是用 TLSv1.2，而不是 SSL。
-如果加上 -state 指令，變成：
-$openssl s_client -connect jennycodes.me:443 -servername jennycodes.me -state 就會看到前面出現這段
-SSL_connect:before/connect initialization SSL_connect:SSLv3 write client hello ASSL_connect:SSLv3 read server hello Adepth=2 C = IE, O = Baltimore, OU = CyberTrust, CN = Baltimore CyberTrust Rootverify return:1depth=1 C = US, ST = CA, L = San Francisco, O = “CloudFlare, Inc.”, CN = CloudFlare Inc ECC CA-2verify return:1depth=0 C = US, ST = CA, L = San Francisco, O = “CloudFlare, Inc.”, CN = sni.cloudflaressl.comverify return:1SSL_connect:SSLv3 read server certificate ASSL_connect:SSLv3 read server key exchange ASSL_connect:SSLv3 read server done ASSL_connect:SSLv3 write client key exchange ASSL_connect:SSLv3 write change cipher spec ASSL_connect:SSLv3 write finished ASSL_connect:SSLv3 flush dataSSL_connect:SSLv3 read server session ticket ASSL_connect:SSLv3 read finished A 這是連線前的握手過程，逐步確認 SSL 連線的步驟是否正確，滿好玩的。
-再來，上面的指令只會顯示最前面那張 certificate 內容（也就是 server certificate）。如果想要看到所有的 certificate ，可以加上 -showcerts：
-$openssl s_client -connect jennycodes.me:443 -servername jennycodes.me -showcerts 就可以拿到包含 root certificate 的所有憑證了。
-光是 s_client 就有很多指令可以用，這邊送上 s_client 的 man page，請好奇的人自行欣賞。
-參考 [Security] SSL — HTTPS 背後的功臣. Security 資訊安全系列文第三篇！ | by 施靜樺 | Starbugs Weekly 星巴哥技術專欄 | Medium
-https://medium.com/starbugs/security-ssl-https-%E8%83%8C%E5%BE%8C%E7%9A%84%E5%8A%9F%E8%87%A3-df714e4df77b
-HTTPS/SSL/TLS 概述，整體流程、憑證、數位簽章 - iT 邦幫忙::一起幫忙解決難題，拯救 IT 人的一天
-https://ithelp.ithome.com.tw/articles/10193095
-SSL憑証(SSL certificate)的原理 - 知識庫 - 無限空間,虛擬主機,網域註冊,網域管理
-https://support.unethost.com/index.php?rp=/knowledgebase/82/SSLSSL-certificate.html
-一文搞懂 HTTP 和 HTTPS 是什麼？兩者有什麼差別｜ALPHA Camp Blog
-https://tw.alphacamp.co/blog/http-https-difference
-簡介 SSL、TLS 協定 - iT 邦幫忙::一起幫忙解決難題，拯救 IT 人的一天
-https://ithelp.ithome.com.tw/articles/10219106
-網站SSL加密原理簡介 | 網管人
-https://www.netadmin.com.tw/netadmin/zh-tw/technology/6F6D669EB83E4DC9BEA42F1C94636D46
-</content>
-    </entry>
-    
-     <entry>
-        <title>IP</title>
-        <url>https://iankingh.github.io/post/net/ip/</url>
-        <categories>
-          <category>技術</category>
-        </categories>
-        <tags>
-          <tag>ip</tag><tag>internet</tag>
-        </tags>
-        <content type="html"> 前言 在 TCP/IP 通訊協定組的 IP 層裡，用來辨識每台電腦的東西，稱為網際網路位址 ( Internet address ) 或 IP 位址 ( IP address )。 IP 位址是一個 32 位元的二進制數字，具有全域性，用來唯一的定義 Internet 上的一台電腦或一台路由器。 所有 IP 位址都是唯一的。「唯一」是指一個位址只定義一個與 Internet 的連接 ( connection )。Internet 上不可以有兩台裝置有著相同的 IP 位址。
-  一個 IP 位址為一個 32 位元的位址。
-  IP 位址是唯一的。
-  IPv4 的位址空間為 232 或 4,294,967,296。   私有網路 IP 範圍    RFC1918 規定區塊名 IP位址區段 IP數量 分類網路 說明 最大CIDR區塊 （子網路遮罩） 主機端位長     24位元區塊 10.0.0.0 – 10.255.255.255 16,777,216 單個A類網路 10.0.0.0/8 (255.0.0.0) 24位元   20位區塊 172.16.0.0 – 172.31.255.255 1,048,576 16個連續B類網路 172.16.0.0/12 (255.240.0.0) 20位   16位元區塊 192.168.0.0 – 192.168.255.255 65,536 256個連續C類網路 192.168.0.0/16 (255.255.0.0) 16位元    正是由於這些限制，當我們使用這些私有位址來設定網路的時候，就無需擔心會和其它也使用相同位址的網路衝突。而這些無需註冊就能自由使用的 IP ，我們稱之為 私有 IP( Private IP )。當我們架設 IP 網路的時候，私有 IP 給與我們很大的方便。比方說：您目前的公司還沒有連上Internet，且也沒有或得公共 IP 的註冊。倘若使用公共 IP 的話，等到以後真正要連上網路的時候，就很可能和別人衝突了。其壞處是：由於您的 IP 不是合法授權使用的，別人跟本連不進來，而且，與您衝突的 IP 您卻永遠沒法連上去(若對方是您的最大客戶可就慘了)。若是那時候再重新規劃 IP 的話，將是件非常頭痛的問題！
-解決的辦法是：我們可以先利用私有位址來架設網路，等到真要連上 intetnet 的時候，我們可以使用代理伺服器( proxy )或 IP 轉換( NAT &amp;mdash; Network Addresss Translation) 等技術，配合新註冊的 IP 就可以了。
-由於私有位址在 Internet 上是不能路由的，用來架設企業內部網路，在安全上面也是有所幫助的。
-路由器 兩個不同的網域是無法透過廣播來資料的傳遞，此時便需要 IP 的路徑選擇 (routing) 功能，才能決定要透過哪個網路來傳送封包， 路由器乃是決定最佳路徑的方式，如果沒有路由器的話，就無法在不同網域之間傳送資料了。 例如，192.168.0.0 與 192.168.1.0 是不同網域，所以主機 A 與主機 B 是不能直接互通資料，必須有路由器找尋需要經過哪些網路才能到達 B 網域的主機 B。
- 查詢 IP 封包的目標 IP 位址： 當主機 A 有 IP 封包需要傳送時，主機會查閱 IP 封包表頭的目標 IP 位址； 查詢主機所在的網域： 當主機 A 發現目標 IP 與本機 IP 的 Net_ID 相同時 (同一網域)，則主機 A 會直接透過區域網路功能，將資料直接傳送給目的地主機； 送出封包至路由器： 在本例中，主機 A 與主機 B 並非同一網域，因此主機 A 直接將該 IP 封包送到路由器上，路由器接收到這個封包後，會分析路由資料表當中與目的地網路之間的距離、 下一個負責中繼的路由器、與路由器互相連接的來源端 Port，然後繼續傳輸到正確的目標主機 B。如下圖所示：  參考
-http://dns-learning.twnic.net.tw/internet/intro7.html
-https://www.netadmin.com.tw/netadmin/zh-tw/technology/EFA52337DD5D4026BB9E594A3B71EC5B
-https://zh.wikipedia.org/wiki/%E4%B8%93%E7%94%A8%E7%BD%91%E7%BB%9C
-http://kevin.hwai.edu.tw/~kevin/material/EAssistant/IP_Class.htm
-</content>
-    </entry>
-    
-     <entry>
-        <title>Git_pull_error</title>
-        <url>https://iankingh.github.io/post/git/git_error/</url>
-        <categories>
-          <category>筆記</category>
-        </categories>
-        <tags>
-          <tag>git</tag>
-        </tags>
-        <content type="html"> git pull error筆記 當 git pull 出現
-error: Your local changes to the following files would be overwritten by merge: 意思是本地新修改的程式碼檔案，將會被git伺服器上的程式碼覆蓋
-git pull == git fetch &#43; git merge
-發生衝突時 可以先試以下步驟
-先
-git fetch  再
-git merge origin/master 如果還是無法解決可以使用的解決方法如下：
-方法1：使用stash 如果你想保留剛才本地修改的程式碼，並把git伺服器上的程式碼pull到本地（本地剛才修改的程式碼將會被暫時封存起來）
-git stash git pull origin mastergit stash pop **注：**用 pop 指令，可以把某個 Stash 拿出來並套用在目前的分支上。套用成功之後，那個套用過的 Stash 就會被刪除。
-方法2 : 放棄變更 如果你想完全地覆蓋本地的程式碼，只保留伺服器端程式碼，則直接回退到上一個版本，再進行pull：
-git reset --hardgit pull origin master 注： 其中origin master表示git的主分支。
-方法3 : 使用分支( 推薦 正統)  切分支出去commit 在切回 master fetch 再進行 merge  git checkout -b &amp;lt;branch&amp;gt;git commit -m &amp;quot;add dev&amp;quot; git checkout master git merge branch EX :
- 注： 感謝 KFC 前輩的提供正確解決衝突的教學
-參考 git pull遇到錯誤：error: Your local changes to the following files would be overwritten by merge:解決方法
-【狀況題】手邊的工作做到一半，臨時要切換到別的任務 - 為你自己學 Git | 高見龍
-</content>
-    </entry>
-    
-     <entry>
-        <title>Docker_Compose</title>
-        <url>https://iankingh.github.io/post/docker/docker_compose/</url>
-        <categories>
-          <category>筆記</category>
-        </categories>
-        <tags>
-          <tag>docker</tag>
-        </tags>
-        <content type="html"> Docker_Compose 筆記 安裝 docker-compose 下載 curl -L &amp;quot;https://github.com/docker/compose/releases/download/1.29.0/docker-compose-$(uname -s)-$(uname -m)&amp;quot; -o /usr/local/bin/docker-compose 安裝 chmod &#43;x /usr/local/bin/docker-compose 查看版本 docker-compose version 測試 第一步，創建 Spring boot 服務  第二步，創建 Dockerfile  第三步，使用 docker-compose 定義一個文件 version: &#39;2&#39;services:web:build: .ports:- &amp;quot;5000:5000&amp;quot;redis:image: &amp;quot;redis:alpine&amp;quot; 這個 compose.yml 定義2個服務，一是Spring boot 一個是 redis 服務。
- Pyhon Web 服务：使用 Dockerfile 构建了当前镜像。将 Web 容器内部的5000端口映射到 host 的5000端口；并将 Web 容器与 redis 容器连接。 redis服务：该容器直接由官方的 redis 镜像创建。  第四步，使用 Compose 使用命令docker-compose up启动
-docker-compose up 启动成功之后，在浏览器访问：http://ipaddress:8080/ ，返回如下：
-Hello World! I have been seen 1 times. img 要放圖片 刷新再次访问返回
-Hello World! I have been seen 2 times. img 要放圖片 不断的刷新数字会不断的增长。
-Docker Compose 常用命令 使用docker-compose up -d 在後台啟動服務
-啟動所有容器，-d 將會在後臺啟動並運行所有的容器
-docker-compose up -d 使用docker-compose ps 查看啟動的服務
-列出專案中目前的所有容器
-docker-compose ps Name Command State Ports ------------------------------------------------------------- 使用docker-compose stop停止服務。
-docker-compose stop Stopping composetest_web_1 ... doneStopping composetest_redis_1 ... done docker-compose restart ：重啟專案中的服務
-docker-compose 命令 docker-compose -h 查看幫助 docker-compose -h  create and start containers docker-compose up start services with detached mode docker-compose -d up start specific service docker-compose up &amp;lt;service-name&amp;gt; stop services 停止已經處於運行狀態的容器，但不刪除它。通過 docker-compose start 可以再次啟動這些容器 docker-compose stop start service 啟動已經存在的服務容器 docker-compose start list images docker-compose images list containers docker-compose ps display running containers docker-compose top stop all contaners and remove images, volumes 停用移除所有容器以及網路相關 docker-compose down remove stopped containers 刪除所有（停止狀態的）服務容器。推薦先執行 docker-compose stop 命令來停止容器 docker-compose rm  kill services docker-compose kill 查看服務容器的輸出 docker-compose logs 構建（重新構建）專案中的服務容器 服務容器一旦構建後，將會帶上一個標記名，例如對於 web 項目中的一個 db 容器，可能是 web_db。可以隨時在專案目錄下運行 docker-compose build 來重新構建服務
-docker-compose build 拉取服務依賴的鏡像 docker-compose pull 在指定服務上執行一個命令 docker-compose run ubuntu ping docker.com 設置指定服務運行的容器個數。通過 service=num 的參數來設置數量 docker-compose scale web=3 db=2 參考 Install Docker Compose | Docker Documentation
-使用 docker-compose 替代 docker run - 张志敏的技术专栏
-Angular — Local Development With Docker-Compose | by Bhargav Bachina | Bachina Labs | Medium
-</content>
-    </entry>
-    
-     <entry>
-        <title>AngularDeployTomcat</title>
-        <url>https://iankingh.github.io/post/angular/angulardeploytomcat/</url>
-        <categories>
-          <category>筆記</category>
-        </categories>
-        <tags>
-          <tag>Angular</tag>
-        </tags>
-        <content type="html"> Angular Deploy Tomcat 1. 編譯 到專案目錄執行 編譯指令如下
-ng build --prod --base-href /project_Name/ 匯出 index.html 如下
-&amp;lt;!doctype html&amp;gt;&amp;lt;html lang=&amp;quot;en&amp;quot;&amp;gt;&amp;lt;head&amp;gt;&amp;lt;meta charset=&amp;quot;utf-8&amp;quot;&amp;gt;&amp;lt;title&amp;gt;Title&amp;lt;/title&amp;gt;&amp;lt;base href=&amp;quot;/project_Name/&amp;quot;&amp;gt;&amp;lt;meta name=&amp;quot;viewport&amp;quot; content=&amp;quot;width=device-width, initial-scale=1&amp;quot;&amp;gt;&amp;lt;link rel=&amp;quot;icon&amp;quot; type=&amp;quot;image/x-icon&amp;quot; href=&amp;quot;favicon.ico&amp;quot;&amp;gt;&amp;lt;link href=&amp;quot;https://fonts.googleapis.com/css?family=Roboto:300,400,500&amp;amp;display=swap&amp;quot; rel=&amp;quot;stylesheet&amp;quot;&amp;gt;&amp;lt;link href=&amp;quot;https://fonts.googleapis.com/icon?family=Material&#43;Icons&amp;quot; rel=&amp;quot;stylesheet&amp;quot;&amp;gt;&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;styles.479444a78a429503e78e.css&amp;quot;&amp;gt;&amp;lt;/head&amp;gt;&amp;lt;body class=&amp;quot;mat-typography&amp;quot;&amp;gt;&amp;lt;app-root&amp;gt;&amp;lt;/app-root&amp;gt;&amp;lt;script src=&amp;quot;runtime.c51bd5b1c616d9ffddc1.js&amp;quot; defer&amp;gt;&amp;lt;/script&amp;gt;&amp;lt;script src=&amp;quot;polyfills-es5.272209ba9e789fcad1c2.js&amp;quot; nomodule defer&amp;gt;&amp;lt;/script&amp;gt;&amp;lt;script src=&amp;quot;polyfills.7f244a820a4deda6d9fd.js&amp;quot; defer&amp;gt;&amp;lt;/script&amp;gt;&amp;lt;script src=&amp;quot;main.d604dab66ca826078124.js&amp;quot; defer&amp;gt;&amp;lt;/script&amp;gt;&amp;lt;/body&amp;gt;&amp;lt;/html&amp;gt; &amp;ndash;prod : 把 src/environments/environment.ts 檔案替換成針對特定目標的版本 , 且編譯出來的檔案會小很多
-&amp;ndash;output-path : 表示輸出路徑 : ex : 輸出到當前目錄的 web資料夾底下
-&amp;ndash;base-href : 修改 index.html 裡的 : ex : 2.部屬 把project/dist裡的project的資料夾 移動到 $Tomcat/webapps
-3. Deploy Tomcat9 調整 server.xml，將 http port 改為 80，https port 改為 443。
-&amp;lt;Connector port=&amp;quot;80&amp;quot; protocol=&amp;quot;HTTP/1.1&amp;quot;connectionTimeout=&amp;quot;20000&amp;quot;redirectPort=&amp;quot;443&amp;quot; /&amp;gt; 4. Installing services Install the service named &amp;lsquo;Tomcat9&amp;rsquo;
-service.bat install 5. 404 如何解決 因為 Angular 是 SPA，所以在網頁伺服器要將所有的 request 全部導回到 index.html 才可以正常地顯示，如果在沒有設定下直接打開網址 web/home，他會去找 home 資料夾下的 index.html
-(1)將以下代碼放在部署文件夾的web.xml中：
-&amp;lt;error-page&amp;gt;&amp;lt;error-code&amp;gt;404&amp;lt;/error-code&amp;gt;&amp;lt;location&amp;gt;/index.html&amp;lt;/location&amp;gt;&amp;lt;/error-page&amp;gt; (2)將HashLocationStrategy與路由的URL中的＃一起使用
-修改 app-routing.module.ts
-使用: RouterModule.forRoot(routes, { useHash: true }) 代替: RouterModule.forRoot(routes)
-使用HashLocationStrategy，您的網址將類似於：
-http://localhost/#/route
-app-routing.module.ts
-@NgModule({imports: [RouterModule.forRoot(routes, { useHash: true })],exports: [RouterModule]}) (3) Tomcat URL Rewrite Valve：如果找不到資源，則使用服務器級別的配置來重寫URL，以重定向到index.html。
-(3.1)在server.xml中配置RewriteValve
-&amp;lt;?xml version=&amp;quot;1.0&amp;quot; encoding=&amp;quot;utf-8&amp;quot;?&amp;gt;&amp;lt;Context&amp;gt;&amp;lt;Valve className=&amp;quot;org.apache.catalina.valves.rewrite.RewriteValve&amp;quot; /&amp;gt;&amp;lt;/Context&amp;gt; (3.2)在rewrite.config中寫入重寫規則
-創建目錄結構–〜/ conf / Catalina / localhost /並使用以下內容在其中創建rewrite.config文件。注意-這裡我考慮將其/web作為應用程序的上下文路徑。
-RewriteCond %{REQUEST_PATH} !-fRewriteRule ^/web/(.*) /web/index.html 參考 Angular
-Apache Tomcat 9 (9.0.53) - Windows Service How-To
-maven - Url rewriting Angular 4 on tomcat 8 server - Stack Overflow
-如何將 Angular 2 含有路由機制的 SPA 網頁應用程式部署到 IIS 網站伺服器 | The Will Will Web
-https://forum.angular.tw/t/topic/881/12
-https://forum.angular.tw/t/topic/1839/2
-</content>
-    </entry>
-    
-     <entry>
-        <title>DockerFile</title>
-        <url>https://iankingh.github.io/post/docker/dockerfile/</url>
-        <categories>
-          <category>筆記</category>
-        </categories>
-        <tags>
-          <tag>docker</tag>
-        </tags>
-        <content type="html"> Dockerfile Dockerfile 是用來描述映像檔（image）的文件。
-所謂的 Image，就是生產 Container 的模版，你可以從 Docker Hub 官方下載或是根據官方的 Image 自己加工後打包成 Image 或是完全自己使用 Dockerfile 描述 Image 內容來製作 Image。
-而 Container 則是透過 Image 產生隔離的執行環境，稱之為 Container，也就是我們一般用來提供 microservice 的最小單位。
-簡單示例 Dockerfile 一般位於構建上下文的根目錄下，也可以通過-f指定該檔的位置：
-$ docker build -f /path/to/a/Dockerfile . 構建時，還可以通過-t參數指定構建成鏡像的倉庫、標籤。
-映像標籤
-$ docker build -t nginx:v1 . 命令最後有一個. 表示目前的目錄
-#從Docker hub 下載基礎的 image，可能是作業系統環境或是程式語言環境FROM nginx#維護者資訊MAINTAINER ianhunag@gmail.com # 鏡像操作指令執行 CMD 指令跑的指令RUN echo &#39;&amp;lt;h1&amp;gt;Hello, Docker!&amp;lt;/h1&amp;gt;&#39; &amp;gt; /usr/share/nginx/html/index.html 使用 docker run 命令來啟動容器
-$ docker run --name docker_nginx_v1 -d -p 80:80 nginx:v1 這條命令會用 nginx 鏡像啟動一個容器，命名為docker_nginx_v1，並且映射了 80 埠，這樣我們可以用流覽器去訪問這個 nginx 伺服器：
-緩存
-Docker 守護進程會一條一條的執行 Dockerfile 中的指令，而且會在每一步提交並生成一個新鏡像，最後會輸出最終映像的ID。生成完成後，Docker 守護進程會自動清理你發送的上下文。
-Dockerfile檔中的每條指令會被獨立執行，並會創建一個新鏡像，RUN cd /tmp等命令不會對下條指令產生影響。
-Docker 會重用已生成的中間鏡像，以加速docker build的構建速度。以下是一個使用了緩存鏡像的執行過程：
-$ docker build -t svendowideit/ambassador . Sending build context to Docker daemon 2.048kBStep 1/3 : FROM nginx---&amp;gt; 7e4d58f0e5f3Step 2/3 : MAINTAINER ianhunag@gmail.com---&amp;gt; Using cache---&amp;gt; d0140a7f8c8eStep 3/3 : RUN echo &#39;&amp;lt;h1&amp;gt;Hello, Docker!&amp;lt;/h1&amp;gt;&#39; &amp;gt; /usr/share/nginx/html/index.html---&amp;gt; Using cache---&amp;gt; 81a660be4e2bSuccessfully built 81a660be4e2bSuccessfully tagged svendowideit/ambassador:latest 構建緩存僅會使用本地父生成鏈上的鏡像，如果不想使用本地緩存的鏡像，也可以通過&amp;ndash;cache-from指定緩存。指定後將不再使用本地生成的鏡像鏈，而是從鏡像倉庫中下載。
-參考
-Dockerfile 使用介紹 - 純潔的微笑博客
-http://www.ityouknow.com/docker/2018/03/12/docker-use-dockerfile.html
-</content>
-    </entry>
-    
-     <entry>
-        <title>AngularUseCompodoc</title>
-        <url>https://iankingh.github.io/post/angular/angularusecompodoc/</url>
-        <categories>
-          <category>筆記</category>
-        </categories>
-        <tags>
-          <tag>Angular</tag><tag>FrontEnd</tag>
-        </tags>
-        <content type="html"> Angularg use compodoc compodoc是一個用於產生 Angular 靜態網頁的工具
-Angular 使用 compodoc 產生說明文件
-安裝compodoc 以 local 模式安裝 npm install --save-dev @compodoc/compodoc 產生檔案 ./node_modules/.bin/compodoc -p tsconfig.json RUN server ./node_modules/.bin/compodoc -s  以global(全域) 模式安裝 npm install -g @compodoc/compodoc 產生文件 compodoc -p tsconfig.json 啟用本地文件網站 compodoc -p tsconfig.json -s 使用 npx(推薦) npx compodoc -p tsconfig.json -s -r 8888 指令 -p : 表示 產生文件
--s : 啟用文件網站
-jsDoc Tags @Injectab()export class HelloService{constructor(){}/*** Represents a hellWord.* @param {string} UserName - The UserName of the hellWord.* @param {string} age - The age of the hellWord.*/hellWord(UserName: string, age : string) {}} 參考 Angular 工具篇之文档管理 | 前端修仙之路
-Angular #10 Angular Documentation
-Javascript文檔註解規則使用方式@use JSDoc | ucamc
-你寫的文件別人看得懂嗎？：compodoc | Jonny Huang 的學習筆記
-</content>
-    </entry>
-    
-     <entry>
-        <title>AngularBsN02</title>
-        <url>https://iankingh.github.io/post/angular/angularbsn02/</url>
-        <categories>
-          <category>筆記</category>
-        </categories>
-        <tags>
-          <tag>Angular</tag><tag>FrontEnd</tag>
-        </tags>
-        <content type="html"> 從 0 開始的 Angular 生活 第2天- Angular CLI 建立的專案架構 angular.json Angular CLI 的設定檔 ，可以在這邊看到專案的一些設定 ,EX: 輸出目錄 , bulid 之類的。
-.editorconfig 編輯器設定檔，設定處理 tab 符號、換行等等。EditorConfig
-.gitignore 設定git 忽略那些檔案不要加入版本控管。
-karma.conf.js karma.conf.js: Angular 單元測試的工具。
-Karma - Spectacular Test Runner for Javascript (karma-runner.github.io)
-tsconfig.json TypeScript 編譯設定。
-tslint.json TypeScript 程式碼風格檢查器。
-package.json npm 的設定檔， scripts 區塊定義了在開發 Angular 時用到的命令 EX: ng serve 。
-node_modeles Folder 存放npm install 後所有被下載下來所有的套件。
-src Folder(重要) 根據 Angular 官網的 Style Guide 建立而成Angular 應用程式主要的原始碼。
-app Folder(重要) app.module 在這一個資料夾中 作為啟動的 module
-index.html SPA 的html , build 好的js 都會放到這邊 ,也可以當作一個入口。
-style.css 在這裡它是 「global styles」也就是整個應用程式都會套用到的 CSS 定義，全部都可以寫在這裡。
-main.ts main.ts 是 Angular 中 JavaScript 程式的進入點。(.ts 代表 TypeScript)
-bootstrapModule 表示以引入AppModule 啟動
-import { enableProdMode } from &#39;@angular/core&#39;;import { platformBrowserDynamic } from &#39;@angular/platform-browser-dynamic&#39;;import { AppModule } from &#39;./app/app.module&#39;;import { environment } from &#39;./environments/environment&#39;;if (environment.production) {enableProdMode();}platformBrowserDynamic().bootstrapModule(AppModule).catch(err =&amp;gt; console.error(err)); app.module.ts 根目錄的TS module
-import { BrowserModule } from &#39;@angular/platform-browser&#39;;import { NgModule } from &#39;@angular/core&#39;;import { FormsModule } from &#39;@angular/forms&#39;;import { AppRoutingModule } from &#39;./app-routing.module&#39;;import { AppComponent } from &#39;./app.component&#39;;@NgModule({declarations: [AppComponent],imports: [BrowserModule,AppRoutingModule,FormsModule],providers: [],bootstrap: [AppComponent]})export class AppModule { } app.component.ts 根目錄的 component ,進入的第一支 component
-import { Component } from &#39;@angular/core&#39;;@Component({selector: &#39;app-root&#39;,templateUrl: &#39;./app.component.html&#39;,styleUrls: [&#39;./app.component.scss&#39;]})export class AppComponent {title = &#39;firstAngular&#39;;} assets(資產) folder 放置所有的靜態檔案的資料夾，如額外的 JavaScript、JQery、CSS、圖片&amp;hellip;&amp;hellip;&amp;hellip;等等。
-environments folder 透過 TypeScript 定義一些環境變數。
-這個資料夾內有預設有兩個檔案，分別是 environment.ts 與 environment.prod.ts 。
-一般來說會有開發 ,sit ,uat ,prod 4種
- environment.ts environment.sit.ts environment.uat.ts environment.prod.ts  favicon.ico 瀏覽器業籤上面的圖示。
-polyfills.ts 當你的 Angular 應用程式同時要符合 IE 或舊版瀏覽器時。
-test.ts 測試設定檔決定是否要跑甚麼測試檔案
-tsconfig.app.json Typescripe編譯成Javascript時的編譯設定
-參考 [從 0 開始的 Angular 生活]No.2 檔案架構 | pvt5r486&amp;rsquo;s Blog
-Angular CLI 7.3 使用 ES2015 的 nomodule 屬性載入 Polyfills 函式庫 | The Will Will Web (miniasp.com)
-[DAY-19] Angular架構與學習資源介紹 - iT 邦幫忙::一起幫忙解決難題，拯救 IT 人的一天 (ithome.com.tw)
-</content>
-    </entry>
-    
-     <entry>
-        <title>Linux指令</title>
-        <url>https://iankingh.github.io/post/linux/linuxcommand/</url>
-        <categories>
-          <category>筆記</category>
-        </categories>
-        <tags>
-          <tag>Linux</tag>
-        </tags>
-        <content type="html"> Linux指令 修改檔案權限 chmod 777 file(資料夾名)chmod 777 -R file(資料夾名) R--&amp;gt;全部chmod -R 777 * --&amp;gt; 修改權 看目錄 pwd ---&amp;gt;當前目錄ll 看目錄ls -ltr ---&amp;gt;看目錄資料權限ls -al &amp;gt;&amp;gt;&amp;gt; 看權限cd $home //到現在使用者下的目錄 參考 :</content>
-    </entry>
-    
-     <entry>
-        <title>[從 0 開始的 JAVA 生活]No.3 變數與它的小夥伴們</title>
-        <url>https://iankingh.github.io/post/java/java_tutorial_3./</url>
-        <categories>
-          <category>筆記</category><category>技術</category>
-        </categories>
-        <tags>
-          <tag>java</tag>
-        </tags>
-        <content type="html"> [從 0 開始的 JAVA 生活]No.3 變數與它的小夥伴們 變數的命名規則 變數名稱 ：
-變數的種類與有效範圍(Variable Scope) 變數的種類 -local variables (區域變數): -區域變數只能在它們被宣告的(method)內存取 -又稱 automatic , temporary , 或stack variables
--insance variables (實體變數): -宣告在(method)之外，並且沒有static修飾子 -實體變數可被類別內的任何非static method 所存取 -又稱 成員變數 (member variables) ,屬性變數(attribute variables)
-** 加上static 修飾子的類別變數(class variables)又稱靜態變數(sttic variables)
-變數的宣告(Declaration)與初始化(Initializtion) 基本觀念 -變數被使用前須有初值,否則(compile)時會有錯誤 -基本的宣告方式 : &amp;lt;變數型態&amp;gt;&amp;lt;變數名稱&amp;gt;; EX : int i ; -宣告之後,在指定初始值[區域變數]才可以 EX : int i = 0;
-實體變數的初始化 參考 :
-</content>
-    </entry>
-    
-     <entry>
-        <title>SpringDataJapNotes</title>
-        <url>https://iankingh.github.io/post/spring/springdatajapnotes/</url>
-        <categories>
-          <category>筆記</category>
-        </categories>
-        <tags>
-          <tag>java</tag><tag>Spring</tag><tag>Spring Data JPA</tag>
-        </tags>
-        <content type="html"> Spring Data JPA 介紹 Spring-Data 概述 Spring Data 是一個資料訪問框架 ，用於簡化資料庫訪問，旨在提供一致的資料庫訪問模型，同時仍然保留不同資料庫底層資料存儲的特點，Spring Data 採用了領域驅動模型的設計思想，實現了訪問關係型數據庫、非關係型數據庫的統一的介面，只需要定義好領域模型（Entity），後續的創建表、CURD、排序操作不需要手動添加任何SQL語句，同時也支持手動擴展功能。
-Spring Data 只要定義介面，遵循 Spring Data 的規範，就無需寫實現類。
-Spring Data 提供了預設的交易處理方式，即所有的查詢均聲明為唯讀事務。
-Spring Data 專案所支援 NoSQL 存儲：MongoDB （文檔資料庫）、Neo4j（圖形資料庫）、Redis（鍵/值存儲）、Hbase（列族資料庫）
-Spring Data 專案所支援的關係資料存儲技術：JDBC、JPA
-Spring Data JPA 概述 JPA(Java Persistence API)是 Sun 官方提出的 Java 持久化規範。
-JPA主要是為了簡化現有的持久化開發工作和整合 ORM 技術， 是在充分吸收了現有 Hibernate、TopLink、JDO 等 ORM 框架的基礎上發展而來的，具有易於使用、伸縮性強等優點。
-Spring Data JPA 是 Spring 基於 ORM 框架、JPA 規範的基礎上封裝的一套 JPA 應用框架，可使開發者用簡單代碼即可實現對資料的訪問和操作。
-它提供了包括增刪改查等在內的常用功能，且易於擴展！通常我們寫持久層，都是先寫一個介面，再寫介面對應的實現類，在實現類中進行持久層的業務邏輯處理。而現在，Spring Data JPA幫助我們自動完成了持久層的業務邏輯處理，開發者唯一要做的，就只是聲明持久層的介面，其他都交給 Spring Data JPA 來幫你完成！
-注意：JPA 是一套規範，不是一套產品， Hibernate、TopLink、JDO 它們是一套產品，如果說這些產品實現了這個 JPA 規範，那麼就可以叫它們為 JPA 的實現產品。
-Repository Repository介面 Repository 介面是 Spring Data 的一個核心介面，是一個抽象的介面，使用者通過繼承該介面來實現資料的訪問，它不提供任何方法，開發者需要在自己定義的介面中聲明需要的方法
-public interface Repository&amp;lt;T, ID&amp;gt; { } 很重要的一點就是，Repository的實現類是在應用啟動的時候生成的，也就是Spring的應用上下文創建的時候.而不是通過代碼生成技術產生的，也不是介面方法調用時才產生的 基礎的Repository提供了最基本的資料訪問功能，其幾個子介面則擴展了一些功能。
-編寫Spring Data JPA Repository 的關鍵在於從一組介面中挑選一個進行擴展
-EX:
-public interface CustomerRepository extends Repository&amp;lt;CustomerEntity,Long&amp;gt; { } 添加注解為其指定 CustomerEntity和 id 屬性。
-在spring boot中如果使用了 spring-boot-starter-data-jpa ,會自動掃描所有擴展了Repository介面的類
-CrudRepository 介面 CrudRepository 介面繼承Repository，提供對實體類(CRUD)增刪改查方法，可以直接調用。
-CrudRepository介面實現了save、delete、count、exists等方法，繼承這個介面時需要兩個範本參數T和ID，T就是你的實體類（對應資料庫表），ID就是主鍵。
-public interface CrudRepository&amp;lt;T, ID extends Serializable&amp;gt; extends Repository&amp;lt;T, ID&amp;gt; {&amp;lt;S extends T&amp;gt; S save(S entity); //Saves the given entity (保存給定的實體。)Optional&amp;lt;T&amp;gt; findById(ID primaryKey); //Returns the entity identified by the given ID.(返回由給定ID標識的實體。)Iterable&amp;lt;T&amp;gt; findAll(); //Returns all entities.(返回所有實體。)long count();//Returns the number of entities.(查詢實體數量) void delete(T entity); //	Deletes the given entity.(刪除給定的實體。)boolean existsById(ID primaryKey); //Indicates whether an entity with the given ID exists.(根據id判斷實體是否存在)void delete(ID id);//根據Id刪除實體 &amp;lt;S extends T&amp;gt; Iterable&amp;lt;S&amp;gt; saveAll(Iterable&amp;lt;S&amp;gt; entities);//保存集合} 在使用中，使用者需要繼承這個介面，CustomerEntity就是定義的實體，Long是主鍵類型
-public interface CustomerRepository extends CrudRepository&amp;lt;CustomerEntity, Long&amp;gt;{} package com.example.demo;import java.util.ArrayList;import org.junit.jupiter.api.Test;import org.springframework.beans.factory.annotation.Autowired;import org.springframework.boot.test.context.SpringBootTest;/*** CustomerRepositoryTest*/@SpringBootTestpublic class CustomerRepositoryTest {@Autowiredprivate UserRepository userRepository;// CRUD 操作// 增 save(entity), save(entities)@Testpublic void save1() {UserEntity userEntity = new UserEntity();userEntity.setName(&amp;quot;肯德基20&amp;quot;);userEntity = userRepository.save(userEntity);System.out.println(userEntity);}// save(entities)@Testpublic void saveManyTest() {UserEntity userEntity = new UserEntity();userEntity.setName(&amp;quot;test21&amp;quot;);UserEntity userEntity2 = new UserEntity();userEntity2.setName(&amp;quot;test22&amp;quot;);ArrayList&amp;lt;UserEntity&amp;gt; userEntities = new ArrayList&amp;lt;UserEntity&amp;gt;();userEntities.add(userEntity);userEntities.add(userEntity2);userRepository.saveAll(userEntities);}} // 刪 delete(id),delete(entity),delete(entities),deleteAll// 查 findOne(id) ,findAll, exits(id)// save***只要 id一樣,就會更新,而不是添加. PagingAndSortingRepository 介面 繼承CrudRepository，具有分頁查詢和排序功能
-public interface PagingAndSortingRepository&amp;lt;T, ID extends Serializable&amp;gt; extends CrudRepository&amp;lt;T, ID&amp;gt; {Iterable&amp;lt;T&amp;gt; findAll(Sort sort); //排序Page&amp;lt;T&amp;gt; findAll(Pageable pageable); //分頁查詢（含排序功能）} **example: **
-package com.example.demo;import java.util.ArrayList;import org.junit.jupiter.api.Test;import org.springframework.beans.factory.annotation.Autowired;import org.springframework.boot.test.context.SpringBootTest;/*** CustomerRepositoryTest*/@SpringBootTestpublic class CustomerRepositoryTest {@Autowiredprivate CustomerRepository customerRepository;@Testpublic void findAll() {Iterable iterable = customerRepository.findAll();System.out.println(&amp;quot;iterable &amp;quot; &#43; iterable);}} JpaRepository 介面 繼承 PagingAndSortingRepository，實現一組 JPA 規範相關的方法， 該介面提供了JPA的相關功能 ，PagingAndSortingRepository介面本身已經繼承了 CrudRepository
-public interface JpaRepository&amp;lt;T,ID&amp;gt; extends PagingAndSortingRepository&amp;lt;T,ID&amp;gt;, QueryByExampleExecutor&amp;lt;T&amp;gt;{List&amp;lt;T&amp;gt; findAll(); //查找所有實體List&amp;lt;T&amp;gt; findAll(Sort sort); //排序、查找所有實體List&amp;lt;T&amp;gt; save(Iterable&amp;lt;? extends T&amp;gt; entities);//保存集合T saveAndFlush(T entity);//強制執行持久化void flush();//執行緩存與資料庫同步void deleteInBatch(Iterable&amp;lt;T&amp;gt; entities);//刪除一個實體集合} JpaSpecificationExecutor介面 可以執行原生SQL查詢也可以自訂Repository的方法不屬於Repository體系，實現一組 JPA Criteria 查詢相關的方法 Specification：封裝 JPA Criteria 查詢準則。通常使用匿名內部類的方式來創建該介面的物件
-Specification：封裝 JPA Criteria 查詢準則。通常使用匿名內部類的方式來創建該介面的物件
-由於JpaSpecificationExecutor 並不繼承repository 介面，所以它不能單獨使用，只能和jpa Repository 一起用。
-public interface JpaSpecificationExecutor&amp;lt;T&amp;gt; {T findOne(Specification&amp;lt;T&amp;gt; spec);List&amp;lt;T&amp;gt; findAll(Specification&amp;lt;T&amp;gt; spec);Page&amp;lt;T&amp;gt; findAll(Specification&amp;lt;T&amp;gt; spec, Pageable pageable);List&amp;lt;T&amp;gt; findAll(Specification&amp;lt;T&amp;gt; spec, Sort sort);long count(Specification&amp;lt;T&amp;gt; spec);} public interface CustomerRepository extends CrudRepository&amp;lt;Customer, Long&amp;gt;, JpaSpecificationExecutor {} Spring-Data 方法定義規範 public interface ProductInfoRepository extends JpaRepository&amp;lt;ProductInfoEntity,String&amp;gt; {//定義一個方法:根據商品名稱查找所有的商品List&amp;lt;ProductInfoEntity&amp;gt; findAllByProductName(String name);} 當創建 Repository 實現的時候， Spring Data會檢查 Repository 介面的所有方法，解析方法的名稱，並基於被持久化的物件來推測方法的目的，Spring Data 定義了一組小型的領域特定語言(DSL) ，在這裡持久化的細節都是通過 Repository的方法簽名來描述的
-findAllByProductName(String name) 方法非常簡單，Repoditory 方法是 由一個動詞，一個可選主題,關鍵字By以及一個斷言所組成
-在findAllByProductName 方法中,動詞是findAll ,斷言是 ProductName，主題並沒有指定，
-暗含就是 ProductInfoEntity Repository 方法的主題是可選的,它主要是讓你命名方法的時候有很多的靈活性,findAllByProductName和findAllProductInfoEntityByProductName方法沒有什麼區別. 要查詢的物件的類型是通過如何參數化 Repository 介面來決定的,而不是方法名稱中的主題.
-擴展查詢 按照Spring Data 的規範，查詢方法以find | read | get 開頭， 涉及條件查詢時，條件的屬性用條件關鍵字連接，要注意的是：條件屬性以首字母大寫。
-find | read | get方法都會查詢資料並返回物件.而 count 則會返回匹配對象的數量,而不是對象本身.
-EX：定義一個 Entity 實體類
-class UserEntity｛private String firstName; private String lastName; ｝ 使用And條件連接時，應這樣寫：
-findByLastNameAndFirstName(String lastName,String firstName); 假如創建如下的查詢：findByUserDepUuid()，框架在解析該方法時，首先剔除 findBy，然後對剩下的屬性進行解析，假設查詢實體為Doc （1）先判斷 userDepUuid （根據 POJO 規範，首字母變為小寫）是否為查詢實體的一個屬性，如果是，則表示根據該屬性進行查詢；如果沒有該屬性，繼續第二步； （2）從右往左截取第一個大寫字母開頭的字串(此處為Uuid)，然後檢查剩下的字串是否為查詢實體的一個屬性，如果是，則表示根據該屬性進行查詢；如果沒有該屬性，則重複第二步，繼續從右往左截取；最後假設 user 為查詢實體的一個屬性； （3）接著處理剩下部分（DepUuid），先判斷 user 所對應的類型是否有depUuid屬性，如果有，則表示該方法最終是根據 “ Doc.user.depUuid” 的取值進行查詢；否則繼續按照步驟 2 的規則從右往左截取，最終表示根據 “Doc.user.dep.uuid” 的值進行查詢。 （4）可能會存在一種特殊情況，比如 Doc包含一個 user 的屬性，也有一個 userDep 屬性，此時會存在混淆。可以明確在屬性之間加上 &amp;ldquo;_&amp;rdquo; 以顯式表達意圖，比如 &amp;ldquo;findByUser_DepUuid()&amp;rdquo; 或者 &amp;ldquo;findByUserDep_uuid()&amp;rdquo; 特殊的參數： 還可以直接在方法的參數上加入分頁或排序的參數，比如：
-Page&amp;lt;UserModel&amp;gt; findByName(String name, Pageable pageable);List&amp;lt;UserModel&amp;gt; findByName(String name, Sort sort); 如果覺得curdrepository提供的查詢不符合要求，可以繼承該介面進行擴展，
-Spring Data JPA為此提供了一些表達條件查詢的關鍵字，大致如下：
-條件的屬性名稱與個數要與參數的位置與個數一一對應 直接在介面中定義查詢方法，如果是符合規範的，可以不用寫實現，目前支援的關鍵字寫法如下：
-   Keyword Description Sample     And 等價於SQL中的and 關鍵字 findByUsernameAndPassword(String user, Striang pwd)；   Or 等價於SQL中的or 關鍵字 findByUsernameOrAddress(String user, String addr);   Between 等價於SQL中的between 關鍵字 findBySalaryBetween(int max,int min)；   LessThan 等價於SQL中的&amp;quot;&amp;lt;&amp;quot; findBySalaryLessThan(int max)；   GreaterThan 等價於SQL中的&amp;quot;&amp;gt;&amp;quot; findBySalaryGreaterThan(intmin)；   IsNull 等價於SQL中的&amp;quot;is null&amp;quot; findByUsernameIsNull()；   IsNotNull 等價於SQL中的&amp;quot;is not null&amp;quot; findByUsernameIsNotNull()；   NotNull 與IsNotNull等價    Like 等價於SQL中的&amp;quot;like&amp;quot; findByUsernameLike(String user)；   NotLike 等價於SQL中的&amp;quot;not like&amp;quot; findByUsernameNotLike(Stringuser)；   OrderBy 等價於SQL中的&amp;quot;order by&amp;quot; findByUsernameOrderBySalaryAsc(String user)；   Not 等價於SQL中的&amp;quot;！ =&amp;quot; findByUsernameNot(String user)；   In 等價於SQL中的&amp;quot;in&amp;quot; findByUsernameIn(CollectionuserList)，方法的參數可以是 Collection類型，也可以是陣列或者不定長參數；   NotIn 等價於SQL中的&amp;quot;not in&amp;quot; findByUsernameNotIn(CollectionuserList)，方法的參數可以是 Collection類型，也可以是陣列或者不定長參數；    @Query注解 Spring Data 這個小型的DSL依舊有其局限性,有時候通過方法名表達預期的查詢很繁瑣,甚至無法實現.如果與呆這種情況,Spring Data能讓我們通過**@Query**注解來解決問題
-這種查詢可以聲明在 Repository 方法中，擺脫像命名查詢那樣的約束，將查詢直接在相應的介面方法中聲明，結構更為清晰，這是 Spring data 的特有實現。
-如果是 @Query 中有 LIKE 關鍵字，後面的參數需要前面或者後面加 %，這樣在傳遞參數值的時候就可以不加 %：
-@Query注解 這種查詢可以聲明在 Repository 方法中，擺脫像命名查詢那樣的約束，將查詢直接在相應的介面方法中聲明，結構更為清晰，這是 Spring data 的特有實現。
-自訂 Repository 方法 定義一個介面: 聲明要添加的, 並自實現的方法 提供該介面的實現類: 類名需在要聲明的 Repository 後添加 Impl, 並實現方法 聲明 Repository 介面, 並繼承 1) 聲明的介面 使用. 注意: 預設情況下, Spring Data 會在 base-package 中查找 &amp;ldquo;介面名Impl&amp;rdquo; 作為實現類. 也可以通過　repository-impl-postfix　聲明尾碼
-@Query(&amp;quot;select o from UserModel o where o.name like %?1&amp;quot;) @Query來指定本地查詢 使用**@Query來指定本地查詢，只要設置nativeQuery為true**
-@Query(value=&amp;quot;select * from tbl_user where name like %?1&amp;quot; ,nativeQuery=true) @Query 與 @Modifying 這兩個 annotation一起聲明，可定義個性化更新操作，例如只涉及某些欄位更新時最為常用
-Springdata支援JPQL 語句對查詢進行擴展，
-例子如下：
-public interface CustomerRepository extends CrudRepository&amp;lt;Customer, Long&amp;gt; { @Query(&amp;quot;select a from Customer a WHERE a.firstName = ?&amp;quot;)List&amp;lt;Customer&amp;gt; findByQuery(StringfirstName); }  EX:
-//聲明自訂查詢/***	使用JPA SQL語句*	@return**/@Query(&amp;quot;select p from ProductInfoEntity p where p.productName like &#39;%米%&#39; &amp;quot;)List&amp;lt;ProductInfoEntity&amp;gt; findProductInfo(); /***	使用JPA SQL語句 查詢價格最高的商品**/@Query(&amp;quot;select p from ProductInfoEntity p &amp;quot; &#43;&amp;quot;where p.productPrice=&amp;quot; &#43;&amp;quot;(select max(p2.productPrice) from ProductInfoEntity p2)&amp;quot;)List&amp;lt;ProductInfoEntity&amp;gt; findMaxPrice(); /*** 使用JPA SQL語句 帶參數的查詢1* @param name* @param price* @return**/@Query(&amp;quot;select o from ProductInfoEntity o where o.productName=?1 and o.productPrice=?2&amp;quot;)List&amp;lt;ProductInfoEntity&amp;gt; findParam(String name, double price); /*** 使用JPASQL語句 帶參數的查詢2* @param name* @param price* @return**/@Query(&amp;quot;select o from ProductInfoEntity o where o.productName=:name and o.productPrice=:price&amp;quot;)List&amp;lt;ProductInfoEntity&amp;gt; findParam2(@Param(&amp;quot;name&amp;quot;) String name, @Param(&amp;quot;price&amp;quot;) double price);當然還可以使用原生SQL語句進行查詢,只需要 nativeQuery = true 即可 /***使用原生SQL語句 查詢* @return**/@Query(nativeQuery = true,value = &amp;quot;select count(*) from product_info&amp;quot;)Integer getCount(); Spring data JPA 更新及刪除操作整合事物的使用
-更新操作注意事項:
-/** 使用Query注解寫更新JPA語句*添加 @Modifying 注解**/@Modifying@Query(&amp;quot;update ProductInfoEntity o set o.productPrice =:price where o.productId=:id&amp;quot;)Integer updatePrice(@Param(&amp;quot;id&amp;quot;) String id,@Param(&amp;quot;price&amp;quot;) double price);  在service層添加事物 @Transactional  package com.itguang.weixinsell.service;import com.itguang.weixinsell.repository.ProductInfoRepository;import org.springframework.beans.factory.annotation.Autowired;import org.springframework.stereotype.Service;import org.springframework.transaction.annotation.Transactional;@Service@Transactionalpublic class ProductInfoService {@Autowiredprivate ProductInfoRepository infoRepository;public Integer updatePrice( String id,double price){Integer i = infoRepository.updatePrice(id, price);return i;}}</content>
-    </entry>
-    
-     <entry>
-        <title>docker 指令</title>
-        <url>https://iankingh.github.io/post/docker/docker_command/</url>
-        <categories>
-          <category>筆記</category>
-        </categories>
-        <tags>
-          <tag>docker</tag>
-        </tags>
-        <content type="html"> Docker 指令 Images 相關的指令 bulid images see images(看映像) docker images docker pull(下載映像) docker pull see registry images() curl -XGET 192.168.x.x:5000/v2/_catalog container docker container ls (看容器) docker container ls docker ps (看容器) docker ps -a : 看到的所有容器 docker ps -a  -l :顯示最新創建的容器(包括所有狀態) docker ps -l -q :只顯示數字ID docker ps -q  -f: 過濾器 docker ps -f id(ContainerId) Container Stop (停掉Container) docker stop  Container remove(移除停掉的Container) docker rm see log docker logs Show Container&amp;rsquo;s logs (once) docker logs ContainerId Log countinuing docker logs -f ContainerId See Container ENV docker inspect Cid &amp;gt; Y.txt (獲取容器/鏡像的 ENV。) Into Container (進入 container 裡面) docker exec -it containerID bash  into 執行命令 docker exec -it ebbeb7c38404 bash -c &#39;echo &amp;quot;$envKey&amp;quot;&#39; stop &amp;amp;&amp;amp; rm docker container docker stop ContainerId &amp;amp;&amp;amp; docker rm ContainerId Container status (查看docker 容器使用的資源) docker stats  提交一個commit docker commit cID docker system docker system df (空間分佈) docker system df 可用於查詢鏡像（Images）、容器（Containers）和本地卷（Local Volumes）等空間使用大戶的空間佔用情況。
--v 表示細節查看空間佔用細節 docker system df -v docker system prune (空間清理) 可以通過 Docker 內置的 CLI 指令 docker system prune 來進行自動空間清理。
-docker system prune WARNING! This will remove:
-- all stopped containers (已經停止的容器（container）)
-- all networks not used by at least one container(未被使用的網路)
-- all dangling images(Dangling images are layers that have no relationship to any tagged images.)(所有未打標籤的鏡像(images)。)
-- all dangling build cache(構建鏡像時產生的緩存)
-該指令預設只會清除懸空鏡像，未被使用的鏡像不會被刪除。
-· 添加 -a 或 --all 參數後，可以一併清除所有未使用的鏡像和懸空鏡像。
-· 可以添加 -f 或 --force 參數用以忽略相關告警確認資訊。
-· 指令結尾處會顯示總計清理釋放的空間大小。
-刪除已經停止的容器： docker container prune 刪除未被使用的網路： docker network prune 刪除沒有Tag的鏡像： docker image prune 刪除沒有容器的鏡像： docker image prune -a 刪除未被使用的資料卷： docker volume prune Docker swarm see swarm service ls docker service ls see swarm service status docker service ps serviceID update service env docker service update --env-add envKey=envValue serviceName update service docker service update --image 172.22.11.11:5000/dockerImageName:tag swarmS_Name 參考 Docker常用命令小记_程序员欣宸的博客-CSDN博客
-docker container ls命令 - Docker教程™
-[Docker] Docker 指令小抄 - Miles&amp;rsquo;s Journey
-</content>
-    </entry>
-    
-     <entry>
-        <title>[從 0 開始的 JAVA 生活]No.2 Java 基本的資料型態(Primitive Data Types)</title>
-        <url>https://iankingh.github.io/post/java/java_tutorial_2/</url>
-        <categories>
-          <category>筆記</category><category>技術</category>
-        </categories>
-        <tags>
-          <tag>java</tag>
-        </tags>
-        <content type="html"> Java 基本的資料型態(Primitive Data Types) 基本數據類型（8種）
-   數據類型 大小/位 封裝類 默認值 可表示數據范圍     byte 8bit Byte 0 -128~127   short 16bit Short 0 -32768~32767   int 32bit Integer 0 -2147483648~2147483647   long 64bit Long 0L -9223372036854775808~9223372036854775807   float 32bit Float 0.0F 1.4E-45~3.4028235E38   double 64bit Double 0.0D 4.9E-324~1.7976931348623157E308   char 16bit Character &amp;lsquo;\u0000&amp;rsquo; 0~65535   boolean 8bit Boolean false true或false    如果兩運算為基本型別，至少會轉為int
-範例 /*** * * &amp;lt;p/&amp;gt;* Package: ch1 &amp;lt;br&amp;gt;* File Name: PrimitiveDataTypesTest &amp;lt;br&amp;gt;* &amp;lt;p/&amp;gt;* Purpose: &amp;lt;br&amp;gt;* * @ClassName: ch1.PrimitiveDataTypesTest* @Description: 測試基本數據類型* @Copyright : Copyright (c) Corp. 2020. All Rights Reserved.* @Company: ian Team.* @author ian* @version 1.0, 2020年5月18日*/public class PrimitiveDataTypesTest {static byte b;static short s;static int i;static long l;static float f;static double d;static char c;static boolean bo;public static void main(String[] args) {System.out.println(&amp;quot;byte的大小：&amp;quot; &#43; Byte.SIZE &#43; &amp;quot; byte的預設值：&amp;quot; &#43; b &#43; &amp;quot; byte的資料範圍：&amp;quot; &#43; Byte.MIN_VALUE &#43; &amp;quot;~&amp;quot;&#43; Byte.MAX_VALUE);System.out.println(&amp;quot;----------------------------------------------------&amp;quot;);System.out.println(&amp;quot;short的大小：&amp;quot; &#43; Short.SIZE &#43; &amp;quot; short的預設值：&amp;quot; &#43; s &#43; &amp;quot; short的資料範圍：&amp;quot; &#43; Short.MIN_VALUE &#43; &amp;quot;~&amp;quot;&#43; Short.MAX_VALUE);System.out.println(&amp;quot;----------------------------------------------------&amp;quot;);System.out.println(&amp;quot;int的大小：&amp;quot; &#43; Integer.SIZE &#43; &amp;quot; int的預設值：&amp;quot; &#43; i &#43; &amp;quot; int的資料範圍：&amp;quot; &#43; Integer.MIN_VALUE &#43; &amp;quot;~&amp;quot;&#43; Integer.MAX_VALUE);System.out.println(&amp;quot;----------------------------------------------------&amp;quot;);System.out.println(&amp;quot;long的大小：&amp;quot; &#43; Long.SIZE &#43; &amp;quot; long的預設值：&amp;quot; &#43; l &#43; &amp;quot; long的資料範圍：&amp;quot; &#43; Long.MIN_VALUE &#43; &amp;quot;~&amp;quot;&#43; Long.MAX_VALUE);System.out.println(&amp;quot;----------------------------------------------------&amp;quot;);System.out.println(&amp;quot;float的大小：&amp;quot; &#43; Float.SIZE &#43; &amp;quot; float的預設值：&amp;quot; &#43; f &#43; &amp;quot; float的資料範圍：&amp;quot; &#43; Float.MIN_VALUE &#43; &amp;quot;~&amp;quot;&#43; Float.MAX_VALUE);System.out.println(&amp;quot;----------------------------------------------------&amp;quot;);System.out.println(&amp;quot;double的大小：&amp;quot; &#43; Double.SIZE &#43; &amp;quot; double的預設值：&amp;quot; &#43; d &#43; &amp;quot; double的資料範圍：&amp;quot; &#43; Double.MIN_VALUE&#43; &amp;quot;~&amp;quot; &#43; Double.MAX_VALUE);System.out.println(&amp;quot;----------------------------------------------------&amp;quot;);System.out.println(&amp;quot;char的大小：&amp;quot; &#43; Character.SIZE &#43; &amp;quot; char的預設值：&amp;quot; &#43; c &#43; &amp;quot; char的資料範圍：&amp;quot; &#43; Character.MIN_VALUE&#43; &amp;quot;~&amp;quot; &#43; Character.MAX_VALUE);System.out.println(&amp;quot;----------------------------------------------------&amp;quot;);System.out.println(&amp;quot;boolean的大小：&amp;quot; &#43; Byte.SIZE &#43; &amp;quot; boolean的預設值：&amp;quot; &#43; bo &#43; &amp;quot; boolean的資料範圍：&amp;quot; &#43; Byte.MIN_VALUE&#43; &amp;quot;~&amp;quot; &#43; Byte.MAX_VALUE);}} JAVA 跳脫字元 Escape Characters - \&#39; : 單引號- \&amp;quot; : 雙引號- \\ : 反斜線- \n : 換行- \t : tab鍵- \b : 倒退一格- \f : 換頁- \r : Enter 鍵 參考 Java中8种基本数据类型及其默认值_飞月程序人生-CSDN博客_float默认值
-</content>
-    </entry>
-    
-     <entry>
-        <title>[從 0 開始的 JAVA 生活] No.1 Java 第一支 java 程式</title>
-        <url>https://iankingh.github.io/post/java/java_tutorial_1/</url>
-        <categories>
-          <category>筆記</category><category>技術</category>
-        </categories>
-        <tags>
-          <tag>java</tag>
-        </tags>
-        <content type="html"> 從 0 開始的 JAVA 生活 No.1 Java 第一支 java 程式 建立一個HelloJava.java 的檔案 /*** HelloJava*/public class HelloJava {public static void main(String[] args) {System.out.println(&amp;quot;Hello java&amp;quot;);}} 編譯程式  **語法 ： javac xxxx.java** EX:
-javac HelloJava.java 執行程式 **語法 ： java xxxx** EX :
-java HelloJava 參考</content>
-    </entry>
-    
-     <entry>
-        <title>Java DecimalFormat(數字格式)</title>
-        <url>https://iankingh.github.io/post/java/java_decimalformat/</url>
-        <categories>
-          <category>筆記</category>
-        </categories>
-        <tags>
-          <tag>java</tag>
-        </tags>
-        <content type="html"> 簡介 java.text提供了NumberFormat類別來讓我們更方便的格式化數字的呈現方式
-DecimalFormat是NumberFormat該格式的具體子類， 其格式為小數。它具有多種功能，旨在使可以在任何語言環境中解析和格式化數字，包括對西方，阿拉伯和印度數字的支持。它還支持各種數字，包括整數（123），定點數字（123.4），科學計數法（1.23E4），百分比（12％）和貨幣金額（$ 123）。所有這些都可以本地化。
-基本用法 NumberFormat //由於NumberFormat是一個抽象類別，必須用getInstance()來取得他裡面的方法NumberFormat nf = NumberFormat.getInstance();//NumberFormat物件格式化的方式是固定的，都是以每三位數一個逗號的方式格式化數字，浮點數欄位則是有的時候顯示，沒有就不顯示。所以可以得到1,234,567.89。System.out.println(nf.format(1234567.89)); DecimalFormat ​DecimalFormat實作了NumberFormat，並提供更客製化的格式選擇，用法如下：
-Double value = 123456.789;String pattern = &amp;quot;###,###.###&amp;quot; ;//宣告了一個DecimalFormat物件，並可以在宣告時帶入要格式化的格式，若不帶入參數，格式規則和NumberFormat相同。DecimalFormat myFormatter = new DecimalFormat(pattern);String output = myFormatter.format(value);System.out.println(&amp;quot;執行結果為：&amp;quot; &#43; value &#43; &amp;quot; &amp;quot; &#43; pattern &#43; &amp;quot; &amp;quot; &#43; output); ​	下表描述了前幾行代碼的輸出. value 是要格式化的數字(double) ,pattern 是指定格式設置屬性的字符串.The output, 輸出是字符串，表示格式化的數字。
-   value pattern output Explanation     123456.789 ###,###.### 123,456.789 井號（＃）表示一個數字，逗號是分組分隔符的佔位符，句點是十進制分隔符的佔位符。   123456.789 ###.## 123456.79 value 在小數點右邊有三位數, 而 pattern 只有兩位. format通過四捨五入來解決這個問題。   123.78 000000.000 000123.780 pattern 指定前導零和尾隨零，因為使用0字符代替了井號（＃）。   12345.67 $###,###.### $12,345.67 pattern中的第一個字符是美元符號（$）。注意，它緊接在格式為output的最左邊的數字之前。   12345.67 \u00A5###,###.### ¥12,345.67 pattern 使用Unicode值00A5指定日元（¥）的貨幣符號。    其他用法 DecimalFormat df = new DecimalFormat(&amp;quot;$#,##0.00&amp;quot;);System.out.println(df.format(1234567.2)); ​格式化的字串中0代表一定要有值，#則代表不一定要有值， 因此#,##0.00表示至少要有個位數及小數點後兩位，且每三位數以一個逗號分開，若格式化的數字沒有個位數或小數點後兩位，就會以0代替。
-​根據需求在前後加上需要的文字，例如$符號，所以上例執行的結果就會是$1,234,567.20。
-這邊要注意若是我們在格式化字串結尾加上百分比符號『%』，DecimalFormat會自動幫我們將數值乘以100以符合字面意義，例如：
-DecimalFormat df = new DecimalFormat(&amp;quot;#,##0.00%&amp;quot;);System.out.println(&amp;quot;執行結果為：&amp;quot; &#43; df.format(1234567.2));// 執行結果為：123,456,720.00% DecimalFormat 類主要靠 # 和 0 兩種預留位置號來指定數位長度。
-0 表示如果位數不足則以 0 填充，# 表示只要有可能就把數字拉上這個位置。
-/*** DecimalFormatTest*/public class DecimalFormatTest {public static void main(String[] args) {double d = 123456789;DecimalFormat decimalFormat = new DecimalFormat(&amp;quot;#,###.##&amp;quot;);System.out.println(decimalFormat.format(d));DecimalFormat decimalFormat2 = new DecimalFormat(&amp;quot;#,###.00&amp;quot;);System.out.println(decimalFormat2.format(d));double pi = 3.1415927;// 圓周率// 取一位元整數System.out.println(new DecimalFormat(&amp;quot;0&amp;quot;).format(pi));// 3// 取一位元整數和兩位元小數System.out.println(new DecimalFormat(&amp;quot;0.00&amp;quot;).format(pi));// 3.14// 取兩位元整數和三位元小數，整數不足部分以0填補。System.out.println(new DecimalFormat(&amp;quot;00.000&amp;quot;).format(pi));// 03.142// 取所有整數部分System.out.println(new DecimalFormat(&amp;quot;#&amp;quot;).format(pi));// 3// 以百分比方式計數，並取兩位小數System.out.println(new DecimalFormat(&amp;quot;#.##%&amp;quot;).format(pi));// 314.16%long c = 299792458;// 光速// 顯示為科學計數法，並取五位小數System.out.println(new DecimalFormat(&amp;quot;#.#####E0&amp;quot;).format(c));// 2.99792E8// 顯示為兩位元整數的科學計數法，並取四位小數System.out.println(new DecimalFormat(&amp;quot;00.####E0&amp;quot;).format(c));// 29.9792E7// 每三位以逗號進行分隔。System.out.println(new DecimalFormat(&amp;quot;,###&amp;quot;).format(c));// 299,792,458// 將格式嵌入文本System.out.println(new DecimalFormat(&amp;quot;光速大小為每秒,###米&amp;quot;).format(c)); // 光速大小為每秒299,792,458米}} 參考 [Java] 13-8 數字輸出格式 @ 給你魚竿 :: 痞客邦
-數字格式(NumberFormat、DecimalFormat) @ Penguin 工作室，一起JAVA吧！ :: 隨意窩 Xuite日誌
-（轉）Java DecimalFormat 用法（數位格式化） - 濫好人 - 博客園 
-https://docs.oracle.com/javase/tutorial/i18n/format/decimalFormat.html
-https://docs.oracle.com/javase/8/docs/api/java/text/DecimalFormat.html
-</content>
-    </entry>
-    
-     <entry>
-        <title>AndroidBsN01</title>
-        <url>https://iankingh.github.io/post/android/androidbsn01/</url>
-        <categories>
-          <category>筆記</category>
-        </categories>
-        <tags>
-          <tag>Kotlin</tag><tag>Android</tag>
-        </tags>
-        <content type="html"> Create an Android project(創建一個Android項目) 要創建新的Android項目，請按照以下步驟操作：
-  安裝最新版本的 Android Studio。
-  在Welcome to Android Studio窗口中，單擊啟動新的Strat a new Android Studio project。   在Select a Project Template窗口中，選擇&amp;quot; Empty Activity，然後單擊next。
-  在Configure Your Project窗口中，完成以下操作：  · 在Name輸入 &amp;ldquo;Myfirstapp&amp;rdquo; 。
-· 在Package name字段中輸入&amp;quot;com.example.myfirstapp&amp;quot; 。
-· Save Location 預設專案放置位置，如果要將項目放置在其他文件夾中，請更改其保存位置。
-· 從&amp;quot; Language&amp;quot;下拉菜單中選擇Java或Kotlin。
-· 在&amp;quot;Minimum SDK&amp;quot;選擇您的應用將支持的最低 Android版本。
-· 保留其他選項不變。
- 點擊完成。  經過一段時間的處理後，出現Android Studio主窗口。
-Android Studio主窗口
-現在花點時間查看最重要的文件。
-首先，請確保已打開項目窗口（選擇“視圖&amp;gt;工具窗口&amp;gt;項目），並且從該窗口頂部的下拉列表中選擇了Android視圖。然後，您可以看到以下文件：
-應用&amp;gt; Java&amp;gt; com.example.myfirstapp&amp;gt; MainActivity
-這是主要活動。這是您的應用程序的切入點。在構建和運行應用程序時，系統將啟動該應用程序的實例 Activity 並加載其佈局。
-應用程序&amp;gt; res&amp;gt;佈局&amp;gt; activity_main.xml
-此XML文件定義活動的用戶界面（UI）的佈局。它包含一個TextView帶有文本“ Hello，World！” 的 元素。
-應用&amp;gt;清單**&amp;gt; AndroidManifest.xml**
-該清單文件描述了應用程序的基本特徵，並限定它的每一個組件。
-Gradle腳本&amp;gt; build.gradle
-有兩個名稱相同的文件：一個用於項目“ Project：My First App”，另一個用於應用程序模塊“ Module：app”。每個模塊都有自己的build.gradle文件，但是該項目當前只有一個模塊。使用每個模塊build.file來控制Gradle插件如何構建您的應用程序。有關此文件的更多信息，請參見 配置構建。
-參考
-https://developer.android.com/training/basics/firstapp/creating-project
-</content>
-    </entry>
-    
-     <entry>
-        <title>Redis簡介</title>
-        <url>https://iankingh.github.io/post/redis/redisinstall/</url>
-        <categories>
-          <category>筆記</category>
-        </categories>
-        <tags>
-          <tag>redis</tag>
-        </tags>
-        <content type="html"> Redis Install Redis簡介 Redis是一個使用ANSI C編寫的開源、支援、基於記憶體、可選永續性的鍵值對儲存資料庫。
-Redis 是一个使用 ANSI C 編寫的開源、支援 網路、基於記憶體(內存)、單線程、**可選永續性 **的 鍵值儲存資料庫。
-以官方的解釋，Redis是一套Open source的In-memory NoSQL database，可以應用在Cache、Database及簡單的Message broker。
-作者則說它是一個Data Structures Server，顧名思義，它提供了很多種資料結構及相對應的指令去操作這些資料。由於它是以In-Memory的方式為主，另一個很明顯的特性就是它很快，非常快，正確使用下可以輕鬆的處理每秒上萬的請求。
-Redis Install 1.Window 下 安裝 安裝網址 https://github.com/microsoftarchive/redis/releases
-啟動指令 redis-server.exe redis.windows.conf 啟動畫面 測試 #連線指令redis-cli.exe -h 127.0.0.1 -p 6379#塞值Set testkey testvalue#取值Get testkey 2.Linux 安裝 #用wget從Redis官網下載最新的Redis安裝包，#下載完成後解壓縮到你想要放的位置，然後執行make進行編譯$ wget http://download.redis.io/releases/redis-6.0.3.tar.gz$ tar xzf redis-6.0.3.tar.gz$ cd redis-6.0.3$ make 啟動 src/redis-server 測試 #連線指令src/redis-cli # 塞值redis&amp;gt; set foo bar # 取值redis&amp;gt; get foo  3. cntos install redis 更新 dnf sudo dnf update -y 下載 redis  下載  sudo dnf install redis -y 啟動  sudo systemctl start redis sudo systemctl enable redis 確認啟動  sudo systemctl status redis 看占用的port  sudo netstat -pnltu | grep redis
-3.使用Docker 安裝 已經安裝好Docker的環境，只要輸入下列指令就能快速的跑起來一個Redis instance
-docker run --name MyRedisCache -d -p 6379:6369 redis 測試 進入 container 測試
-#連線指令redis-cli# 塞值127.0.0.1:6379&amp;gt; set hello &amp;quot;hello world&amp;quot;# 取值127.0.0.1:6379&amp;gt; get hello 參考 Redis - 維基百科，自由的百科全書
-https://zh.wikipedia.org/wiki/Redis
-Redis - 在 Windows 上建立高可用性的 Redis | 天空的垃圾場
-https://skychang.github.io/2017/04/09/Redis-Create_Redis_HA/
-Redis系列 - 環境建置篇 - Jed&amp;rsquo;s blog
-https://jed1978.github.io/2018/05/02/Redis-Environment-Installation-Configuration.html
-如何在CentOS 8 / RHEL 8上安裝Redis服務器 https://www.linuxtechi.com/install-redis-server-on-centos-8-rhel-8/
-</content>
-    </entry>
-    
-     <entry>
-        <title>[從 0 開始的 JAVA 生活] No.0  JAVA 環境安裝</title>
-        <url>https://iankingh.github.io/post/java/java_tutorial_0/</url>
-        <categories>
-          <category>筆記</category><category>技術</category>
-        </categories>
-        <tags>
-          <tag>java</tag>
-        </tags>
-        <content type="html"> JAVA 環境安裝 第一步 設定環境變數-JAVA_HOME 於系統path 添加 java環境變數 (Environment Variable)
-C:\Program Files\Java\jdk1.8.0_111(後面為自己的jdk) 如下圖
-第二步 Path設定 (environment variable) 於Path設定啟動 (environment variable)
-%JAVA_HOME%\bin; 如下圖 第三步 測試 打開terminal，輸入以下指令
-java -vresionjavac -version 輸出如下圖
-參考</content>
-    </entry>
-    
-     <entry>
-        <title>Eclipse 用 Open Type Hierarchy 查看類的繼承關係</title>
-        <url>https://iankingh.github.io/post/eclipse/opentypehierarchy/</url>
-        <categories>
-          <category>筆記</category>
-        </categories>
-        <tags>
-          <tag>eclispe</tag>
-        </tags>
-        <content type="html"> Eclipse 用 Open Type Hierarchy 查看類的繼承關係 前言 有時會想要知道繼承類別的關係，此時可以使用ide 內建的功能來解決
-使用 Eclispe 用Open Type Hierarchy可以查看類的繼承關係，可以在Hierarchy窗口看到繼承層次的導航。
-在方法或類名上點擊右鍵，選擇Open Type Hierarchy即可，快捷鍵是F4。
-參考</content>
-    </entry>
-    
-     <entry>
-        <title>連線GitLab問題處理</title>
-        <url>https://iankingh.github.io/post/git/gitlaberror/</url>
-        <categories>
-          <category>筆記</category>
-        </categories>
-        <tags>
-          <tag>git</tag><tag>gitLab</tag>
-        </tags>
-        <content type="html"> 連線GitLab問題處理 問題1 : 在連線 gitlab 遇到fatal: Authentication failed for&amp;hellip;. 的問題 可能是有人重灌gitlab 或是改密碼時造成 憑證用舊的對新的 gitlab 密碼
-Windows 解法 解決方法1 : 到 win10 的控制台/認證管理員/ Windows 認證 或到搜尋輸入
-Credential Manager / Windows Credentials/  找到 對應的 gitlab 把他移除
-1.Credential Manager
-2.Windows Credentials
-參考 在gitlab 遇到fatal: Authentication failed for&amp;hellip;. 的問題 | Frank的探索之旅 - 點部落
-</content>
-    </entry>
-    
-     <entry>
-        <title>Hugo 使用 disqus</title>
-        <url>https://iankingh.github.io/post/hugo/hugoaddisqus/</url>
-        <categories>
-          <category>筆記</category>
-        </categories>
-        <tags>
-          <tag>hugo</tag>
-        </tags>
-        <content type="html"> Hugo 使用 disqus Disqus（/dɪsˈkʌs/，與英語「discuss」同音）是一家使用社群網路形式，向網路社區提供網站留言服務的公司。 該公司的平台提供不同的功能，例如與不同社群網路服務連結、社群網路、用戶個人檔案、垃圾宣傳及審核工具、資料分析、電子郵件通知和在行動裝置留言等。
-先申請 disqus 取得 disqusShortname
-Config.toml 開啟Hugo配置檔 Config.toml，設定 DisqusShortname。
-disqusShortname = &amp;quot;yourDisqusShortname&amp;quot; 新增 disqus.html 在根目錄 /layouts/partials/ 裡新增 disqus.html 檔案， 然後把官方提供的 Script 貼到 disqus.html 檔案裡並存檔。 官方提供的 Script 如下：
-&amp;lt;div id=&amp;quot;disqus_thread&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;script type=&amp;quot;text/javascript&amp;quot;&amp;gt;(function () {// Don&#39;t ever inject Disqus on localhost--it creates unwanted// discussions from &#39;localhost:1313&#39; on your Disqus account...if (window.location.hostname == &amp;quot;localhost&amp;quot;)return;var dsq = document.createElement(&#39;script&#39;); dsq.type = &#39;text/javascript&#39;; dsq.async = true;var disqus_shortname = &#39;{{ .Site.DisqusShortname }}&#39;;dsq.src = &#39;//&#39; &#43; disqus_shortname &#43; &#39;.disqus.com/embed.js&#39;;(document.getElementsByTagName(&#39;head&#39;)[0] || document.getElementsByTagName(&#39;body&#39;)[0]).appendChild(dsq);})();&amp;lt;/script&amp;gt;&amp;lt;noscript&amp;gt;Please enable JavaScript to view the &amp;lt;a href=&amp;quot;http://disqus.com/?ref_noscript&amp;quot;&amp;gt;comments powered byDisqus.&amp;lt;/a&amp;gt;&amp;lt;/noscript&amp;gt;&amp;lt;a href=&amp;quot;http://disqus.com/&amp;quot; class=&amp;quot;dsq-brlink&amp;quot;&amp;gt;comments powered by &amp;lt;span class=&amp;quot;logo-disqus&amp;quot;&amp;gt;Disqus&amp;lt;/span&amp;gt;&amp;lt;/a&amp;gt; 設定 disqus.html 到 Hugo 主題的目錄下，找到 single.html 檔案， 將 Hugo 主題的目錄下 single.html Copy 至 /layouts/_default/ 下。 開啟 /layouts/_default/single.html 檔案，貼上下方語法
-&amp;lt;div class=&amp;quot;disqus markdown&amp;quot;&amp;gt;{{ partial &amp;quot;disqus.html&amp;quot; . }}&amp;lt;/div&amp;gt; 解決 localhost 不顯示 的問題 這是因為官方所提供的 Script 裡面其中一段語法的關係 if (window.location.hostname == &amp;ldquo;localhost&amp;rdquo;) return; 它的作用是當本地端 Server 運行時，就 return 中止，所以我們才會看不到 Disqus，這是因為當自己在編輯文章並運行 Server 進行預覽時，不需要用到留言的功能，所以才會採用這個判斷式來避免本地端的 Server 模式啟用Disqus功能。若您希望在本地端 Server 模式下，也能看到 Disqus，只要把上述那二行給註解掉並存檔就可以了。 ShowDisqus
-參考 Hugo 加入 Disqus 整合性留言管理系統
-给Hugo添加disqus评论服务 - Marvin&amp;rsquo;s Blog【程式人生】
-为你博客添加disqus评论系统 | 23.9K | Vineo
-</content>
-    </entry>
-    
-     <entry>
-        <title>Prism.js使用筆記</title>
-        <url>https://iankingh.github.io/post/hugo/hugoaddprism/</url>
-        <categories>
-          <category>筆記</category>
-        </categories>
-        <tags>
-          <tag>hugo</tag>
-        </tags>
-        <content type="html"> hugo使用Prism.js 使用 prism.js 做為代碼高量的工具
-Prism是一種輕量級的，可擴展的語法突出顯示工具，其構建考慮了現代Web標準。它已在數千個網站中使用，包括您每天訪問的一些網站。
-下載 https://prismjs.com/
-使用 放在Hugo部落格資料夾（static）位置
-├── static│ ├── prism.js│ └── prism.css Config.toml 開啟Hugo配置檔 Config.toml，設定將預設代碼高亮設定false
-#預設代碼區塊pygmentsCodefences = falsepygmentsCodefencesGuessSyntax = false 參考 Hugo / 如何在 Hugo 中用 Prism.js 提供程式碼色彩標註 | sujj blog
-漂亮的代碼語法高亮插件Prism.js簡單使用文檔 - 嚴穎專欄 -SegmentFault 思否
-</content>
-    </entry>
-    
-     <entry>
-        <title>Hugo使用筆記</title>
-        <url>https://iankingh.github.io/post/hugo/hugonotes/</url>
-        <categories>
-          <category>筆記</category>
-        </categories>
-        <tags>
-          <tag>hugo</tag>
-        </tags>
-        <content type="html"> Hugo使用筆記 前言
-Hugo 基本指令 安裝 透過Chocolatey 安裝
-choco install hugo -confirm Check version:
-hugo version 建立新Blog hugo new site blog 新增文章 hugo new post/文章名稱.md 生成的文件默認為會帶上 draft: true標記，不會發布。
-run server 不 run draft: true 的標記(未發布)
-hugo server run 全部
-hugo server -D 插入圖片 ![Example image](/static/image.png) 建立及設定部落格專案 我們先使用 hugo 命令新增一個空白專案，然後下載一個Template到我們的專案裡面
-接著新增四個我們想加到模板 Menu 的頁面: about, history, tags, categories
-最後則是新增一篇空白的文章到專案內。
-1.create the project$ hugo new site myblog2.add a theme$ git submodule add https://github.com/laozhu/hugo-nuo themes/hugo-nuo3.add new pages$ hugo new about.md$ hugo new hisroty.md$ hugo new tags.md$ hugo new categories.md4.add new article$ hugo new post/welcome.mdhugo server -D 參考 右上角github 貓 GitHub Corners
-在 Github Pages 建立 Hugo 靜態網站 · Kaichu.io
-使用Github部署Hugo靜態網站
-next模版
-使用 Hugo 打造個人部落格
-hugo搭建静态博客 | 生信笔记
-使用Hugo搭建博客系统 - XniLe - Ops 2.0
-</content>
-    </entry>
-    
-</search>
