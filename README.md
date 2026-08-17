@@ -1,7 +1,7 @@
 # iankingh.github.io redirect
 
 This repository contains the root page for `iankingh.github.io`. Its
-`index.html` redirects browsers with JavaScript to:
+`index.html` redirects browsers with an HTML refresh and JavaScript to:
 
 `https://iankingh.github.io/blog/`
 
@@ -18,6 +18,6 @@ deployment workflow in this repository. `index.html` is the complete site; any
 GitHub Pages publishing configuration is repository-side configuration and is
 not represented here.
 
-To change the destination, update the `window.location.href` value in
-`index.html`. Because the redirect is JavaScript-only, visitors with JavaScript
-disabled remain on a blank page.
+To change the destination, update the canonical link, HTML refresh, JavaScript
+redirect, and fallback link in `index.html`. Visitors who cannot be redirected
+automatically can follow the fallback link.
